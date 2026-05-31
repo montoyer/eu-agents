@@ -55,6 +55,7 @@ Investigation period:   [run cold-start-interview to set]
 | Draft a delegated act under Art. 290 TFEU / classify DA vs IA | `delegated-acts-drafter` |
 | Run a full Charter of Fundamental Rights compatibility assessment | `fundamental-rights-assessor` |
 | Quantify costs and benefits for the RSB — CBA, SME test, OIOO | `regulatory-impact-quantifier` |
+| Model the full EU policy lifecycle end-to-end (all 7 phases) | `policy-cycle` |
 
 ---
 

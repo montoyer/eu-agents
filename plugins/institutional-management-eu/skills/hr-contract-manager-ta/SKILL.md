@@ -68,6 +68,7 @@ and individual case management under the CEOS and Staff Regulations as applied t
 | Probation assessment | `references/probation-ta.md` | Length, assessment report, unsatisfactory outcome |
 | Working conditions | `references/working-conditions-ta.md` | Leave, sick leave, working time, telework |
 | Pension & social rights | `references/ceos-social-rights.md` | JSIS, pension, unemployment, accident coverage |
+| Pay table (2026) | `references/staff-regulations-annex-i-2026.md` | Basic monthly salaries, allowances, deduction rates — read; do not generate |
 
 ---
 
@@ -255,7 +256,7 @@ Staff member: _______________ Date: [DD Month YYYY]
 - Force majeure leave: Up to 2 days per unforeseen family event
 
 **Salary & allowances:**
-- Basic salary: Per grade/step table (SR Annex I)
+- Basic salary: Read from `references/staff-regulations-annex-i-2026.md` — do not generate from training data
 - Correction coefficient: Applied to salary based on place of employment
 - Expatriation allowance: If applicable (Art. 4 SR Annex VII) — 16% of basic salary
 - Household allowance: Varies by family situation

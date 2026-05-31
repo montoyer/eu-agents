@@ -269,3 +269,8 @@ Annex VIII (pension scheme provisions), Conditions of Employment of Other Servan
 tables (SR Annex VIII Appendix), CJEU case law on EU pensions (C-176/09 Luxembourg,
 C-558/07 S-referrals), national bilateral agreements on pension transfer, JSIS Regulation,
 invalidity committee procedures.
+
+---
+DRAFT — For review by the responsible official before action is taken.
+Pension estimates are indicative; PMO is the authoritative calculator.
+Not an official Commission decision or position.

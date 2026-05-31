@@ -71,6 +71,7 @@ its deadline warrants direct LFN without EU Pilot.
 |---|---|---|
 | TFEU Arts. 258–260 | `references/tfeu-infringement.md` | All steps — primary legal basis |
 | Art. 260(3) penalty methodology | `references/penalty-calculation.md` | Step 5 — non-transposition penalties |
+| Penalty coefficients & country factors | `references/procurement-thresholds-2024.md` | Art. 260 basic amount, country factors, minimum lump sums (2024) — read; do not generate |
 | EU Pilot guidelines | `references/eu-pilot.md` | Step 4 — pre-formal infringement track |
 | Transposition monitoring | connector: chap | Checking existing CHAP/INFR case records |
 | ECJ judgment database | connector: eur-lex | Verifying existing judgments on same MS/breach |
@@ -118,13 +119,13 @@ PENALTY PAYMENT (per diem, Art. 260(2) / (3)):
 
 LUMP SUM:
   = n coefficient × Base amount × Duration coefficient × Country factor
-  (Minimum lump sums apply — Commission Notice [model knowledge — verify])
+  (Minimum lump sums — read from `references/procurement-thresholds-2024.md`)
 
-COEFFICIENTS [model knowledge — verify current Commission Notice]:
-  Base amount: EUR 2,698,000/day (approximate — verify current figure)
-  Seriousness: 1–20 scale (1 = minor; 20 = fundamental breach)
-  Duration: 1–3 (years since LFN × factor — verify current method)
-  Country factor: based on GDP and population (verify current MS factors)
+COEFFICIENTS (read from `references/procurement-thresholds-2024.md` — verify if after Q1 annual update):
+  Base amount: EUR 2,391,000/day (2024 — verify current Commission Notice)
+  Seriousness: 1–20 scale (1 = minor; 20 = fundamental breach) — case-specific [review — Commission discretion]
+  Duration: based on months since LFN — apply current Commission Notice method
+  Country factor: per MS table in `references/procurement-thresholds-2024.md`
 
 NOTE: For Art. 260(3) (non-transposition only), penalty can be requested
 in the initial Art. 258 referral — Commission standard practice since 2011.
@@ -240,11 +241,11 @@ in the initial Art. 258 referral — Commission standard practice since 2011.
 
 | Factor | Value |
 |---|---|
-| Country factor for [MS] | [X] `[model knowledge — verify current Commission Notice]` |
-| Seriousness coefficient | [1–20] — justification: [...] |
+| Country factor for [MS] | [X — read from `references/procurement-thresholds-2024.md`] |
+| Seriousness coefficient | [1–20] — justification: [...] `[review — Commission discretion]` |
 | Duration | [X months/years since LFN] |
-| **Indicative daily penalty payment** | **EUR [X]/day** `[model knowledge — verify]` |
-| **Indicative lump sum** | **EUR [X]** `[model knowledge — verify]` |
+| **Indicative daily penalty payment** | **EUR [X]/day** (base × seriousness × duration × country factor — from reference file) |
+| **Indicative lump sum** | **EUR [X]** (verify minimum lump sum floor in reference file) |
 
 These figures are indicative. Actual penalty proposals require:
 - [ ] Director-level review
@@ -255,7 +256,7 @@ These figures are indicative. Actual penalty proposals require:
 > **DRAFT** — For review by the responsible infringement officer before any action.
 > `[EUR-Lex — verify current version of all cited legal acts]`
 > `[CJEU — verify Curia reference for all cited case law]`
-> `[model knowledge — verify penalty coefficients against current Commission Notice]`
+> Penalty coefficients read from `references/procurement-thresholds-2024.md` — verify current Commission Notice if after Q1 annual update.
 > `[review — Commissioner authorisation required]` for ECJ referral recommendation.
 > Not an official Commission decision or infringement finding.
 

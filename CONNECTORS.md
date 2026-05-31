@@ -11,6 +11,40 @@ citations.
 
 ---
 
+## Status
+
+> **No connector is wired yet.** No MCP server is configured in this repository,
+> so every connector below is currently **`planned`** — declaring a connector in a
+> plugin's `plugin.json` does *not* mean live data is being retrieved. Skills that
+> reference a connector (e.g., `connector: eur-lex` in a SKILL workflow) degrade
+> gracefully: they emit `[model knowledge — verify]` / `[EUR-Lex — verify current
+> version]` tags and, where a curated `references/*.md` file exists, read static
+> figures from that file instead. Treat every connector as planned until this table
+> says otherwise.
+
+| Connector | Status | Auth | Backed by `references/*.md` fallback |
+|---|---|---|---|
+| `eur-lex` | planned | none | — |
+| `eurostat` | planned | none | — |
+| `ted-ojeu` | planned | API key | `grants-enforcement-eu/references/procurement-thresholds-2024.md` |
+| `comitology-register` | planned | none | — |
+| `rapid` | planned | none | — |
+| `eu-open-data-portal` | planned | none | — |
+| `oj-state-aid-register` | planned | none | `competition-eu/references/gber-de-minimis-2024.md` |
+| `f-and-t-portal` | planned | EU Login | — |
+| `chap` | planned | EU Login (intranet) | — |
+| `epso-eu` | planned | none | `careers-eu/references/staff-regulations-annex-i-2026.md` |
+| `sysper` | planned | EU Login (intranet) | — |
+| `abac` | planned | EU Login (intranet) | — |
+| `edps-register` | planned | none | — |
+| `comext` | planned | none | `trade-eu/references/anti-dumping-method.md` |
+
+**Status legend** — `live`: an MCP server is configured and the connector returns
+data; `manual`: no API, retrieval is via a documented manual step; `planned`:
+declared but not wired (current state of all connectors).
+
+---
+
 ## Available Connectors
 
 ### `eur-lex`
@@ -252,6 +286,124 @@ of a complaint before opening EU Pilot or drafting formal correspondence.
 
 ---
 
+### `epso-eu`
+**EPSO — European Personnel Selection Office**
+
+Retrieves published competition notices, reserve list status, and the current
+Staff Regulations pay tables. Enables the `careers-eu` skills to check live
+competition timelines and grade requirements.
+
+- Source: `https://eu-careers.europa.eu/`
+- API: no public REST API — competition notices published as OJ C-series
+- Used by: `careers-eu`
+- Fallback when planned: read pay-scale figures from
+  `careers-eu/references/staff-regulations-annex-i-2026.md`; do not generate them
+
+```json
+{
+  "connector": "epso-eu",
+  "endpoint": "https://eu-careers.europa.eu/en/job-opportunities",
+  "auth": "none",
+  "notes": "No REST API; competition notices via OJ C-series / EPSO account"
+}
+```
+
+---
+
+### `sysper`
+**Sysper — Commission HR Management System**
+
+Internal Commission HR system. Enables `institutional-management-eu` skills to
+retrieve staff records, leave balances, and appraisal (CDR) data.
+
+- Source: Internal Commission system — not publicly accessible
+- Access: Commission intranet only
+- Used by: `institutional-management-eu`
+- Fallback when planned: no live access outside the Commission network; all
+  figures carry `[model knowledge — verify]`
+
+```json
+{
+  "connector": "sysper",
+  "endpoint": "internal — Commission intranet access only",
+  "auth": "EU Login + Commission network access",
+  "notes": "External deployment of this plugin cannot use this connector"
+}
+```
+
+---
+
+### `abac`
+**ABAC — Commission Accounting / Budget Execution System**
+
+Internal Commission financial system. Enables `institutional-management-eu`
+skills (financial-officer) to check commitment/payment appropriations and
+budget line balances.
+
+- Source: Internal Commission system — not publicly accessible
+- Access: Commission intranet only
+- Used by: `institutional-management-eu`
+- Fallback when planned: no live access outside the Commission network
+
+```json
+{
+  "connector": "abac",
+  "endpoint": "internal — Commission intranet access only",
+  "auth": "EU Login + Commission network access",
+  "notes": "External deployment of this plugin cannot use this connector"
+}
+```
+
+---
+
+### `edps-register`
+**EDPS — Register of Records (Art. 31 EUDPR)**
+
+Searches the public register of processing records and prior consultations.
+Enables `privacy-eu` skills to check whether a comparable processing activity
+has an existing record or a prior EDPS consultation.
+
+- Source: `https://www.edps.europa.eu/`
+- API: no formal REST API — public register search
+- Used by: `privacy-eu`
+- Fallback when planned: DPIA threshold and Art. 39 EUDPR criteria applied from
+  model knowledge with `[EUR-Lex — verify current version]` tags
+
+```json
+{
+  "connector": "edps-register",
+  "endpoint": "https://www.edps.europa.eu/data-protection/our-work/publications",
+  "auth": "none",
+  "notes": "No REST API; public register search / scrape"
+}
+```
+
+---
+
+### `comext`
+**Comext — Eurostat International Trade Database**
+
+Detailed EU external trade statistics at product (CN/HS) level. Enables the
+`trade-defence-investigator` skill to check import volumes, values, and trends
+for a product under investigation.
+
+- Source: `https://ec.europa.eu/eurostat/web/international-trade-in-goods/data/database`
+- API: Eurostat SDMX REST API (Comext datasets, e.g., `DS-045409`)
+- Used by: `trade-eu`
+- Fallback when planned: anti-dumping duty calculation method and de minimis
+  thresholds read from `trade-eu/references/anti-dumping-method.md`
+
+```json
+{
+  "connector": "comext",
+  "endpoint": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/",
+  "auth": "none",
+  "format": "JSON (SDMX-JSON) — Comext product-level datasets"
+}
+```
+
+---
+
 ## Connector Configuration
 
 To activate connectors, add them to your Claude Code settings or the relevant
@@ -270,14 +422,21 @@ for full connector setup instructions.
 
 ## Which Plugin Uses Which Connectors
 
-| Connector | legislative-eu | competition-eu | institutional-management-eu | trade-eu | grants-enforcement-eu | data-communication-eu |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| `eur-lex` | ✓ | ✓ | — | ✓ | ✓ | — |
-| `eurostat` | ✓ | — | — | ✓ | — | ✓ |
-| `ted-ojeu` | — | — | — | ✓ | ✓ | — |
-| `comitology-register` | ✓ | — | — | — | — | — |
-| `rapid` | — | — | — | — | — | ✓ |
-| `eu-open-data-portal` | — | — | — | — | — | ✓ |
-| `oj-state-aid-register` | — | ✓ | — | — | — | — |
-| `f-and-t-portal` | — | — | — | — | ✓ | — |
-| `chap` | — | — | — | — | ✓ | — |
+| Connector | legislative | competition | inst-mgmt | trade | grants-enf | data-comm | careers | privacy |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| `eur-lex` | ✓ | ✓ | — | ✓ | ✓ | — | ✓ | ✓ |
+| `eurostat` | ✓ | — | — | — | — | ✓ | — | — |
+| `ted-ojeu` | — | — | — | ✓ | ✓ | — | — | — |
+| `comitology-register` | ✓ | — | — | — | — | — | — | — |
+| `rapid` | — | — | — | — | — | ✓ | — | — |
+| `eu-open-data-portal` | — | — | — | — | — | ✓ | — | — |
+| `oj-state-aid-register` | — | ✓ | — | — | — | — | — | — |
+| `f-and-t-portal` | — | — | — | — | ✓ | — | — | — |
+| `chap` | — | — | — | — | ✓ | — | — | — |
+| `epso-eu` | — | — | — | — | — | — | ✓ | — |
+| `sysper` | — | — | ✓ | — | — | — | — | — |
+| `abac` | — | — | ✓ | — | — | — | — | — |
+| `edps-register` | — | — | — | — | — | — | — | ✓ |
+| `comext` | — | — | — | ✓ | — | — | — | — |
+
+(`simulation-eu` declares no connectors — it is a pure model-knowledge simulation.)

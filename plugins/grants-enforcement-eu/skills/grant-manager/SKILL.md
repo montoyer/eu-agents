@@ -78,6 +78,7 @@ manage financial corrections in a way that is legally sound, auditable, and fair
 | Funding and Tenders Portal (F&T Portal) | `references/fnt-portal-guide.md` | Submission, evaluation, reporting system |
 | ABAC system (financial commitments) | `references/abac-grants-guide.md` | Budget commitment, payment orders, ABAC grant module |
 | Financial correction methodology | `references/financial-correction-methodology.md` | Flat-rate corrections, extrapolation, 100% correction |
+| Flat-rate correction rates (cross-programme) | `references/procurement-thresholds-2024.md` | Standard correction scale, Horizon Europe rates, cohesion fund rates — read; do not generate |
 | Audit preparation checklist | `references/audit-preparation-checklist.md` | ECA, IAS, OLAF — document retention, response drafting |
 | Recovery order procedure | `references/recovery-order-guide.md` | Issuing recovery orders, debtor notification, ABAC |
 

@@ -267,7 +267,34 @@ Run through this list before opening a pull request:
 □ All output templates end with the DRAFT disclaimer
 □ All legal citations use trust tags
 □ MUST DO / MUST NOT DO constraints are specific and include a reason
+□ `scripts/validate.sh` passes (no errors)
 ```
+
+### Automated validation
+
+`scripts/validate.sh` enforces the structural rules above. It runs two **hard
+checks** (a failure blocks a commit) and one **soft check** (warnings only):
+
+| Check | Type | What it asserts |
+|---|---|---|
+| Registered skill paths exist | hard | Every `skills[].path` in a `plugin.json` resolves to a real `SKILL.md` |
+| DRAFT disclaimer present | hard | Every `SKILL.md` contains a `DRAFT` disclaimer |
+| Cited reference files exist | soft | Every `references/<file>.md` cited in a SKILL exists (many legacy citations don't — these are surfaced, not fatal) |
+
+Run it manually:
+
+```bash
+scripts/validate.sh            # full repo
+scripts/validate.sh --strict   # promote the soft check to a hard failure
+```
+
+Enable it as a pre-commit hook once per clone:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+With the hook active, the hard checks run automatically before every commit.
 
 ---
 

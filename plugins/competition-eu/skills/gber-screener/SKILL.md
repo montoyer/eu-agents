@@ -63,8 +63,8 @@ cause a national court or DG COMP to find the exemption does not apply.
 
 | Topic | Reference | Load When |
 |---|---|---|
-| GBER (Regulation 651/2014 as amended) | `references/gber-2014.md` | Full text — all screening checks |
-| De Minimis Regulation (2023/2831) | `references/de-minimis-2023.md` | Measures below EUR 300k / 3 years |
+| GBER & De Minimis thresholds / intensities (2024) | `references/gber-de-minimis-2024.md` | Notification thresholds, aid intensities, de minimis ceilings — **read; do not generate** |
+| GBER full text (Regulation 651/2014 as amended) | `[EUR-Lex — verify current version]` | Article-level wording for screening checks |
 | ABER (Regulation 2022/2472) | `references/aber-2022.md` | Agricultural sector measures |
 | State Aid Manual of Procedures (DG COMP) | `references/state-aid-manual.md` | Notification and GBER registration procedure |
 | SANI2 system | `references/sani2-guide.md` | Electronic registration of GBER measures |
@@ -72,6 +72,12 @@ cause a national court or DG COMP to find the exemption does not apply.
 ---
 
 ## GBER Chapter Map — Quick Reference
+
+> The threshold and intensity figures below are an at-a-glance aid. Before relying
+> on any number, read the authoritative values from
+> `references/gber-de-minimis-2024.md` and cite as
+> `(gber-de-minimis-2024.md — verify if after the next GBER amendment)`. If a
+> figure here conflicts with the reference file, the reference file wins.
 
 ```
 GBER CHAPTER III — CATEGORIES OF AID COMPATIBLE WITH THE INTERNAL MARKET

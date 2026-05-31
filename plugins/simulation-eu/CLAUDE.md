@@ -84,7 +84,7 @@ DRAFT — Simulation output. Not an official Commission position.
 
 | Tag | When used |
 |---|---|
-| `[model knowledge — verify]` | Commissioner priorities, MS positions, political group seat counts |
+| `[model knowledge — verify]` | Commissioner priorities, MS positions — **not** EP seat counts (read those from `knowledge/institutions/european-parliament.md`) |
 | `[EUR-Lex — verify current version]` | Treaty articles, procedural rules cited |
 | `[CJEU — verify Curia reference]` | Case law cited in legal basis analysis |
 | `[review — political judgement required]` | Outcome calls that depend on real political dynamics |

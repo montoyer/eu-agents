@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#
+# pre-commit hook — runs the repository structural validation before each commit.
+# Hard checks (missing skill paths, missing DRAFT disclaimers) block the commit;
+# soft warnings (cited-but-missing reference files) are printed but do not block.
+#
+# Enable once per clone with:   git config core.hooksPath .githooks
+#
+set -uo pipefail
+
+repo_root="$(git rev-parse --show-toplevel)"
+"$repo_root/scripts/validate.sh"
+status=$?
+
+if [[ $status -ne 0 ]]; then
+  echo
+  echo "pre-commit: validation failed — commit aborted."
+  echo "Fix the errors above, or bypass with 'git commit --no-verify' (not recommended)."
+  exit 1
+fi
+
+exit 0

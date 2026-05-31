@@ -73,20 +73,20 @@ and communication workflows.
 
 | Topic | Reference | Load When |
 |---|---|---|
-| Eurostat database browser | `references/eurostat-database.md` | Finding and extracting Eurostat data |
-| AMECO (macro data) | `references/ameco-guide.md` | GDP, fiscal, employment macroeconomic series |
-| COMEXT (trade statistics) | `references/comext-guide.md` | EU external trade data — product, partner, flow |
-| LFS (Labour Force Survey) | `references/lfs-methodology.md` | Employment, unemployment, participation rate |
-| SILC (Income and Living Conditions) | `references/silc-methodology.md` | Poverty, inequality, social exclusion indicators |
-| SBS (Structural Business Statistics) | `references/sbs-guide.md` | Firm-level data — size classes, sectors |
-| NUTS classification | `references/nuts-classification.md` | Regional breakdown — NUTS 1/2/3 definitions |
-| GISCO (geospatial) | `references/gisco-guide.md` | EU geospatial data, maps, shapefiles |
-| SDG indicator framework | `references/sdg-eurostat.md` | Eurostat SDG monitoring — all 17 goals |
-| European Semester scoreboard | `references/semester-scoreboard.md` | Macroeconomic Imbalance Procedure, social scoreboard |
+| Eurostat dataset codes (2024) | `references/eurostat-indicator-codes.md` | **Look up the dataset code for any indicator here; do not invent codes** |
+| Eurostat database browser | `https://ec.europa.eu/eurostat/databrowser/` | Verify a code / find a dataset not listed in the reference file |
+| AMECO (macro data) | `[AMECO YYYY — verify]` | GDP, fiscal, employment macroeconomic series |
+| NUTS classification (NUTS 2021) | `[Eurostat — verify current NUTS version]` | Regional breakdown — NUTS 1/2/3 definitions |
+| SDG indicator framework | `[Eurostat — verify SDG indicator set]` | Eurostat SDG monitoring — all 17 goals |
 
 ---
 
 ## Key Eurostat Databases — Quick Reference
+
+> At-a-glance only. Confirm the exact dataset code in
+> `references/eurostat-indicator-codes.md` before building a query — codes are
+> occasionally renamed (e.g., the Gini code is now `ilc_di12`). Cite as
+> `(eurostat-indicator-codes.md — verify code on the Eurostat data browser)`.
 
 ```
 EUROSTAT DATABASE MAP
@@ -113,7 +113,7 @@ TRADE:
 SOCIAL:
   ilc_li02       — At-risk-of-poverty rate
   ilc_peps01     — People at risk of poverty or social exclusion (AROPE)
-  ilc_di01       — Gini coefficient
+  ilc_di12       — Gini coefficient of equivalised disposable income
 
 ENVIRONMENT:
   env_air_gge    — GHG emissions by sector (UNFCCC)

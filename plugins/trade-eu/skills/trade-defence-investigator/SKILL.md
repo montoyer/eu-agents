@@ -78,16 +78,16 @@ both legally watertight and economically substantiated.
 
 | Topic | Reference | Load When |
 |---|---|---|
-| Basic AD Regulation (2016/1036) | `references/basic-ad-regulation.md` | Full text — anti-dumping investigations |
-| Basic AS Regulation (2016/1037) | `references/basic-as-regulation.md` | Full text — anti-subsidy/CVD investigations |
-| Safeguards Regulation (2015/478) | `references/safeguards-regulation.md` | Safeguard investigations |
-| WTO Anti-Dumping Agreement (ADA) | `references/wto-ada.md` | WTO obligations — Art. 6, 9, 11, 17 key |
-| WTO SCM Agreement | `references/wto-scm.md` | Prohibited/actionable/countervailable subsidies |
-| WTO Safeguards Agreement | `references/wto-safeguards.md` | Serious injury, unforeseen developments |
-| Foreign Subsidies Regulation (2022/2560) | `references/fsr-regulation.md` | FSR investigations — M&A, procurement, market investigations |
-| IPI (International Procurement Instrument) | `references/ipi-regulation.md` | Reciprocity in public procurement |
-| DG TRADE TDI methodology guidance | `references/tdi-methodology.md` | Internal calculation methods — dumping, subsidy, injury |
-| NME / Market economy treatment | `references/nme-met-guide.md` | Non-market economy determination and surrogates |
+| De minimis / negligibility thresholds & duty method | `references/anti-dumping-method.md` | **Read thresholds and lesser-duty method; do not generate** |
+| Basic AD Regulation (2016/1036) | `[EUR-Lex — verify current version]` | Article wording — anti-dumping investigations |
+| Basic AS Regulation (2016/1037) | `[EUR-Lex — verify current version]` | Article wording — anti-subsidy/CVD investigations |
+| Safeguards Regulation (2015/478) | `[EUR-Lex — verify current version]` | Safeguard investigations |
+| WTO Anti-Dumping Agreement (ADA) | `[WTO — verify ADA/SCM compliance]` | WTO obligations — Art. 6, 9, 11, 17 key |
+| WTO SCM Agreement | `[WTO — verify ADA/SCM compliance]` | Prohibited/actionable/countervailable subsidies |
+| WTO Safeguards Agreement | `[WTO — verify ADA/SCM compliance]` | Serious injury, unforeseen developments |
+| Foreign Subsidies Regulation (2022/2560) | `[EUR-Lex — verify current version]` | FSR investigations — M&A, procurement, market investigations |
+| IPI (International Procurement Instrument) | `[EUR-Lex — verify current version]` | Reciprocity in public procurement |
+| NME / Market economy treatment | `[review — legal uncertainty]` | Non-market economy determination and surrogates |
 
 ---
 
@@ -106,8 +106,10 @@ Priority 1: Domestic sales in the exporting country
 
 If domestic sales insufficient or unsuitable →
 Priority 2: Constructed normal value
-  = Cost of production + SGA (min. 2%) + Profit (min. 2%)
+  = Cost of production + SGA + Profit (Art. 2(6) BAR — actual amounts where
+    representative, otherwise a reasonable amount; no fixed 2% statutory floor)
   [Cost = direct materials + direct labour + manufacturing overhead + SGA overhead]
+  See `references/anti-dumping-method.md` for the method.
 
 Priority 3: Export to comparable third country
 

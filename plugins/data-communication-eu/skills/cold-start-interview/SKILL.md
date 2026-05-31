@@ -97,3 +97,6 @@ Then confirm:
 > Data outputs will be tagged with source and extraction date.
 > Communication outputs will be flagged `[review — cleared lines required]`
 > until the clearance chain is complete."
+
+---
+DRAFT — Personalisation helper. Not an official Commission communication.

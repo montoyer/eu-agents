@@ -47,7 +47,7 @@ and the appointing authority makes all binding determinations.
 |---|---|---|
 | Grade on appointment | SR Art. 31(2) | Appointment at step 1 of the advertised grade |
 | Step recognition | SR Art. 32(2) | Up to 2 extra steps for prior professional experience at entry grade |
-| Pay table | SR Annex I | Basic monthly salaries by grade and step — adjusted annually |
+| Pay table | SR Annex I | Basic monthly salaries by grade and step — read from `references/staff-regulations-annex-i-2026.md` |
 | Household allowance | SR Art. 67(1)(a) + Annex VII Art. 1 | Fixed amount + % of basic salary if married/equivalent or single parent |
 | Dependent child allowance | SR Art. 67(1)(b) + Annex VII Art. 2 | Per qualifying dependent child |
 | Expatriation allowance | SR Annex VII Art. 4 | 16% of (basic + household + dependent child) if not national of duty station |
@@ -87,7 +87,7 @@ and the appointing authority makes all binding determinations.
 
 2. **Determine step on appointment** — Default is step 1. Apply SR Art. 32(2): the appointing authority may grant additional steps based on prior professional experience. Standard implementing rules allow up to 2 extra steps at entry grade (each step requires ~2 years of relevant experience). Note: this is discretionary, not automatic.
 
-3. **Read basic salary from SR Annex I** — Identify the gross basic monthly salary for the grade and step. Flag as `[model knowledge — verify against current SR Annex I]`.
+3. **Read basic salary from SR Annex I** — Look up the gross basic monthly salary for the grade and step in `references/staff-regulations-annex-i-2026.md`. Do not generate this figure from training data. If the current date is after 31 December 2026, flag that the 2027 adjustment regulation should be checked.
 
 4. **Calculate allowances** — Apply SR Annex VII:
    - Household allowance (Art. 1): if married or equivalent, or single parent with dependant
@@ -139,7 +139,7 @@ Payable if: married or legally recognised equivalent; or single parent with a de
 
 ```
 Household allowance =
-  Fixed amount:    [EUR amount — model knowledge — verify against current SR Annex VII]
+  Fixed amount:    EUR 210.62 (from references/staff-regulations-annex-i-2026.md — verify if after January 2027)
   Variable part:   2% of basic monthly salary
   ─────────────────────────────────────────────────────
   Total:           Fixed + Variable
@@ -152,7 +152,7 @@ Payable per qualifying dependent child.
 
 ```
 Dependent child allowance =
-  Per child:    [EUR amount — model knowledge — verify against current SR Annex VII]
+  Per child:    EUR 432.38 (from references/staff-regulations-annex-i-2026.md — verify if after January 2027)
   Number of qualifying children: [N]
   ─────────────────────────────────────────────────────
   Total:        Per child × N
@@ -190,24 +190,32 @@ Taxable base =
   − Unemployment insurance contribution (TAs/CAs only)
   − Personal and family allowance deduction (flat rate)
 
-Community tax rates (approximate — verify against current implementing measures):
-  Band 1 (low):    ~8%    on first slice of taxable base
-  Band 2:          ~10%
-  ...
-  Top rate:        ~45%   on highest slice
-
-  [model knowledge — verify against current implementing measures to Protocol No. 7]
+Community tax bands (from references/staff-regulations-annex-i-2026.md — verify if after January 2027):
+  0 – 1,156.16:        8%
+  1,156.17 – 1,884.15: 10%
+  1,884.16 – 2,776.54: 12.5%
+  2,776.55 – 3,668.93: 15%
+  3,668.94 – 4,561.31: 17.5%
+  4,561.32 – 5,453.69: 20%
+  5,453.70 – 6,346.07: 22.5%
+  6,346.08 – 7,238.45: 25%
+  7,238.46 – 8,568.31: 27.5%
+  8,568.32 – 9,898.14: 30%
+  9,898.15 – 11,956.13: 32.5%
+  11,956.14 – 14,014.09: 35%
+  14,014.10 – 16,810.92: 37.5%
+  above 16,810.92:      45%
 ```
 
 ### Standard Contribution Rates (approximate — verify)
 
 | Deduction | Rate | Base |
 |---|---|---|
-| Pension contribution | ~10.1% | Basic salary |
-| JSIS (sickness insurance) | ~2.0% | Basic salary |
-| Unemployment insurance | ~0.81% | Basic salary (TAs/CAs only) |
+| Pension contribution | 10.10% | Basic salary |
+| JSIS (sickness insurance) | 2.00% | Basic salary |
+| Unemployment insurance | 0.81% | Basic salary (TAs/CAs only) |
 
-[model knowledge — verify against current rates — adjusted periodically]
+(from references/staff-regulations-annex-i-2026.md — verify if after January 2027)
 
 ---
 
@@ -261,7 +269,7 @@ Community tax rates (approximate — verify against current implementing measure
 ## Constraints
 
 ### MUST DO
-- Flag every salary figure with `[model knowledge — verify against current SR Annex I]`.
+- Read every salary figure from `references/staff-regulations-annex-i-2026.md`. Cite it as `(SR Annex I 2026 — verify if after January 2027)`. Do not generate figures from training data.
 - Explain both the grade (set by the Notice) and the step (discretionary recognition under Art. 32).
 - Distinguish between officials (SR applies) and contract agents (CEOS applies — different pay tables and function groups).
 - State explicitly that the net salary estimate requires PMO verification for a binding figure.

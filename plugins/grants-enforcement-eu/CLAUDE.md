@@ -79,7 +79,7 @@ F&T Portal access:      [run cold-start-interview to set]
 |---|---|
 | `[EUR-Lex — verify current version]` | MGA articles, directive/regulation citations, FR 2018/1046 |
 | `[CJEU — verify Curia reference]` | Infringement case law, penalty calculation precedents |
-| `[model knowledge — verify]` | Flat-rate correction percentages, penalty benchmarks, procurement thresholds |
+| `(procurement-thresholds-2024.md — verify if after January 2026)` | Flat-rate correction rates, penalty coefficients, procurement thresholds — read from `references/procurement-thresholds-2024.md`; do not generate |
 | `[review — political judgement required]` | Decision to refer a case to the CJEU; penalty amount |
 | `[review — legal uncertainty]` | Novel transposition gaps; mixed infringement (factual + legal) |
 | `[review — financial authorisation required]` | Any financial correction decision before formal adoption |
@@ -115,8 +115,8 @@ Not an official Commission decision or infringement finding.
   refer a case to the CJEU is a College decision; infringement officers cannot
   commit to referral without the authorisation chain being complete
 - **Procurement thresholds change** — EU procurement thresholds are revised every
-  two years; always tag threshold figures `[model knowledge — verify current
-  thresholds under FR 2018/1046 Art. 175]`
+  two years; read threshold figures from `references/procurement-thresholds-2024.md`
+  and cite as `(procurement-thresholds-2024.md — verify if after January 2026)`
 - **OLAF jurisdiction is separate** — if fraud indicators are present, the file
   must be referred to OLAF; the grants or infringement officer must not continue
   their own investigation once OLAF has opened a case

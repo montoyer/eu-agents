@@ -64,9 +64,9 @@ Commission's ability to recover incompatible aid.
 
 | Topic | Reference | Load When |
 |---|---|---|
-| TFEU Arts. 107–109 | `references/tfeu-state-aid.md` | All steps — primary legal basis |
-| GBER (Reg. 651/2014 as amended) | `references/gber.md` | Step 3 — block exemption screening |
-| De minimis Regulation 2023/2831 | `references/de-minimis.md` | Step 2 — threshold check |
+| TFEU Arts. 107–109 | `[EUR-Lex — verify current version]` | All steps — primary legal basis |
+| GBER & De Minimis thresholds / intensities (2024) | `references/gber-de-minimis-2024.md` | Steps 2–3 — **read thresholds; do not generate** |
+| GBER / De Minimis full text | `[EUR-Lex — verify current version]` | Article wording (651/2014; 2023/2831) |
 | IPCEI Communication | `references/ipcei-communication.md` | Step 4 — multi-MS strategic projects |
 | SGEI Framework + Altmark | `references/sgei-framework.md` | Step 4 — services of general interest |
 | TCTF (current version) | `references/tctf.md` | Step 4 — energy/transition framework |
@@ -112,9 +112,9 @@ MEOP does NOT apply to:
   must not implement the measure before Commission approval; unlawful aid
   (implemented before approval) is recoverable with interest regardless of
   compatibility
-- **Use current GBER thresholds** — GBER thresholds and aid intensities are
-  amended periodically; tag all threshold figures `[model knowledge — verify
-  against current GBER Regulation 651/2014 as amended]`
+- **Use current GBER thresholds** — read every threshold and aid intensity from
+  `references/gber-de-minimis-2024.md`; do not generate them. Cite as
+  `(gber-de-minimis-2024.md — verify if after the next GBER amendment)`
 - **Distinguish GBER exemption from compatibility** — GBER-exempt aid does
   not require notification and is presumed compatible; notifiable aid requires
   a full compatibility assessment; never conflate the two tracks
@@ -187,12 +187,12 @@ Reasoning: [...]
 
 ### 2. De Minimis (if aid exists)
 
-[EUR-Lex — verify Regulation 2023/2831 current version]
+Thresholds read from `references/gber-de-minimis-2024.md` (verify if after the next GBER amendment).
 
 Aid amount:           EUR [X]
-Applicable threshold: - [ ] General: EUR 300,000 / 3 fiscal years
+Applicable threshold: - [ ] General: EUR 300,000 / rolling 3-year period
                       - [ ] Agriculture: EUR [X]  - [ ] Fisheries: EUR [X]
-                      - [ ] SGEI: EUR 750,000 / 3 fiscal years
+                      - [ ] SGEI: EUR 750,000 / 3 years
 Threshold exceeded:   - [ ] No → DE MINIMIS applies — no notification required
                       - [ ] Yes → Continue to §3
 
@@ -203,7 +203,7 @@ Threshold exceeded:   - [ ] No → DE MINIMIS applies — no notification requir
 
 ### 3. GBER Screening (Regulation 651/2014 as amended)
 
-[model knowledge — verify current GBER thresholds and aid intensities]
+Thresholds and aid intensities read from `references/gber-de-minimis-2024.md` — do not generate.
 
 General conditions (Arts. 1–12):
 - Excluded activities (Art. 1): - [ ] No exclusion applies  - [ ] Exclusion: [specify]
@@ -276,7 +276,7 @@ Applicable legal basis:
 
 ---
 
-> **DRAFT** — Preliminary assessment only. [EUR-Lex — verify current version of all cited legislation] [model knowledge — verify all thresholds and aid intensities against current GBER and de minimis Regulations] [review — DG COMP case handler required before any formal position is taken] Not an official Commission decision or state aid approval.
+> **DRAFT** — Preliminary assessment only. [EUR-Lex — verify current version of all cited legislation] Thresholds and aid intensities read from `references/gber-de-minimis-2024.md` (verify if after the next GBER amendment). [review — DG COMP case handler required before any formal position is taken] Not an official Commission decision or state aid approval.
 
 ---
 

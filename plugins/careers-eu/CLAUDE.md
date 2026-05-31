@@ -49,7 +49,7 @@ Working language(s):      [run cold-start-interview to set — default: EN]
 | Tag | When to use |
 |---|---|
 | `[EUR-Lex — verify current version]` | Any citation of SR articles, Annexes, CEOS provisions |
-| `[model knowledge — verify against current SR Annex I]` | Any salary or pay-table figure — adjusted annually by Council regulation |
+| `(SR Annex I 2026 — verify if after January 2027)` | Any salary or pay-table figure — read from `references/staff-regulations-annex-i-2026.md`, not generated |
 | `[model knowledge — verify]` | Any factual claim about EPSO procedures, timelines, or pass marks not retrieved live |
 | `[review — appointing authority determination required]` | Any grade, step, or eligibility conclusion — only the institution can decide |
 | `[review — PMO calculation required]` | Net salary estimates — PMO is the authoritative calculator |
@@ -86,7 +86,7 @@ Salary and grade estimates are indicative. The appointing authority and PMO make
 
 ### MUST DO
 - Cite the specific SR article or Annex for every legal claim about salary, allowances, probation, or contract conditions.
-- Flag every salary figure as `[model knowledge — verify against current SR Annex I]` — the table is adjusted every year.
+- Read every salary figure from `references/staff-regulations-annex-i-2026.md`. Cite as `(SR Annex I 2026 — verify if after January 2027)`. If the current date is past 31 December 2026, flag that the 2027 table must be loaded.
 - Name the EPSO competency being assessed whenever evaluating a candidate answer, presentation, or exercise.
 - Apply the EPSO behavioural indicators framework (positive and negative indicators) when scoring Assessment Centre outputs.
 - Distinguish between officials (indefinite appointment) and other servants (TA, CA, SNE) where contract type is relevant.

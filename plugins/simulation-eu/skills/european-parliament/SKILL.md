@@ -60,9 +60,9 @@ acts. It is a co-legislator, not a rubber stamp.
 
 | Resource | Path | Load when |
 |---|---|---|
-| EP institutional agent | `knowledge/institutions/european-parliament.md` | All sessions |
+| EP institutional agent | `knowledge/institutions/european-parliament.md` | All sessions — **read seat counts from this file; do not generate them** |
 | Committee assignments | `knowledge/institutions/european-parliament.md` | Step 1 |
-| Political group dynamics | `knowledge/institutions/european-parliament.md` | Steps 3 and 5 |
+| Political group dynamics | `knowledge/institutions/european-parliament.md` | Steps 3 and 5 — seat counts, governing majority arithmetic |
 
 ---
 
@@ -134,15 +134,15 @@ Procedure: [OLP first reading / second reading]
 
 ### Political Group Positions
 
-EPP ([seats]):   [Support / Conditional support / Opposition] — [key condition]
-S&D ([seats]):   [Support / Conditional support / Opposition] — [key condition]
-Renew ([seats]): [Support / Conditional support / Opposition] — [key condition]
-Greens ([seats]):[Support / Conditional support / Opposition] — [key condition]
-ECR ([seats]):   [Support / Conditional support / Opposition] — [key condition]
-ID ([seats]):    [Support / Conditional support / Opposition] — [key condition]
-Left ([seats]):  [Support / Conditional support / Opposition] — [key condition]
+EPP ([seats — from knowledge/institutions/european-parliament.md]):   [Support / Conditional support / Opposition] — [key condition]
+S&D ([seats — from knowledge/institutions/european-parliament.md]):   [Support / Conditional support / Opposition] — [key condition]
+Renew ([seats — from knowledge/institutions/european-parliament.md]): [Support / Conditional support / Opposition] — [key condition]
+Greens ([seats — from knowledge/institutions/european-parliament.md]):[Support / Conditional support / Opposition] — [key condition]
+ECR ([seats — from knowledge/institutions/european-parliament.md]):   [Support / Conditional support / Opposition] — [key condition]
+PfE ([seats — from knowledge/institutions/european-parliament.md]):   [Support / Conditional support / Opposition] — [key condition]
+Left ([seats — from knowledge/institutions/european-parliament.md]):  [Support / Conditional support / Opposition] — [key condition]
 
-Majority coalition: [Groups forming the majority — total seats]
+Majority coalition: [Groups forming the majority — total seats from knowledge/institutions/european-parliament.md]
 Majority margin: [comfortable / narrow / at risk if [group] defects]
 
 ---
@@ -179,7 +179,6 @@ EP negotiating chips (rapporteur can concede in package deal):
 EP nice-to-haves (rapporteur can drop without political cost):
   - [Amendment N]
 
-[model knowledge — verify current EP political group seat distribution and
-committee assignments]
+Seat counts read from `knowledge/institutions/european-parliament.md` (2024–2029 term). If that file's figures conflict with a known election result, flag the discrepancy and update the knowledge file rather than generating alternative figures.
 
 > **DRAFT** — Simulation output. Not an official EP position.

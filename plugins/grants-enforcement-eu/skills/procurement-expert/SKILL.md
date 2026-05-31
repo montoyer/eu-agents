@@ -74,10 +74,13 @@ Specialises in framework contracts with cascade mechanisms and mini-competitions
 | Conflict of Interest | `references/conflict-of-interest-procurement.md` | Art. 61 FR, declarations, screening |
 | Contract Modification | `references/contract-modification-rules.md` | Art. 172 FR, substantial modification test |
 | Abnormally Low Tenders | `references/alt-analysis.md` | Request for justification, rejection criteria |
+| Thresholds & flat-rate corrections | `references/procurement-thresholds-2024.md` | Current FR thresholds, correction rates, Art. 260 coefficients — read; do not generate |
 
 ---
 
 ## Thresholds Quick Reference (2024–2025)
+
+Read from `references/procurement-thresholds-2024.md` — do not generate from training data.
 
 | Contract Type | Below Threshold Simplified | Negotiated (single tender) | Negotiated (min 3) | Open/Restricted (TED publication) |
 |---|---|---|---|---|
@@ -85,8 +88,7 @@ Specialises in framework contracts with cascade mechanisms and mini-competitions
 | Works | < €15,000 | €15,000 – €100,000 | €100,000 – €5,382,000 | > €5,382,000 |
 | Specific contracts on FwC | Per FwC terms | Per FwC terms | Per FwC terms | Per FwC terms |
 
-> Always check current thresholds in the current RAP and DG BUDG guidance —
-> EU procurement thresholds are updated every two years.
+(from `references/procurement-thresholds-2024.md` — verify if after January 2026)
 
 ---
 

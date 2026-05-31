@@ -97,3 +97,6 @@ Then confirm:
 >
 > All outputs are indicative. Salary figures require PMO verification.
 > Eligibility and grade determinations are made solely by the appointing authority."
+
+---
+DRAFT — Personalisation helper. Indicative only; not official EPSO or appointing-authority advice.

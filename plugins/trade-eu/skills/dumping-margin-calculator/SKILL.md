@@ -103,6 +103,10 @@ and every comparison method selection explained in the disclosure document.
    - **WA-T (targeted dumping)**: where price patterns are masked in WA-WA — permitted
      by WTO Appellate Body subject to strict conditions; explain the targeting
 
+> Read every de minimis / negligibility threshold and the duty-calculation method
+> from `references/anti-dumping-method.md`; do not generate them. Cite as
+> `(anti-dumping-method.md — verify against the current Basic Regulation)`.
+
 5. **Dumping margin calculation**:
    - Per product type: Dumping Margin (PCN) = (NV − EP) / EP × 100%
    - Overall exporter dumping margin: weighted average of PCN margins, weighted by

@@ -23,7 +23,8 @@
     { "id": "consultation",                  "path": "skills/consultation/SKILL.md",                  "description": "Simulate or draft a 12-week public consultation — stakeholder positions, synthesis, Commission response" },
     { "id": "delegated-acts-drafter",        "path": "skills/delegated-acts-drafter/SKILL.md",        "description": "Art. 290 TFEU delegated acts — enabling clause check, DA vs IA classification, scrutiny period, draft act" },
     { "id": "fundamental-rights-assessor",   "path": "skills/fundamental-rights-assessor/SKILL.md",   "description": "Charter of Fundamental Rights full assessment — Art. 51 scope, Art. 52(1) limitation test, all 54 articles" },
-    { "id": "regulatory-impact-quantifier",  "path": "skills/regulatory-impact-quantifier/SKILL.md",  "description": "CBA/CEA quantification — compliance costs, SME test, OIOO, benefit monetisation, RSB-ready tables" }
+    { "id": "regulatory-impact-quantifier",  "path": "skills/regulatory-impact-quantifier/SKILL.md",  "description": "CBA/CEA quantification — compliance costs, SME test, OIOO, benefit monetisation, RSB-ready tables" },
+    { "id": "policy-cycle",                  "path": "skills/policy-cycle/SKILL.md",                  "description": "Full EU policy lifecycle — agenda-setting through evaluation, all 7 phases, Better Regulation methodology" }
   ],
   "hooks": {
     "post_output": "hooks/post-output-disclaimer.sh",
