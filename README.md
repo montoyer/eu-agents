@@ -74,11 +74,33 @@ See [NOI.md](NOI.md) for the full argument.
 
 ---
 
-## Quick start
+## Installation
 
 ```bash
-# Ask the President to open a policy initiative
-/president
+# Register the marketplace (once)
+/plugin marketplace add montoyer/eu-agents
+
+# Install the plugins you need
+/plugin install simulation-eu        # 21 Commissioners + compound commands
+/plugin install legislative-eu       # Policy drafting, impact assessment, ISC
+/plugin install privacy-eu           # Full DPIA workflow
+/plugin install competition-eu       # Antitrust and state aid
+/plugin install trade-eu             # Trade defence instruments
+/plugin install grants-enforcement-eu # Grants, infringement, procurement
+/plugin install institutional-management-eu # HR, finance, unit management
+/plugin install data-communication-eu # Data analysis, press, speeches
+/plugin install careers-eu           # EPSO preparation
+```
+
+Or install everything at once:
+
+```bash
+/plugin marketplace add montoyer/eu-agents && /plugin install all
+```
+
+---
+
+## Quick start
 
 # Run a full College deliberation on a topic
 /college-deliberation "Should the EU ban algorithmic pricing in retail?"
@@ -116,7 +138,8 @@ agents-for-EU/
 ├── CONNECTORS.md                   ← MCP connector catalogue
 ├── QUICKSTART.md                   ← 5-minute onboarding guide
 ├── SKILL.md                        ← SKILL.md authoring standard
-├── marketplace.json                ← plugin registry for /plugin install
+├── .claude-plugin/marketplace.json ← plugin marketplace registry (/plugin marketplace add montoyer/eu-agents)
+├── marketplace.json                ← legacy plugin registry (kept for reference)
 │
 ├── plugins/                        ← installable skill packages
 │   ├── legislative-eu/             ← Policy, legislative drafting, ISC, PQ

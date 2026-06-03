@@ -1,0 +1,119 @@
+{
+  "$schema": "https://claude.ai/schemas/marketplace.json",
+  "name": "Agents for EU",
+  "description": "EU Commission agent plugins — 30,000 staff, 21 Commissioners, 70 years of institutional knowledge, now running on your laptop.",
+  "owner": {
+    "name": "montoyer",
+    "email": ""
+  },
+  "plugins": [
+    {
+      "name": "simulation-eu",
+      "description": "Multi-agent simulation of EU institutional processes: all 21 Commissioner personas, College deliberation, inter-service consultation, trilogue, full OLP, and compound analysis commands (mandate-conflict, red-team-college, subsidiarity-stress, timeline).",
+      "category": "productivity",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/montoyer/eu-agents",
+        "path": "plugins/simulation-eu",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/montoyer/eu-agents"
+    },
+    {
+      "name": "legislative-eu",
+      "description": "Policy drafting, legislative procedures, impact assessment, comitology, and inter-service consultation. For policy officers, legislative drafters, and SecGen lawyers.",
+      "category": "productivity",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/montoyer/eu-agents",
+        "path": "plugins/legislative-eu",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/montoyer/eu-agents"
+    },
+    {
+      "name": "competition-eu",
+      "description": "Antitrust (Arts. 101-102 TFEU), state aid (Arts. 107-109 TFEU), and Commission Legal Service opinions and litigation. For DG COMP and Legal Service lawyers.",
+      "category": "productivity",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/montoyer/eu-agents",
+        "path": "plugins/competition-eu",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/montoyer/eu-agents"
+    },
+    {
+      "name": "privacy-eu",
+      "description": "Full Art. 39 EUDPR DPIA workflow voiced by five specialist roles: DPO, IT architect, legal officer, IT security, EDPS reviewer. For data protection officers and IT project managers.",
+      "category": "security",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/montoyer/eu-agents",
+        "path": "plugins/privacy-eu",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/montoyer/eu-agents"
+    },
+    {
+      "name": "institutional-management-eu",
+      "description": "Unit management, HR administration, financial circuits, and staff operations. For Heads of Unit, HR managers, and financial officers.",
+      "category": "productivity",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/montoyer/eu-agents",
+        "path": "plugins/institutional-management-eu",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/montoyer/eu-agents"
+    },
+    {
+      "name": "trade-eu",
+      "description": "EU Trade Defence Instruments: anti-dumping, anti-subsidy, safeguards, IPI, and FSR investigations. For DG TRADE trade defence investigators.",
+      "category": "productivity",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/montoyer/eu-agents",
+        "path": "plugins/trade-eu",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/montoyer/eu-agents"
+    },
+    {
+      "name": "grants-enforcement-eu",
+      "description": "Horizon Europe grant management, infringement procedures (Arts. 258-260 TFEU), and public procurement. For grant managers, infringement officers, and procurement experts.",
+      "category": "productivity",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/montoyer/eu-agents",
+        "path": "plugins/grants-enforcement-eu",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/montoyer/eu-agents"
+    },
+    {
+      "name": "data-communication-eu",
+      "description": "Eurostat data analysis, scoreboard design, press releases, Commissioner speeches, and lines to take. For data analysts and communication officers.",
+      "category": "productivity",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/montoyer/eu-agents",
+        "path": "plugins/data-communication-eu",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/montoyer/eu-agents"
+    },
+    {
+      "name": "careers-eu",
+      "description": "EU Careers and EPSO preparation: grade assessment, presentation coaching, and offer evaluation. For candidates preparing for EU institution competitions.",
+      "category": "productivity",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/montoyer/eu-agents",
+        "path": "plugins/careers-eu",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/montoyer/eu-agents"
+    }
+  ]
+}
