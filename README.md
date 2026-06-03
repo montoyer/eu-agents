@@ -10,11 +10,11 @@
 
 ![Profile Views](https://komarev.com/ghpvc/?username=montoyer&color=0052cc&style=flat-square&label=views)
 &nbsp;
-![GitHub Stars](https://img.shields.io/github/stars/montoyer/agents?style=flat-square&color=gold&label=stars)
+![GitHub Stars](https://img.shields.io/github/stars/montoyer/eu-agents?style=flat-square&color=gold&label=stars)
 &nbsp;
-![Last Commit](https://img.shields.io/github/last-commit/montoyer/agents?style=flat-square&color=brightgreen&label=last+commit)
+![Last Commit](https://img.shields.io/github/last-commit/montoyer/eu-agents?style=flat-square&color=brightgreen&label=last+commit)
 &nbsp;
-![License](https://img.shields.io/github/license/montoyer/agents?style=flat-square&color=lightgrey)
+![License](https://img.shields.io/github/license/montoyer/eu-agents?style=flat-square&color=lightgrey)
 
 </div>
 
@@ -204,7 +204,7 @@ If this project is useful to you — or just makes you smile — help it reach m
 
 <div align="center">
 
-[![GitHub Stars](https://img.shields.io/github/stars/montoyer/agents?style=for-the-badge&color=gold&label=⭐%20Star%20this%20repo)](https://github.com/montoyer/agents/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/montoyer/eu-agents?style=for-the-badge&color=gold&label=⭐%20Star%20this%20repo)](https://github.com/montoyer/eu-agents/stargazers)
 
 </div>
 
