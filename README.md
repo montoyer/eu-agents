@@ -1,6 +1,6 @@
 # Agents for EU
 
-> Replace the European Commission with a college of AI agents.
+> 30,000 EU staff. 21 Commissioners. 70 years to build. Now running on your laptop.
 
 <div align="center">
   <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjByaDMyMXFqcmo4aXZxNWVwdHJzbXZlZnN4bWEzNmp3b3g2Z3doeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/UqASWHeU91ADUSk5co/giphy.gif" width="520" alt="EU Commission in session"/>
@@ -26,6 +26,29 @@ The goal is not satire. It is a serious attempt to simulate how the EU Commissio
 
 ---
 
+## Why this exists — the non-obvious insight
+
+> **The EU Commission is not primarily a regulatory body. It is the most sophisticated structured argumentation engine ever built by human institutions.**
+
+Every regulation it produces is the residue of a scored debate across 21 mandates, each grounded in a different treaty basis, each representing a different theory of what the EU is for. Competition law versus industrial policy. Climate targets versus energy security. Digital sovereignty versus open markets. The College does not resolve these tensions by consensus — it forces them to a legally defensible equilibrium, on the record, with citations.
+
+That structure is the insight. The EU's deliberative machinery — subsidiarity tests, inter-service consultation, impact assessments, trilogue — is a **general-purpose scaffold for high-stakes collective reasoning**. It was designed for policy, but it works on any problem where multiple legitimate perspectives must be reconciled under constraint.
+
+This repository makes that scaffold programmable. The use case is not "simulate the EU." The use case is: **use EU deliberative procedure as a reasoning framework for any domain where the quality of a decision depends on how many well-grounded objections it has survived.**
+
+Practically, this means the system's most powerful commands are not the single-agent skill invocations but the **compound commands** that only work because 21 agents are running in parallel with conflicting mandates:
+
+| Command | What it does that a single agent cannot |
+|---|---|
+| `/mandate-conflict <proposal>` | Identifies every structurally guaranteed conflict between Commissioner portfolios, with the legal basis for each position |
+| `/red-team-college <proposal>` | Runs a proposal through all 21 Commissioners, returns only the severe objections — token-efficient College stress test |
+| `/subsidiarity-stress <proposal>` | Tests the same proposal against 5 different member-state configurations to find where the subsidiarity check fails |
+| `/timeline <proposal>` | Produces a realistic OLP timeline with blocking dependencies, QMV thresholds, and trilogue risk points |
+
+See [NOI.md](NOI.md) for the full argument.
+
+---
+
 ## What this is
 
 | Layer | What it models |
@@ -46,13 +69,27 @@ The goal is not satire. It is a serious attempt to simulate how the EU Commissio
 /president
 
 # Run a full College deliberation on a topic
-/college-deliberate "Should the EU ban algorithmic pricing in retail?"
+/college-deliberation "Should the EU ban algorithmic pricing in retail?"
 
 # Draft a legislative proposal via the standard workflow
 /legislative-proposal "Regulation on synthetic biology"
 
 # Stress-test a policy against all Commissioner portfolios
 /impact-assessment "Carbon border adjustment expansion to agriculture"
+
+# --- Compound commands (multi-agent only) ---
+
+# Find every structurally guaranteed conflict across 21 portfolios
+/mandate-conflict "Regulation on AI liability in critical infrastructure"
+
+# Run all 21 Commissioners, surface only severe objections
+/red-team-college "Carbon border adjustment expansion to agriculture"
+
+# Test subsidiarity failure across 5 member-state configurations
+/subsidiarity-stress "Harmonised insolvency rules for SMEs"
+
+# Produce a realistic OLP timeline with blocking dependencies
+/timeline "Platform regulation for financial services"
 ```
 
 ---
@@ -128,10 +165,11 @@ agents-for-EU/
 
 ## Use cases
 
-- **Policy research** — Simulate how a new regulation would be received across all Commission portfolios before it is written.
-- **Legislative drafting** — Use the `legislative-proposal` skill to produce a structurally compliant draft from a one-line brief.
-- **Education** — Walk students through the full ordinary legislative procedure with live agent interactions.
-- **Scenario testing** — Test geopolitical shocks, climate events, or market crises against the College's deliberative capacity.
+- **Policy research** — Simulate how a new regulation would be received across all Commission portfolios before it is written. `/mandate-conflict` finds the structural fault lines in under a minute.
+- **Legislative drafting** — Use `/legislative-proposal` to produce a structurally compliant draft from a one-line brief; use `/red-team-college` to find the objections that will survive committee.
+- **Education** — Walk students through the full ordinary legislative procedure with live agent interactions; `/timeline` makes the blocking dependencies visible.
+- **Scenario testing** — Test geopolitical shocks, climate events, or market crises against the College's deliberative capacity. `/subsidiarity-stress` reveals when a proposed EU intervention loses its legal justification.
+- **General-purpose structured reasoning** — Use EU deliberative procedure as a scaffold for any high-stakes collective decision outside government: a corporate strategy review, a standards body proposal, a research consortium priority-setting. The scaffold works whenever multiple legitimate perspectives must survive adversarial scrutiny under constraint.
 - **Civic tech** — Build tools that explain EU decisions in plain language by running them backward through the agents that produced them.
 
 ---

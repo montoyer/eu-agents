@@ -85,6 +85,22 @@ These voice multiple institutional actors in sequence:
 /legislative-cycle             — Full OLP from Commission proposal to OJ publication
 ```
 
+### Compound analysis commands (simulation-eu plugin)
+
+These require all 21 Commissioner agents and are structurally impossible with a single-agent system:
+
+```
+/mandate-conflict <proposal>    — Conflict map across all 21 portfolios: guaranteed clashes,
+                                  treaty basis for each side, severity (BLOCKING / SIGNIFICANT /
+                                  MANAGEABLE), resolution path
+/red-team-college <proposal>    — Token-efficient College stress test: runs all 21 Commissioners,
+                                  returns only SEVERE objections + College adoptability verdict
+/subsidiarity-stress <proposal> — Tests subsidiarity against 5 member-state configurations to find
+                                  where the necessity argument fails; assesses yellow card risk
+/timeline <proposal>            — OLP timeline with blocking dependencies, QMV arithmetic, and
+                                  trilogue risk points for a proposed regulation or directive
+```
+
 ---
 
 ## Agent behavior rules
@@ -135,7 +151,7 @@ These voice multiple institutional actors in sequence:
 | `trade-eu` | Trade Defence | `trade-defence-investigator` |
 | `grants-enforcement-eu` | Grants, Procurement & Enforcement | `grant-manager`, `infringement-officer`, `infringement`, `procurement-expert`, `lfn-drafter`, `transposition-tracker` |
 | `data-communication-eu` | Data & Communication | `data-analyst`, `communication-officer`, `lines-to-take-drafter` |
-| `simulation-eu` | EU Institutional Simulation | `commissioner`, `college-deliberation`, `inter-service-consultation`, `trilogue`, `legislative-cycle`, `european-parliament`, `council-eu` |
+| `simulation-eu` | EU Institutional Simulation | `commissioner`, `college-deliberation`, `inter-service-consultation`, `trilogue`, `legislative-cycle`, `european-parliament`, `council-eu`, `mandate-conflict`, `red-team-college`, `subsidiarity-stress`, `timeline` |
 | `privacy-eu` | Data Protection & Privacy | `dpia`, `dpo`, `it-project-manager`, `it-security`, `legal-officer` |
 | `careers-eu` | EU Careers & EPSO Preparation | `epso-grade`, `epso-presentation`, `epso-offer` |
 
