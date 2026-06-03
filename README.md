@@ -1,4 +1,4 @@
-# Agents for EU
+# EU Commission AI Agents — Simulate EU Policy, Law, and Institutions with Claude Code
 
 > 30,000 EU staff. 21 Commissioners. 70 years to build. Now running on your laptop.
 
@@ -195,6 +195,18 @@ agents-for-EU/
 **Adversarial by design.** Commissioners disagree. The Council pushes back. Parliament amends. The system is built for productive tension, not rubber-stamping.
 
 **Composable.** Every skill, commissioner, and workflow can be invoked standalone or composed into larger multi-agent sessions.
+
+---
+
+## Who this is for
+
+- **EU policy officers and legislative drafters** — impact assessments, ISC notes, treaty checks, legislative proposals without starting from scratch
+- **Lawyers working on EU compliance** — GDPR DPIA, state aid analysis, antitrust under Arts. 101-102 TFEU, infringement procedures
+- **Consultants and lobbyists** — understand the institutional position of any Commissioner portfolio before walking into a meeting in Brussels
+- **Researchers and academics** — simulate the full ordinary legislative procedure, model College deliberation, test policy options against all DG mandates
+- **Journalists and policy analysts** — get the TFEU legal basis and inter-institutional tensions behind any EU dossier in plain language
+- **Law and political science students** — walk through real EU procedures interactively: subsidiarity, proportionality, trilogue, comitology
+- **Civic technologists** — build tools that make EU decision-making legible to citizens
 
 ---
 
