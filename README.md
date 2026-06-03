@@ -20,6 +20,18 @@
 
 ---
 
+**You're a startup lawyer asked about GDPR compliance for an AI hiring tool. You open ChatGPT. You get confident-sounding text you can't cite in front of a client.** `/dpia "AI hiring tool"` gives you a complete Art. 39 EUDPR assessment voiced by five specialist roles — DPO, IT architect, legal officer, security officer, EDPS reviewer — with trust-tagged citations and a draft ready for your DPO to sign off. In 3 minutes.
+
+**Your team needs to know whether a proposed regulation would survive inter-service consultation. Normally that's a 500 euro/hour Brussels consultant and a three-week wait.** `/inter-service-consultation "Regulation on algorithmic pricing"` runs all affected DGs in sequence, surfaces every objection with the legal basis behind it, and produces a synthesis note. In 3 minutes.
+
+**A journalist asks you about the EU's position on carbon border adjustments. You guess.** `/commissioner climate` gives you the institutional position, the TFEU legal basis, and the live tension with the Trade Commissioner. In 30 seconds.
+
+**You're drafting a regulation and want to know which parts will get blocked at College before you write a word.** `/mandate-conflict "Regulation on AI liability"` reads all 21 Commissioner knowledge files, identifies every structurally guaranteed conflict, names the treaty basis on each side, and tells you which fights require Presidential arbitration. No consultant has ever done this in under an hour.
+
+**You want to know if your proposal will even hold up legally at the member-state level before it goes anywhere near the Council.** `/subsidiarity-stress "Harmonised insolvency rules for SMEs"` tests your necessity argument against five different member-state configurations and tells you exactly where it fails. That test normally lives inside a Staff Working Document that takes six months to produce.
+
+---
+
 Inspired by [gstack](https://github.com/garrytan/gstack) — which turns Claude Code into a virtual engineering team — **Agents for EU** models the entire European Commission as a structured system of specialized AI agents: one per Commissioner portfolio, backed by Directorate-General agents, wired together through the EU's real legislative and policy workflows.
 
 The goal is not satire. It is a serious attempt to simulate how the EU Commission thinks, deliberates, and produces policy — and to use that simulation as a tool for research, policy drafting, scenario testing, and civic education.
