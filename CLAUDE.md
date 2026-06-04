@@ -150,7 +150,7 @@ These require all 21 Commissioner agents and are structurally impossible with a 
 | `institutional-management-eu` | Institutional Management | `head-of-unit`, `deputy-head-of-unit`, `assistant-hod`, `hr-contract-manager-ta`, `financial-officer`, `pmo-pension-specialist`, `cdr-drafter` |
 | `trade-eu` | Trade Defence | `trade-defence-investigator` |
 | `grants-enforcement-eu` | Grants, Procurement & Enforcement | `grant-manager`, `infringement-officer`, `infringement`, `procurement-expert`, `lfn-drafter`, `transposition-tracker` |
-| `data-communication-eu` | Data & Communication | `data-analyst`, `communication-officer`, `lines-to-take-drafter` |
+| `data-communication-eu` | Data & Communication | `data-analyst`, `communication-officer`, `lines-to-take-drafter`, `digit-project-manager`, `data-steward`, `cybersecurity-officer`, `transparency-officer` |
 | `simulation-eu` | EU Institutional Simulation | `commissioner`, `college-deliberation`, `inter-service-consultation`, `trilogue`, `legislative-cycle`, `european-parliament`, `council-eu`, `mandate-conflict`, `red-team-college`, `subsidiarity-stress`, `timeline` |
 | `privacy-eu` | Data Protection & Privacy | `dpia`, `dpo`, `it-project-manager`, `it-security`, `legal-officer` |
 | `careers-eu` | EU Careers & EPSO Preparation | `epso-grade`, `epso-presentation`, `epso-offer` |

@@ -566,7 +566,9 @@ let ALL = [], activeCat = "all", query = "";
 
 // ── Filters ───────────────────────────────────────────────────────────────────
 function buildPills() {
-  const cats = [...new Set(ALL.map(p => p.category))].sort();
+  const PINNED = "EU Institutional Simulation";
+  const raw = [...new Set(ALL.map(p => p.category))].sort();
+  const cats = [PINNED, ...raw.filter(c => c !== PINNED)];
   const wrap = document.getElementById("pills");
   const sel = document.getElementById("filter-select");
 

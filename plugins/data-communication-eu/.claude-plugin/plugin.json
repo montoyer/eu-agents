@@ -8,7 +8,11 @@
     { "id": "cold-start-interview",   "path": "skills/cold-start-interview/SKILL.md",   "description": "Personalise this plugin to your DG, communication audiences, and data focus areas" },
     { "id": "data-analyst",           "path": "skills/data-analyst/SKILL.md",           "description": "Eurostat data extraction, indicator design, scoreboards, data notes, visualisation" },
     { "id": "communication-officer",  "path": "skills/communication-officer/SKILL.md",  "description": "Press releases, lines to take, Commissioner speeches, social media, briefings" },
-    { "id": "lines-to-take-drafter", "path": "skills/lines-to-take-drafter/SKILL.md", "description": "Draft complete LTT packages — friendly/neutral/hostile Q&A, no-go zones, background facts, clearance tracking" }
+    { "id": "lines-to-take-drafter",  "path": "skills/lines-to-take-drafter/SKILL.md",  "description": "Draft complete LTT packages — friendly/neutral/hostile Q&A, no-go zones, background facts, clearance tracking" },
+    { "id": "digit-project-manager",  "path": "skills/digit-project-manager/SKILL.md",  "description": "DIGIT IT project governance: Agile delivery, OCS gates, ITSRM² risk, EU Cloud, vendor management, steering-committee reporting" },
+    { "id": "data-steward",           "path": "skills/data-steward/SKILL.md",           "description": "Data governance, metadata (DCAT-AP, ISA², SEMIC), open data publication, data quality, data spaces, Data Governance Act" },
+    { "id": "cybersecurity-officer",  "path": "skills/cybersecurity-officer/SKILL.md",  "description": "Cybersecurity risk (ITSRM²), NIS2 compliance, incident response, CERT-EU coordination, security accreditation, vulnerability management" },
+    { "id": "transparency-officer",   "path": "skills/transparency-officer/SKILL.md",   "description": "Access to documents (Reg. 1049/2001), GESTDEM, confirmatory applications, exception analysis, Transparency Register, Ombudsman" }
   ],
   "hooks": {
     "post_output": "hooks/post-output-disclaimer.sh"

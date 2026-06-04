@@ -34,6 +34,14 @@ Data sources available: [run cold-start-interview to set — Eurostat / AMECO / 
 | Draft a full lines-to-take package (friendly/neutral/hostile Q&A) | `lines-to-take-drafter` |
 | Prepare lines for a Commissioner EP hearing | `lines-to-take-drafter` |
 | Identify no-go topics and standard formulations for an event | `lines-to-take-drafter` |
+| Manage an IT project on DIGIT infrastructure (Agile, OCS, ITSRM²) | `digit-project-manager` |
+| Prepare a steering committee brief or IT risk register | `digit-project-manager` |
+| Document data assets, produce DCAT-AP metadata, or publish open data | `data-steward` |
+| Assess data quality or design a data sharing agreement | `data-steward` |
+| Conduct a cybersecurity risk assessment or handle a security incident | `cybersecurity-officer` |
+| Coordinate with CERT-EU or produce an incident report | `cybersecurity-officer` |
+| Handle an access to documents request (Reg. 1049/2001) or GESTDEM | `transparency-officer` |
+| Draft a confirmatory application reply or exception analysis | `transparency-officer` |
 
 ---
 

@@ -32,7 +32,11 @@ PLUGIN_CATEGORIES = {
     "careers-eu": "EU Careers & EPSO",
 }
 
-ACRONYMS = {"dpia", "dpo", "cdr", "pmo", "isc", "pq", "lfn", "gber", "eu", "ep", "olaf", "hod", "epso"}
+ACRONYMS = {
+    "dpia", "dpo", "cdr", "pmo", "isc", "pq", "lfn", "gber", "eu", "ep", "olaf", "hod", "epso",
+    "eppo", "tia", "edps", "sme", "aar", "amp", "hr", "ai", "it", "ta", "digit",
+}
+MIXED_CASE = {"ropa": "RoPA"}
 SKIP_SKILLS = {"cold-start-interview"}
 
 # Sections that are internal/Claude-Code-specific — stop extracting prompt body here
@@ -136,7 +140,12 @@ def parse_frontmatter(text: str) -> tuple[dict, str]:
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
 def to_title(name: str) -> str:
-    return " ".join(w.upper() if w.lower() in ACRONYMS else w.title() for w in name.split("-"))
+    def _word(w):
+        lw = w.lower()
+        if lw in MIXED_CASE: return MIXED_CASE[lw]
+        if lw in ACRONYMS: return w.upper()
+        return w.title()
+    return " ".join(_word(w) for w in name.split("-"))
 
 
 def infer_difficulty(role: str, output_format: str) -> str:
