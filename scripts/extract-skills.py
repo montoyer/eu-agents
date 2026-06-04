@@ -284,6 +284,10 @@ def main() -> None:
             print(f"  ! workflow/{wf_file.name}: {exc}", file=sys.stderr)
             errors += 1
 
+    # Pin "EU Institutional Simulation" first; sort everything else by category then title
+    PINNED_CAT = "EU Institutional Simulation"
+    prompts.sort(key=lambda p: (0 if p["category"] == PINNED_CAT else 1, p["category"], p["title"]))
+
     OUTPUT_FILE.parent.mkdir(exist_ok=True)
     now = datetime.now(timezone.utc)
     payload = {
