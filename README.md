@@ -102,6 +102,7 @@ Or install everything at once:
 
 ## Quick start
 
+```bash
 # Run a full College deliberation on a topic
 /simulation-eu:college-deliberation "Should the EU ban algorithmic pricing in retail?"
 
