@@ -7,8 +7,9 @@ proposal to final adoption.
 ## Setup
 
 ```
-/plugin install simulation-eu
-/plugin install legislative-eu
+/plugin marketplace add montoyer/eu-agents
+/plugin install simulation-eu@eu-agents
+/plugin install legislative-eu@eu-agents
 ```
 
 ---
@@ -24,7 +25,7 @@ It is the world's first comprehensive AI regulatory framework.
 ## Step 1 — Commission proposal
 
 ```
-/legislative-proposal
+/legislative-eu:legislative-proposal
 
 Brief: A regulation establishing harmonised rules on artificial intelligence,
 based on a risk-based approach: prohibited AI, high-risk AI, limited risk AI,
@@ -42,7 +43,7 @@ Key tensions to surface:
 ## Step 2 — Inter-service consultation
 
 ```
-/inter-service-consultation
+/simulation-eu:inter-service-consultation
 
 Dossier: AI Act draft — COM(2021) 206. Lead DG: DG CONNECT. Consult: DG JUST,
 DG HOME, DG GROW, DG RTD, DG COMP, Legal Service, SecGen.
@@ -60,7 +61,7 @@ Expected positions:
 ## Step 3 — College deliberation
 
 ```
-/college-deliberation
+/simulation-eu:college-deliberation
 
 Dossier: AI Act proposal — COM(2021) 206. Decision sought: adopt for
 transmission to EP and Council. Lead Commissioner: EVP Digital.
@@ -78,7 +79,7 @@ Expected College dynamics:
 ## Step 4 — EP position
 
 ```
-/european-parliament
+/simulation-eu:european-parliament
 
 Dossier: AI Act — COM(2021) 206. Responsible committee: IMCO + LIBE (joint).
 Model the EP rapporteur position and key amendments.
@@ -94,7 +95,7 @@ The EP moved significantly further than the Commission on:
 ## Step 5 — Council position
 
 ```
-/council-eu
+/simulation-eu:council-eu
 
 Dossier: AI Act — COM(2021) 206. Configuration: COMPET. Model the Council
 general approach — where it diverges from the Commission proposal and EP amendments.
@@ -105,7 +106,7 @@ general approach — where it diverges from the Commission proposal and EP amend
 ## Step 6 — Trilogue
 
 ```
-/trilogue
+/simulation-eu:trilogue
 
 Dossier: AI Act. Commission: COM(2021) 206. EP position: IMCO/LIBE mandate
 (biometric ban, GPAI, expanded prohibited list). Council GA: flexibility for
@@ -126,7 +127,7 @@ Historical outcome: political agreement December 2023. Final text adopted April 
 ## Or run the whole cycle at once
 
 ```
-/legislative-cycle
+/simulation-eu:legislative-cycle
 
 Brief: AI Act — a regulation establishing harmonised rules on AI based on a
 risk-based approach (prohibited / high-risk / limited risk / minimal risk).

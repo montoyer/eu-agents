@@ -25,7 +25,7 @@ This example simulates the Commission's Fit for 55 package: 13 legislative propo
 ## Simulate the College deliberation
 
 ```
-/college-deliberate "Fit for 55: adopt the 13-proposal package for simultaneous transmission to EP and Council"
+/simulation-eu:college-deliberation "Fit for 55: adopt the 13-proposal package for simultaneous transmission to EP and Council"
 ```
 
 **Expected tensions:**
@@ -39,7 +39,7 @@ This example simulates the Commission's Fit for 55 package: 13 legislative propo
 ## Simulate the 2035 ICE ban trilogue
 
 ```
-/trilogue "CO2 standards for cars and vans — 2035 zero-emission mandate"
+/simulation-eu:trilogue "CO2 standards for cars and vans — 2035 zero-emission mandate"
 ```
 
 **Historical fault lines:**
@@ -54,11 +54,11 @@ This example simulates the Commission's Fit for 55 package: 13 legislative propo
 ## The CBAM WTO question
 
 ```
-/treaty-check "Carbon Border Adjustment Mechanism — WTO compatibility"
+/legislative-eu:treaty-check "Carbon Border Adjustment Mechanism — WTO compatibility"
 ```
 
 ```
-/trade "Is the CBAM compatible with WTO rules? What is the risk of WTO dispute settlement?"
+/trade-eu:trade-defence-investigator "Is the CBAM compatible with WTO rules? What is the risk of WTO dispute settlement?"
 ```
 
 **Key legal question:** Is the CBAM a legitimate environmental measure under GATT Art. XX(b) (necessary to protect human life or health) or Art. XX(g) (relating to conservation of exhaustible natural resources)? Or does it constitute a discriminatory trade barrier?
