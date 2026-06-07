@@ -192,7 +192,7 @@ def extract_skill(skill_path: Path, plugin_name: str) -> Optional[dict]:
     related_raw = meta.get("related-skills", "")
     related = [r.strip() for r in related_raw.split(",") if r.strip()]
 
-    trigger = f"/{name}"
+    trigger = f"/{plugin_name}:{name}"
     if any(k in scope for k in ("assessment", "proposal", "analysis", "orchestration", "dpia")):
         trigger += " <brief>"
 

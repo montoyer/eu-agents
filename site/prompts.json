@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-04T20:49:51.124160+00:00",
+  "generated": "2026-06-07T15:39:25.434433+00:00",
   "count": 98,
   "prompts": [
     {
@@ -453,7 +453,7 @@
       "description": "Use when analysing, investigating, or advising on EU antitrust law under Articles 101 and 102 TFEU. Covers cartel investigations (Article 101 — agreements, concerted practices, decisions by associations), abuse of dominant position (Article 102 — exclusionary and exploitative abuses), leniency applications, commitments procedure (Article 9 of Regulation 1/2003), interim measures, fines calculation, dawn raids, requests for information (RFI), market definition (SSNIP/SNIP test), dominance assessment, effects-based analysis, and enforcement coordination with National Competition Authorities (NCAs) in the European Competition Network (ECN). Also covers the interaction between competition enforcement and sector-specific regulation, and the Digital Markets Act (DMA) gatekeeper enforcement vs. antitrust.",
       "plugin": "competition-eu",
       "category": "Competition & Legal Service",
-      "trigger": "/competition-eu:lawyer-competition-antitrust",
+      "trigger": "/competition-eu:lawyer-competition-antitrust <brief>",
       "tags": [
         "antitrust",
         "Article 101 TFEU",
@@ -511,7 +511,7 @@
       "description": "Use when analysing, drafting, or advising on EU State aid rules. Covers the full State aid legal framework under Articles 107–109 TFEU: aid compatibility under GBER (General Block Exemption Regulation), notification and pre-notification to DG Competition, de minimis rules, aid schemes vs. individual aid, the compatibility criteria for the main exceptions (Art. 107(2) and 107(3) TFEU), recovery of unlawful aid, and State aid procedure regulation. Also covers sectoral guidelines (R&D&I, environmental aid, regional aid, broadband, financial sector, agriculture ABER), temporary frameworks (energy crisis, COVID-19 precedents), and interactions between State aid and public procurement. Use when advising Member States, drafting notification files, conducting compatibility assessments, or managing recovery procedures.",
       "plugin": "competition-eu",
       "category": "Competition & Legal Service",
-      "trigger": "/competition-eu:lawyer-state-aid",
+      "trigger": "/competition-eu:lawyer-state-aid <brief>",
       "tags": [
         "state aid",
         "Article 107 TFEU",
@@ -593,7 +593,7 @@
       "description": "Use when analysing whether a proposed national measure constitutes state aid within the meaning of TFEU Art. 107(1) and, if so, whether it is compatible with the internal market. Applies the four-limb Art. 107(1) test (state resources, selective advantage, effect on competition, effect on trade), checks de minimis thresholds, screens against the General Block Exemption Regulation (GBER), and — where notification is required — assesses compatibility under Art. 107(2)/(3) and the common compatibility test. Covers IPCEI, SGEI/Altmark, and special frameworks (TCTF).",
       "plugin": "competition-eu",
       "category": "Competition & Legal Service",
-      "trigger": "/competition-eu:state-aid-review",
+      "trigger": "/competition-eu:state-aid-review <brief>",
       "tags": [
         "state aid",
         "Art. 107 TFEU",
@@ -705,7 +705,7 @@
       "description": "Use when performing data analysis, statistical analysis, or data visualisation tasks in a European Commission context. Covers Eurostat data extraction and interpretation (National Accounts, labour statistics, trade statistics, environmental indicators, social statistics), EU open data portals, quantitative analysis for impact assessments and policy evaluations, data quality assessment, indicator design, scoreboards and monitoring frameworks, geospatial data analysis (NUTS regions, GISCO), and data governance (GDPR, statistical confidentiality, EU Open Data Policy). Also covers the use of JRC analytical tools, Eurostat databases (SBS, COMEXT, SILC, LFS, HICP), and the design of data collection instruments (surveys, questionnaires, reporting templates).",
       "plugin": "data-communication-eu",
       "category": "Data & Communication",
-      "trigger": "/data-communication-eu:data-analyst",
+      "trigger": "/data-communication-eu:data-analyst <brief>",
       "tags": [
         "data analysis",
         "statistics",
@@ -876,7 +876,7 @@
       "description": "Use to produce a complete Data Protection Impact Assessment (DPIA) under Article 39 of Regulation (EU) 2018/1725 (EUDPR) for a processing activity of an EU institution, body, office, or agency. This is a multi-agent orchestration skill: it voices five specialist roles in sequence — IT Project Manager, Legal Officer, IT Security Officer, DPO, and EDPS prior-consultation determination — to generate a structured DPIA document meeting all seven Art. 39(7) EUDPR requirements. Covers: system architecture and data flows, legal basis and necessity/proportionality, CIA threat model and TIA for non-EU providers, risk assessment (inherent + residual), DPO sign-off opinion, and Art. 40 prior-consultation determination. Includes AI module assessment where an AI component is present. Invoke with a brief description of the processing activity.",
       "plugin": "privacy-eu",
       "category": "Data Protection & Privacy",
-      "trigger": "/privacy-eu:dpia",
+      "trigger": "/privacy-eu:dpia <brief>",
       "tags": [
         "DPIA",
         "data protection impact assessment",
@@ -932,7 +932,7 @@
       "description": "Use when a personal data breach has been detected or suspected involving an EU institution processing activity. Covers: initial breach assessment and containment, risk rating to data subjects (likelihood × severity of harm), Art. 34 EUDPR 72-hour EDPS notification drafting, Art. 35 EUDPR communication to data subjects (when required), Art. 34(5) internal breach register entry, and post-breach corrective measures and lessons-learned review. Applicable to all personal data breaches — confidentiality, integrity, and availability breaches — including ransomware, accidental disclosure, unauthorised access, and data loss events.",
       "plugin": "privacy-eu",
       "category": "Data Protection & Privacy",
-      "trigger": "/privacy-eu:data-breach-officer",
+      "trigger": "/privacy-eu:data-breach-officer <brief>",
       "tags": [
         "data breach",
         "personal data breach",
@@ -1047,7 +1047,7 @@
       "description": "Use when conducting the security and threat-model section of a DPIA, or when assessing the security of a processing system under Regulation (EU) 2018/1725 (EUDPR). Covers: CIA triad threat modelling (Confidentiality, Integrity, Availability), STRIDE threat analysis for IT systems, security measures assessment (encryption, access control, pseudonymisation, audit logging), Transfer Impact Assessment (TIA) for personal data flows to non-EU/EEA cloud providers or AI vendors, residual risk rating after mitigations, incident response capability assessment, and security recommendations. Also covers AI-specific threats: model inversion attacks, adversarial inputs, data poisoning, and inference-time data leakage. Use within the DPIA workflow to produce the security/risk section required by Art. 39(7)(c)–(d) EUDPR, or standalone when a security review of a processing system is needed.",
       "plugin": "privacy-eu",
       "category": "Data Protection & Privacy",
-      "trigger": "/privacy-eu:it-security",
+      "trigger": "/privacy-eu:it-security <brief>",
       "tags": [
         "threat model",
         "DPIA security section",
@@ -1103,7 +1103,7 @@
       "description": "Use when conducting the legal analysis section of a DPIA or advising on the lawfulness of a processing activity under Regulation (EU) 2018/1725 (EUDPR). Covers: identification and justification of legal basis under Art. 5(1) EUDPR (including Art. 5(1)(a) — task in the public interest / exercise of official authority, and Art. 5(1)(b) — performance of a contract or pre-contractual steps), necessity and proportionality analysis, special categories legal basis (Art. 10 EUDPR), data subject rights framework and derogations, retention period justification, legal assessment of automated decision-making (Art. 24 EUDPR), and compatibility of further processing with original purpose (Art. 6(4)-equivalent under EUDPR). Also covers the legal basis for transfers to third countries (Art. 25 EUDPR) and the interaction of EUDPR with other EU legal instruments (Staff Regulations, Financial Regulation, specific sectoral laws). Use within the DPIA workflow for the Art. 39(7)(b) necessity/proportionality section, or standalone when advising on processing lawfulness.",
       "plugin": "privacy-eu",
       "category": "Data Protection & Privacy",
-      "trigger": "/privacy-eu:legal-officer",
+      "trigger": "/privacy-eu:legal-officer <brief>",
       "tags": [
         "legal basis EUDPR",
         "Art. 5(1)(a) EUDPR",
@@ -1219,7 +1219,7 @@
       "description": "Use when conducting a Transfer Impact Assessment (TIA) for a transfer of personal data from an EU institution to a third country or international organisation under Art. 25 of Regulation (EU) 2018/1725 (EUDPR). Covers: transfer mechanism selection (adequacy decision, standard contractual clauses, binding corporate rules, Art. 25(4) derogations), legal framework assessment of the recipient country (surveillance law exposure, government access risk, Schrems II compliance), contractual safeguards review, supplementary technical and organisational measures, and TIA conclusion with escalation path where transfer cannot proceed. Applicable to cloud providers, AI/SaaS vendors, international partners, and any non-EU/EEA processor or controller receiving EU institutional data.",
       "plugin": "privacy-eu",
       "category": "Data Protection & Privacy",
-      "trigger": "/privacy-eu:tia-expert",
+      "trigger": "/privacy-eu:tia-expert <brief>",
       "tags": [
         "TIA",
         "transfer impact assessment",
@@ -1274,7 +1274,7 @@
       "description": "Use when a candidate has received a job offer from an EU institution and wants to understand or verify what it means. Takes the job offer letter (or key details: institution, grade, step, duty station, contract type, family situation) and produces: a plain-language explanation of every term in the offer; a gross-to-net salary breakdown (basic salary, household allowance, expatriation allowance, dependent child allowance, community tax, JSIS, pension); probation period obligations and risks under SR Art. 34; contract type analysis (official indefinite appointment vs. Temporary Agent vs. Contract Agent — duration, renewal, termination conditions); and a checklist of actions to take before signing. Also covers: negotiating steps under Art. 32, education allowance for children abroad, installation allowance, and the impact of duty station on the correction coefficient. Use when a candidate says \"I received a job offer\", \"what does this letter mean\", or \"can I negotiate\".",
       "plugin": "careers-eu",
       "category": "EU Careers & EPSO",
-      "trigger": "/careers-eu:epso-offer",
+      "trigger": "/careers-eu:epso-offer <brief>",
       "tags": [
         "job offer",
         "offer letter",
@@ -1300,7 +1300,7 @@
       "description": "Use when preparing or getting feedback on a 10-minute oral presentation for the EPSO Assessment Centre. Takes a topic, scenario, or candidate draft and produces a structured presentation outline with timing, key messages, and transition cues. Scores any candidate draft against the EPSO Communication competency behavioural indicators (positive and negative). Also covers the 10-minute Q&A phase: anticipates likely panel questions and coaches candidate answers. Covers all AD competition levels (AD5 generalist, AD7 specialist, AD9/12 management). Can also coach on delivery: structure, signposting, managing nerves, and adapting to the panel. Use when a candidate says \"I have an AC oral presentation to prepare\", shares a topic they received, or asks for feedback on a draft presentation.",
       "plugin": "careers-eu",
       "category": "EU Careers & EPSO",
-      "trigger": "/careers-eu:epso-presentation",
+      "trigger": "/careers-eu:epso-presentation <brief>",
       "tags": [
         "oral presentation",
         "AC presentation",
@@ -1382,7 +1382,7 @@
       "description": "Use when assessing whether an offence or investigation falls within the jurisdiction of the European Public Prosecutor's Office (EPPO) under Regulation (EU) 2017/1939. Covers: EPPO's material jurisdiction (PIF offences under Directive 2017/1371), EPPO's territorial jurisdiction (participating member states), the distinction between EPPO and OLAF competences, mandatory referral obligations when EPPO opens an investigation, the relationship between EPPO investigations and ongoing administrative procedures (grant corrections, procurement recovery), and the Commission's obligations to cooperate with EPPO. Also covers when OLAF refers to EPPO vs. national prosecutors, and managing the Commission's financial correction procedure in parallel with or after an EPPO investigation.",
       "plugin": "grants-enforcement-eu",
       "category": "Grants, Procurement & Enforcement",
-      "trigger": "/grants-enforcement-eu:eppo-jurisdiction-advisor",
+      "trigger": "/grants-enforcement-eu:eppo-jurisdiction-advisor <brief>",
       "tags": [
         "EPPO",
         "European Public Prosecutor's Office",
@@ -1494,7 +1494,7 @@
       "description": "Use when analysing whether a member state is failing to fulfil an obligation under EU law and recommending the appropriate procedural step under TFEU Art. 258. Classifies the infringement type (non-transposition, incorrect transposition, misapplication, direct breach), assesses the evidence, maps the Art. 258 procedure stages (EU Pilot → LFN → RO → ECJ referral → Art. 260), and calculates indicative penalty estimates for Art. 260 cases. Works alongside infringement-officer (role persona) and lfn-drafter (document drafting).",
       "plugin": "grants-enforcement-eu",
       "category": "Grants, Procurement & Enforcement",
-      "trigger": "/grants-enforcement-eu:infringement",
+      "trigger": "/grants-enforcement-eu:infringement <brief>",
       "tags": [
         "infringement",
         "Art. 258 TFEU",
@@ -1522,7 +1522,7 @@
       "description": "Use when managing, advising on, or drafting documents in EU infringement proceedings under Article 258 TFEU. Covers all stages of the infringement procedure: EU Pilot (pre-infringement dialogue), Letter of Formal Notice (LFN), Reasoned Opinion (RO), referral to the Court of Justice (CJEU), and follow-up under Article 260 TFEU (non-compliance with a judgment). Also covers the specific regime for non-transposition of directives (Art. 260(3) TFEU — financial penalties in the initial referral), complaint management, and the prioritisation criteria for opening infringement cases. Use when drafting LFNs, ROs, legal analyses of member state measures, or CJEU referral documents.",
       "plugin": "grants-enforcement-eu",
       "category": "Grants, Procurement & Enforcement",
-      "trigger": "/grants-enforcement-eu:infringement-officer",
+      "trigger": "/grants-enforcement-eu:infringement-officer <brief>",
       "tags": [
         "infringement",
         "Article 258",
@@ -1691,7 +1691,7 @@
       "description": "Use when monitoring, assessing, or reporting on the transposition status of an EU directive across member states. Produces transposition status tables, conformity assessment frameworks, and escalation recommendations for the infringement pipeline. Covers: identification of the transposition deadline, tracking of national notification status in MNE (national measures database), conformity assessment methodology (correlation table analysis), prioritisation of non-transposing or non-conforming member states for infringement action, and reporting to the Commissioner or DG management on the state of play. Works in conjunction with lfn-drafter and infringement-officer for individual case action.",
       "plugin": "grants-enforcement-eu",
       "category": "Grants, Procurement & Enforcement",
-      "trigger": "/grants-enforcement-eu:transposition-tracker",
+      "trigger": "/grants-enforcement-eu:transposition-tracker <brief>",
       "tags": [
         "transposition",
         "transposition tracking",
@@ -1718,7 +1718,7 @@
       "description": "Runs the full Ordinary Legislative Procedure (OLP) as defined in TFEU Art. 294. The Commission proposes; the European Parliament and Council co-decide; the workflow models all phases including trilogue.",
       "plugin": "workflows",
       "category": "Guided Workflows",
-      "trigger": "/workflows:legislative-cycle",
+      "trigger": "/legislative-cycle <brief>",
       "tags": [],
       "role": "multi-agent",
       "output_format": "multi-phase-workflow",
@@ -1734,7 +1734,7 @@
       "description": "Models the complete EU policy cycle for a given policy area: political agenda-setting, problem analysis, policy design, legislative action, implementation, and evaluation. Follows the Commission's Better Regulation Guidelines.",
       "plugin": "workflows",
       "category": "Guided Workflows",
-      "trigger": "/workflows:policy-cycle",
+      "trigger": "/policy-cycle <policy area>",
       "tags": [],
       "role": "multi-agent",
       "output_format": "multi-phase-workflow",
@@ -2124,7 +2124,7 @@
       "description": "Use when assessing whether existing EU legislation achieves its objectives efficiently (REFIT review), or whether a proposed new regulation is designed in line with Better Regulation principles. Applies the Commission's five evaluation criteria — effectiveness, efficiency, coherence, relevance, EU added value — and produces a scored regulatory fitness check with a recommended action (maintain / minor update / targeted revision / comprehensive revision / repeal) and a list of simplification opportunities.",
       "plugin": "legislative-eu",
       "category": "Legislative & Policy",
-      "trigger": "/legislative-eu:better-regulation",
+      "trigger": "/legislative-eu:better-regulation <brief>",
       "tags": [
         "better regulation",
         "REFIT",
@@ -2235,7 +2235,7 @@
       "description": "Use when performing economic analysis in a European Commission context. Covers quantitative and qualitative economic assessment for policy proposals, impact assessments, competition cases, trade policy, and macroeconomic surveillance. Specialises in cost-benefit analysis (CBA), cost-effectiveness analysis (CEA), market failure identification, econometric modelling, European Semester economic analysis, competition economics (market definition, dominance, merger effects), trade impact modelling (CGE), and macroeconomic forecasting methodology as used by DG ECFIN, DG COMP, DG TRADE, DG GROW, and the Joint Research Centre (JRC).",
       "plugin": "legislative-eu",
       "category": "Legislative & Policy",
-      "trigger": "/legislative-eu:economist",
+      "trigger": "/legislative-eu:economist <brief>",
       "tags": [
         "economic analysis",
         "cost-benefit analysis",
@@ -2265,7 +2265,7 @@
       "description": "Use when conducting a full Charter of Fundamental Rights of the European Union compatibility assessment for a legislative proposal, policy measure, or administrative decision. Covers: the Art. 51 applicability threshold (when the Charter binds member states), identification of Charter rights engaged, the limitation test under Art. 52(1) (legal basis, essence of the right, proportionality and necessity), horizontal Charter provisions (Arts. 51–54), alignment with ECHR minimum standards, the Commission's internal Charter compatibility check methodology, and the Charter in the context of the Regulatory Scrutiny Board review. Deeper and more structured than the Charter review in treaty-check — this skill is the full specialist assessment.",
       "plugin": "legislative-eu",
       "category": "Legislative & Policy",
-      "trigger": "/legislative-eu:fundamental-rights-assessor",
+      "trigger": "/legislative-eu:fundamental-rights-assessor <brief>",
       "tags": [
         "Charter of Fundamental Rights",
         "CFR",
@@ -2321,7 +2321,7 @@
       "description": "Use when conducting a full regulatory impact assessment for a Commission policy initiative. Produces a Staff Working Document (SWD) following the Better Regulation methodology: problem definition, subsidiarity check, policy options (0–4), economic/social/environmental impact analysis per option, comparison matrix, preferred option with proportionality statement, and monitoring framework. Includes the SME test, DNSH assessment, and Charter rights check. Required before any major legislative proposal.",
       "plugin": "legislative-eu",
       "category": "Legislative & Policy",
-      "trigger": "/legislative-eu:impact-assessment",
+      "trigger": "/legislative-eu:impact-assessment <brief>",
       "tags": [
         "impact assessment",
         "IA",
@@ -2351,7 +2351,7 @@
       "description": "Use when preparing, reviewing, or advising on Impact Assessments (IAs), Inception Impact Assessments (IIAs), regulatory evaluations, REFIT assessments, or fitness checks within the European Commission's Better Regulation framework. Covers problem definition, baseline scenario, policy options design, proportionality analysis, cost-benefit analysis (CBA), multi-criteria analysis (MCA), SME test, fundamental rights screening, subsidiarity check, stakeholder consultation design, and Regulatory Scrutiny Board (RSB) submission requirements. Also covers Staff Working Documents (SWDs) drafting and IA executive summaries.",
       "plugin": "legislative-eu",
       "category": "Legislative & Policy",
-      "trigger": "/legislative-eu:impact-assessment-analyst",
+      "trigger": "/legislative-eu:impact-assessment-analyst <brief>",
       "tags": [
         "impact assessment",
         "IA",
@@ -2525,7 +2525,7 @@
       "description": "Use when performing the core duties of a European Commission policy officer (Administrator, AD grade). Covers dossier management from inception to adoption: drafting policy documents (communications, working papers, options papers, briefing notes), preparing and representing the Commission in Council working party meetings and expert groups, managing inter-service consultation contributions, drafting contributions to impact assessments, stakeholder engagement, and monitoring transposition and implementation of legislation in the area of responsibility. Also covers preparation of Commissioner briefings, speaking notes, answering Parliamentary Questions, and contributing to the Annual Management Plan.",
       "plugin": "legislative-eu",
       "category": "Legislative & Policy",
-      "trigger": "/legislative-eu:policy-officer",
+      "trigger": "/legislative-eu:policy-officer <brief>",
       "tags": [
         "policy officer",
         "dossier",
@@ -2584,7 +2584,7 @@
       "description": "Use when running the mandatory subsidiarity and proportionality test on a draft Commission legislative proposal under Article 5(3)–(4) TEU and Protocol No. 2 on the application of the principles of subsidiarity and proportionality. Produces a structured subsidiarity and proportionality assessment suitable for inclusion in the Impact Assessment (SWD) or Explanatory Memorandum, compliant with the RSB (Regulatory Scrutiny Board) quality checklist and the Better Regulation Guidelines. Also produces the subsidiarity grid for Protocol No. 2 reasoned opinion risk assessment.",
       "plugin": "legislative-eu",
       "category": "Legislative & Policy",
-      "trigger": "/legislative-eu:subsidiarity-checker",
+      "trigger": "/legislative-eu:subsidiarity-checker <brief>",
       "tags": [
         "subsidiarity",
         "proportionality",
@@ -2748,6 +2748,6 @@
     "disclaimer": "Independent project — not an official European Commission product and not affiliated with the European Commission or any EU institution in any way.",
     "website": "https://www.montoyer.com",
     "website_description": "AI agents and prompts for the Brussels quarter",
-    "updated": "04/06/2026"
+    "updated": "07/06/2026"
   }
 }
