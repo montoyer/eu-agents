@@ -1,30 +1,109 @@
 {
-  "id": "legislative-eu",
-  "name": "Legislative & Policy",
+  "name": "legislative-eu",
   "version": "1.0.0",
   "description": "Policy drafting, legislative procedures, impact assessment, comitology, and inter-service consultation.",
   "claude_md": "CLAUDE.md",
   "skills": [
-    { "id": "cold-start-interview",   "path": "skills/cold-start-interview/SKILL.md",   "description": "Personalise this plugin to your DG, dossier, and working language" },
-    { "id": "policy-officer",         "path": "skills/policy-officer/SKILL.md",         "description": "Briefing notes, negotiating briefs, ISC contributions, options papers" },
-    { "id": "legislative-drafter",    "path": "skills/legislative-drafter/SKILL.md",    "description": "Draft EU regulations, directives, and decisions to Joint Practical Guide standards" },
-    { "id": "lawyer-secgen",          "path": "skills/lawyer-secgen/SKILL.md",          "description": "ISC legal quality review, subsidiarity and proportionality analysis" },
-    { "id": "comitology-officer",     "path": "skills/comitology-officer/SKILL.md",     "description": "Delegated and implementing acts, committee procedures, EP objections" },
-    { "id": "impact-assessment-analyst", "path": "skills/impact-assessment-analyst/SKILL.md", "description": "Better Regulation impact assessments — problem definition, CBA, SME test" },
-    { "id": "economist",              "path": "skills/economist/SKILL.md",              "description": "Economic analysis, market failure assessment, European Semester data" },
-    { "id": "isc-contributor",        "path": "skills/isc-contributor/SKILL.md",        "description": "Draft ISC contributions — Agreement, Reservations, or Opposition with textual amendments" },
-    { "id": "pq-responder",           "path": "skills/pq-responder/SKILL.md",           "description": "Draft EP Parliamentary Question responses (Rules 138 and 139) with clearance tracking" },
-    { "id": "subsidiarity-checker",   "path": "skills/subsidiarity-checker/SKILL.md",   "description": "Run Art. 5(3)–(4) TEU subsidiarity and proportionality test with Protocol No. 2 risk" },
-    { "id": "trilogue-position-tracker", "path": "skills/trilogue-position-tracker/SKILL.md", "description": "Maintain four-column document, track positions, draft pre-round mandate briefs" },
-    { "id": "impact-assessment",        "path": "skills/impact-assessment/SKILL.md",        "description": "Full SWD impact assessment — problem definition, options, CBA, SME test, DNSH, comparison matrix" },
-    { "id": "legislative-proposal",     "path": "skills/legislative-proposal/SKILL.md",     "description": "Draft complete EU regulation or directive — legal basis, recitals, operative articles, EM" },
-    { "id": "treaty-check",             "path": "skills/treaty-check/SKILL.md",             "description": "Legal basis, subsidiarity, proportionality, and Charter rights review — mirrors CLS check" },
-    { "id": "better-regulation",        "path": "skills/better-regulation/SKILL.md",        "description": "REFIT regulatory fitness check — five criteria, overall score, simplification opportunities" },
-    { "id": "consultation",                  "path": "skills/consultation/SKILL.md",                  "description": "Simulate or draft a 12-week public consultation — stakeholder positions, synthesis, Commission response" },
-    { "id": "delegated-acts-drafter",        "path": "skills/delegated-acts-drafter/SKILL.md",        "description": "Art. 290 TFEU delegated acts — enabling clause check, DA vs IA classification, scrutiny period, draft act" },
-    { "id": "fundamental-rights-assessor",   "path": "skills/fundamental-rights-assessor/SKILL.md",   "description": "Charter of Fundamental Rights full assessment — Art. 51 scope, Art. 52(1) limitation test, all 54 articles" },
-    { "id": "regulatory-impact-quantifier",  "path": "skills/regulatory-impact-quantifier/SKILL.md",  "description": "CBA/CEA quantification — compliance costs, SME test, OIOO, benefit monetisation, RSB-ready tables" },
-    { "id": "policy-cycle",                  "path": "skills/policy-cycle/SKILL.md",                  "description": "Full EU policy lifecycle — agenda-setting through evaluation, all 7 phases, Better Regulation methodology" }
+    {
+      "id": "cold-start-interview",
+      "path": "skills/cold-start-interview/SKILL.md",
+      "description": "Personalise this plugin to your DG, dossier, and working language"
+    },
+    {
+      "id": "policy-officer",
+      "path": "skills/policy-officer/SKILL.md",
+      "description": "Briefing notes, negotiating briefs, ISC contributions, options papers"
+    },
+    {
+      "id": "legislative-drafter",
+      "path": "skills/legislative-drafter/SKILL.md",
+      "description": "Draft EU regulations, directives, and decisions to Joint Practical Guide standards"
+    },
+    {
+      "id": "lawyer-secgen",
+      "path": "skills/lawyer-secgen/SKILL.md",
+      "description": "ISC legal quality review, subsidiarity and proportionality analysis"
+    },
+    {
+      "id": "comitology-officer",
+      "path": "skills/comitology-officer/SKILL.md",
+      "description": "Delegated and implementing acts, committee procedures, EP objections"
+    },
+    {
+      "id": "impact-assessment-analyst",
+      "path": "skills/impact-assessment-analyst/SKILL.md",
+      "description": "Better Regulation impact assessments — problem definition, CBA, SME test"
+    },
+    {
+      "id": "economist",
+      "path": "skills/economist/SKILL.md",
+      "description": "Economic analysis, market failure assessment, European Semester data"
+    },
+    {
+      "id": "isc-contributor",
+      "path": "skills/isc-contributor/SKILL.md",
+      "description": "Draft ISC contributions — Agreement, Reservations, or Opposition with textual amendments"
+    },
+    {
+      "id": "pq-responder",
+      "path": "skills/pq-responder/SKILL.md",
+      "description": "Draft EP Parliamentary Question responses (Rules 138 and 139) with clearance tracking"
+    },
+    {
+      "id": "subsidiarity-checker",
+      "path": "skills/subsidiarity-checker/SKILL.md",
+      "description": "Run Art. 5(3)–(4) TEU subsidiarity and proportionality test with Protocol No. 2 risk"
+    },
+    {
+      "id": "trilogue-position-tracker",
+      "path": "skills/trilogue-position-tracker/SKILL.md",
+      "description": "Maintain four-column document, track positions, draft pre-round mandate briefs"
+    },
+    {
+      "id": "impact-assessment",
+      "path": "skills/impact-assessment/SKILL.md",
+      "description": "Full SWD impact assessment — problem definition, options, CBA, SME test, DNSH, comparison matrix"
+    },
+    {
+      "id": "legislative-proposal",
+      "path": "skills/legislative-proposal/SKILL.md",
+      "description": "Draft complete EU regulation or directive — legal basis, recitals, operative articles, EM"
+    },
+    {
+      "id": "treaty-check",
+      "path": "skills/treaty-check/SKILL.md",
+      "description": "Legal basis, subsidiarity, proportionality, and Charter rights review — mirrors CLS check"
+    },
+    {
+      "id": "better-regulation",
+      "path": "skills/better-regulation/SKILL.md",
+      "description": "REFIT regulatory fitness check — five criteria, overall score, simplification opportunities"
+    },
+    {
+      "id": "consultation",
+      "path": "skills/consultation/SKILL.md",
+      "description": "Simulate or draft a 12-week public consultation — stakeholder positions, synthesis, Commission response"
+    },
+    {
+      "id": "delegated-acts-drafter",
+      "path": "skills/delegated-acts-drafter/SKILL.md",
+      "description": "Art. 290 TFEU delegated acts — enabling clause check, DA vs IA classification, scrutiny period, draft act"
+    },
+    {
+      "id": "fundamental-rights-assessor",
+      "path": "skills/fundamental-rights-assessor/SKILL.md",
+      "description": "Charter of Fundamental Rights full assessment — Art. 51 scope, Art. 52(1) limitation test, all 54 articles"
+    },
+    {
+      "id": "regulatory-impact-quantifier",
+      "path": "skills/regulatory-impact-quantifier/SKILL.md",
+      "description": "CBA/CEA quantification — compliance costs, SME test, OIOO, benefit monetisation, RSB-ready tables"
+    },
+    {
+      "id": "policy-cycle",
+      "path": "skills/policy-cycle/SKILL.md",
+      "description": "Full EU policy lifecycle — agenda-setting through evaluation, all 7 phases, Better Regulation methodology"
+    }
   ],
   "hooks": {
     "post_output": "hooks/post-output-disclaimer.sh",
@@ -35,5 +114,6 @@
     "eur-lex",
     "eurostat",
     "comitology-register"
-  ]
+  ],
+  "displayName": "Legislative & Policy"
 }

@@ -1,23 +1,74 @@
 {
-  "id": "simulation-eu",
-  "name": "EU Institutional Simulation",
+  "name": "simulation-eu",
   "version": "1.0.0",
   "description": "Multi-agent simulation of EU institutional processes: Commissioner personas, College deliberation, inter-service consultation, trilogue, and the full Ordinary Legislative Procedure.",
   "claude_md": "CLAUDE.md",
   "skills": [
-    { "id": "commissioner",              "path": "skills/commissioner/SKILL.md",              "description": "Invoke any of 21 Commissioner personas — speaks from treaty mandate, priorities, tensions" },
-    { "id": "college-deliberation",      "path": "skills/college-deliberation/SKILL.md",      "description": "Full College of Commissioners meeting — all 21 speak, President calls vote, outcome recorded" },
-    { "id": "inter-service-consultation","path": "skills/inter-service-consultation/SKILL.md", "description": "ISC round — lead DG circulates, all affected DGs respond, synthesis note produced" },
-    { "id": "trilogue",                  "path": "skills/trilogue/SKILL.md",                  "description": "Inter-institutional trilogue — EP/Council/Commission negotiate via four-column document" },
-    { "id": "legislative-cycle",         "path": "skills/legislative-cycle/SKILL.md",         "description": "Full OLP from Commission initiative to OJ publication — chains all six phases" },
-    { "id": "european-parliament",       "path": "skills/european-parliament/SKILL.md",       "description": "EP counter-party agent — committee, rapporteur, group dynamics, amendments, plenary vote" },
-    { "id": "council-eu",          "path": "skills/council-eu/SKILL.md",          "description": "Council counter-party agent — configuration, QMV arithmetic, general approach, Presidency mandate" },
-    { "id": "advocate-general",    "path": "skills/advocate-general/SKILL.md",    "description": "AG Opinion simulation — legal question analysis, party arguments, proposed ruling, Art. 252 TFEU independence" },
-    { "id": "council-presidency",  "path": "skills/council-presidency/SKILL.md",  "description": "Council Presidency chair — compromise texts, non-papers, QMV tracking, general approach, trilogue mandate" },
-    { "id": "mandate-conflict",    "path": "skills/mandate-conflict/SKILL.md",    "description": "Conflict map across all 21 Commissioner portfolios — identifies structurally guaranteed mandate clashes with treaty basis and severity rating" },
-    { "id": "red-team-college",    "path": "skills/red-team-college/SKILL.md",    "description": "Token-efficient College stress test — runs all 21 Commissioners, returns only SEVERE objections and a College adoptability verdict" },
-    { "id": "subsidiarity-stress", "path": "skills/subsidiarity-stress/SKILL.md", "description": "Tests subsidiarity justification against 5 member-state configurations — finds where the necessity argument fails and assesses yellow card risk" },
-    { "id": "timeline",            "path": "skills/timeline/SKILL.md",            "description": "OLP timeline with blocking dependencies, QMV arithmetic, and trilogue risk points for a proposed regulation or directive" }
+    {
+      "id": "commissioner",
+      "path": "skills/commissioner/SKILL.md",
+      "description": "Invoke any of 21 Commissioner personas — speaks from treaty mandate, priorities, tensions"
+    },
+    {
+      "id": "college-deliberation",
+      "path": "skills/college-deliberation/SKILL.md",
+      "description": "Full College of Commissioners meeting — all 21 speak, President calls vote, outcome recorded"
+    },
+    {
+      "id": "inter-service-consultation",
+      "path": "skills/inter-service-consultation/SKILL.md",
+      "description": "ISC round — lead DG circulates, all affected DGs respond, synthesis note produced"
+    },
+    {
+      "id": "trilogue",
+      "path": "skills/trilogue/SKILL.md",
+      "description": "Inter-institutional trilogue — EP/Council/Commission negotiate via four-column document"
+    },
+    {
+      "id": "legislative-cycle",
+      "path": "skills/legislative-cycle/SKILL.md",
+      "description": "Full OLP from Commission initiative to OJ publication — chains all six phases"
+    },
+    {
+      "id": "european-parliament",
+      "path": "skills/european-parliament/SKILL.md",
+      "description": "EP counter-party agent — committee, rapporteur, group dynamics, amendments, plenary vote"
+    },
+    {
+      "id": "council-eu",
+      "path": "skills/council-eu/SKILL.md",
+      "description": "Council counter-party agent — configuration, QMV arithmetic, general approach, Presidency mandate"
+    },
+    {
+      "id": "advocate-general",
+      "path": "skills/advocate-general/SKILL.md",
+      "description": "AG Opinion simulation — legal question analysis, party arguments, proposed ruling, Art. 252 TFEU independence"
+    },
+    {
+      "id": "council-presidency",
+      "path": "skills/council-presidency/SKILL.md",
+      "description": "Council Presidency chair — compromise texts, non-papers, QMV tracking, general approach, trilogue mandate"
+    },
+    {
+      "id": "mandate-conflict",
+      "path": "skills/mandate-conflict/SKILL.md",
+      "description": "Conflict map across all 21 Commissioner portfolios — identifies structurally guaranteed mandate clashes with treaty basis and severity rating"
+    },
+    {
+      "id": "red-team-college",
+      "path": "skills/red-team-college/SKILL.md",
+      "description": "Token-efficient College stress test — runs all 21 Commissioners, returns only SEVERE objections and a College adoptability verdict"
+    },
+    {
+      "id": "subsidiarity-stress",
+      "path": "skills/subsidiarity-stress/SKILL.md",
+      "description": "Tests subsidiarity justification against 5 member-state configurations — finds where the necessity argument fails and assesses yellow card risk"
+    },
+    {
+      "id": "timeline",
+      "path": "skills/timeline/SKILL.md",
+      "description": "OLP timeline with blocking dependencies, QMV arithmetic, and trilogue risk points for a proposed regulation or directive"
+    }
   ],
   "hooks": {
     "post_output": "hooks/post-output-disclaimer.sh"
@@ -28,5 +79,6 @@
     "knowledge/institutions",
     "knowledge/agents",
     "knowledge/workflows"
-  ]
+  ],
+  "displayName": "EU Institutional Simulation"
 }

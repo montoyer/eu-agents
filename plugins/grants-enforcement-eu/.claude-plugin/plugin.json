@@ -1,25 +1,84 @@
 {
-  "id": "grants-enforcement-eu",
-  "name": "Grants, Procurement & Enforcement",
+  "name": "grants-enforcement-eu",
   "version": "1.0.0",
   "description": "Horizon Europe grant management, infringement procedures (Arts. 258–260 TFEU), and public procurement under the Financial Regulation.",
   "claude_md": "CLAUDE.md",
   "skills": [
-    { "id": "cold-start-interview",  "path": "skills/cold-start-interview/SKILL.md",  "description": "Personalise this plugin to your programme, member state portfolio, or procurement type" },
-    { "id": "grant-manager",         "path": "skills/grant-manager/SKILL.md",         "description": "Horizon Europe MGA management, payment assessment, financial corrections" },
-    { "id": "infringement-officer",  "path": "skills/infringement-officer/SKILL.md",  "description": "Arts. 258–260 TFEU procedure — EU Pilot, LFN, RO, CJEU referral, Art. 260 penalties" },
-    { "id": "procurement-expert",    "path": "skills/procurement-expert/SKILL.md",    "description": "FR 2018/1046 procurement — framework contracts, tender evaluation, award decisions" },
-    { "id": "lfn-drafter",          "path": "skills/lfn-drafter/SKILL.md",          "description": "Draft Art. 258 TFEU Letters of Formal Notice — non-transposition, incorrect transposition, misapplication" },
-    { "id": "transposition-tracker","path": "skills/transposition-tracker/SKILL.md","description": "Track and assess directive transposition across 27 MS — status table, conformity, escalation" },
-    { "id": "infringement",             "path": "skills/infringement/SKILL.md",             "description": "Art. 258–260 TFEU infringement assessment — type classification, procedural stage, penalty estimate" },
-    { "id": "reasoned-opinion-drafter", "path": "skills/reasoned-opinion-drafter/SKILL.md", "description": "Art. 258(2) TFEU Reasoned Opinion — rebuttal of member state observations, maintained allegations, RO drafting" },
-    { "id": "grant-audit-advisor",      "path": "skills/grant-audit-advisor/SKILL.md",      "description": "Grant audit preparation and response — ECA/IAS on-the-spot checks, contradictory procedure, rebuttal notes" },
-    { "id": "grant-amendment-officer",  "path": "skills/grant-amendment-officer/SKILL.md",  "description": "Grant agreement amendments — budget reallocation, partner withdrawal, period extension, force majeure" },
-    { "id": "tender-evaluator",         "path": "skills/tender-evaluator/SKILL.md",         "description": "Tender evaluation — exclusion/selection/award criteria scoring, ALT assessment, evaluation report, debrief letters" },
-    { "id": "olaf-referral-advisor",    "path": "skills/olaf-referral-advisor/SKILL.md",    "description": "OLAF referral — fraud indicators, Art. 8 Reg. 883/2013 notification, payment suspension, parallel procedure rules" },
-    { "id": "direct-award-advisor",       "path": "skills/direct-award-advisor/SKILL.md",       "description": "Direct award justification — urgency, sole source, follow-on services, FR Art. 164 exception assessment" },
-    { "id": "eppo-jurisdiction-advisor",  "path": "skills/eppo-jurisdiction-advisor/SKILL.md",  "description": "EPPO jurisdiction — PIF offences, Reg. 2017/1939, OLAF-EPPO referral, parallel administrative procedure management" },
-    { "id": "cohesion-fund-manager",      "path": "skills/cohesion-fund-manager/SKILL.md",      "description": "Cohesion funds shared management — CPR 2021/1060, financial corrections, n+3 decommitment, closure, audit response" }
+    {
+      "id": "cold-start-interview",
+      "path": "skills/cold-start-interview/SKILL.md",
+      "description": "Personalise this plugin to your programme, member state portfolio, or procurement type"
+    },
+    {
+      "id": "grant-manager",
+      "path": "skills/grant-manager/SKILL.md",
+      "description": "Horizon Europe MGA management, payment assessment, financial corrections"
+    },
+    {
+      "id": "infringement-officer",
+      "path": "skills/infringement-officer/SKILL.md",
+      "description": "Arts. 258–260 TFEU procedure — EU Pilot, LFN, RO, CJEU referral, Art. 260 penalties"
+    },
+    {
+      "id": "procurement-expert",
+      "path": "skills/procurement-expert/SKILL.md",
+      "description": "FR 2018/1046 procurement — framework contracts, tender evaluation, award decisions"
+    },
+    {
+      "id": "lfn-drafter",
+      "path": "skills/lfn-drafter/SKILL.md",
+      "description": "Draft Art. 258 TFEU Letters of Formal Notice — non-transposition, incorrect transposition, misapplication"
+    },
+    {
+      "id": "transposition-tracker",
+      "path": "skills/transposition-tracker/SKILL.md",
+      "description": "Track and assess directive transposition across 27 MS — status table, conformity, escalation"
+    },
+    {
+      "id": "infringement",
+      "path": "skills/infringement/SKILL.md",
+      "description": "Art. 258–260 TFEU infringement assessment — type classification, procedural stage, penalty estimate"
+    },
+    {
+      "id": "reasoned-opinion-drafter",
+      "path": "skills/reasoned-opinion-drafter/SKILL.md",
+      "description": "Art. 258(2) TFEU Reasoned Opinion — rebuttal of member state observations, maintained allegations, RO drafting"
+    },
+    {
+      "id": "grant-audit-advisor",
+      "path": "skills/grant-audit-advisor/SKILL.md",
+      "description": "Grant audit preparation and response — ECA/IAS on-the-spot checks, contradictory procedure, rebuttal notes"
+    },
+    {
+      "id": "grant-amendment-officer",
+      "path": "skills/grant-amendment-officer/SKILL.md",
+      "description": "Grant agreement amendments — budget reallocation, partner withdrawal, period extension, force majeure"
+    },
+    {
+      "id": "tender-evaluator",
+      "path": "skills/tender-evaluator/SKILL.md",
+      "description": "Tender evaluation — exclusion/selection/award criteria scoring, ALT assessment, evaluation report, debrief letters"
+    },
+    {
+      "id": "olaf-referral-advisor",
+      "path": "skills/olaf-referral-advisor/SKILL.md",
+      "description": "OLAF referral — fraud indicators, Art. 8 Reg. 883/2013 notification, payment suspension, parallel procedure rules"
+    },
+    {
+      "id": "direct-award-advisor",
+      "path": "skills/direct-award-advisor/SKILL.md",
+      "description": "Direct award justification — urgency, sole source, follow-on services, FR Art. 164 exception assessment"
+    },
+    {
+      "id": "eppo-jurisdiction-advisor",
+      "path": "skills/eppo-jurisdiction-advisor/SKILL.md",
+      "description": "EPPO jurisdiction — PIF offences, Reg. 2017/1939, OLAF-EPPO referral, parallel administrative procedure management"
+    },
+    {
+      "id": "cohesion-fund-manager",
+      "path": "skills/cohesion-fund-manager/SKILL.md",
+      "description": "Cohesion funds shared management — CPR 2021/1060, financial corrections, n+3 decommitment, closure, audit response"
+    }
   ],
   "hooks": {
     "post_output": "hooks/post-output-disclaimer.sh"
@@ -29,5 +88,6 @@
     "ted-ojeu",
     "f-and-t-portal",
     "chap"
-  ]
+  ],
+  "displayName": "Grants, Procurement & Enforcement"
 }

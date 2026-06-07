@@ -1,6 +1,7 @@
 {
   "$schema": "https://claude.ai/schemas/marketplace.json",
-  "name": "Agents for EU",
+  "name": "eu-agents",
+  "displayName": "Agents for EU",
   "description": "EU Commission agent plugins — 30,000 staff, 21 Commissioners, 70 years of institutional knowledge, now running on your laptop.",
   "owner": {
     "name": "montoyer",
