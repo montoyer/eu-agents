@@ -24,6 +24,15 @@ Skills live in `plugins/` as SKILL.md files and are invoked as slash commands. E
 
 See `knowledge/commissioners/` for all 21 portfolios.
 
+### Simulation support skills (eu-simulation plugin)
+
+```
+/coreper                         — COREPER I/II ambassador negotiation and mandate formation
+/qmv-calculator                  — Qualified majority voting arithmetic and blocking minority check
+/advocate-general                — CJEU Advocate General opinion (preliminary ruling, annulment)
+/council-presidency               — Rotating Presidency compromise text and agenda management
+```
+
 ### Workflow skills (eu-legislative plugin)
 
 Single-agent procedural tools that follow a fixed structure and produce a defined output:
@@ -41,27 +50,98 @@ Single-agent procedural tools that follow a fixed structure and produce a define
 Open-ended specialist personas. Adapt to whatever the user asks within their mandate:
 
 ```
-/policy-officer        — Commission policy officer (briefing notes, WP negotiations, ISC)
-/legislative-drafter   — Legislative drafter (regulations, directives, OLP drafts)
-/lawyer-secgen         — SecGen legal quality reviewer (subsidiarity, JPG compliance)
-/comitology-officer    — Comitology procedure assessment
-/impact-assessment-analyst — Impact assessment specialist persona
-/economist             — Economic analysis and market failure assessment
+// Legislative & Policy (eu-legislative)
+/policy-officer              — Commission policy officer (briefing notes, WP negotiations, ISC)
+/legislative-drafter         — Legislative drafter (regulations, directives, OLP drafts)
+/lawyer-secgen               — SecGen legal quality reviewer (subsidiarity, JPG compliance)
+/comitology-officer          — Comitology procedure assessment
+/impact-assessment-analyst   — Impact assessment specialist persona
+/economist                   — Economic analysis and market failure assessment
+/isc-contributor             — Inter-service consultation contributor (DG position paper)
+/pq-responder                — Parliamentary Question answer drafting
+/subsidiarity-checker        — Subsidiarity and proportionality assessment
+/trilogue-position-tracker   — Track EP/Council positions across trilogue rounds
+/delegated-acts-drafter      — Draft delegated acts under Art. 290 TFEU with empowerment analysis
+/fundamental-rights-assessor — Charter of Fundamental Rights compatibility check
+/regulatory-impact-quantifier — Quantify regulatory costs and benefits for impact assessments
+/policy-cycle                — Full policy cycle management from agenda-setting to evaluation
+
+// Competition & Legal Service (eu-competition)
 /lawyer-competition-antitrust — Antitrust analysis (Arts. 101–102 TFEU)
-/lawyer-state-aid      — State aid analysis (Arts. 107–109 TFEU)
-/lawyer-legal-service  — Legal Service opinion and litigation
-/state-aid-review      — State aid four-limb test and compatibility assessment
-/infringement          — Infringement procedure assessment (Arts. 258–260 TFEU)
-/grant-manager         — Horizon Europe grant management
-/procurement-expert    — Public procurement
-/head-of-unit          — Unit management and staff operations
-/trade-defence-investigator — Anti-dumping, anti-subsidy, safeguards
-/data-analyst          — Eurostat data extraction and scoreboard design
-/communication-officer — Press releases, speeches, lines to take
-/dpo                   — Data Protection Officer (EUDPR threshold, DPIA sign-off, Art. 40 referral)
-/it-project-manager    — IT architecture, data flows, processors, AI module documentation (DPIA)
-/it-security           — CIA threat model, TIA for non-EU cloud/AI, residual risk (DPIA)
-/legal-officer         — Legal basis Art. 5(1) EUDPR, necessity, proportionality, retention (DPIA)
+/lawyer-state-aid            — State aid analysis (Arts. 107–109 TFEU)
+/lawyer-legal-service        — Legal Service opinion and litigation
+/state-aid-review            — State aid four-limb test and compatibility assessment
+/market-definer              — Relevant market definition (product and geographic)
+/gber-screener               — GBER block exemption eligibility screening
+/merger-screener             — EUMR merger screening: thresholds, referral, Phase I/II assessment
+/dawn-raid-advisor           — Art. 20–21 Regulation 1/2003 dawn raid rights and obligations
+/eu-liability-advisor        — Non-contractual liability (Art. 340 TFEU), Francovich, damages claims
+
+// Institutional Management (eu-institutional-management)
+/head-of-unit                — Unit management and staff operations
+/deputy-head-of-unit         — Deputy HoU: unit coordination, staff cover, workflow management
+/assistant-hod               — Assistant to Head of Unit: agenda, ARES, correspondence, action points
+/hr-contract-manager-ta      — TA contract management under CEOS: selection, renewal, reclassification
+/financial-officer           — Financial regulation compliance, payment authorisation, ex-ante control
+/pmo-pension-specialist      — PMO pension rights, JSIS, allowances under Staff Regulations
+/cdr-drafter                 — Career Development Report drafting and appraisal procedure
+/amp-drafter                 — Annual Management Plan drafting and objective-setting
+/aar-drafter                 — Annual Activity Report drafting and performance reporting
+/selection-board             — Selection board procedures, reserve list management, EPSO liaison
+/access-to-documents         — Regulation 1049/2001 access-to-documents requests and exceptions
+/underperformance-advisor    — Underperformance procedures under Staff Regulations
+/budget-planner              — DG budget planning, commitment/payment appropriations, BIA
+
+// Trade Defence (eu-trade)
+/trade-defence-investigator  — Anti-dumping, anti-subsidy, safeguards
+/dumping-margin-calculator   — Anti-dumping margin calculation methodology
+/sanctions-screener          — EU sanctions compliance screening and derogation assessment
+
+// Grants, Procurement & Enforcement (eu-grants-enforcement)
+/grant-manager               — Horizon Europe grant management
+/infringement                — Infringement procedure assessment (Arts. 258–260 TFEU)
+/infringement-officer        — Infringement case management and member-state dialogue
+/procurement-expert          — Public procurement
+/lfn-drafter                 — Letter of Formal Notice drafting (Art. 258 TFEU, first step)
+/transposition-tracker       — Directive transposition monitoring across member states
+/reasoned-opinion-drafter    — Infringement reasoned opinion drafting (Art. 258 TFEU)
+/grant-audit-advisor         — Grant audit response, error rates, financial corrections
+/grant-amendment-officer     — Grant agreement amendment procedures
+/tender-evaluator            — Tender evaluation methodology and scoring grids
+/olaf-referral-advisor       — OLAF referral assessment and case opening criteria
+/direct-award-advisor        — Direct award justification and single tender procedure
+/eppo-jurisdiction-advisor   — EPPO jurisdiction and admissibility assessment
+/cohesion-fund-manager       — ESIF/cohesion fund management, managing authority obligations
+
+// Data & Communication (eu-data-communication)
+/data-analyst                — Eurostat data extraction and scoreboard design
+/communication-officer       — Press releases, speeches, lines to take
+/lines-to-take-drafter       — Lines to take for press briefings and spokesperson responses
+/digit-project-manager       — DIGIT IT project management, ISA², interoperability
+/data-steward                — Data governance, metadata, data quality, open data publication
+/cybersecurity-officer       — NIS2 compliance, CERT-EU liaison, incident response
+/transparency-officer        — Transparency register, lobby meetings, conflict of interest
+
+// Data Protection & Privacy (eu-privacy)
+/dpo                         — Data Protection Officer (EUDPR threshold, DPIA sign-off, Art. 40 referral)
+/it-project-manager          — IT architecture, data flows, processors, AI module documentation (DPIA)
+/it-security                 — CIA threat model, TIA for non-EU cloud/AI, residual risk (DPIA)
+/legal-officer               — Legal basis Art. 5(1) EUDPR, necessity, proportionality, retention (DPIA)
+/it-security-plan            — IT Security Plan drafting, ISO 27001/NIS2 compliance
+/data-breach-officer         — Art. 34–35 EUDPR data breach notification and register
+/ropa-drafter                — Art. 31 EUDPR Record of Processing Activities
+/ai-act-officer              — AI Act risk classification, FRIA, technical documentation
+/tia-expert                  — Transfer Impact Assessment for third-country data transfers
+/retention-schedule          — Art. 25 EUDPR retention schedule and deletion procedures
+/privacy-notice-drafter      — Arts. 15–16 EUDPR compliant privacy notices
+/data-subject-rights         — Data subject rights responses, deadlines, exemptions
+/edps-complaint-handler      — EDPS supervisory inquiry response and remedial action
+/ai-governance-officer       — AI system register, model cards, governance board ToR
+
+// EU Careers & EPSO (eu-careers)
+/epso-grade                  — Estimate entry grade, step, and net salary for a competition type
+/epso-presentation           — Coach and critique a 10-minute Assessment Centre oral presentation
+/epso-offer                  — Analyse a job offer letter: grade/step, remuneration, contract obligations
 ```
 
 ### DPIA workflow skill (eu-privacy plugin)
@@ -145,14 +225,14 @@ These require all 21 Commissioner agents and are structurally impossible with a 
 
 | Plugin ID | Domain | Key skills |
 |---|---|---|
-| `eu-legislative` | Legislative & Policy | `policy-officer`, `legislative-drafter`, `lawyer-secgen`, `impact-assessment`, `legislative-proposal`, `treaty-check`, `better-regulation`, `consultation`, `comitology-officer`, `economist`, `isc-contributor`, `pq-responder`, `subsidiarity-checker`, `trilogue-position-tracker` |
-| `eu-competition` | Competition & Legal Service | `lawyer-competition-antitrust`, `lawyer-state-aid`, `lawyer-legal-service`, `state-aid-review`, `market-definer`, `gber-screener` |
-| `eu-institutional-management` | Institutional Management | `head-of-unit`, `deputy-head-of-unit`, `assistant-hod`, `hr-contract-manager-ta`, `financial-officer`, `pmo-pension-specialist`, `cdr-drafter` |
-| `eu-trade` | Trade Defence | `trade-defence-investigator` |
-| `eu-grants-enforcement` | Grants, Procurement & Enforcement | `grant-manager`, `infringement-officer`, `infringement`, `procurement-expert`, `lfn-drafter`, `transposition-tracker` |
+| `eu-legislative` | Legislative & Policy | `policy-officer`, `legislative-drafter`, `lawyer-secgen`, `impact-assessment`, `legislative-proposal`, `treaty-check`, `better-regulation`, `consultation`, `comitology-officer`, `economist`, `isc-contributor`, `pq-responder`, `subsidiarity-checker`, `trilogue-position-tracker`, `delegated-acts-drafter`, `fundamental-rights-assessor`, `regulatory-impact-quantifier`, `policy-cycle` |
+| `eu-competition` | Competition & Legal Service | `lawyer-competition-antitrust`, `lawyer-state-aid`, `lawyer-legal-service`, `state-aid-review`, `market-definer`, `gber-screener`, `merger-screener`, `dawn-raid-advisor`, `eu-liability-advisor` |
+| `eu-institutional-management` | Institutional Management | `head-of-unit`, `deputy-head-of-unit`, `assistant-hod`, `hr-contract-manager-ta`, `financial-officer`, `pmo-pension-specialist`, `cdr-drafter`, `amp-drafter`, `aar-drafter`, `selection-board`, `access-to-documents`, `underperformance-advisor`, `budget-planner` |
+| `eu-trade` | Trade Defence | `trade-defence-investigator`, `dumping-margin-calculator`, `sanctions-screener` |
+| `eu-grants-enforcement` | Grants, Procurement & Enforcement | `grant-manager`, `infringement-officer`, `infringement`, `procurement-expert`, `lfn-drafter`, `transposition-tracker`, `reasoned-opinion-drafter`, `grant-audit-advisor`, `grant-amendment-officer`, `tender-evaluator`, `olaf-referral-advisor`, `direct-award-advisor`, `eppo-jurisdiction-advisor`, `cohesion-fund-manager` |
 | `eu-data-communication` | Data & Communication | `data-analyst`, `communication-officer`, `lines-to-take-drafter`, `digit-project-manager`, `data-steward`, `cybersecurity-officer`, `transparency-officer` |
-| `eu-simulation` | EU Institutional Simulation | `commissioner`, `college-deliberation`, `inter-service-consultation`, `trilogue`, `legislative-cycle`, `european-parliament`, `council-eu`, `mandate-conflict`, `red-team-college`, `subsidiarity-stress`, `timeline` |
-| `eu-privacy` | Data Protection & Privacy | `dpia`, `dpo`, `it-project-manager`, `it-security`, `legal-officer` |
+| `eu-simulation` | EU Institutional Simulation | `commissioner`, `college-deliberation`, `inter-service-consultation`, `trilogue`, `legislative-cycle`, `european-parliament`, `council-eu`, `coreper`, `qmv-calculator`, `advocate-general`, `council-presidency`, `mandate-conflict`, `red-team-college`, `subsidiarity-stress`, `timeline` |
+| `eu-privacy` | Data Protection & Privacy | `dpia`, `dpo`, `it-project-manager`, `it-security`, `legal-officer`, `it-security-plan`, `data-breach-officer`, `ropa-drafter`, `ai-act-officer`, `tia-expert`, `retention-schedule`, `privacy-notice-drafter`, `data-subject-rights`, `edps-complaint-handler`, `ai-governance-officer` |
 | `eu-careers` | EU Careers & EPSO Preparation | `epso-grade`, `epso-presentation`, `epso-offer` |
 
 ---
