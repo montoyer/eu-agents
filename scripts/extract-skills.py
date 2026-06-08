@@ -21,15 +21,15 @@ WORKFLOWS_DIR = REPO_ROOT / "knowledge" / "workflows"
 OUTPUT_FILE = REPO_ROOT / "site" / "prompts.json"
 
 PLUGIN_CATEGORIES = {
-    "legislative-eu": "Legislative & Policy",
-    "competition-eu": "Competition & Legal Service",
-    "institutional-management-eu": "Institutional Management",
-    "trade-eu": "Trade Defence",
-    "grants-enforcement-eu": "Grants, Procurement & Enforcement",
-    "data-communication-eu": "Data & Communication",
-    "simulation-eu": "EU Institutional Simulation",
-    "privacy-eu": "Data Protection & Privacy",
-    "careers-eu": "EU Careers & EPSO",
+    "eu-legislative": "Legislative & Policy",
+    "eu-competition": "Competition & Legal Service",
+    "eu-institutional-management": "Institutional Management",
+    "eu-trade": "Trade Defence",
+    "eu-grants-enforcement": "Grants, Procurement & Enforcement",
+    "eu-data-communication": "Data & Communication",
+    "eu-simulation": "EU Institutional Simulation",
+    "eu-privacy": "Data Protection & Privacy",
+    "eu-careers": "EU Careers & EPSO",
 }
 
 ACRONYMS = {
