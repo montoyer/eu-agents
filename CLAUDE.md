@@ -12,7 +12,7 @@ Skills live in `plugins/` as SKILL.md files and are invoked as slash commands. E
 
 ## How to invoke agents
 
-### Commissioner personas (simulation-eu plugin)
+### Commissioner personas (eu-simulation plugin)
 
 ```
 /commissioner president          — President of the European Commission
@@ -24,7 +24,7 @@ Skills live in `plugins/` as SKILL.md files and are invoked as slash commands. E
 
 See `knowledge/commissioners/` for all 21 portfolios.
 
-### Workflow skills (legislative-eu plugin)
+### Workflow skills (eu-legislative plugin)
 
 Single-agent procedural tools that follow a fixed structure and produce a defined output:
 
@@ -64,7 +64,7 @@ Open-ended specialist personas. Adapt to whatever the user asks within their man
 /legal-officer         — Legal basis Art. 5(1) EUDPR, necessity, proportionality, retention (DPIA)
 ```
 
-### DPIA workflow skill (privacy-eu plugin)
+### DPIA workflow skill (eu-privacy plugin)
 
 Produces a complete Art. 39 EUDPR DPIA by voicing five specialist roles in sequence:
 
@@ -72,7 +72,7 @@ Produces a complete Art. 39 EUDPR DPIA by voicing five specialist roles in seque
 /dpia "<processing activity>"  — Full DPIA: DPO threshold → IT-PM → Legal → IT Security → EDPS determination
 ```
 
-### Multi-agent simulation skills (simulation-eu plugin)
+### Multi-agent simulation skills (eu-simulation plugin)
 
 These voice multiple institutional actors in sequence:
 
@@ -85,7 +85,7 @@ These voice multiple institutional actors in sequence:
 /legislative-cycle             — Full OLP from Commission proposal to OJ publication
 ```
 
-### Compound analysis commands (simulation-eu plugin)
+### Compound analysis commands (eu-simulation plugin)
 
 These require all 21 Commissioner agents and are structurally impossible with a single-agent system:
 
@@ -145,15 +145,15 @@ These require all 21 Commissioner agents and are structurally impossible with a 
 
 | Plugin ID | Domain | Key skills |
 |---|---|---|
-| `legislative-eu` | Legislative & Policy | `policy-officer`, `legislative-drafter`, `lawyer-secgen`, `impact-assessment`, `legislative-proposal`, `treaty-check`, `better-regulation`, `consultation`, `comitology-officer`, `economist`, `isc-contributor`, `pq-responder`, `subsidiarity-checker`, `trilogue-position-tracker` |
-| `competition-eu` | Competition & Legal Service | `lawyer-competition-antitrust`, `lawyer-state-aid`, `lawyer-legal-service`, `state-aid-review`, `market-definer`, `gber-screener` |
-| `institutional-management-eu` | Institutional Management | `head-of-unit`, `deputy-head-of-unit`, `assistant-hod`, `hr-contract-manager-ta`, `financial-officer`, `pmo-pension-specialist`, `cdr-drafter` |
-| `trade-eu` | Trade Defence | `trade-defence-investigator` |
-| `grants-enforcement-eu` | Grants, Procurement & Enforcement | `grant-manager`, `infringement-officer`, `infringement`, `procurement-expert`, `lfn-drafter`, `transposition-tracker` |
-| `data-communication-eu` | Data & Communication | `data-analyst`, `communication-officer`, `lines-to-take-drafter`, `digit-project-manager`, `data-steward`, `cybersecurity-officer`, `transparency-officer` |
-| `simulation-eu` | EU Institutional Simulation | `commissioner`, `college-deliberation`, `inter-service-consultation`, `trilogue`, `legislative-cycle`, `european-parliament`, `council-eu`, `mandate-conflict`, `red-team-college`, `subsidiarity-stress`, `timeline` |
-| `privacy-eu` | Data Protection & Privacy | `dpia`, `dpo`, `it-project-manager`, `it-security`, `legal-officer` |
-| `careers-eu` | EU Careers & EPSO Preparation | `epso-grade`, `epso-presentation`, `epso-offer` |
+| `eu-legislative` | Legislative & Policy | `policy-officer`, `legislative-drafter`, `lawyer-secgen`, `impact-assessment`, `legislative-proposal`, `treaty-check`, `better-regulation`, `consultation`, `comitology-officer`, `economist`, `isc-contributor`, `pq-responder`, `subsidiarity-checker`, `trilogue-position-tracker` |
+| `eu-competition` | Competition & Legal Service | `lawyer-competition-antitrust`, `lawyer-state-aid`, `lawyer-legal-service`, `state-aid-review`, `market-definer`, `gber-screener` |
+| `eu-institutional-management` | Institutional Management | `head-of-unit`, `deputy-head-of-unit`, `assistant-hod`, `hr-contract-manager-ta`, `financial-officer`, `pmo-pension-specialist`, `cdr-drafter` |
+| `eu-trade` | Trade Defence | `trade-defence-investigator` |
+| `eu-grants-enforcement` | Grants, Procurement & Enforcement | `grant-manager`, `infringement-officer`, `infringement`, `procurement-expert`, `lfn-drafter`, `transposition-tracker` |
+| `eu-data-communication` | Data & Communication | `data-analyst`, `communication-officer`, `lines-to-take-drafter`, `digit-project-manager`, `data-steward`, `cybersecurity-officer`, `transparency-officer` |
+| `eu-simulation` | EU Institutional Simulation | `commissioner`, `college-deliberation`, `inter-service-consultation`, `trilogue`, `legislative-cycle`, `european-parliament`, `council-eu`, `mandate-conflict`, `red-team-college`, `subsidiarity-stress`, `timeline` |
+| `eu-privacy` | Data Protection & Privacy | `dpia`, `dpo`, `it-project-manager`, `it-security`, `legal-officer` |
+| `eu-careers` | EU Careers & EPSO Preparation | `epso-grade`, `epso-presentation`, `epso-offer` |
 
 ---
 
@@ -194,7 +194,7 @@ DRAFT — For review by an EU official before use. Not an official Commission po
 1. Create a file in `knowledge/commissioners/` or `knowledge/dgs/` following the existing template.
 2. Define: mandate, legal basis, key dossiers, decision style, tensions with other portfolios.
 3. Add the agent to the `knowledge/agents/college-deliberation.md` roster.
-4. Update the commissioner shortnames grid in `plugins/simulation-eu/CLAUDE.md`.
+4. Update the commissioner shortnames grid in `plugins/eu-simulation/CLAUDE.md`.
 
 **To add a new skill:**
 1. Create `plugins/<domain>/skills/<skill-name>/SKILL.md` using the SKILL.md frontmatter convention.

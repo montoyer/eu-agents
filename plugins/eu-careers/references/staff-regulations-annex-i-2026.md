@@ -1,0 +1,1 @@
+../../eu-institutional-management/references/staff-regulations-annex-i-2026.md

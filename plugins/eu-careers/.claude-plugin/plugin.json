@@ -1,0 +1,36 @@
+{
+  "name": "eu-careers",
+  "version": "1.0.0",
+  "description": "End-to-end support for candidates targeting EU civil service competitions (EPSO). Covers eligibility screening, grade and salary calculation, Assessment Centre preparation (oral presentation, structured interview, case study), job offer analysis, and onboarding under the Staff Regulations.",
+  "claude_md": "CLAUDE.md",
+  "skills": [
+    {
+      "id": "cold-start-interview",
+      "path": "skills/cold-start-interview/SKILL.md",
+      "description": "Personalise this plugin to the candidate's profile, target competition, and current preparation stage"
+    },
+    {
+      "id": "epso-grade",
+      "path": "skills/epso-grade/SKILL.md",
+      "description": "Estimate entry grade, step, and net monthly salary for a given competition type and candidate profile under SR Annex I"
+    },
+    {
+      "id": "epso-presentation",
+      "path": "skills/epso-presentation/SKILL.md",
+      "description": "Coach and critique a 10-minute Assessment Centre oral presentation against EPSO Communication competency indicators"
+    },
+    {
+      "id": "epso-offer",
+      "path": "skills/epso-offer/SKILL.md",
+      "description": "Analyse a job offer letter: decode grade/step, calculate gross and net remuneration, map probation and contract obligations under the SR"
+    }
+  ],
+  "hooks": {
+    "post_output": "hooks/post-output-disclaimer.sh"
+  },
+  "connectors": [
+    "eur-lex",
+    "epso-eu"
+  ],
+  "displayName": "EU Careers & EPSO Preparation"
+}

@@ -20,13 +20,13 @@ cd agents-for-EU
 
 | Plugin | Who it is for |
 |---|---|
-| `legislative-eu` | Policy officers, legislative drafters, SecGen lawyers, impact assessment analysts |
-| `competition-eu` | DG COMP antitrust and state aid lawyers, Commission Legal Service lawyers |
-| `institutional-management-eu` | Heads of Unit, Deputy HoUs, assistants, HR and financial officers |
-| `trade-eu` | DG TRADE trade defence investigators |
-| `grants-enforcement-eu` | Grant managers, infringement officers, procurement experts |
-| `data-communication-eu` | Data analysts, communication officers |
-| `simulation-eu` | Training, scenario planning, and policy stress-testing via multi-agent EU institutional simulation |
+| `eu-legislative` | Policy officers, legislative drafters, SecGen lawyers, impact assessment analysts |
+| `eu-competition` | DG COMP antitrust and state aid lawyers, Commission Legal Service lawyers |
+| `eu-institutional-management` | Heads of Unit, Deputy HoUs, assistants, HR and financial officers |
+| `eu-trade` | DG TRADE trade defence investigators |
+| `eu-grants-enforcement` | Grant managers, infringement officers, procurement experts |
+| `eu-data-communication` | Data analysts, communication officers |
+| `eu-simulation` | Training, scenario planning, and policy stress-testing via multi-agent EU institutional simulation |
 
 ---
 
@@ -41,14 +41,14 @@ First, add the eu-agents marketplace:
 Then install the plugin you need:
 
 ```
-/plugin install legislative-eu@eu-agents
+/plugin install eu-legislative@eu-agents
 ```
 
 Or combine plugins for a full simulation workflow:
 
 ```
-/plugin install legislative-eu@eu-agents
-/plugin install simulation-eu@eu-agents
+/plugin install eu-legislative@eu-agents
+/plugin install eu-simulation@eu-agents
 ```
 
 Or install all plugins at once:
@@ -70,10 +70,10 @@ To see what is available:
 Every plugin starts with a 2-minute personalisation interview. Run it first, using the plugin name as prefix:
 
 ```
-/legislative-eu:cold-start-interview
+/eu-legislative:cold-start-interview
 ```
 
-Replace `legislative-eu` with the plugin you installed (e.g. `competition-eu`, `privacy-eu`).
+Replace `eu-legislative` with the plugin you installed (e.g. `eu-competition`, `eu-privacy`).
 
 You will be asked about your DG, active dossier, procedural stage, and working
 language. Your answers are written into the practice profile and used by every
@@ -86,22 +86,22 @@ subsequent skill in the package.
 After the interview, invoke any skill using the `/plugin-name:skill-name` format:
 
 ```
-/legislative-eu:policy-officer       draft a briefing note for the Commissioner
-/legislative-eu:legislative-drafter  draft the regulation preamble
-/legislative-eu:lawyer-secgen        check subsidiarity on this proposal
-/competition-eu:lawyer-state-aid     run the four-limb test on this measure
-/grants-enforcement-eu:infringement-officer  draft a Letter of Formal Notice to Poland
-/data-communication-eu:data-analyst  extract unemployment data from Eurostat for the scoreboard
+/eu-legislative:policy-officer       draft a briefing note for the Commissioner
+/eu-legislative:legislative-drafter  draft the regulation preamble
+/eu-legislative:lawyer-secgen        check subsidiarity on this proposal
+/eu-competition:lawyer-state-aid     run the four-limb test on this measure
+/eu-grants-enforcement:infringement-officer  draft a Letter of Formal Notice to Poland
+/eu-data-communication:data-analyst  extract unemployment data from Eurostat for the scoreboard
 ```
 
 For simulation skills (no cold-start needed):
 
 ```
-/simulation-eu:commissioner digital          speak as the Commissioner for Digital
-/simulation-eu:college-deliberation          run a full College vote on a dossier
-/simulation-eu:inter-service-consultation    route a proposal through all affected DGs
-/simulation-eu:trilogue                      simulate EP/Council/Commission negotiation rounds
-/simulation-eu:legislative-cycle             run the full OLP from proposal to adoption
+/eu-simulation:commissioner digital          speak as the Commissioner for Digital
+/eu-simulation:college-deliberation          run a full College vote on a dossier
+/eu-simulation:inter-service-consultation    route a proposal through all affected DGs
+/eu-simulation:trilogue                      simulate EP/Council/Commission negotiation rounds
+/eu-simulation:legislative-cycle             run the full OLP from proposal to adoption
 ```
 
 ---
@@ -138,47 +138,47 @@ and TED procurement monitoring directly from within skills.
 
 **Policy officer:**
 ```
-/legislative-eu:cold-start-interview
-/legislative-eu:policy-officer  draft a Commissioner briefing note on [dossier]
+/eu-legislative:cold-start-interview
+/eu-legislative:policy-officer  draft a Commissioner briefing note on [dossier]
 ```
 
 **Competition lawyer:**
 ```
-/competition-eu:cold-start-interview
-/competition-eu:lawyer-competition-antitrust  run the Art. 101 four-step assessment on [conduct]
+/eu-competition:cold-start-interview
+/eu-competition:lawyer-competition-antitrust  run the Art. 101 four-step assessment on [conduct]
 ```
 
 **Head of Unit:**
 ```
-/institutional-management-eu:cold-start-interview
-/institutional-management-eu:head-of-unit  draft the weekly status note for [week]
+/eu-institutional-management:cold-start-interview
+/eu-institutional-management:head-of-unit  draft the weekly status note for [week]
 ```
 
 **Trade defence investigator:**
 ```
-/trade-eu:cold-start-interview
-/trade-eu:trade-defence-investigator  calculate the dumping margin for [exporter]
+/eu-trade:cold-start-interview
+/eu-trade:trade-defence-investigator  calculate the dumping margin for [exporter]
 ```
 
 **Infringement officer:**
 ```
-/grants-enforcement-eu:cold-start-interview
-/grants-enforcement-eu:infringement-officer  draft a Letter of Formal Notice to [member state] on [directive]
+/eu-grants-enforcement:cold-start-interview
+/eu-grants-enforcement:infringement-officer  draft a Letter of Formal Notice to [member state] on [directive]
 ```
 
 **Policy analyst running a simulation:**
 ```
-/plugin install legislative-eu@eu-agents
-/plugin install simulation-eu@eu-agents
-/simulation-eu:legislative-cycle  [brief: what the proposal is, legal basis, lead Commissioner]
+/plugin install eu-legislative@eu-agents
+/plugin install eu-simulation@eu-agents
+/eu-simulation:legislative-cycle  [brief: what the proposal is, legal basis, lead Commissioner]
 ```
 
 Or step by step:
 ```
-/legislative-eu:impact-assessment       [policy brief]
-/simulation-eu:inter-service-consultation  [dossier summary]
-/simulation-eu:college-deliberation    [decision sought]
-/simulation-eu:trilogue                [dossier, EP mandate, Council GA]
+/eu-legislative:impact-assessment       [policy brief]
+/eu-simulation:inter-service-consultation  [dossier summary]
+/eu-simulation:college-deliberation    [decision sought]
+/eu-simulation:trilogue                [dossier, EP mandate, Council GA]
 ```
 
 ---

@@ -6,7 +6,7 @@
 # (CJEU C-300/89 Commission v Council — Titanium Dioxide).
 #
 # Claude Code hook event: PreToolUse
-# Applies to: legislative-eu domain package
+# Applies to: eu-legislative domain package
 
 input=$(cat)
 

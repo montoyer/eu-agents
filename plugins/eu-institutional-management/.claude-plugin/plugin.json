@@ -1,0 +1,86 @@
+{
+  "name": "eu-institutional-management",
+  "version": "1.0.0",
+  "description": "Unit management, HR administration, financial circuits, and staff operations across the European Commission.",
+  "claude_md": "CLAUDE.md",
+  "skills": [
+    {
+      "id": "cold-start-interview",
+      "path": "skills/cold-start-interview/SKILL.md",
+      "description": "Personalise this plugin to your DG, unit, and management responsibilities"
+    },
+    {
+      "id": "head-of-unit",
+      "path": "skills/head-of-unit/SKILL.md",
+      "description": "Unit management, CDR, work programme, staff decisions, AMP"
+    },
+    {
+      "id": "deputy-head-of-unit",
+      "path": "skills/deputy-head-of-unit/SKILL.md",
+      "description": "Operational coordination, quality review, deadline tracking, A.I. acting"
+    },
+    {
+      "id": "assistant-hod",
+      "path": "skills/assistant-hod/SKILL.md",
+      "description": "ARES management, MIPS/C2 missions, SYSPER, PQ tracking, action trackers"
+    },
+    {
+      "id": "hr-contract-manager-ta",
+      "path": "skills/hr-contract-manager-ta/SKILL.md",
+      "description": "TA/CA contract management, CEOS, CAST, recruitment, renewal decisions"
+    },
+    {
+      "id": "financial-officer",
+      "path": "skills/financial-officer/SKILL.md",
+      "description": "ABAC financial circuit, FR 2018/1046, commitment and payment orders"
+    },
+    {
+      "id": "pmo-pension-specialist",
+      "path": "skills/pmo-pension-specialist/SKILL.md",
+      "description": "Annex VIII pension calculations, PMO entitlements, pension projections"
+    },
+    {
+      "id": "cdr-drafter",
+      "path": "skills/cdr-drafter/SKILL.md",
+      "description": "Draft SMART CDR objectives, end-year appraisals, and competency assessments in SYSPER"
+    },
+    {
+      "id": "amp-drafter",
+      "path": "skills/amp-drafter/SKILL.md",
+      "description": "Annual Management Plan — unit objectives, KPIs, deliverables, resource mapping, risk section, COO cycle"
+    },
+    {
+      "id": "aar-drafter",
+      "path": "skills/aar-drafter/SKILL.md",
+      "description": "Annual Activity Report — objective assessment, resource use, internal control, HoU management assurance"
+    },
+    {
+      "id": "selection-board",
+      "path": "skills/selection-board/SKILL.md",
+      "description": "Selection procedure — vacancy notice, shortlisting, competency-based interview grid, selection board report"
+    },
+    {
+      "id": "access-to-documents",
+      "path": "skills/access-to-documents/SKILL.md",
+      "description": "Regulation 1049/2001 access requests — exception assessment, partial access, refusal letters, confirmatory procedure"
+    },
+    {
+      "id": "underperformance-advisor",
+      "path": "skills/underperformance-advisor/SKILL.md",
+      "description": "Art. 51 SR underperformance procedure — warning letter, improvement plan, monitoring, JEC submission"
+    },
+    {
+      "id": "budget-planner",
+      "path": "skills/budget-planner/SKILL.md",
+      "description": "Budget planning and execution — CA/PA programming, virements, carry-overs, execution monitoring, AAR reporting"
+    }
+  ],
+  "hooks": {
+    "post_output": "hooks/post-output-disclaimer.sh"
+  },
+  "connectors": [
+    "sysper",
+    "abac"
+  ],
+  "displayName": "Institutional Management"
+}
