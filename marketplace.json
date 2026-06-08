@@ -7,7 +7,7 @@
   "repository": "https://github.com/EC-Skills-Library/agents-for-EU",
   "plugins": [
     {
-      "id": "legislative-eu",
+      "id": "eu-legislative",
       "name": "Legislative & Policy",
       "description": "Policy drafting, legislative procedures, impact assessment, comitology, and inter-service consultation. For policy officers, legislative drafters, and SecGen lawyers.",
       "path": "plugins/legislative-eu",
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "id": "competition-eu",
+      "id": "eu-competition",
       "name": "Competition & Legal Service",
       "description": "Antitrust (Arts. 101–102 TFEU), state aid (Arts. 107–109 TFEU), and Commission Legal Service opinions and litigation. For DG COMP and Legal Service lawyers.",
       "path": "plugins/competition-eu",
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "id": "institutional-management-eu",
+      "id": "eu-institutional-management",
       "name": "Institutional Management",
       "description": "Unit management, HR administration, financial circuits, and staff operations. For Heads of Unit, Deputy HoUs, HoU assistants, HR managers, and financial officers.",
       "path": "plugins/institutional-management-eu",
@@ -49,7 +49,7 @@
       ]
     },
     {
-      "id": "trade-eu",
+      "id": "eu-trade",
       "name": "Trade Defence",
       "description": "EU Trade Defence Instruments — anti-dumping, anti-subsidy, safeguards, IPI, and FSR investigations. For DG TRADE trade defence investigators.",
       "path": "plugins/trade-eu",
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "id": "grants-enforcement-eu",
+      "id": "eu-grants-enforcement",
       "name": "Grants, Procurement & Enforcement",
       "description": "Horizon Europe grant management, infringement procedures (Arts. 258–260 TFEU), and public procurement. For grant managers, infringement officers, and procurement experts.",
       "path": "plugins/grants-enforcement-eu",
@@ -71,7 +71,7 @@
       ]
     },
     {
-      "id": "simulation-eu",
+      "id": "eu-simulation",
       "name": "EU Institutional Simulation",
       "description": "Multi-agent simulation of EU institutional processes: Commissioner personas, College deliberation, inter-service consultation, trilogue, and the full Ordinary Legislative Procedure.",
       "path": "plugins/simulation-eu",
@@ -86,7 +86,7 @@
       ]
     },
     {
-      "id": "data-communication-eu",
+      "id": "eu-data-communication",
       "name": "Data & Communication",
       "description": "Eurostat data analysis, scoreboard design, press releases, Commissioner speeches, and lines to take. For data analysts and communication officers.",
       "path": "plugins/data-communication-eu",

@@ -17,7 +17,7 @@ Add the marketplace and install the plugins you need:
 ### 1. Ask a single Commissioner a question
 
 ```
-/simulation-eu:commissioner competition
+/eu-simulation:commissioner competition
 ```
 
 Then ask: *Is the proposed merger of two major European steel producers compatible with EU competition law?*
@@ -29,7 +29,7 @@ Claude will adopt the Competition Commissioner persona, apply the EU Merger Regu
 ### 2. Run a quick impact assessment
 
 ```
-/legislative-eu:impact-assessment "A proposed EU regulation requiring all commercial buildings to install EV charging infrastructure by 2030"
+/eu-legislative:impact-assessment "A proposed EU regulation requiring all commercial buildings to install EV charging infrastructure by 2030"
 ```
 
 This produces a structured Staff Working Document covering problem definition, policy options, and economic/social/environmental impacts.
@@ -39,7 +39,7 @@ This produces a structured Staff Working Document covering problem definition, p
 ### 3. Simulate a College vote
 
 ```
-/simulation-eu:college-deliberation "Should the Commission propose a ban on PFAS ('forever chemicals') across all uses by 2030?"
+/eu-simulation:college-deliberation "Should the Commission propose a ban on PFAS ('forever chemicals') across all uses by 2030?"
 ```
 
 All 21 Commissioners will speak. The Competition Commissioner will worry about industry impact. The Environment Commissioner will support the ban. The EVP Economy will demand a REFIT analysis. The President will find a compromise. You get the full deliberation.
@@ -49,7 +49,7 @@ All 21 Commissioners will speak. The Competition Commissioner will worry about i
 ### 4. Draft a legislative proposal
 
 ```
-/legislative-eu:legislative-proposal "A regulation establishing a European Digital Infrastructure Fund, financed by a levy on large digital platforms"
+/eu-legislative:legislative-proposal "A regulation establishing a European Digital Infrastructure Fund, financed by a levy on large digital platforms"
 ```
 
 Produces a structurally complete draft regulation with legal basis, recitals, operative articles, explanatory memorandum, and quality checks.
@@ -59,7 +59,7 @@ Produces a structurally complete draft regulation with legal basis, recitals, op
 ### 5. Run a full legislative cycle simulation
 
 ```
-/simulation-eu:legislative-cycle "Mandatory supply chain due diligence for critical raw materials"
+/eu-simulation:legislative-cycle "Mandatory supply chain due diligence for critical raw materials"
 ```
 
 This runs the entire process: Commission proposal → impact assessment → inter-service consultation → College adoption → EP first reading → Council → trilogue → adoption.
@@ -80,9 +80,9 @@ They are not legal opinions and should not be relied upon as such.
 
 ## Common errors to avoid
 
-**Don't ask a Commissioner to speak outside their mandate.** The Agriculture Commissioner will not give you an opinion on competition law. If you need cross-portfolio analysis, use `/simulation-eu:college-deliberation` or specify multiple Commissioner perspectives.
+**Don't ask a Commissioner to speak outside their mandate.** The Agriculture Commissioner will not give you an opinion on competition law. If you need cross-portfolio analysis, use `/eu-simulation:college-deliberation` or specify multiple Commissioner perspectives.
 
-**Don't skip the legal basis.** Any legislative proposal needs a treaty legal basis. If you don't know which article applies, use `/legislative-eu:treaty-check` first.
+**Don't skip the legal basis.** Any legislative proposal needs a treaty legal basis. If you don't know which article applies, use `/eu-legislative:treaty-check` first.
 
 **Don't confuse Council of the EU with the European Council.** The Council of the EU (ministers) co-legislates. The European Council (heads of state) sets strategic direction but does not legislate.
 

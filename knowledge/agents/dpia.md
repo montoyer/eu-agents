@@ -22,10 +22,10 @@ Regulation (EU) 2018/1725 (EUDPR). It does not apply to GDPR-governed entities.
 
 | Role | Agent skill | Section |
 |---|---|---|
-| Data Protection Officer (DPO) | `plugins/privacy-eu/skills/dpo/SKILL.md` | §0 Threshold screening; §4 Sign-off |
-| IT Project Manager | `plugins/privacy-eu/skills/it-project-manager/SKILL.md` | §1 Technical description |
-| Legal Officer | `plugins/privacy-eu/skills/legal-officer/SKILL.md` | §2 Legal analysis |
-| IT Security Officer | `plugins/privacy-eu/skills/it-security/SKILL.md` | §3 Security & risk |
+| Data Protection Officer (DPO) | `plugins/eu-privacy/skills/dpo/SKILL.md` | §0 Threshold screening; §4 Sign-off |
+| IT Project Manager | `plugins/eu-privacy/skills/it-project-manager/SKILL.md` | §1 Technical description |
+| Legal Officer | `plugins/eu-privacy/skills/legal-officer/SKILL.md` | §2 Legal analysis |
+| IT Security Officer | `plugins/eu-privacy/skills/it-security/SKILL.md` | §3 Security & risk |
 | EDPS | `knowledge/agents/edps.md` | §5 Prior consultation |
 
 ---

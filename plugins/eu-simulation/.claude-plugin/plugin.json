@@ -1,5 +1,5 @@
 {
-  "name": "simulation-eu",
+  "name": "eu-simulation",
   "version": "1.0.0",
   "description": "Multi-agent simulation of EU institutional processes: Commissioner personas, College deliberation, inter-service consultation, trilogue, and the full Ordinary Legislative Procedure.",
   "claude_md": "CLAUDE.md",

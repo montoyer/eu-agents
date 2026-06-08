@@ -80,7 +80,7 @@ The SKILL.md files in `plugins/` are the authoritative source. The **persona sec
 
 ### Definition
 
-A **skill** is a fully packaged version of a prompt. It lives in a `SKILL.md` file, has structured metadata, and is invoked with a slash command inside Claude Code. Instead of typing a multi-paragraph instruction every time, you type `/legislative-eu:policy-officer` and the AI loads the full persona, workflow, and output format automatically.
+A **skill** is a fully packaged version of a prompt. It lives in a `SKILL.md` file, has structured metadata, and is invoked with a slash command inside Claude Code. Instead of typing a multi-paragraph instruction every time, you type `/eu-legislative:policy-officer` and the AI loads the full persona, workflow, and output format automatically.
 
 Think of a skill as a **saved, versioned, shareable prompt** with extras: metadata for automatic triggering, a defined output template, links to related skills, and integration with hooks and connectors.
 
@@ -134,7 +134,7 @@ Experienced European Commission administrator with deep expertise in EU policy d
 In Claude Code, in this repository, type:
 
 ```
-/legislative-eu:policy-officer
+/eu-legislative:policy-officer
 
 Draft a briefing note for the Commissioner on the risk of regulatory fragmentation
 in the EU cloud market following three member states' unilateral certification schemes.
@@ -146,17 +146,17 @@ The skill loads the policy officer persona, applies the Commission briefing note
 
 | Slash command | Domain | What it produces |
 |---|---|---|
-| `/legislative-eu:policy-officer` | Legislative | Briefing notes, ISC contributions, negotiating briefs |
-| `/legislative-eu:legislative-drafter` | Legislative | Regulations, directives, decisions (Joint Practical Guide format) |
-| `/legislative-eu:impact-assessment` | Legislative | Full SWD — problem definition, options, CBA, SME test |
-| `/legislative-eu:treaty-check` | Legislative | Legal basis, subsidiarity, proportionality, Charter review |
-| `/competition-eu:lawyer-state-aid` | Competition | Art. 107–109 TFEU four-limb test and compatibility |
-| `/competition-eu:lawyer-competition-antitrust` | Competition | Art. 101–102 TFEU analysis |
-| `/privacy-eu:dpo` | Privacy | EUDPR threshold check, DPIA scoping, Art. 40 referral |
-| `/grants-enforcement-eu:procurement-expert` | Grants | Tender evaluation, framework contract management |
-| `/institutional-management-eu:head-of-unit` | Institutional | Appraisal reports, unit work plans, HR decisions |
-| `/data-communication-eu:communication-officer` | Communication | Press releases, speeches, lines to take |
-| `/data-communication-eu:data-analyst` | Data | Eurostat extraction, scoreboard design |
+| `/eu-legislative:policy-officer` | Legislative | Briefing notes, ISC contributions, negotiating briefs |
+| `/eu-legislative:legislative-drafter` | Legislative | Regulations, directives, decisions (Joint Practical Guide format) |
+| `/eu-legislative:impact-assessment` | Legislative | Full SWD — problem definition, options, CBA, SME test |
+| `/eu-legislative:treaty-check` | Legislative | Legal basis, subsidiarity, proportionality, Charter review |
+| `/eu-competition:lawyer-state-aid` | Competition | Art. 107–109 TFEU four-limb test and compatibility |
+| `/eu-competition:lawyer-competition-antitrust` | Competition | Art. 101–102 TFEU analysis |
+| `/eu-privacy:dpo` | Privacy | EUDPR threshold check, DPIA scoping, Art. 40 referral |
+| `/eu-grants-enforcement:procurement-expert` | Grants | Tender evaluation, framework contract management |
+| `/eu-institutional-management:head-of-unit` | Institutional | Appraisal reports, unit work plans, HR decisions |
+| `/eu-data-communication:communication-officer` | Communication | Press releases, speeches, lines to take |
+| `/eu-data-communication:data-analyst` | Data | Eurostat extraction, scoreboard design |
 
 ---
 
@@ -192,7 +192,7 @@ A **skill** tells the AI *what to do* (draft a briefing note, run an impact asse
 
 An **agent** tells the AI *who to be* (Competition Commissioner, Legal Service lawyer, DPO).
 
-Most skills load an agent persona automatically. When you type `/competition-eu:lawyer-state-aid`, the skill loads both the workflow (four-limb test → compatibility analysis) and the agent (Legal Service State Aid lawyer who applies Art. 107 TFEU rigorously and refuses to approve aid for "strategic reasons" not grounded in the rules).
+Most skills load an agent persona automatically. When you type `/eu-competition:lawyer-state-aid`, the skill loads both the workflow (four-limb test → compatibility analysis) and the agent (Legal Service State Aid lawyer who applies Art. 107 TFEU rigorously and refuses to approve aid for "strategic reasons" not grounded in the rules).
 
 ### Example: Commissioner agents
 
@@ -215,7 +215,7 @@ Resists pressure to clear mergers for "strategic" reasons not grounded in compet
 - vs. EVP Digital: DMA (ex ante) vs. antitrust (ex post) — jurisdiction boundaries.
 ```
 
-When you invoke `/simulation-eu:commissioner competition`, this mandate file is loaded and the AI responds as that portfolio — not as a named individual, but as the institutional position of DG COMP.
+When you invoke `/eu-simulation:commissioner competition`, this mandate file is loaded and the AI responds as that portfolio — not as a named individual, but as the institutional position of DG COMP.
 
 ### Multi-agent sessions
 
@@ -248,14 +248,14 @@ Workflows model real EU procedures: the Ordinary Legislative Procedure, the Bett
 
 ### Workflow vs. skill — the distinction
 
-A **role skill** like `/legislative-eu:policy-officer` is open-ended. You ask it anything within the policy officer's mandate and it responds.
+A **role skill** like `/eu-legislative:policy-officer` is open-ended. You ask it anything within the policy officer's mandate and it responds.
 
-A **workflow skill** like `/legislative-eu:impact-assessment` is procedurally constrained. It runs through a fixed sequence (problem definition → subsidiarity check → baseline → policy options → CBA → comparison matrix → preferred option → monitoring framework) and will not skip a step, because skipping a step in a real impact assessment would result in an RSB negative opinion.
+A **workflow skill** like `/eu-legislative:impact-assessment` is procedurally constrained. It runs through a fixed sequence (problem definition → subsidiarity check → baseline → policy options → CBA → comparison matrix → preferred option → monitoring framework) and will not skip a step, because skipping a step in a real impact assessment would result in an RSB negative opinion.
 
-### Example: `/legislative-eu:impact-assessment`
+### Example: `/eu-legislative:impact-assessment`
 
 ```
-/legislative-eu:impact-assessment "A proposed EU regulation requiring platforms with over 10,000 
+/eu-legislative:impact-assessment "A proposed EU regulation requiring platforms with over 10,000 
 business users to publish algorithmic ranking criteria by 2027"
 ```
 
@@ -272,12 +272,12 @@ The skill runs 8 fixed steps:
 | 7 | Comparison matrix and preferred option with proportionality statement |
 | 8 | Monitoring and evaluation framework |
 
-### Example: `/simulation-eu:legislative-cycle`
+### Example: `/eu-simulation:legislative-cycle`
 
 The most complex workflow in the library. Runs the full Ordinary Legislative Procedure (TFEU Art. 294) from Commission initiative to Official Journal publication:
 
 ```
-/simulation-eu:legislative-cycle "Mandatory supply chain due diligence for critical raw materials"
+/eu-simulation:legislative-cycle "Mandatory supply chain due diligence for critical raw materials"
 ```
 
 Phases:
@@ -288,12 +288,12 @@ Phases:
 5. Second readings and conciliation (if needed)
 6. Signature and OJ publication
 
-### Example: `/privacy-eu:dpia`
+### Example: `/eu-privacy:dpia`
 
 Workflow for a complete Data Protection Impact Assessment under EUDPR Art. 39:
 
 ```
-/privacy-eu:dpia "HR analytics system processing staff performance data and absence patterns 
+/eu-privacy:dpia "HR analytics system processing staff performance data and absence patterns 
 to generate management recommendations"
 ```
 
@@ -307,7 +307,7 @@ Produces all seven Art. 39(7) EUDPR elements in sequence, each authored by the r
 
 A **plugin** is a packaged collection of skills, agent knowledge files, hooks, and connectors — all scoped to one domain. Installing a plugin gives you all the skills in that domain as slash commands, pre-configured to work together and aware of each other.
 
-Think of a plugin as the equivalent of installing a specialised software module. Before: you have no `/competition-eu:lawyer-state-aid` command. After: you have the full competition & legal service plugin with six interrelated skills.
+Think of a plugin as the equivalent of installing a specialised software module. Before: you have no `/eu-competition:lawyer-state-aid` command. After: you have the full competition & legal service plugin with six interrelated skills.
 
 ### Key characteristics
 
@@ -323,7 +323,7 @@ Think of a plugin as the equivalent of installing a specialised software module.
 ### Plugin structure
 
 ```
-plugins/competition-eu/
+plugins/eu-competition/
 ├── .claude-plugin/
 │   └── plugin.json          ← skill registry, connector declarations
 ├── CLAUDE.md                ← domain practice profile and house style
@@ -361,7 +361,7 @@ Hooks are shell scripts that run automatically at defined events — no user act
 
 - `post-output-disclaimer.sh` — appends the `DRAFT — For review by an EU official` disclaimer to every skill output
 - `pre-legal-basis-check.sh` — before generating a legislative draft, confirms a legal basis has been stated
-- `post-subsidiarity-prompt.sh` — after a legislative draft, prompts the user to run `/legislative-eu:subsidiarity-checker`
+- `post-subsidiarity-prompt.sh` — after a legislative draft, prompts the user to run `/eu-legislative:subsidiarity-checker`
 
 Hooks enforce procedural discipline at the infrastructure level, not just through the persona instructions.
 
@@ -382,9 +382,9 @@ PLUGIN
 | Situation | Concept | Example |
 |---|---|---|
 | I need a quick answer in GPT@EC right now | **Prompt** | Paste the persona paragraph from the SKILL.md + your question |
-| I need a specialist persona that adapts to my questions | **Skill** | `/legislative-eu:policy-officer` or `/competition-eu:lawyer-state-aid` |
-| I need to simulate an institutional actor's position | **Agent** | `/simulation-eu:commissioner competition` |
-| I need a complete procedural output (IA, DPIA, legislative proposal) | **Workflow skill** | `/legislative-eu:impact-assessment`, `/privacy-eu:dpia`, `/simulation-eu:legislative-cycle` |
+| I need a specialist persona that adapts to my questions | **Skill** | `/eu-legislative:policy-officer` or `/eu-competition:lawyer-state-aid` |
+| I need to simulate an institutional actor's position | **Agent** | `/eu-simulation:commissioner competition` |
+| I need a complete procedural output (IA, DPIA, legislative proposal) | **Workflow skill** | `/eu-legislative:impact-assessment`, `/eu-privacy:dpia`, `/eu-simulation:legislative-cycle` |
 | I work in one domain regularly and want all tools pre-configured | **Plugin** | Install `legislative-eu` or `privacy-eu` |
 
 ### Analogy
@@ -411,7 +411,7 @@ PLUGIN
 Type the skill name preceded by `/`:
 
 ```
-/legislative-eu:policy-officer
+/eu-legislative:policy-officer
 
 I need a negotiating brief for next week's Council working party on the proposed
 Cyber Resilience Act amendment. The debate is on Art. 12 (vulnerability disclosure
@@ -436,7 +436,7 @@ Claude will automatically engage the `treaty-check` skill because the request ma
 Workflow skills take a brief as input and run the full procedure:
 
 ```
-/legislative-eu:impact-assessment "Mandatory recycled content requirements for single-use plastic 
+/eu-legislative:impact-assessment "Mandatory recycled content requirements for single-use plastic 
 packaging in the food sector, phased from 20% by 2028 to 50% by 2033"
 ```
 
@@ -445,7 +445,7 @@ The output will be a complete SWD-structured impact assessment. For long workflo
 ### Running a multi-agent simulation
 
 ```
-/simulation-eu:college-deliberation
+/eu-simulation:college-deliberation
 
 Should the Commission propose mandatory human oversight requirements for all 
 AI systems used in public benefit decisions (social benefits, taxation, permit grants)?
@@ -458,14 +458,14 @@ All 21 Commissioner agents deliberate in sequence. Expect: the EVP Digital to su
 Skills can be chained manually for complex tasks:
 
 ```
-Step 1: /legislative-eu:treaty-check — confirm legal basis for the proposal
-Step 2: /legislative-eu:legislative-proposal — draft the regulation
-Step 3: /legislative-eu:impact-assessment — produce the accompanying SWD
-Step 4: /simulation-eu:inter-service-consultation — simulate the ISC round
-Step 5: /simulation-eu:college-deliberation — simulate College adoption
+Step 1: /eu-legislative:treaty-check — confirm legal basis for the proposal
+Step 2: /eu-legislative:legislative-proposal — draft the regulation
+Step 3: /eu-legislative:impact-assessment — produce the accompanying SWD
+Step 4: /eu-simulation:inter-service-consultation — simulate the ISC round
+Step 5: /eu-simulation:college-deliberation — simulate College adoption
 ```
 
-Or run `/simulation-eu:legislative-cycle` which does all of this in one command.
+Or run `/eu-simulation:legislative-cycle` which does all of this in one command.
 
 ---
 
@@ -478,14 +478,14 @@ Skills are designed for Claude Code, but the underlying expertise is transferabl
 Every SKILL.md contains a persona section after the frontmatter. Copy it and paste it as the first message (system prompt or opening message) in your chat session.
 
 **Steps:**
-1. Open the relevant SKILL.md (e.g. `plugins/legislative-eu/skills/policy-officer/SKILL.md`)
+1. Open the relevant SKILL.md (e.g. `plugins/eu-legislative/skills/policy-officer/SKILL.md`)
 2. Scroll past the `---` frontmatter block to the `# Policy Officer` heading
 3. Copy from that heading down through the Core Workflow
 4. Paste it at the start of your GPT@EC conversation, then add your specific question
 
-**Example — using `/competition-eu:lawyer-state-aid` in GPT@EC:**
+**Example — using `/eu-competition:lawyer-state-aid` in GPT@EC:**
 
-Open `plugins/competition-eu/skills/lawyer-state-aid/SKILL.md`. Copy the persona section. Then in GPT@EC, start with:
+Open `plugins/eu-competition/skills/lawyer-state-aid/SKILL.md`. Copy the persona section. Then in GPT@EC, start with:
 
 > [paste persona here]
 >
@@ -497,7 +497,7 @@ The LLM will adopt the Legal Service State Aid lawyer persona and apply the four
 
 For workflow skills, you do not need the full persona. Copy the numbered step sequence from the SKILL.md and paste it as instructions:
 
-**Example — `/privacy-eu:dpia` in GPT@EC:**
+**Example — `/eu-privacy:dpia` in GPT@EC:**
 
 > I need you to produce a complete DPIA following the EUDPR Art. 39 structure. Use exactly these steps:
 >
@@ -535,7 +535,7 @@ If your organisation publishes prompt library entries based on this repository, 
 | Plugin connectors (EUR-Lex, Eurostat) | When configured | No — describe the source you want |
 | Skills aware of each other | Yes | Only if you copy both |
 | Persistent persona across sessions | Yes | No — re-paste each session |
-| Multi-agent College simulation | Automatic | Possible — paste the college protocol from `knowledge/agents/simulation-eu:college-deliberation.md` |
+| Multi-agent College simulation | Automatic | Possible — paste the college protocol from `knowledge/agents/eu-simulation:college-deliberation.md` |
 
 **Bottom line:** Claude Code gives you the full system with slash commands, hooks, and cross-skill awareness. GPT@EC gives you the same intellectual content — the personas, the procedures, the legal frameworks — but requires manual setup each session. The quality of the substantive output is comparable; the workflow efficiency is not.
 
@@ -545,10 +545,10 @@ If your organisation publishes prompt library entries based on this repository, 
 
 ### "I need to draft a briefing note for my HoU before tomorrow's COREPER meeting"
 
-Reach for: **`/legislative-eu:policy-officer`** (skill)
+Reach for: **`/eu-legislative:policy-officer`** (skill)
 
 ```
-/legislative-eu:policy-officer
+/eu-legislative:policy-officer
 
 Draft a 2-page briefing note for the Head of Unit ahead of the COREPER II meeting 
 on Thursday. Topic: the Commission's position on the General Product Safety Regulation 
@@ -559,10 +559,10 @@ state of member-state positions.
 ### "I want to understand what the Commissioner for Digital would say about a mandatory 
 AI audit requirement"
 
-Reach for: **`/simulation-eu:commissioner digital`** (agent)
+Reach for: **`/eu-simulation:commissioner digital`** (agent)
 
 ```
-/simulation-eu:commissioner digital
+/eu-simulation:commissioner digital
 
 How does your portfolio assess the proposal to require mandatory third-party audits 
 of all AI systems used in HR decisions across the EU public sector?
@@ -571,10 +571,10 @@ of all AI systems used in HR decisions across the EU public sector?
 ### "I need to check whether our proposed regulation is legally sound before we send 
 it to the Legal Service"
 
-Reach for: **`/legislative-eu:treaty-check`** (skill + workflow)
+Reach for: **`/eu-legislative:treaty-check`** (skill + workflow)
 
 ```
-/legislative-eu:treaty-check
+/eu-legislative:treaty-check
 
 [paste your draft legislative proposal]
 ```
@@ -584,20 +584,20 @@ The skill checks legal basis, subsidiarity, proportionality, and Charter rights 
 ### "My DG is launching a major initiative and I need the full package: IA, legislative 
 proposal, and a College simulation"
 
-Reach for: **`/simulation-eu:legislative-cycle`** (workflow)
+Reach for: **`/eu-simulation:legislative-cycle`** (workflow)
 
 ```
-/simulation-eu:legislative-cycle "EU framework for mandatory transparency of public sector algorithmic 
+/eu-simulation:legislative-cycle "EU framework for mandatory transparency of public sector algorithmic 
 decision-making systems"
 ```
 
 ### "We have a new IT system. I need to know whether it triggers a DPIA and if so 
 produce the full assessment"
 
-Reach for: **`/privacy-eu:dpia`** (workflow skill, multi-agent)
+Reach for: **`/eu-privacy:dpia`** (workflow skill, multi-agent)
 
 ```
-/privacy-eu:dpia "Automated leave management system that uses AI to flag anomalous absence 
+/eu-privacy:dpia "Automated leave management system that uses AI to flag anomalous absence 
 patterns and generate management recommendations for HR decisions. Processes 
 health-related absence data for 15,000 staff. Hosted on a US-based cloud provider."
 ```
@@ -605,10 +605,10 @@ health-related absence data for 15,000 staff. Hosted on a US-based cloud provide
 ### "I want to present a state aid case to my Head of Unit and need a structured 
 legal analysis"
 
-Reach for: **`/competition-eu:lawyer-state-aid`** (skill, competition-eu plugin)
+Reach for: **`/eu-competition:lawyer-state-aid`** (skill, competition-eu plugin)
 
 ```
-/competition-eu:lawyer-state-aid
+/eu-competition:lawyer-state-aid
 
 Analyse whether the following measure constitutes state aid within the meaning of 
 Art. 107(1) TFEU, and if so, assess compatibility under the Climate, Energy and 
@@ -617,7 +617,7 @@ Environmental Aid Guidelines (CEEAG): [describe the measure]
 
 ### "I am in GPT@EC and cannot use Claude Code — I still need an impact assessment"
 
-Reach for: **Method 2** from [section 9](#9-how-to-use-skills-in-gptec-or-any-other-chat-tool) — copy the workflow steps from `plugins/legislative-eu/skills/impact-assessment/SKILL.md` and paste them as instructions.
+Reach for: **Method 2** from [section 9](#9-how-to-use-skills-in-gptec-or-any-other-chat-tool) — copy the workflow steps from `plugins/eu-legislative/skills/impact-assessment/SKILL.md` and paste them as instructions.
 
 ---
 
@@ -690,7 +690,7 @@ This is not a formality. The outputs are structurally realistic and procedurally
 ### I want to add a new skill or Commissioner portfolio
 
 See `CLAUDE.md` — the "Extending the system" section — for the step-by-step procedure:
-- New Commissioner: add a file to `knowledge/commissioners/` using `_template.md`, add to the College roster in `knowledge/agents/simulation-eu:college-deliberation.md`.
+- New Commissioner: add a file to `knowledge/commissioners/` using `_template.md`, add to the College roster in `knowledge/agents/eu-simulation:college-deliberation.md`.
 - New skill: create `plugins/<domain>/skills/<name>/SKILL.md`, register in `plugin.json`, add a row to the domain `CLAUDE.md`.
 - New domain plugin: follow `CONTRIBUTING.md` — scaffold, manifest, practice profile, cold-start interview, hook symlink, marketplace registration.
 
@@ -706,142 +706,142 @@ All 97 skills across 9 plugins. Add the marketplace with `/plugin marketplace ad
 
 | Skill | Description |
 |---|---|
-| `/legislative-eu:policy-officer` | Briefing notes, negotiating briefs, ISC contributions, options papers |
-| `/legislative-eu:legislative-drafter` | Draft EU regulations, directives, and decisions to Joint Practical Guide standards |
-| `/legislative-eu:lawyer-secgen` | ISC legal quality review, subsidiarity and proportionality analysis |
-| `/legislative-eu:comitology-officer` | Delegated and implementing acts, committee procedures, EP objections |
-| `/legislative-eu:impact-assessment-analyst` | Better Regulation impact assessments — problem definition, CBA, SME test |
-| `/legislative-eu:economist` | Economic analysis, market failure assessment, European Semester data |
-| `/legislative-eu:isc-contributor` | Draft ISC contributions — Agreement, Reservations, or Opposition with textual amendments |
-| `/legislative-eu:pq-responder` | Draft EP Parliamentary Question responses (Rules 138 and 139) with clearance tracking |
-| `/legislative-eu:subsidiarity-checker` | Run Art. 5(3)–(4) TEU subsidiarity and proportionality test with Protocol No. 2 risk |
-| `/legislative-eu:trilogue-position-tracker` | Maintain four-column document, track positions, draft pre-round mandate briefs |
-| `/legislative-eu:impact-assessment` | Full SWD impact assessment — problem definition, options, CBA, SME test, DNSH, comparison matrix |
-| `/legislative-eu:legislative-proposal` | Draft complete EU regulation or directive — legal basis, recitals, operative articles, EM |
-| `/legislative-eu:treaty-check` | Legal basis, subsidiarity, proportionality, and Charter rights review — mirrors CLS check |
-| `/legislative-eu:better-regulation` | REFIT regulatory fitness check — five criteria, overall score, simplification opportunities |
-| `/legislative-eu:consultation` | Simulate or draft a 12-week public consultation — stakeholder positions, synthesis, Commission response |
-| `/legislative-eu:delegated-acts-drafter` | Art. 290 TFEU delegated acts — enabling clause check, DA vs IA classification, scrutiny period, draft act |
-| `/legislative-eu:fundamental-rights-assessor` | Charter of Fundamental Rights full assessment — Art. 51 scope, Art. 52(1) limitation test, all 54 articles |
-| `/legislative-eu:regulatory-impact-quantifier` | CBA/CEA quantification — compliance costs, SME test, OIOO, benefit monetisation, RSB-ready tables |
-| `/legislative-eu:policy-cycle` | Full EU policy lifecycle — agenda-setting through evaluation, all 7 phases, Better Regulation methodology |
+| `/eu-legislative:policy-officer` | Briefing notes, negotiating briefs, ISC contributions, options papers |
+| `/eu-legislative:legislative-drafter` | Draft EU regulations, directives, and decisions to Joint Practical Guide standards |
+| `/eu-legislative:lawyer-secgen` | ISC legal quality review, subsidiarity and proportionality analysis |
+| `/eu-legislative:comitology-officer` | Delegated and implementing acts, committee procedures, EP objections |
+| `/eu-legislative:impact-assessment-analyst` | Better Regulation impact assessments — problem definition, CBA, SME test |
+| `/eu-legislative:economist` | Economic analysis, market failure assessment, European Semester data |
+| `/eu-legislative:isc-contributor` | Draft ISC contributions — Agreement, Reservations, or Opposition with textual amendments |
+| `/eu-legislative:pq-responder` | Draft EP Parliamentary Question responses (Rules 138 and 139) with clearance tracking |
+| `/eu-legislative:subsidiarity-checker` | Run Art. 5(3)–(4) TEU subsidiarity and proportionality test with Protocol No. 2 risk |
+| `/eu-legislative:trilogue-position-tracker` | Maintain four-column document, track positions, draft pre-round mandate briefs |
+| `/eu-legislative:impact-assessment` | Full SWD impact assessment — problem definition, options, CBA, SME test, DNSH, comparison matrix |
+| `/eu-legislative:legislative-proposal` | Draft complete EU regulation or directive — legal basis, recitals, operative articles, EM |
+| `/eu-legislative:treaty-check` | Legal basis, subsidiarity, proportionality, and Charter rights review — mirrors CLS check |
+| `/eu-legislative:better-regulation` | REFIT regulatory fitness check — five criteria, overall score, simplification opportunities |
+| `/eu-legislative:consultation` | Simulate or draft a 12-week public consultation — stakeholder positions, synthesis, Commission response |
+| `/eu-legislative:delegated-acts-drafter` | Art. 290 TFEU delegated acts — enabling clause check, DA vs IA classification, scrutiny period, draft act |
+| `/eu-legislative:fundamental-rights-assessor` | Charter of Fundamental Rights full assessment — Art. 51 scope, Art. 52(1) limitation test, all 54 articles |
+| `/eu-legislative:regulatory-impact-quantifier` | CBA/CEA quantification — compliance costs, SME test, OIOO, benefit monetisation, RSB-ready tables |
+| `/eu-legislative:policy-cycle` | Full EU policy lifecycle — agenda-setting through evaluation, all 7 phases, Better Regulation methodology |
 
 ### `competition-eu` — Competition & Legal Service
 
 | Skill | Description |
 |---|---|
-| `/competition-eu:lawyer-competition-antitrust` | Arts. 101–102 TFEU analysis, SO drafting, fines calculation, dawn raids |
-| `/competition-eu:lawyer-state-aid` | Art. 107–109 TFEU four-limb test, GBER screening, recovery calculation |
-| `/competition-eu:lawyer-legal-service` | CLS legal opinions, litigation management, Written Observations, risk assessment |
-| `/competition-eu:gber-screener` | Screen a measure against GBER categories — all conditions, incentive effect, cumulation |
-| `/competition-eu:market-definer` | Apply SSNIP test, define relevant product and geographic market for Art. 101/102/merger |
-| `/competition-eu:state-aid-review` | Art. 107(1) four-limb test, de minimis, GBER screening, compatibility assessment workflow |
-| `/competition-eu:merger-screener` | EU Merger Regulation — SIEC test, jurisdictional thresholds, Phase I/II, remedies design |
-| `/competition-eu:dawn-raid-advisor` | Competition inspection defence — LPP claims, employee rights, document log, post-inspection obligations |
-| `/competition-eu:eu-liability-advisor` | Art. 340(2) TFEU non-contractual liability — Bergaderm three-limb test, damage assessment, MS Francovich liability |
+| `/eu-competition:lawyer-competition-antitrust` | Arts. 101–102 TFEU analysis, SO drafting, fines calculation, dawn raids |
+| `/eu-competition:lawyer-state-aid` | Art. 107–109 TFEU four-limb test, GBER screening, recovery calculation |
+| `/eu-competition:lawyer-legal-service` | CLS legal opinions, litigation management, Written Observations, risk assessment |
+| `/eu-competition:gber-screener` | Screen a measure against GBER categories — all conditions, incentive effect, cumulation |
+| `/eu-competition:market-definer` | Apply SSNIP test, define relevant product and geographic market for Art. 101/102/merger |
+| `/eu-competition:state-aid-review` | Art. 107(1) four-limb test, de minimis, GBER screening, compatibility assessment workflow |
+| `/eu-competition:merger-screener` | EU Merger Regulation — SIEC test, jurisdictional thresholds, Phase I/II, remedies design |
+| `/eu-competition:dawn-raid-advisor` | Competition inspection defence — LPP claims, employee rights, document log, post-inspection obligations |
+| `/eu-competition:eu-liability-advisor` | Art. 340(2) TFEU non-contractual liability — Bergaderm three-limb test, damage assessment, MS Francovich liability |
 
 ### `simulation-eu` — EU Institutional Simulation
 
 | Skill | Description |
 |---|---|
-| `/simulation-eu:commissioner` | Invoke any of 21 Commissioner personas — speaks from treaty mandate, priorities, tensions |
-| `/simulation-eu:college-deliberation` | Full College of Commissioners meeting — all 21 speak, President calls vote, outcome recorded |
-| `/simulation-eu:inter-service-consultation` | ISC round — lead DG circulates, all affected DGs respond, synthesis note produced |
-| `/simulation-eu:trilogue` | Inter-institutional trilogue — EP/Council/Commission negotiate via four-column document |
-| `/simulation-eu:legislative-cycle` | Full OLP from Commission initiative to OJ publication — chains all six phases |
-| `/simulation-eu:european-parliament` | EP counter-party agent — committee, rapporteur, group dynamics, amendments, plenary vote |
-| `/simulation-eu:council-eu` | Council counter-party agent — configuration, QMV arithmetic, general approach, Presidency mandate |
-| `/simulation-eu:advocate-general` | AG Opinion simulation — legal question analysis, party arguments, proposed ruling, Art. 252 TFEU independence |
-| `/simulation-eu:council-presidency` | Council Presidency chair — compromise texts, non-papers, QMV tracking, general approach, trilogue mandate |
-| `/simulation-eu:mandate-conflict` | Conflict map across all 21 Commissioner portfolios — structurally guaranteed mandate clashes with treaty basis and severity rating |
-| `/simulation-eu:red-team-college` | Token-efficient College stress test — runs all 21 Commissioners, returns only SEVERE objections and adoptability verdict |
-| `/simulation-eu:subsidiarity-stress` | Tests subsidiarity justification against 5 member-state configurations — finds where necessity argument fails and assesses yellow card risk |
-| `/simulation-eu:timeline` | OLP timeline with blocking dependencies, QMV arithmetic, and trilogue risk points |
+| `/eu-simulation:commissioner` | Invoke any of 21 Commissioner personas — speaks from treaty mandate, priorities, tensions |
+| `/eu-simulation:college-deliberation` | Full College of Commissioners meeting — all 21 speak, President calls vote, outcome recorded |
+| `/eu-simulation:inter-service-consultation` | ISC round — lead DG circulates, all affected DGs respond, synthesis note produced |
+| `/eu-simulation:trilogue` | Inter-institutional trilogue — EP/Council/Commission negotiate via four-column document |
+| `/eu-simulation:legislative-cycle` | Full OLP from Commission initiative to OJ publication — chains all six phases |
+| `/eu-simulation:european-parliament` | EP counter-party agent — committee, rapporteur, group dynamics, amendments, plenary vote |
+| `/eu-simulation:council-eu` | Council counter-party agent — configuration, QMV arithmetic, general approach, Presidency mandate |
+| `/eu-simulation:advocate-general` | AG Opinion simulation — legal question analysis, party arguments, proposed ruling, Art. 252 TFEU independence |
+| `/eu-simulation:council-presidency` | Council Presidency chair — compromise texts, non-papers, QMV tracking, general approach, trilogue mandate |
+| `/eu-simulation:mandate-conflict` | Conflict map across all 21 Commissioner portfolios — structurally guaranteed mandate clashes with treaty basis and severity rating |
+| `/eu-simulation:red-team-college` | Token-efficient College stress test — runs all 21 Commissioners, returns only SEVERE objections and adoptability verdict |
+| `/eu-simulation:subsidiarity-stress` | Tests subsidiarity justification against 5 member-state configurations — finds where necessity argument fails and assesses yellow card risk |
+| `/eu-simulation:timeline` | OLP timeline with blocking dependencies, QMV arithmetic, and trilogue risk points |
 
 ### `privacy-eu` — Data Protection & Privacy
 
 | Skill | Description |
 |---|---|
-| `/privacy-eu:dpia` | Full DPIA under Art. 39 EUDPR — multi-agent: DPO, IT-PM, IT Security, Legal Officer, EDPS prior-consultation determination |
-| `/privacy-eu:dpo` | DPO persona — Art. 39 threshold screening, risk sign-off, register of processing activities, Art. 40 referral decision |
-| `/privacy-eu:it-project-manager` | IT Project Manager — system architecture, data flows, third-party processors, ROPA record, retention schedule |
-| `/privacy-eu:it-security` | IT Security Officer — CIA threat model, TIA for non-EU cloud/AI providers, security measures, residual risk rating |
-| `/privacy-eu:legal-officer` | Legal Officer — legal basis Art. 5(1) EUDPR, necessity, proportionality, special categories, retention justification |
-| `/privacy-eu:it-security-plan` | IT Security Plans Expert — ISP drafting, ISO 27001/CIS Controls mapping, risk register, incident response, NIS2 compliance |
-| `/privacy-eu:data-breach-officer` | Data Breach Response — breach assessment, 72-hour EDPS notification (Art. 34 EUDPR), data subject communication, breach register |
-| `/privacy-eu:ropa-drafter` | RoPA Drafter — Art. 31 EUDPR Record of Processing Activities, legal basis, retention schedule, processor register |
-| `/privacy-eu:ai-act-officer` | AI Act Compliance — risk tier classification, prohibited practice check, FRIA (Art. 27), technical documentation, conformity assessment |
-| `/privacy-eu:tia-expert` | Transfer Impact Assessment — full TIA for third-country transfers, adequacy decisions, SCCs, supplementary measures, Schrems II |
-| `/privacy-eu:retention-schedule` | Retention Schedule — Art. 25 EUDPR storage limitation, retention matrix, sectoral obligations, archiving rules, deletion procedures |
-| `/privacy-eu:privacy-notice-drafter` | Privacy Notice Drafter — Arts. 15–16 EUDPR compliant notices, plain language, layered notices, mandatory content checklist |
-| `/privacy-eu:data-subject-rights` | Data Subject Rights — access, rectification, erasure, restriction, portability, objection — deadlines, exemptions, refusal letters |
-| `/privacy-eu:edps-complaint-handler` | EDPS Complaint Handler — Art. 57/58 EUDPR supervisory inquiry response, contradictory procedure, remedial action plan |
-| `/privacy-eu:ai-governance-officer` | AI Governance Officer — AI system register, model cards, governance board ToR, human oversight, AI procurement clauses |
+| `/eu-privacy:dpia` | Full DPIA under Art. 39 EUDPR — multi-agent: DPO, IT-PM, IT Security, Legal Officer, EDPS prior-consultation determination |
+| `/eu-privacy:dpo` | DPO persona — Art. 39 threshold screening, risk sign-off, register of processing activities, Art. 40 referral decision |
+| `/eu-privacy:it-project-manager` | IT Project Manager — system architecture, data flows, third-party processors, ROPA record, retention schedule |
+| `/eu-privacy:it-security` | IT Security Officer — CIA threat model, TIA for non-EU cloud/AI providers, security measures, residual risk rating |
+| `/eu-privacy:legal-officer` | Legal Officer — legal basis Art. 5(1) EUDPR, necessity, proportionality, special categories, retention justification |
+| `/eu-privacy:it-security-plan` | IT Security Plans Expert — ISP drafting, ISO 27001/CIS Controls mapping, risk register, incident response, NIS2 compliance |
+| `/eu-privacy:data-breach-officer` | Data Breach Response — breach assessment, 72-hour EDPS notification (Art. 34 EUDPR), data subject communication, breach register |
+| `/eu-privacy:ropa-drafter` | RoPA Drafter — Art. 31 EUDPR Record of Processing Activities, legal basis, retention schedule, processor register |
+| `/eu-privacy:ai-act-officer` | AI Act Compliance — risk tier classification, prohibited practice check, FRIA (Art. 27), technical documentation, conformity assessment |
+| `/eu-privacy:tia-expert` | Transfer Impact Assessment — full TIA for third-country transfers, adequacy decisions, SCCs, supplementary measures, Schrems II |
+| `/eu-privacy:retention-schedule` | Retention Schedule — Art. 25 EUDPR storage limitation, retention matrix, sectoral obligations, archiving rules, deletion procedures |
+| `/eu-privacy:privacy-notice-drafter` | Privacy Notice Drafter — Arts. 15–16 EUDPR compliant notices, plain language, layered notices, mandatory content checklist |
+| `/eu-privacy:data-subject-rights` | Data Subject Rights — access, rectification, erasure, restriction, portability, objection — deadlines, exemptions, refusal letters |
+| `/eu-privacy:edps-complaint-handler` | EDPS Complaint Handler — Art. 57/58 EUDPR supervisory inquiry response, contradictory procedure, remedial action plan |
+| `/eu-privacy:ai-governance-officer` | AI Governance Officer — AI system register, model cards, governance board ToR, human oversight, AI procurement clauses |
 
 ### `institutional-management-eu` — Institutional Management
 
 | Skill | Description |
 |---|---|
-| `/institutional-management-eu:head-of-unit` | Unit management, CDR, work programme, staff decisions, AMP |
-| `/institutional-management-eu:deputy-head-of-unit` | Operational coordination, quality review, deadline tracking, A.I. acting |
-| `/institutional-management-eu:assistant-hod` | ARES management, MIPS/C2 missions, SYSPER, PQ tracking, action trackers |
-| `/institutional-management-eu:hr-contract-manager-ta` | TA/CA contract management, CEOS, CAST, recruitment, renewal decisions |
-| `/institutional-management-eu:financial-officer` | ABAC financial circuit, FR 2018/1046, commitment and payment orders |
-| `/institutional-management-eu:pmo-pension-specialist` | Annex VIII pension calculations, PMO entitlements, pension projections |
-| `/institutional-management-eu:cdr-drafter` | Draft SMART CDR objectives, end-year appraisals, and competency assessments in SYSPER |
-| `/institutional-management-eu:amp-drafter` | Annual Management Plan — unit objectives, KPIs, deliverables, resource mapping, risk section, COO cycle |
-| `/institutional-management-eu:aar-drafter` | Annual Activity Report — objective assessment, resource use, internal control, HoU management assurance |
-| `/institutional-management-eu:selection-board` | Selection procedure — vacancy notice, shortlisting, competency-based interview grid, selection board report |
-| `/institutional-management-eu:access-to-documents` | Regulation 1049/2001 access requests — exception assessment, partial access, refusal letters, confirmatory procedure |
-| `/institutional-management-eu:underperformance-advisor` | Art. 51 SR underperformance procedure — warning letter, improvement plan, monitoring, JEC submission |
-| `/institutional-management-eu:budget-planner` | Budget planning and execution — CA/PA programming, virements, carry-overs, execution monitoring, AAR reporting |
+| `/eu-institutional-management:head-of-unit` | Unit management, CDR, work programme, staff decisions, AMP |
+| `/eu-institutional-management:deputy-head-of-unit` | Operational coordination, quality review, deadline tracking, A.I. acting |
+| `/eu-institutional-management:assistant-hod` | ARES management, MIPS/C2 missions, SYSPER, PQ tracking, action trackers |
+| `/eu-institutional-management:hr-contract-manager-ta` | TA/CA contract management, CEOS, CAST, recruitment, renewal decisions |
+| `/eu-institutional-management:financial-officer` | ABAC financial circuit, FR 2018/1046, commitment and payment orders |
+| `/eu-institutional-management:pmo-pension-specialist` | Annex VIII pension calculations, PMO entitlements, pension projections |
+| `/eu-institutional-management:cdr-drafter` | Draft SMART CDR objectives, end-year appraisals, and competency assessments in SYSPER |
+| `/eu-institutional-management:amp-drafter` | Annual Management Plan — unit objectives, KPIs, deliverables, resource mapping, risk section, COO cycle |
+| `/eu-institutional-management:aar-drafter` | Annual Activity Report — objective assessment, resource use, internal control, HoU management assurance |
+| `/eu-institutional-management:selection-board` | Selection procedure — vacancy notice, shortlisting, competency-based interview grid, selection board report |
+| `/eu-institutional-management:access-to-documents` | Regulation 1049/2001 access requests — exception assessment, partial access, refusal letters, confirmatory procedure |
+| `/eu-institutional-management:underperformance-advisor` | Art. 51 SR underperformance procedure — warning letter, improvement plan, monitoring, JEC submission |
+| `/eu-institutional-management:budget-planner` | Budget planning and execution — CA/PA programming, virements, carry-overs, execution monitoring, AAR reporting |
 
 ### `grants-enforcement-eu` — Grants, Procurement & Enforcement
 
 | Skill | Description |
 |---|---|
-| `/grants-enforcement-eu:grant-manager` | Horizon Europe MGA management, payment assessment, financial corrections |
-| `/grants-enforcement-eu:infringement-officer` | Arts. 258–260 TFEU procedure — EU Pilot, LFN, RO, CJEU referral, Art. 260 penalties |
-| `/grants-enforcement-eu:procurement-expert` | FR 2018/1046 procurement — framework contracts, tender evaluation, award decisions |
-| `/grants-enforcement-eu:lfn-drafter` | Draft Art. 258 TFEU Letters of Formal Notice — non-transposition, incorrect transposition, misapplication |
-| `/grants-enforcement-eu:transposition-tracker` | Track and assess directive transposition across 27 MS — status table, conformity, escalation |
-| `/grants-enforcement-eu:infringement` | Art. 258–260 TFEU infringement assessment — type classification, procedural stage, penalty estimate |
-| `/grants-enforcement-eu:reasoned-opinion-drafter` | Art. 258(2) TFEU Reasoned Opinion — rebuttal of member state observations, maintained allegations, RO drafting |
-| `/grants-enforcement-eu:grant-audit-advisor` | Grant audit preparation and response — ECA/IAS on-the-spot checks, contradictory procedure, rebuttal notes |
-| `/grants-enforcement-eu:grant-amendment-officer` | Grant agreement amendments — budget reallocation, partner withdrawal, period extension, force majeure |
-| `/grants-enforcement-eu:tender-evaluator` | Tender evaluation — exclusion/selection/award criteria scoring, ALT assessment, evaluation report, debrief letters |
-| `/grants-enforcement-eu:olaf-referral-advisor` | OLAF referral — fraud indicators, Art. 8 Reg. 883/2013 notification, payment suspension, parallel procedure rules |
-| `/grants-enforcement-eu:direct-award-advisor` | Direct award justification — urgency, sole source, follow-on services, FR Art. 164 exception assessment |
-| `/grants-enforcement-eu:eppo-jurisdiction-advisor` | EPPO jurisdiction — PIF offences, Reg. 2017/1939, OLAF-EPPO referral, parallel administrative procedure management |
-| `/grants-enforcement-eu:cohesion-fund-manager` | Cohesion funds shared management — CPR 2021/1060, financial corrections, n+3 decommitment, closure, audit response |
+| `/eu-grants-enforcement:grant-manager` | Horizon Europe MGA management, payment assessment, financial corrections |
+| `/eu-grants-enforcement:infringement-officer` | Arts. 258–260 TFEU procedure — EU Pilot, LFN, RO, CJEU referral, Art. 260 penalties |
+| `/eu-grants-enforcement:procurement-expert` | FR 2018/1046 procurement — framework contracts, tender evaluation, award decisions |
+| `/eu-grants-enforcement:lfn-drafter` | Draft Art. 258 TFEU Letters of Formal Notice — non-transposition, incorrect transposition, misapplication |
+| `/eu-grants-enforcement:transposition-tracker` | Track and assess directive transposition across 27 MS — status table, conformity, escalation |
+| `/eu-grants-enforcement:infringement` | Art. 258–260 TFEU infringement assessment — type classification, procedural stage, penalty estimate |
+| `/eu-grants-enforcement:reasoned-opinion-drafter` | Art. 258(2) TFEU Reasoned Opinion — rebuttal of member state observations, maintained allegations, RO drafting |
+| `/eu-grants-enforcement:grant-audit-advisor` | Grant audit preparation and response — ECA/IAS on-the-spot checks, contradictory procedure, rebuttal notes |
+| `/eu-grants-enforcement:grant-amendment-officer` | Grant agreement amendments — budget reallocation, partner withdrawal, period extension, force majeure |
+| `/eu-grants-enforcement:tender-evaluator` | Tender evaluation — exclusion/selection/award criteria scoring, ALT assessment, evaluation report, debrief letters |
+| `/eu-grants-enforcement:olaf-referral-advisor` | OLAF referral — fraud indicators, Art. 8 Reg. 883/2013 notification, payment suspension, parallel procedure rules |
+| `/eu-grants-enforcement:direct-award-advisor` | Direct award justification — urgency, sole source, follow-on services, FR Art. 164 exception assessment |
+| `/eu-grants-enforcement:eppo-jurisdiction-advisor` | EPPO jurisdiction — PIF offences, Reg. 2017/1939, OLAF-EPPO referral, parallel administrative procedure management |
+| `/eu-grants-enforcement:cohesion-fund-manager` | Cohesion funds shared management — CPR 2021/1060, financial corrections, n+3 decommitment, closure, audit response |
 
 ### `data-communication-eu` — Data & Communication
 
 | Skill | Description |
 |---|---|
-| `/data-communication-eu:data-analyst` | Eurostat data extraction, indicator design, scoreboards, data notes, visualisation |
-| `/data-communication-eu:communication-officer` | Press releases, lines to take, Commissioner speeches, social media, briefings |
-| `/data-communication-eu:lines-to-take-drafter` | Draft complete LTT packages — friendly/neutral/hostile Q&A, no-go zones, background facts, clearance tracking |
-| `/data-communication-eu:digit-project-manager` | DIGIT IT project governance: Agile delivery, OCS gates, ITSRM² risk, EU Cloud, vendor management, steering-committee reporting |
-| `/data-communication-eu:data-steward` | Data governance, metadata (DCAT-AP, ISA², SEMIC), open data publication, data quality, data spaces, Data Governance Act |
-| `/data-communication-eu:cybersecurity-officer` | Cybersecurity risk (ITSRM²), NIS2 compliance, incident response, CERT-EU coordination, security accreditation, vulnerability management |
-| `/data-communication-eu:transparency-officer` | Access to documents (Reg. 1049/2001), GESTDEM, confirmatory applications, exception analysis, Transparency Register, Ombudsman |
+| `/eu-data-communication:data-analyst` | Eurostat data extraction, indicator design, scoreboards, data notes, visualisation |
+| `/eu-data-communication:communication-officer` | Press releases, lines to take, Commissioner speeches, social media, briefings |
+| `/eu-data-communication:lines-to-take-drafter` | Draft complete LTT packages — friendly/neutral/hostile Q&A, no-go zones, background facts, clearance tracking |
+| `/eu-data-communication:digit-project-manager` | DIGIT IT project governance: Agile delivery, OCS gates, ITSRM² risk, EU Cloud, vendor management, steering-committee reporting |
+| `/eu-data-communication:data-steward` | Data governance, metadata (DCAT-AP, ISA², SEMIC), open data publication, data quality, data spaces, Data Governance Act |
+| `/eu-data-communication:cybersecurity-officer` | Cybersecurity risk (ITSRM²), NIS2 compliance, incident response, CERT-EU coordination, security accreditation, vulnerability management |
+| `/eu-data-communication:transparency-officer` | Access to documents (Reg. 1049/2001), GESTDEM, confirmatory applications, exception analysis, Transparency Register, Ombudsman |
 
 ### `trade-eu` — Trade Defence
 
 | Skill | Description |
 |---|---|
-| `/trade-eu:trade-defence-investigator` | AD/CVD/safeguard investigations — margins, injury, NOI, questionnaires, OSV |
-| `/trade-eu:dumping-margin-calculator` | Dumping margin calculation — normal value, export price, Art. 2(10) adjustments, WA-WA, LDR |
-| `/trade-eu:sanctions-screener` | EU restrictive measures screening — consolidated list, asset freeze, sectoral sanctions, derogation procedure |
+| `/eu-trade:trade-defence-investigator` | AD/CVD/safeguard investigations — margins, injury, NOI, questionnaires, OSV |
+| `/eu-trade:dumping-margin-calculator` | Dumping margin calculation — normal value, export price, Art. 2(10) adjustments, WA-WA, LDR |
+| `/eu-trade:sanctions-screener` | EU restrictive measures screening — consolidated list, asset freeze, sectoral sanctions, derogation procedure |
 
 ### `careers-eu` — EU Careers & EPSO Preparation
 
 | Skill | Description |
 |---|---|
-| `/careers-eu:epso-grade` | Estimate entry grade, step, and net monthly salary for a given competition type and candidate profile under SR Annex I |
-| `/careers-eu:epso-presentation` | Coach and critique a 10-minute Assessment Centre oral presentation against EPSO Communication competency indicators |
-| `/careers-eu:epso-offer` | Analyse a job offer letter: decode grade/step, calculate gross and net remuneration, map probation and contract obligations under the SR |
+| `/eu-careers:epso-grade` | Estimate entry grade, step, and net monthly salary for a given competition type and candidate profile under SR Annex I |
+| `/eu-careers:epso-presentation` | Coach and critique a 10-minute Assessment Centre oral presentation against EPSO Communication competency indicators |
+| `/eu-careers:epso-offer` | Analyse a job offer letter: decode grade/step, calculate gross and net remuneration, map probation and contract obligations under the SR |
 
 ---
 

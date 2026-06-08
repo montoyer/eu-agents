@@ -1,5 +1,5 @@
 {
-  "name": "privacy-eu",
+  "name": "eu-privacy",
   "version": "1.0.0",
   "description": "DPIA workflow under Regulation (EU) 2018/1725 (EUDPR). Covers DPO oversight, IT architecture description, security threat modelling, legal basis assessment, and EDPS prior consultation determination for EU institutions, bodies, offices, and agencies.",
   "claude_md": "CLAUDE.md",

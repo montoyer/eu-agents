@@ -178,7 +178,7 @@ Required sections: `[SESSION CONTEXT]`, `Playbook`, `House Style`,
 
 ### Step 4 — Create the cold-start-interview skill
 
-Copy `plugins/legislative-eu/skills/cold-start-interview/SKILL.md` as a starting
+Copy `plugins/eu-legislative/skills/cold-start-interview/SKILL.md` as a starting
 point and adapt the questions to the new domain's context.
 
 ### Step 5 — Wire up the hook symlink
@@ -219,7 +219,7 @@ they are loaded as context by skills (particularly by `simulation-eu`).
 
 Knowledge files are **reference material only** — they do not produce invokable
 skills on their own. To make a knowledge file invokable, create a corresponding
-skill in `plugins/simulation-eu/` that loads it.
+skill in `plugins/eu-simulation/` that loads it.
 
 ---
 

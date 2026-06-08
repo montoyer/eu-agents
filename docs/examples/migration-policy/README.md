@@ -20,7 +20,7 @@ This example simulates the Commission's New Pact on Migration and Asylum — the
 ## The core political tension
 
 ```
-/simulation-eu:college-deliberation "New Pact: mandatory solidarity vs. voluntary solidarity — which model should the Commission propose?"
+/eu-simulation:college-deliberation "New Pact: mandatory solidarity vs. voluntary solidarity — which model should the Commission propose?"
 ```
 
 **The fundamental divide:**
@@ -35,7 +35,7 @@ This example simulates the Commission's New Pact on Migration and Asylum — the
 ## Simulate the Council blocking minority dynamics
 
 ```
-/simulation-eu:council-eu "New Pact — mandatory solidarity: QMV analysis. Which member states form a blocking minority?"
+/eu-simulation:council-eu "New Pact — mandatory solidarity: QMV analysis. Which member states form a blocking minority?"
 ```
 
 **Analysis:** Hungary, Poland (pre-2023), Czech Republic, Slovakia = 4 member states, but their combined population is insufficient for a blocking minority alone. The Commission's QMV bet was correct — the Visegrád group could not block. But political dynamics (non-paper coalitions, package deals) meant the negotiations were still highly complex.
@@ -45,7 +45,7 @@ This example simulates the Commission's New Pact on Migration and Asylum — the
 ## The fundamental rights constraint
 
 ```
-/legislative-eu:treaty-check "Accelerated border procedure — is 7-day screening compatible with fundamental rights?"
+/eu-legislative:treaty-check "Accelerated border procedure — is 7-day screening compatible with fundamental rights?"
 ```
 
 **Key rights engaged:**

@@ -8,7 +8,7 @@
 # The hook reminds the user to run the check before the draft progresses.
 #
 # Claude Code hook event: PostToolUse
-# Applies to: legislative-eu domain package
+# Applies to: eu-legislative domain package
 
 input=$(cat)
 

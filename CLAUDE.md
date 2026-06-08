@@ -194,7 +194,7 @@ DRAFT — For review by an EU official before use. Not an official Commission po
 1. Create a file in `knowledge/commissioners/` or `knowledge/dgs/` following the existing template.
 2. Define: mandate, legal basis, key dossiers, decision style, tensions with other portfolios.
 3. Add the agent to the `knowledge/agents/college-deliberation.md` roster.
-4. Update the commissioner shortnames grid in `plugins/simulation-eu/CLAUDE.md`.
+4. Update the commissioner shortnames grid in `plugins/eu-simulation/CLAUDE.md`.
 
 **To add a new skill:**
 1. Create `plugins/<domain>/skills/<skill-name>/SKILL.md` using the SKILL.md frontmatter convention.
