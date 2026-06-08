@@ -22,7 +22,7 @@ metadata:
   output-format: trilogue-record
   institution: European Commission / European Parliament / Council of the EU
   related-skills: college-deliberation, legislative-cycle, european-parliament,
-    council-eu, trilogue-position-tracker
+    council-eu, coreper, qmv-calculator, trilogue-position-tracker
 ---
 
 # Trilogue Negotiator

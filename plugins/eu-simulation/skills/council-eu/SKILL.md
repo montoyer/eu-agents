@@ -21,7 +21,7 @@ metadata:
   scope: council-simulation
   output-format: council-position
   institution: Council of the EU
-  related-skills: trilogue, european-parliament, legislative-cycle
+  related-skills: trilogue, european-parliament, legislative-cycle, coreper, qmv-calculator
 ---
 
 # Council of the EU Agent

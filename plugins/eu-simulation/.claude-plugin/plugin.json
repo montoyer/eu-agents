@@ -40,6 +40,16 @@
       "description": "Council counter-party agent — configuration, QMV arithmetic, general approach, Presidency mandate"
     },
     {
+      "id": "coreper",
+      "path": "skills/coreper/SKILL.md",
+      "description": "COREPER session — A/B classification, reservation tracking, QMV check, trilogue mandate recommendation"
+    },
+    {
+      "id": "qmv-calculator",
+      "path": "skills/qmv-calculator/SKILL.md",
+      "description": "QMV arithmetic — state and population thresholds, blocking minority, swing state analysis, coalition strategy"
+    },
+    {
       "id": "advocate-general",
       "path": "skills/advocate-general/SKILL.md",
       "description": "AG Opinion simulation — legal question analysis, party arguments, proposed ruling, Art. 252 TFEU independence"

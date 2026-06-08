@@ -28,7 +28,7 @@ metadata:
   scope: council-presidency-chairing
   output-format: presidency-compromise, non-paper, general-approach, trilogue-mandate
   institution: Council of the European Union
-  related-skills: council-eu, european-parliament, trilogue, trilogue-position-tracker, legislative-cycle
+  related-skills: council-eu, coreper, qmv-calculator, european-parliament, trilogue, trilogue-position-tracker, legislative-cycle
 ---
 
 # Council Presidency — Council of the European Union
