@@ -1,6 +1,6 @@
 # Competition & Legal Service — Practice Profile
 
-This file is the practice profile for the `competition-eu` plugin. It is loaded
+This file is the practice profile for the `eu-competition` plugin. It is loaded
 automatically when any skill in this package is invoked. Run `/cold-start-interview`
 first to personalise the `[SESSION CONTEXT]` section.
 

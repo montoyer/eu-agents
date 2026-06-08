@@ -1,10 +1,10 @@
 ---
 name: cold-start-interview
 description: >
-  Personalise the data-communication-eu plugin to the user's DG, primary
+  Personalise the eu-data-communication plugin to the user's DG, primary
   audiences, Commissioner portfolio (for speeches), data sources available,
   and working language. Writes the session context into
-  data-communication-eu/CLAUDE.md. Run this first before using any other skill.
+  eu-data-communication/CLAUDE.md. Run this first before using any other skill.
 license: MIT
 metadata:
   author: EC-Skills-Library
@@ -25,7 +25,7 @@ metadata:
 Welcome to the **Data & Communication** plugin.
 
 This interview personalises the practice profile for your data or communication
-work. Answers are stored in `data-communication-eu/CLAUDE.md`.
+work. Answers are stored in `eu-data-communication/CLAUDE.md`.
 
 ---
 

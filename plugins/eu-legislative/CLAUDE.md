@@ -1,6 +1,6 @@
 # Legislative & Policy — Practice Profile
 
-This file is the practice profile for the `legislative-eu` plugin. It is loaded
+This file is the practice profile for the `eu-legislative` plugin. It is loaded
 automatically when any skill in this package is invoked. It sets the working
 context, house style, trust standards, and escalation rules that apply to all
 outputs produced by skills in this package.

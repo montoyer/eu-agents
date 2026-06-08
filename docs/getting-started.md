@@ -8,8 +8,8 @@ Add the marketplace and install the plugins you need:
 
 ```
 /plugin marketplace add montoyer/eu-agents
-/plugin install simulation-eu@eu-agents
-/plugin install legislative-eu@eu-agents
+/plugin install eu-simulation@eu-agents
+/plugin install eu-legislative@eu-agents
 ```
 
 ---

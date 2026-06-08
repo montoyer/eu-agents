@@ -1,9 +1,9 @@
 ---
 name: cold-start-interview
 description: >
-  Personalise the legislative-eu plugin to the user's DG, active dossier(s),
+  Personalise the eu-legislative plugin to the user's DG, active dossier(s),
   Council configuration, working language, and Commissioner portfolio. Writes
-  the session context into legislative-eu/CLAUDE.md so all subsequent skills
+  the session context into eu-legislative/CLAUDE.md so all subsequent skills
   operate with the correct institutional frame. Run this first in every new
   session before using any other skill in this package.
 license: MIT
@@ -28,7 +28,7 @@ Welcome to the **Legislative & Policy** plugin for the European Commission.
 
 This interview takes 2 minutes. Your answers personalise the practice profile
 so every skill in this package produces outputs calibrated to your DG, dossier,
-and working context. Answers are stored in `legislative-eu/CLAUDE.md` under
+and working context. Answers are stored in `eu-legislative/CLAUDE.md` under
 `[SESSION CONTEXT]` for this session.
 
 ---
@@ -75,7 +75,7 @@ Ask the user the following questions. Accept brief answers — expand from conte
 ## What to Do With the Answers
 
 Once the user has answered, produce a filled `[SESSION CONTEXT]` block and tell
-the user to paste it into `legislative-eu/CLAUDE.md`, replacing the placeholder:
+the user to paste it into `eu-legislative/CLAUDE.md`, replacing the placeholder:
 
 ```
 ## [SESSION CONTEXT]

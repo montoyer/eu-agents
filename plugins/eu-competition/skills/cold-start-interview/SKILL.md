@@ -1,9 +1,9 @@
 ---
 name: cold-start-interview
 description: >
-  Personalise the competition-eu plugin to the user's unit, case type, case
+  Personalise the eu-competition plugin to the user's unit, case type, case
   reference, sector, confidentiality level, and working language. Writes the
-  session context into competition-eu/CLAUDE.md so all subsequent skills operate
+  session context into eu-competition/CLAUDE.md so all subsequent skills operate
   with the correct institutional and legal frame. Run this first in every new
   session before using any other skill in this package.
 license: MIT
@@ -26,7 +26,7 @@ metadata:
 Welcome to the **Competition & Legal Service** plugin.
 
 This interview takes 2 minutes. Your answers personalise the practice profile
-for your case or opinion work. Answers are stored in `competition-eu/CLAUDE.md`
+for your case or opinion work. Answers are stored in `eu-competition/CLAUDE.md`
 under `[SESSION CONTEXT]`.
 
 ---

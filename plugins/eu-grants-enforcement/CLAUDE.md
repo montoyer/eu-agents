@@ -1,6 +1,6 @@
 # Grants, Procurement & Enforcement — Practice Profile
 
-This file is the practice profile for the `grants-enforcement-eu` plugin.
+This file is the practice profile for the `eu-grants-enforcement` plugin.
 Run `/cold-start-interview` to personalise the `[SESSION CONTEXT]` section.
 
 ---

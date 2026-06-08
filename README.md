@@ -81,15 +81,15 @@ See [NOI.md](NOI.md) for the full argument.
 /plugin marketplace add montoyer/eu-agents
 
 # Install the plugins you need
-/plugin install simulation-eu        # 21 Commissioners + compound commands
-/plugin install legislative-eu       # Policy drafting, impact assessment, ISC
-/plugin install privacy-eu           # Full DPIA workflow
-/plugin install competition-eu       # Antitrust and state aid
-/plugin install trade-eu             # Trade defence instruments
-/plugin install grants-enforcement-eu # Grants, infringement, procurement
-/plugin install institutional-management-eu # HR, finance, unit management
-/plugin install data-communication-eu # Data analysis, press, speeches
-/plugin install careers-eu           # EPSO preparation
+/plugin install eu-simulation        # 21 Commissioners + compound commands
+/plugin install eu-legislative       # Policy drafting, impact assessment, ISC
+/plugin install eu-privacy           # Full DPIA workflow
+/plugin install eu-competition       # Antitrust and state aid
+/plugin install eu-trade             # Trade defence instruments
+/plugin install eu-grants-enforcement # Grants, infringement, procurement
+/plugin install eu-institutional-management # HR, finance, unit management
+/plugin install eu-data-communication # Data analysis, press, speeches
+/plugin install eu-careers           # EPSO preparation
 ```
 
 Or install everything at once:
@@ -143,14 +143,14 @@ agents-for-EU/
 ├── marketplace.json                ← legacy plugin registry (kept for reference)
 │
 ├── plugins/                        ← installable skill packages
-│   ├── legislative-eu/             ← Policy, legislative drafting, ISC, PQ
-│   ├── competition-eu/             ← Antitrust, state aid, Legal Service
-│   ├── institutional-management-eu/← Unit management, HR, finance, CDR
-│   ├── trade-eu/                   ← Trade defence instruments
-│   ├── grants-enforcement-eu/      ← Grants, infringement, procurement
-│   ├── data-communication-eu/      ← Data analysis, press, speeches
-│   ├── simulation-eu/              ← Commissioner personas, College, trilogue, OLP
-│   └── privacy-eu/                 ← DPIA workflow, DPO, IT security, legal officer
+│   ├── eu-legislative/             ← Policy, legislative drafting, ISC, PQ
+│   ├── eu-competition/             ← Antitrust, state aid, Legal Service
+│   ├── eu-institutional-management/← Unit management, HR, finance, CDR
+│   ├── eu-trade/                   ← Trade defence instruments
+│   ├── eu-grants-enforcement/      ← Grants, infringement, procurement
+│   ├── eu-data-communication/      ← Data analysis, press, speeches
+│   ├── eu-simulation/              ← Commissioner personas, College, trilogue, OLP
+│   └── eu-privacy/                 ← DPIA workflow, DPO, IT security, legal officer
 │       Each contains:
 │           CLAUDE.md               ← domain practice profile
 │           .claude-plugin/         ← plugin.json manifest

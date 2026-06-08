@@ -26,18 +26,18 @@ citations.
 |---|---|---|---|
 | `eur-lex` | planned | none | — |
 | `eurostat` | planned | none | — |
-| `ted-ojeu` | planned | API key | `grants-enforcement-eu/references/procurement-thresholds-2024.md` |
+| `ted-ojeu` | planned | API key | `eu-grants-enforcement/references/procurement-thresholds-2024.md` |
 | `comitology-register` | planned | none | — |
 | `rapid` | planned | none | — |
 | `eu-open-data-portal` | planned | none | — |
-| `oj-state-aid-register` | planned | none | `competition-eu/references/gber-de-minimis-2024.md` |
+| `oj-state-aid-register` | planned | none | `eu-competition/references/gber-de-minimis-2024.md` |
 | `f-and-t-portal` | planned | EU Login | — |
 | `chap` | planned | EU Login (intranet) | — |
-| `epso-eu` | planned | none | `careers-eu/references/staff-regulations-annex-i-2026.md` |
+| `epso-eu` | planned | none | `eu-careers/references/staff-regulations-annex-i-2026.md` |
 | `sysper` | planned | EU Login (intranet) | — |
 | `abac` | planned | EU Login (intranet) | — |
 | `edps-register` | planned | none | — |
-| `comext` | planned | none | `trade-eu/references/anti-dumping-method.md` |
+| `comext` | planned | none | `eu-trade/references/anti-dumping-method.md` |
 
 **Status legend** — `live`: an MCP server is configured and the connector returns
 data; `manual`: no API, retrieval is via a documented manual step; `planned`:
@@ -56,7 +56,7 @@ of any cited legal act rather than the training-data version.
 
 - Source: `https://eur-lex.europa.eu/`
 - API: EUR-Lex SPARQL endpoint + REST search API
-- Used by: `legislative-eu`, `competition-eu`, `trade-eu`, `grants-enforcement-eu`
+- Used by: `eu-legislative`, `eu-competition`, `eu-trade`, `eu-grants-enforcement`
 - Primary use cases:
   - Retrieve current consolidated text of the Basic AD Regulation (2016/1036)
   - Retrieve current GBER (651/2014 as amended)
@@ -85,7 +85,7 @@ extraction date, replacing `[model knowledge — verify]` tags with
 
 - Source: `https://ec.europa.eu/eurostat/`
 - API: Eurostat SDMX-JSON REST API
-- Used by: `data-communication-eu`, `legislative-eu` (economist skill)
+- Used by: `eu-data-communication`, `eu-legislative` (economist skill)
 - Primary use cases:
   - Labour market statistics (LFS — `lfsa_urgan`, `lfsa_ergan`)
   - GDP and national accounts (`nama_10_gdp`)
@@ -115,7 +115,7 @@ current publications.
 
 - Source: `https://ted.europa.eu/`
 - API: TED API v3 (search and retrieve notices)
-- Used by: `trade-eu`, `grants-enforcement-eu`
+- Used by: `eu-trade`, `eu-grants-enforcement`
 - Primary use cases:
   - Retrieve published Notices of Initiation (AD/CVD investigations)
   - Monitor contract award notices in a sector
@@ -141,7 +141,7 @@ status of a delegated or implementing act.
 
 - Source: `https://comitology.consilium.europa.eu/`
 - API: Comitology Register public search (scrape / RSS)
-- Used by: `legislative-eu`
+- Used by: `eu-legislative`
 - Primary use cases:
   - Check committee opinion outcome for a specific DA/IA
   - Retrieve EP objection status for a delegated act
@@ -167,7 +167,7 @@ existing Commission communication on a topic before drafting new materials.
 
 - Source: `https://ec.europa.eu/commission/presscorner/`
 - API: RAPID search API (full-text search)
-- Used by: `data-communication-eu`
+- Used by: `eu-data-communication`
 - Primary use cases:
   - Check existing Commission press releases on a topic
   - Retrieve the standard phrasing for a recurring announcement type
@@ -193,7 +193,7 @@ through the SDMX API (e.g., JRC datasets, DG ENV monitoring data).
 
 - Source: `https://data.europa.eu/`
 - API: DCAT-AP REST API
-- Used by: `data-communication-eu`
+- Used by: `eu-data-communication`
 - Primary use cases:
   - JRC analytical datasets (energy, environment, industry)
   - DG ENV biodiversity and environmental quality monitoring data
@@ -218,7 +218,7 @@ for comparable aid schemes.
 
 - Source: `https://competition-cases.ec.europa.eu/`
 - API: Competition Cases Portal search
-- Used by: `competition-eu`
+- Used by: `eu-competition`
 - Primary use cases:
   - Retrieve Commission decisions on comparable state aid schemes
   - Check whether a specific SA case number has a published decision
@@ -243,7 +243,7 @@ details, submission deadlines, and beneficiary data.
 
 - Source: `https://ec.europa.eu/info/funding-tenders/`
 - API: F&T Portal REST API (authenticated)
-- Used by: `grants-enforcement-eu`
+- Used by: `eu-grants-enforcement`
 - Primary use cases:
   - Retrieve grant agreement financial data
   - Check reporting deadlines
@@ -269,7 +269,7 @@ of a complaint before opening EU Pilot or drafting formal correspondence.
 
 - Source: Internal Commission system — not publicly accessible
 - Access: Commission intranet only
-- Used by: `grants-enforcement-eu`
+- Used by: `eu-grants-enforcement`
 - Primary use cases:
   - Check complaint status (registered, in EU Pilot, closed)
   - Retrieve complainant information for correspondence
@@ -290,14 +290,14 @@ of a complaint before opening EU Pilot or drafting formal correspondence.
 **EPSO — European Personnel Selection Office**
 
 Retrieves published competition notices, reserve list status, and the current
-Staff Regulations pay tables. Enables the `careers-eu` skills to check live
+Staff Regulations pay tables. Enables the `eu-careers` skills to check live
 competition timelines and grade requirements.
 
 - Source: `https://eu-careers.europa.eu/`
 - API: no public REST API — competition notices published as OJ C-series
-- Used by: `careers-eu`
+- Used by: `eu-careers`
 - Fallback when planned: read pay-scale figures from
-  `careers-eu/references/staff-regulations-annex-i-2026.md`; do not generate them
+  `eu-careers/references/staff-regulations-annex-i-2026.md`; do not generate them
 
 ```json
 {
@@ -313,12 +313,12 @@ competition timelines and grade requirements.
 ### `sysper`
 **Sysper — Commission HR Management System**
 
-Internal Commission HR system. Enables `institutional-management-eu` skills to
+Internal Commission HR system. Enables `eu-institutional-management` skills to
 retrieve staff records, leave balances, and appraisal (CDR) data.
 
 - Source: Internal Commission system — not publicly accessible
 - Access: Commission intranet only
-- Used by: `institutional-management-eu`
+- Used by: `eu-institutional-management`
 - Fallback when planned: no live access outside the Commission network; all
   figures carry `[model knowledge — verify]`
 
@@ -336,13 +336,13 @@ retrieve staff records, leave balances, and appraisal (CDR) data.
 ### `abac`
 **ABAC — Commission Accounting / Budget Execution System**
 
-Internal Commission financial system. Enables `institutional-management-eu`
+Internal Commission financial system. Enables `eu-institutional-management`
 skills (financial-officer) to check commitment/payment appropriations and
 budget line balances.
 
 - Source: Internal Commission system — not publicly accessible
 - Access: Commission intranet only
-- Used by: `institutional-management-eu`
+- Used by: `eu-institutional-management`
 - Fallback when planned: no live access outside the Commission network
 
 ```json
@@ -360,12 +360,12 @@ budget line balances.
 **EDPS — Register of Records (Art. 31 EUDPR)**
 
 Searches the public register of processing records and prior consultations.
-Enables `privacy-eu` skills to check whether a comparable processing activity
+Enables `eu-privacy` skills to check whether a comparable processing activity
 has an existing record or a prior EDPS consultation.
 
 - Source: `https://www.edps.europa.eu/`
 - API: no formal REST API — public register search
-- Used by: `privacy-eu`
+- Used by: `eu-privacy`
 - Fallback when planned: DPIA threshold and Art. 39 EUDPR criteria applied from
   model knowledge with `[EUR-Lex — verify current version]` tags
 
@@ -389,9 +389,9 @@ for a product under investigation.
 
 - Source: `https://ec.europa.eu/eurostat/web/international-trade-in-goods/data/database`
 - API: Eurostat SDMX REST API (Comext datasets, e.g., `DS-045409`)
-- Used by: `trade-eu`
+- Used by: `eu-trade`
 - Fallback when planned: anti-dumping duty calculation method and de minimis
-  thresholds read from `trade-eu/references/anti-dumping-method.md`
+  thresholds read from `eu-trade/references/anti-dumping-method.md`
 
 ```json
 {
@@ -439,4 +439,4 @@ for full connector setup instructions.
 | `edps-register` | — | — | — | — | — | — | — | ✓ |
 | `comext` | — | — | — | ✓ | — | — | — | — |
 
-(`simulation-eu` declares no connectors — it is a pure model-knowledge simulation.)
+(`eu-simulation` declares no connectors — it is a pure model-knowledge simulation.)

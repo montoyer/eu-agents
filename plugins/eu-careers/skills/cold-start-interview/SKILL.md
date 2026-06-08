@@ -1,10 +1,10 @@
 ---
 name: cold-start-interview
 description: >
-  Personalise the careers-eu plugin to the candidate's competition target, profile,
+  Personalise the eu-careers plugin to the candidate's competition target, profile,
   and current preparation stage. Collects degree level, domain, years of experience,
   family situation, and AC readiness. Writes the session context into
-  careers-eu/CLAUDE.md. Run this first before using any other skill in this package.
+  eu-careers/CLAUDE.md. Run this first before using any other skill in this package.
 license: MIT
 metadata:
   author: EC-Skills-Library
@@ -25,7 +25,7 @@ metadata:
 Welcome to the **EU Careers & EPSO Preparation** plugin.
 
 This short interview personalises the practice profile for your situation.
-Answers are stored in `careers-eu/CLAUDE.md` and carried across all skills
+Answers are stored in `eu-careers/CLAUDE.md` and carried across all skills
 in this package.
 
 ---

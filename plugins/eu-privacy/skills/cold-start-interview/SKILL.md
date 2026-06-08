@@ -1,7 +1,7 @@
 ---
 name: cold-start-interview
 description: >
-  Personalise the privacy-eu plugin to a specific DG, processing activity, and working
+  Personalise the eu-privacy plugin to a specific DG, processing activity, and working
   context before running a DPIA or any specialist data-protection skill. Collects:
   DG/Unit name, processing activity description, controller identity, data subjects,
   presence of special categories, non-EU cloud or AI providers, DPIA reference number,
@@ -15,7 +15,7 @@ metadata:
   domain: eu-data-protection-setup
   triggers: >
     cold start, setup privacy plugin, configure DPIA context, set DG for DPIA,
-    personalise privacy-eu, initialize data protection session
+    personalise eu-privacy, initialize data protection session
   role: setup
   scope: session-configuration
   output-format: session-context-block
@@ -25,7 +25,7 @@ metadata:
 
 # Cold-Start Interview — Privacy & Data Protection Plugin
 
-Welcome to the `privacy-eu` plugin. This brief interview personalises the session for
+Welcome to the `eu-privacy` plugin. This brief interview personalises the session for
 your DG and processing activity. Answer each question; the [SESSION CONTEXT] block
 will be populated automatically.
 

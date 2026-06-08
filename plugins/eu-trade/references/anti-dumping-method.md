@@ -1,6 +1,6 @@
 # Trade Defence — Calculation Method and Thresholds
 
-Curated static reference for the `trade-eu` skills (`dumping-margin-calculator`,
+Curated static reference for the `eu-trade` skills (`dumping-margin-calculator`,
 `trade-defence-investigator`). These thresholds and methodology constants are set
 by the Basic Regulations and WTO agreements — read them from this file; **do not
 generate them from training data**.

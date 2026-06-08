@@ -1,9 +1,9 @@
 ---
 name: cold-start-interview
 description: >
-  Personalise the trade-eu plugin to the current investigation type, product,
+  Personalise the eu-trade plugin to the current investigation type, product,
   country of origin, case reference, investigation phase, and working language.
-  Writes the session context into trade-eu/CLAUDE.md. Run this first before
+  Writes the session context into eu-trade/CLAUDE.md. Run this first before
   using any other skill in this package.
 license: MIT
 metadata:
@@ -25,7 +25,7 @@ metadata:
 Welcome to the **Trade Defence** plugin.
 
 This interview personalises the practice profile for your investigation. Answers
-are stored in `trade-eu/CLAUDE.md`.
+are stored in `eu-trade/CLAUDE.md`.
 
 ---
 

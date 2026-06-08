@@ -1,9 +1,9 @@
 ---
 name: cold-start-interview
 description: >
-  Personalise the institutional-management-eu plugin to the user's DG, unit,
+  Personalise the eu-institutional-management plugin to the user's DG, unit,
   management role, unit size, ABAC delegation level, and current work programme
-  priorities. Writes the session context into institutional-management-eu/CLAUDE.md.
+  priorities. Writes the session context into eu-institutional-management/CLAUDE.md.
   Run this first before using any other skill in this package.
 license: MIT
 metadata:
@@ -26,7 +26,7 @@ metadata:
 Welcome to the **Institutional Management** plugin.
 
 This interview personalises the practice profile for your unit and management
-role. Answers are stored in `institutional-management-eu/CLAUDE.md`.
+role. Answers are stored in `eu-institutional-management/CLAUDE.md`.
 
 ---
 

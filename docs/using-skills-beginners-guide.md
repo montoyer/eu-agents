@@ -27,12 +27,12 @@ review, correct, and take responsibility for. This is by design.
 
 | Package | Who it is for | What it covers |
 |---|---|---|
-| **legislative-eu** | Policy officers, legislative drafters, SecGen lawyers | Briefing notes, regulations, ISC contributions, PQ responses, trilogue, impact assessment, consultation, REFIT |
-| **competition-eu** | DG COMP lawyers, Legal Service lawyers | Antitrust analysis, state aid (four-limb test, GBER, compatibility), legal opinions, market definition |
-| **institutional-management-eu** | Heads of Unit, assistants, HR officers, financial officers | CDR appraisals, ARES workflow, ABAC, contracts, pensions |
-| **trade-eu** | DG TRADE investigators | Anti-dumping/anti-subsidy investigations, dumping margins, injury analysis |
-| **grants-enforcement-eu** | Grant managers, infringement officers, procurement officers | Horizon Europe grants, Letters of Formal Notice, transposition tracking, infringement assessment |
-| **data-communication-eu** | Data analysts, communication officers | Eurostat data notes, press releases, speeches, lines to take |
+| **eu-legislative** | Policy officers, legislative drafters, SecGen lawyers | Briefing notes, regulations, ISC contributions, PQ responses, trilogue, impact assessment, consultation, REFIT |
+| **eu-competition** | DG COMP lawyers, Legal Service lawyers | Antitrust analysis, state aid (four-limb test, GBER, compatibility), legal opinions, market definition |
+| **eu-institutional-management** | Heads of Unit, assistants, HR officers, financial officers | CDR appraisals, ARES workflow, ABAC, contracts, pensions |
+| **eu-trade** | DG TRADE investigators | Anti-dumping/anti-subsidy investigations, dumping margins, injury analysis |
+| **eu-grants-enforcement** | Grant managers, infringement officers, procurement officers | Horizon Europe grants, Letters of Formal Notice, transposition tracking, infringement assessment |
+| **eu-data-communication** | Data analysts, communication officers | Eurostat data notes, press releases, speeches, lines to take |
 
 Each package lives under `plugins/<package-name>/` in the repository. EU
 institutional knowledge (Commissioner personas, DG profiles, institutions) is
@@ -149,7 +149,7 @@ The reply must:
 ### Step 1: Install the right package
 
 This task is legal work — drafting a formal reply based on a specific legal
-framework (Regulation 2018/1725). The right package is **`competition-eu`**
+framework (Regulation 2018/1725). The right package is **`eu-competition`**
 because it contains the `lawyer-legal-service` skill, which handles legal
 analysis and formal legal documents.
 
@@ -157,7 +157,7 @@ In Claude Code:
 
 ```
 /plugin marketplace add montoyer/eu-agents
-/plugin install competition-eu@eu-agents
+/plugin install eu-competition@eu-agents
 ```
 
 ---
@@ -487,7 +487,7 @@ quality checklist at the end.
 
 ## Other tasks you can do with the same package
 
-Once your cold-start interview has set the competition-eu context, you can
+Once your cold-start interview has set the eu-competition context, you can
 continue the same session with related tasks without re-interviewing:
 
 ```
@@ -554,14 +554,14 @@ Note: the applicable regulation is Regulation (EU) 2018/1725, not GDPR
 
 Use this quick-decision question: *What kind of official would normally do this task?*
 
-- A DG COMP or Legal Service lawyer → `competition-eu`
-- A policy officer working on a legislative file → `legislative-eu`
-- A Head of Unit or HR officer → `institutional-management-eu`
-- A DG TRADE investigator → `trade-eu`
-- A grant manager or infringement officer → `grants-enforcement-eu`
-- A data analyst or press officer → `data-communication-eu`
+- A DG COMP or Legal Service lawyer → `eu-competition`
+- A policy officer working on a legislative file → `eu-legislative`
+- A Head of Unit or HR officer → `eu-institutional-management`
+- A DG TRADE investigator → `eu-trade`
+- A grant manager or infringement officer → `eu-grants-enforcement`
+- A data analyst or press officer → `eu-data-communication`
 
-If in doubt, `legislative-eu` with `policy-officer` is the closest to a generalist
+If in doubt, `eu-legislative` with `policy-officer` is the closest to a generalist
 Commission policy function.
 
 ---
@@ -570,7 +570,7 @@ Commission policy function.
 
 All 97 skills across 9 plugins. Install a plugin with `/plugin install <plugin-name>@eu-agents`.
 
-### `legislative-eu` — Legislative & Policy
+### `eu-legislative` — Legislative & Policy
 
 | Skill | Description |
 |---|---|
@@ -594,7 +594,7 @@ All 97 skills across 9 plugins. Install a plugin with `/plugin install <plugin-n
 | `/eu-legislative:regulatory-impact-quantifier` | CBA/CEA quantification — compliance costs, SME test, OIOO, benefit monetisation, RSB-ready tables |
 | `/eu-legislative:policy-cycle` | Full EU policy lifecycle — agenda-setting through evaluation, all 7 phases, Better Regulation methodology |
 
-### `competition-eu` — Competition & Legal Service
+### `eu-competition` — Competition & Legal Service
 
 | Skill | Description |
 |---|---|
@@ -608,7 +608,7 @@ All 97 skills across 9 plugins. Install a plugin with `/plugin install <plugin-n
 | `/eu-competition:dawn-raid-advisor` | Competition inspection defence — LPP claims, employee rights, document log, post-inspection obligations |
 | `/eu-competition:eu-liability-advisor` | Art. 340(2) TFEU non-contractual liability — Bergaderm three-limb test, damage assessment, MS Francovich liability |
 
-### `simulation-eu` — EU Institutional Simulation
+### `eu-simulation` — EU Institutional Simulation
 
 | Skill | Description |
 |---|---|
@@ -626,7 +626,7 @@ All 97 skills across 9 plugins. Install a plugin with `/plugin install <plugin-n
 | `/eu-simulation:subsidiarity-stress` | Tests subsidiarity justification against 5 member-state configurations — finds where necessity argument fails and assesses yellow card risk |
 | `/eu-simulation:timeline` | OLP timeline with blocking dependencies, QMV arithmetic, and trilogue risk points |
 
-### `privacy-eu` — Data Protection & Privacy
+### `eu-privacy` — Data Protection & Privacy
 
 | Skill | Description |
 |---|---|
@@ -646,7 +646,7 @@ All 97 skills across 9 plugins. Install a plugin with `/plugin install <plugin-n
 | `/eu-privacy:edps-complaint-handler` | EDPS Complaint Handler — Art. 57/58 EUDPR supervisory inquiry response, contradictory procedure, remedial action plan |
 | `/eu-privacy:ai-governance-officer` | AI Governance Officer — AI system register, model cards, governance board ToR, human oversight, AI procurement clauses |
 
-### `institutional-management-eu` — Institutional Management
+### `eu-institutional-management` — Institutional Management
 
 | Skill | Description |
 |---|---|
@@ -664,7 +664,7 @@ All 97 skills across 9 plugins. Install a plugin with `/plugin install <plugin-n
 | `/eu-institutional-management:underperformance-advisor` | Art. 51 SR underperformance procedure — warning letter, improvement plan, monitoring, JEC submission |
 | `/eu-institutional-management:budget-planner` | Budget planning and execution — CA/PA programming, virements, carry-overs, execution monitoring, AAR reporting |
 
-### `grants-enforcement-eu` — Grants, Procurement & Enforcement
+### `eu-grants-enforcement` — Grants, Procurement & Enforcement
 
 | Skill | Description |
 |---|---|
@@ -683,7 +683,7 @@ All 97 skills across 9 plugins. Install a plugin with `/plugin install <plugin-n
 | `/eu-grants-enforcement:eppo-jurisdiction-advisor` | EPPO jurisdiction — PIF offences, Reg. 2017/1939, OLAF-EPPO referral, parallel administrative procedure management |
 | `/eu-grants-enforcement:cohesion-fund-manager` | Cohesion funds shared management — CPR 2021/1060, financial corrections, n+3 decommitment, closure, audit response |
 
-### `data-communication-eu` — Data & Communication
+### `eu-data-communication` — Data & Communication
 
 | Skill | Description |
 |---|---|
@@ -695,7 +695,7 @@ All 97 skills across 9 plugins. Install a plugin with `/plugin install <plugin-n
 | `/eu-data-communication:cybersecurity-officer` | Cybersecurity risk (ITSRM²), NIS2 compliance, incident response, CERT-EU coordination, security accreditation, vulnerability management |
 | `/eu-data-communication:transparency-officer` | Access to documents (Reg. 1049/2001), GESTDEM, confirmatory applications, exception analysis, Transparency Register, Ombudsman |
 
-### `trade-eu` — Trade Defence
+### `eu-trade` — Trade Defence
 
 | Skill | Description |
 |---|---|
@@ -703,7 +703,7 @@ All 97 skills across 9 plugins. Install a plugin with `/plugin install <plugin-n
 | `/eu-trade:dumping-margin-calculator` | Dumping margin calculation — normal value, export price, Art. 2(10) adjustments, WA-WA, LDR |
 | `/eu-trade:sanctions-screener` | EU restrictive measures screening — consolidated list, asset freeze, sectoral sanctions, derogation procedure |
 
-### `careers-eu` — EU Careers & EPSO Preparation
+### `eu-careers` — EU Careers & EPSO Preparation
 
 | Skill | Description |
 |---|---|

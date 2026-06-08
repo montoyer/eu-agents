@@ -1,9 +1,9 @@
 ---
 name: cold-start-interview
 description: >
-  Personalise the grants-enforcement-eu plugin to the user's work area (grants,
+  Personalise the eu-grants-enforcement plugin to the user's work area (grants,
   procurement, or infringement), programme or member state portfolio, and relevant
-  system access. Writes the session context into grants-enforcement-eu/CLAUDE.md.
+  system access. Writes the session context into eu-grants-enforcement/CLAUDE.md.
   Run this first before using any other skill in this package.
 license: MIT
 metadata:
@@ -25,7 +25,7 @@ metadata:
 Welcome to the **Grants, Procurement & Enforcement** plugin.
 
 This interview personalises the practice profile for your work area. Answers
-are stored in `grants-enforcement-eu/CLAUDE.md`.
+are stored in `eu-grants-enforcement/CLAUDE.md`.
 
 ---
 

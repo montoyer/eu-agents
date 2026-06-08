@@ -1,6 +1,6 @@
 # Eurostat — Indicator / Dataset Codes (2024)
 
-Curated static reference for the `data-communication-eu` skills (`data-analyst`).
+Curated static reference for the `eu-data-communication` skills (`data-analyst`).
 Eurostat dataset codes are stable identifiers but are occasionally renamed, split,
 or discontinued. Read the code for a requested indicator from this file rather than
 recalling it; **do not invent dataset codes** — an invented code produces a dead
@@ -76,7 +76,7 @@ SDMX REST base: `https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/
 
 `b` break in series · `p` provisional · `e` estimated · `c` confidential ·
 `d` definition differs · `:` not available. Never present `p`/`e`/`:` data without
-the flag (House Style, `data-communication-eu/CLAUDE.md`).
+the flag (House Style, `eu-data-communication/CLAUDE.md`).
 
 ---
 

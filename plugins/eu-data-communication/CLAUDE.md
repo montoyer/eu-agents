@@ -1,6 +1,6 @@
 # Data & Communication — Practice Profile
 
-This file is the practice profile for the `data-communication-eu` plugin.
+This file is the practice profile for the `eu-data-communication` plugin.
 Run `/cold-start-interview` to personalise the `[SESSION CONTEXT]` section.
 
 ---

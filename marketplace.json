@@ -10,7 +10,7 @@
       "id": "eu-legislative",
       "name": "Legislative & Policy",
       "description": "Policy drafting, legislative procedures, impact assessment, comitology, and inter-service consultation. For policy officers, legislative drafters, and SecGen lawyers.",
-      "path": "plugins/legislative-eu",
+      "path": "plugins/eu-legislative",
       "skills": [
         "cold-start-interview",
         "policy-officer",
@@ -25,7 +25,7 @@
       "id": "eu-competition",
       "name": "Competition & Legal Service",
       "description": "Antitrust (Arts. 101–102 TFEU), state aid (Arts. 107–109 TFEU), and Commission Legal Service opinions and litigation. For DG COMP and Legal Service lawyers.",
-      "path": "plugins/competition-eu",
+      "path": "plugins/eu-competition",
       "skills": [
         "cold-start-interview",
         "lawyer-competition-antitrust",
@@ -37,7 +37,7 @@
       "id": "eu-institutional-management",
       "name": "Institutional Management",
       "description": "Unit management, HR administration, financial circuits, and staff operations. For Heads of Unit, Deputy HoUs, HoU assistants, HR managers, and financial officers.",
-      "path": "plugins/institutional-management-eu",
+      "path": "plugins/eu-institutional-management",
       "skills": [
         "cold-start-interview",
         "head-of-unit",
@@ -52,7 +52,7 @@
       "id": "eu-trade",
       "name": "Trade Defence",
       "description": "EU Trade Defence Instruments — anti-dumping, anti-subsidy, safeguards, IPI, and FSR investigations. For DG TRADE trade defence investigators.",
-      "path": "plugins/trade-eu",
+      "path": "plugins/eu-trade",
       "skills": [
         "cold-start-interview",
         "trade-defence-investigator"
@@ -62,7 +62,7 @@
       "id": "eu-grants-enforcement",
       "name": "Grants, Procurement & Enforcement",
       "description": "Horizon Europe grant management, infringement procedures (Arts. 258–260 TFEU), and public procurement. For grant managers, infringement officers, and procurement experts.",
-      "path": "plugins/grants-enforcement-eu",
+      "path": "plugins/eu-grants-enforcement",
       "skills": [
         "cold-start-interview",
         "grant-manager",
@@ -74,7 +74,7 @@
       "id": "eu-simulation",
       "name": "EU Institutional Simulation",
       "description": "Multi-agent simulation of EU institutional processes: Commissioner personas, College deliberation, inter-service consultation, trilogue, and the full Ordinary Legislative Procedure.",
-      "path": "plugins/simulation-eu",
+      "path": "plugins/eu-simulation",
       "skills": [
         "commissioner",
         "college-deliberation",
@@ -89,7 +89,7 @@
       "id": "eu-data-communication",
       "name": "Data & Communication",
       "description": "Eurostat data analysis, scoreboard design, press releases, Commissioner speeches, and lines to take. For data analysts and communication officers.",
-      "path": "plugins/data-communication-eu",
+      "path": "plugins/eu-data-communication",
       "skills": [
         "cold-start-interview",
         "data-analyst",

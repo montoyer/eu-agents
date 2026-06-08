@@ -1,6 +1,6 @@
 # EU Institutional Simulation — Practice Profile
 
-This file is the practice profile for the `simulation-eu` plugin. It is loaded
+This file is the practice profile for the `eu-simulation` plugin. It is loaded
 automatically when any skill in this package is invoked.
 
 ---
@@ -57,9 +57,9 @@ Run each skill in sequence — the output of one feeds into the next:
 ```
 Step 1: /legislative-cycle  ← runs all phases automatically
   OR run phase by phase:
-  /impact-assessment         ← from legislative-eu plugin
-  /consultation              ← from legislative-eu plugin
-  /treaty-check              ← from legislative-eu plugin
+  /impact-assessment         ← from eu-legislative plugin
+  /consultation              ← from eu-legislative plugin
+  /treaty-check              ← from eu-legislative plugin
   /inter-service-consultation ← from this plugin
   /college-deliberation      ← from this plugin
   /european-parliament       ← from this plugin

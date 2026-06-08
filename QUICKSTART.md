@@ -20,13 +20,13 @@ cd agents-for-EU
 
 | Plugin | Who it is for |
 |---|---|
-| `legislative-eu` | Policy officers, legislative drafters, SecGen lawyers, impact assessment analysts |
-| `competition-eu` | DG COMP antitrust and state aid lawyers, Commission Legal Service lawyers |
-| `institutional-management-eu` | Heads of Unit, Deputy HoUs, assistants, HR and financial officers |
-| `trade-eu` | DG TRADE trade defence investigators |
-| `grants-enforcement-eu` | Grant managers, infringement officers, procurement experts |
-| `data-communication-eu` | Data analysts, communication officers |
-| `simulation-eu` | Training, scenario planning, and policy stress-testing via multi-agent EU institutional simulation |
+| `eu-legislative` | Policy officers, legislative drafters, SecGen lawyers, impact assessment analysts |
+| `eu-competition` | DG COMP antitrust and state aid lawyers, Commission Legal Service lawyers |
+| `eu-institutional-management` | Heads of Unit, Deputy HoUs, assistants, HR and financial officers |
+| `eu-trade` | DG TRADE trade defence investigators |
+| `eu-grants-enforcement` | Grant managers, infringement officers, procurement experts |
+| `eu-data-communication` | Data analysts, communication officers |
+| `eu-simulation` | Training, scenario planning, and policy stress-testing via multi-agent EU institutional simulation |
 
 ---
 
@@ -41,14 +41,14 @@ First, add the eu-agents marketplace:
 Then install the plugin you need:
 
 ```
-/plugin install legislative-eu@eu-agents
+/plugin install eu-legislative@eu-agents
 ```
 
 Or combine plugins for a full simulation workflow:
 
 ```
-/plugin install legislative-eu@eu-agents
-/plugin install simulation-eu@eu-agents
+/plugin install eu-legislative@eu-agents
+/plugin install eu-simulation@eu-agents
 ```
 
 Or install all plugins at once:
@@ -73,7 +73,7 @@ Every plugin starts with a 2-minute personalisation interview. Run it first, usi
 /eu-legislative:cold-start-interview
 ```
 
-Replace `legislative-eu` with the plugin you installed (e.g. `competition-eu`, `privacy-eu`).
+Replace `eu-legislative` with the plugin you installed (e.g. `eu-competition`, `eu-privacy`).
 
 You will be asked about your DG, active dossier, procedural stage, and working
 language. Your answers are written into the practice profile and used by every
@@ -168,8 +168,8 @@ and TED procurement monitoring directly from within skills.
 
 **Policy analyst running a simulation:**
 ```
-/plugin install legislative-eu@eu-agents
-/plugin install simulation-eu@eu-agents
+/plugin install eu-legislative@eu-agents
+/plugin install eu-simulation@eu-agents
 /eu-simulation:legislative-cycle  [brief: what the proposal is, legal basis, lead Commissioner]
 ```
 

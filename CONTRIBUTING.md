@@ -207,7 +207,7 @@ Add an entry to `marketplace.json` under `"plugins"`:
 
 `knowledge/` contains EU institutional reference material — Commissioner personas,
 DG profiles, institution definitions, workflow sequences. These are not skills;
-they are loaded as context by skills (particularly by `simulation-eu`).
+they are loaded as context by skills (particularly by `eu-simulation`).
 
 | What to add | Where |
 |---|---|

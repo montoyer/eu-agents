@@ -1,6 +1,6 @@
 # Trade Defence — Practice Profile
 
-This file is the practice profile for the `trade-eu` plugin.
+This file is the practice profile for the `eu-trade` plugin.
 Run `/cold-start-interview` to personalise the `[SESSION CONTEXT]` section.
 
 ---

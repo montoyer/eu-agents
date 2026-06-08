@@ -1,6 +1,6 @@
 # GBER & De Minimis — Thresholds and Aid Intensities (2024)
 
-Curated static reference for the `competition-eu` skills (`gber-screener`,
+Curated static reference for the `eu-competition` skills (`gber-screener`,
 `state-aid-review`, `lawyer-state-aid`). These figures change when the Commission
 amends the block exemption regulations — read them from this file; **do not
 generate them from training data**.

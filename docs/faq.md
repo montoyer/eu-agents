@@ -346,14 +346,14 @@ plugins/eu-competition/
 
 | Plugin | Domain | Skills included |
 |---|---|---|
-| `legislative-eu` | Legislative & Policy | `policy-officer`, `legislative-drafter`, `lawyer-secgen`, `impact-assessment`, `legislative-proposal`, `treaty-check`, `better-regulation`, `consultation`, `comitology-officer`, `economist`, and 8 more |
-| `competition-eu` | Competition & Legal | `lawyer-competition-antitrust`, `lawyer-state-aid`, `lawyer-legal-service`, `state-aid-review`, `market-definer`, `gber-screener` |
-| `institutional-management-eu` | Institutional Management | `head-of-unit`, `deputy-head-of-unit`, `assistant-hod`, `hr-contract-manager-ta`, `financial-officer`, `pmo-pension-specialist`, `cdr-drafter` |
-| `trade-eu` | Trade Defence | `trade-defence-investigator` |
-| `grants-enforcement-eu` | Grants, Procurement & Enforcement | `grant-manager`, `infringement-officer`, `infringement`, `procurement-expert`, `lfn-drafter`, `transposition-tracker` |
-| `data-communication-eu` | Data & Communication | `data-analyst`, `communication-officer`, `lines-to-take-drafter` |
-| `simulation-eu` | EU Institutional Simulation | `commissioner`, `college-deliberation`, `inter-service-consultation`, `trilogue`, `legislative-cycle`, `european-parliament`, `council-eu` |
-| `privacy-eu` | Data Protection & Privacy | `dpia`, `dpo`, `it-project-manager`, `it-security`, `legal-officer`, `ai-act-officer`, `ropa-drafter`, and 7 more |
+| `eu-legislative` | Legislative & Policy | `policy-officer`, `legislative-drafter`, `lawyer-secgen`, `impact-assessment`, `legislative-proposal`, `treaty-check`, `better-regulation`, `consultation`, `comitology-officer`, `economist`, and 8 more |
+| `eu-competition` | Competition & Legal | `lawyer-competition-antitrust`, `lawyer-state-aid`, `lawyer-legal-service`, `state-aid-review`, `market-definer`, `gber-screener` |
+| `eu-institutional-management` | Institutional Management | `head-of-unit`, `deputy-head-of-unit`, `assistant-hod`, `hr-contract-manager-ta`, `financial-officer`, `pmo-pension-specialist`, `cdr-drafter` |
+| `eu-trade` | Trade Defence | `trade-defence-investigator` |
+| `eu-grants-enforcement` | Grants, Procurement & Enforcement | `grant-manager`, `infringement-officer`, `infringement`, `procurement-expert`, `lfn-drafter`, `transposition-tracker` |
+| `eu-data-communication` | Data & Communication | `data-analyst`, `communication-officer`, `lines-to-take-drafter` |
+| `eu-simulation` | EU Institutional Simulation | `commissioner`, `college-deliberation`, `inter-service-consultation`, `trilogue`, `legislative-cycle`, `european-parliament`, `council-eu` |
+| `eu-privacy` | Data Protection & Privacy | `dpia`, `dpo`, `it-project-manager`, `it-security`, `legal-officer`, `ai-act-officer`, `ropa-drafter`, and 7 more |
 
 ### Hooks
 
@@ -385,7 +385,7 @@ PLUGIN
 | I need a specialist persona that adapts to my questions | **Skill** | `/eu-legislative:policy-officer` or `/eu-competition:lawyer-state-aid` |
 | I need to simulate an institutional actor's position | **Agent** | `/eu-simulation:commissioner competition` |
 | I need a complete procedural output (IA, DPIA, legislative proposal) | **Workflow skill** | `/eu-legislative:impact-assessment`, `/eu-privacy:dpia`, `/eu-simulation:legislative-cycle` |
-| I work in one domain regularly and want all tools pre-configured | **Plugin** | Install `legislative-eu` or `privacy-eu` |
+| I work in one domain regularly and want all tools pre-configured | **Plugin** | Install `eu-legislative` or `eu-privacy` |
 
 ### Analogy
 
@@ -605,7 +605,7 @@ health-related absence data for 15,000 staff. Hosted on a US-based cloud provide
 ### "I want to present a state aid case to my Head of Unit and need a structured 
 legal analysis"
 
-Reach for: **`/eu-competition:lawyer-state-aid`** (skill, competition-eu plugin)
+Reach for: **`/eu-competition:lawyer-state-aid`** (skill, eu-competition plugin)
 
 ```
 /eu-competition:lawyer-state-aid
@@ -702,7 +702,7 @@ See `CLAUDE.md` — the "Extending the system" section — for the step-by-step 
 
 All 97 skills across 9 plugins. Add the marketplace with `/plugin marketplace add montoyer/eu-agents`, then install the plugin you need with `/plugin install <plugin-name>@eu-agents`.
 
-### `legislative-eu` — Legislative & Policy
+### `eu-legislative` — Legislative & Policy
 
 | Skill | Description |
 |---|---|
@@ -726,7 +726,7 @@ All 97 skills across 9 plugins. Add the marketplace with `/plugin marketplace ad
 | `/eu-legislative:regulatory-impact-quantifier` | CBA/CEA quantification — compliance costs, SME test, OIOO, benefit monetisation, RSB-ready tables |
 | `/eu-legislative:policy-cycle` | Full EU policy lifecycle — agenda-setting through evaluation, all 7 phases, Better Regulation methodology |
 
-### `competition-eu` — Competition & Legal Service
+### `eu-competition` — Competition & Legal Service
 
 | Skill | Description |
 |---|---|
@@ -740,7 +740,7 @@ All 97 skills across 9 plugins. Add the marketplace with `/plugin marketplace ad
 | `/eu-competition:dawn-raid-advisor` | Competition inspection defence — LPP claims, employee rights, document log, post-inspection obligations |
 | `/eu-competition:eu-liability-advisor` | Art. 340(2) TFEU non-contractual liability — Bergaderm three-limb test, damage assessment, MS Francovich liability |
 
-### `simulation-eu` — EU Institutional Simulation
+### `eu-simulation` — EU Institutional Simulation
 
 | Skill | Description |
 |---|---|
@@ -758,7 +758,7 @@ All 97 skills across 9 plugins. Add the marketplace with `/plugin marketplace ad
 | `/eu-simulation:subsidiarity-stress` | Tests subsidiarity justification against 5 member-state configurations — finds where necessity argument fails and assesses yellow card risk |
 | `/eu-simulation:timeline` | OLP timeline with blocking dependencies, QMV arithmetic, and trilogue risk points |
 
-### `privacy-eu` — Data Protection & Privacy
+### `eu-privacy` — Data Protection & Privacy
 
 | Skill | Description |
 |---|---|
@@ -778,7 +778,7 @@ All 97 skills across 9 plugins. Add the marketplace with `/plugin marketplace ad
 | `/eu-privacy:edps-complaint-handler` | EDPS Complaint Handler — Art. 57/58 EUDPR supervisory inquiry response, contradictory procedure, remedial action plan |
 | `/eu-privacy:ai-governance-officer` | AI Governance Officer — AI system register, model cards, governance board ToR, human oversight, AI procurement clauses |
 
-### `institutional-management-eu` — Institutional Management
+### `eu-institutional-management` — Institutional Management
 
 | Skill | Description |
 |---|---|
@@ -796,7 +796,7 @@ All 97 skills across 9 plugins. Add the marketplace with `/plugin marketplace ad
 | `/eu-institutional-management:underperformance-advisor` | Art. 51 SR underperformance procedure — warning letter, improvement plan, monitoring, JEC submission |
 | `/eu-institutional-management:budget-planner` | Budget planning and execution — CA/PA programming, virements, carry-overs, execution monitoring, AAR reporting |
 
-### `grants-enforcement-eu` — Grants, Procurement & Enforcement
+### `eu-grants-enforcement` — Grants, Procurement & Enforcement
 
 | Skill | Description |
 |---|---|
@@ -815,7 +815,7 @@ All 97 skills across 9 plugins. Add the marketplace with `/plugin marketplace ad
 | `/eu-grants-enforcement:eppo-jurisdiction-advisor` | EPPO jurisdiction — PIF offences, Reg. 2017/1939, OLAF-EPPO referral, parallel administrative procedure management |
 | `/eu-grants-enforcement:cohesion-fund-manager` | Cohesion funds shared management — CPR 2021/1060, financial corrections, n+3 decommitment, closure, audit response |
 
-### `data-communication-eu` — Data & Communication
+### `eu-data-communication` — Data & Communication
 
 | Skill | Description |
 |---|---|
@@ -827,7 +827,7 @@ All 97 skills across 9 plugins. Add the marketplace with `/plugin marketplace ad
 | `/eu-data-communication:cybersecurity-officer` | Cybersecurity risk (ITSRM²), NIS2 compliance, incident response, CERT-EU coordination, security accreditation, vulnerability management |
 | `/eu-data-communication:transparency-officer` | Access to documents (Reg. 1049/2001), GESTDEM, confirmatory applications, exception analysis, Transparency Register, Ombudsman |
 
-### `trade-eu` — Trade Defence
+### `eu-trade` — Trade Defence
 
 | Skill | Description |
 |---|---|
@@ -835,7 +835,7 @@ All 97 skills across 9 plugins. Add the marketplace with `/plugin marketplace ad
 | `/eu-trade:dumping-margin-calculator` | Dumping margin calculation — normal value, export price, Art. 2(10) adjustments, WA-WA, LDR |
 | `/eu-trade:sanctions-screener` | EU restrictive measures screening — consolidated list, asset freeze, sectoral sanctions, derogation procedure |
 
-### `careers-eu` — EU Careers & EPSO Preparation
+### `eu-careers` — EU Careers & EPSO Preparation
 
 | Skill | Description |
 |---|---|
