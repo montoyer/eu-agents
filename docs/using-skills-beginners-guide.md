@@ -36,7 +36,7 @@ review, correct, and take responsibility for. This is by design.
 
 Each package lives under `plugins/<package-name>/` in the repository. EU
 institutional knowledge (Commissioner personas, DG profiles, institutions) is
-under `knowledge/`. Shared hook scripts are under `lib/hooks/`.
+under `knowledge/`.
 
 ---
 

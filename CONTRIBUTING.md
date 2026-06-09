@@ -14,20 +14,18 @@ agents-for-EU/
 │   └── [domain]/
 │       ├── CLAUDE.md               ← domain practice profile + playbook
 │       ├── .claude-plugin/
-│       │   └── plugin.json         ← skill registry + hooks + connectors
+│       │   └── plugin.json         ← skill registry + connectors
 │       ├── skills/
 │       │   └── [skill-name]/
 │       │       └── SKILL.md        ← the skill itself
 │       ├── references/             ← reference docs loaded by skills
-│       └── hooks/                  ← symlinks to lib/hooks/
+│       └── hooks/                  ← optional hooks.json + scripts
 ├── knowledge/                      ← EU institutional knowledge base (read-only reference)
 │   ├── commissioners/              ← Commissioner agent personas
 │   ├── dgs/                        ← Directorate-General profiles
 │   ├── institutions/               ← EP, Council, ECJ, ECB, EEAS
 │   ├── workflows/                  ← OLP, policy cycle sequences
 │   └── agents/                     ← College, ISC, trilogue protocols
-├── lib/
-│   └── hooks/                      ← shared hook shell scripts
 ├── docs/                           ← user guides and examples
 │   └── examples/
 └── .claude-plugin/
@@ -146,7 +144,7 @@ If the skill area does not fit any existing package, create a new one.
 ### Step 1 — Scaffold the directory
 
 ```bash
-mkdir -p plugins/[new-domain]/{.claude-plugin,skills/cold-start-interview,references,hooks}
+mkdir -p plugins/[new-domain]/{.claude-plugin,skills/cold-start-interview,references}
 ```
 
 ### Step 2 — Create the plugin manifest
@@ -163,12 +161,12 @@ mkdir -p plugins/[new-domain]/{.claude-plugin,skills/cold-start-interview,refere
   "skills": [
     { "id": "cold-start-interview", "path": "skills/cold-start-interview/SKILL.md", "description": "Personalise this plugin to your context" }
   ],
-  "hooks": {
-    "post_output": "hooks/post-output-disclaimer.sh"
-  },
   "connectors": []
 }
 ```
+
+The DRAFT disclaimer is enforced by the SKILL.md output templates (checked by
+`scripts/validate.sh`), not by a hook — every template must end with it.
 
 ### Step 3 — Create the practice profile
 
@@ -181,10 +179,27 @@ Required sections: `[SESSION CONTEXT]`, `Playbook`, `House Style`,
 Copy `plugins/eu-legislative/skills/cold-start-interview/SKILL.md` as a starting
 point and adapt the questions to the new domain's context.
 
-### Step 5 — Wire up the hook symlink
+### Step 5 — (Optional) Add hooks
 
-```bash
-ln -s ../../../lib/hooks/post-output-disclaimer.sh plugins/[new-domain]/hooks/post-output-disclaimer.sh
+Only if the domain needs event hooks: create `plugins/[new-domain]/hooks/hooks.json`
+using the standard Claude Code hook schema (see `plugins/eu-legislative/hooks/` for
+a working example), with scripts vendored in the same directory and referenced via
+`${CLAUDE_PLUGIN_ROOT}`. Hook scripts receive a JSON event payload on stdin and
+return feedback to the model — they cannot rewrite output text.
+
+```json
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Skill",
+        "hooks": [
+          { "type": "command", "command": "\"${CLAUDE_PLUGIN_ROOT}\"/hooks/my-hook.sh" }
+        ]
+      }
+    ]
+  }
+}
 ```
 
 ### Step 6 — Register in the marketplace
@@ -267,7 +282,7 @@ Run through this list before opening a pull request:
   metadata.related-skills)
 □ Skill is registered in plugin.json
 □ Skill appears in the domain CLAUDE.md playbook
-□ If new package: hook symlink created and resolves
+□ If the package ships hooks: hooks/hooks.json commands exist and are executable
 □ If new package: registered in .claude-plugin/marketplace.json with correct source path (plugins/[domain])
 □ All output templates end with the DRAFT disclaimer
 □ All legal citations use trust tags

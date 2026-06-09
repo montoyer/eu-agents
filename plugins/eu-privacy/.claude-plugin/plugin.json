@@ -85,9 +85,6 @@
       "description": "AI Governance Officer — AI system register, model cards, governance board ToR, human oversight mechanisms, AI procurement clauses, incident log"
     }
   ],
-  "hooks": {
-    "post_output": "hooks/post-output-disclaimer.sh"
-  },
   "connectors": [
     "eur-lex",
     "edps-register"

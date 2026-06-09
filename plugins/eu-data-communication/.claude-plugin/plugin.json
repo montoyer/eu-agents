@@ -45,9 +45,6 @@
       "description": "Access to documents (Reg. 1049/2001), GESTDEM, confirmatory applications, exception analysis, Transparency Register, Ombudsman"
     }
   ],
-  "hooks": {
-    "post_output": "hooks/post-output-disclaimer.sh"
-  },
   "connectors": [
     "eurostat",
     "rapid",

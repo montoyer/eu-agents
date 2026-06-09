@@ -336,8 +336,6 @@ plugins/eu-competition/
 │   │   └── SKILL.md
 │   └── gber-screener/
 │       └── SKILL.md
-├── hooks/
-│   └── post-output-disclaimer.sh   ← auto-adds DRAFT disclaimer to every output
 └── references/
     └── [domain reference documents]
 ```
@@ -357,11 +355,12 @@ plugins/eu-competition/
 
 ### Hooks
 
-Hooks are shell scripts that run automatically at defined events — no user action needed. Examples:
+Hooks are shell scripts that run automatically at Claude Code lifecycle events — no user action needed. Only `eu-legislative` ships hooks (`hooks/hooks.json`, fired on `PostToolUse` when a drafting skill is invoked):
 
-- `post-output-disclaimer.sh` — appends the `DRAFT — For review by an EU official` disclaimer to every skill output
-- `pre-legal-basis-check.sh` — before generating a legislative draft, confirms a legal basis has been stated
-- `post-subsidiarity-prompt.sh` — after a legislative draft, prompts the user to run `/eu-legislative:subsidiarity-checker`
+- `legal-basis-check.sh` — injects the requirement that every legislative draft cite its treaty legal basis (an act without one is void — CJEU C-300/89)
+- `subsidiarity-prompt.sh` — injects a reminder that the draft needs a subsidiarity and proportionality check, and prompts the user to run `/eu-legislative:subsidiarity-checker`
+
+The `DRAFT` disclaimer on every output is enforced by the SKILL.md templates themselves, verified by `scripts/validate.sh`.
 
 Hooks enforce procedural discipline at the infrastructure level, not just through the persona instructions.
 
@@ -692,7 +691,7 @@ This is not a formality. The outputs are structurally realistic and procedurally
 See `CLAUDE.md` — the "Extending the system" section — for the step-by-step procedure:
 - New Commissioner: add a file to `knowledge/commissioners/` using `_template.md`, add to the College roster in `knowledge/agents/eu-simulation:college-deliberation.md`.
 - New skill: create `plugins/<domain>/skills/<name>/SKILL.md`, register in `plugin.json`, add a row to the domain `CLAUDE.md`.
-- New domain plugin: follow `CONTRIBUTING.md` — scaffold, manifest, practice profile, cold-start interview, hook symlink, marketplace registration.
+- New domain plugin: follow `CONTRIBUTING.md` — scaffold, manifest, practice profile, cold-start interview, marketplace registration.
 
 ---
 

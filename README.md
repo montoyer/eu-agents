@@ -155,7 +155,7 @@ agents-for-EU/
 │           .claude-plugin/         ← plugin.json manifest
 │           skills/<name>/SKILL.md  ← individual skills
 │           skills/cold-start-interview/ ← plugin onboarding skill
-│           hooks/                  ← symlinks to lib/hooks/
+│           hooks/                  ← optional hooks.json + scripts (eu-legislative only)
 │           references/             ← reference documents loaded by skills
 │
 ├── knowledge/                      ← EU institutional knowledge base
@@ -164,12 +164,6 @@ agents-for-EU/
 │   ├── institutions/               ← Counter-party agents (EP, Council, ECJ, ECB, EEAS, European Council)
 │   ├── workflows/                  ← End-to-end policy processes (legislative-cycle, policy-cycle)
 │   └── agents/                     ← Multi-agent session definitions (college, ISC, trilogue, DPIA, EDPS)
-│
-├── lib/                            ← Shared technical assets
-│   └── hooks/                      ← Event hook shell scripts
-│       ├── post-output-disclaimer.sh
-│       ├── post-subsidiarity-prompt.sh
-│       └── pre-legal-basis-check.sh
 │
 └── docs/                           ← Guides and reference material
     ├── getting-started.md

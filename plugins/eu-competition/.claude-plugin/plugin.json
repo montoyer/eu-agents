@@ -55,9 +55,6 @@
       "description": "Art. 340(2) TFEU non-contractual liability — Bergaderm three-limb test, damage assessment, MS Francovich liability"
     }
   ],
-  "hooks": {
-    "post_output": "hooks/post-output-disclaimer.sh"
-  },
   "connectors": [
     "eur-lex",
     "oj-state-aid-register"

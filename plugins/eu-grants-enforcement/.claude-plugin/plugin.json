@@ -80,9 +80,6 @@
       "description": "Cohesion funds shared management — CPR 2021/1060, financial corrections, n+3 decommitment, closure, audit response"
     }
   ],
-  "hooks": {
-    "post_output": "hooks/post-output-disclaimer.sh"
-  },
   "connectors": [
     "eur-lex",
     "ted-ojeu",

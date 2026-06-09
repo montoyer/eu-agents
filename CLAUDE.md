@@ -207,16 +207,15 @@ These require all 21 Commissioner agents and are structurally impossible with a 
 |---|---|
 | `plugins/` | Installable skill packages — one sub-directory per domain |
 | `plugins/<domain>/skills/<name>/SKILL.md` | A skill — frontmatter + persona + workflow + templates |
-| `plugins/<domain>/.claude-plugin/plugin.json` | Plugin manifest — skill registry, hooks, connectors |
+| `plugins/<domain>/.claude-plugin/plugin.json` | Plugin manifest — skill registry, connectors |
 | `plugins/<domain>/CLAUDE.md` | Domain practice profile — playbook, house style, constraints |
-| `plugins/<domain>/hooks/` | Hook symlinks pointing to `lib/hooks/` |
+| `plugins/<domain>/hooks/` | Optional `hooks.json` + hook scripts (currently `eu-legislative` only) |
 | `plugins/<domain>/references/` | Reference documents loaded by skills in that domain |
 | `knowledge/commissioners/` | Commissioner agent personas — mandate, priorities, decision style |
 | `knowledge/dgs/` | DG operational agents — technical analysis, legal framing |
 | `knowledge/institutions/` | Counter-party agents (Parliament, Council, ECJ, ECB, EEAS) |
 | `knowledge/workflows/` | Sequenced multi-step process definitions |
 | `knowledge/agents/` | Multi-agent session protocols (College, ISC, trilogue) |
-| `lib/hooks/` | Shared hook shell scripts |
 | `docs/` | User guides and reference material |
 | `docs/examples/` | Worked end-to-end simulations |
 
@@ -281,4 +280,4 @@ DRAFT — For review by an EU official before use. Not an official Commission po
 3. Add a row to the Playbook table in `plugins/<domain>/CLAUDE.md`.
 
 **To add a new domain plugin:**
-Follow the full procedure in [CONTRIBUTING.md](CONTRIBUTING.md) — scaffold, manifest, practice profile, cold-start interview, hook symlink, marketplace registration.
+Follow the full procedure in [CONTRIBUTING.md](CONTRIBUTING.md) — scaffold, manifest, practice profile, cold-start interview, marketplace registration.

@@ -25,9 +25,6 @@
       "description": "Analyse a job offer letter: decode grade/step, calculate gross and net remuneration, map probation and contract obligations under the SR"
     }
   ],
-  "hooks": {
-    "post_output": "hooks/post-output-disclaimer.sh"
-  },
   "connectors": [
     "eur-lex",
     "epso-eu"

@@ -25,9 +25,6 @@
       "description": "EU restrictive measures screening — consolidated list, asset freeze, sectoral sanctions, derogation procedure"
     }
   ],
-  "hooks": {
-    "post_output": "hooks/post-output-disclaimer.sh"
-  },
   "connectors": [
     "eur-lex",
     "ted-ojeu",

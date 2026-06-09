@@ -75,9 +75,6 @@
       "description": "Budget planning and execution — CA/PA programming, virements, carry-overs, execution monitoring, AAR reporting"
     }
   ],
-  "hooks": {
-    "post_output": "hooks/post-output-disclaimer.sh"
-  },
   "connectors": [
     "sysper",
     "abac"

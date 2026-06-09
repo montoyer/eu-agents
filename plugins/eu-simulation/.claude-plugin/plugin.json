@@ -80,9 +80,6 @@
       "description": "OLP timeline with blocking dependencies, QMV arithmetic, and trilogue risk points for a proposed regulation or directive"
     }
   ],
-  "hooks": {
-    "post_output": "hooks/post-output-disclaimer.sh"
-  },
   "knowledge": [
     "knowledge/commissioners",
     "knowledge/dgs",

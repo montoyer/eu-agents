@@ -5,7 +5,8 @@
 # Hard checks (exit 1 on failure):
 #   1. Every skill registered in a plugin.json points to a SKILL.md that exists.
 #   2. Every SKILL.md contains a DRAFT disclaimer.
-#   4. Every hook path declared in a plugin.json resolves to an existing file.
+#   4. Every command declared in a plugin's hooks/hooks.json resolves to an
+#      existing executable file (after ${CLAUDE_PLUGIN_ROOT} substitution).
 #   5a. No symlink under plugins/ is dangling.
 #
 # Soft checks (reported as warnings, do not fail the build):
@@ -80,18 +81,27 @@ while IFS= read -r skill; do
 done < <(find plugins -name 'SKILL.md' -type f)
 
 # ---------------------------------------------------------------------------
-# Check 4 — every declared hook path exists
+# Check 4 — every hook command in hooks/hooks.json exists and is executable
 # ---------------------------------------------------------------------------
-echo "==> Check 4: declared hook paths exist"
-for manifest in plugins/*/.claude-plugin/plugin.json; do
-  plugin_dir="$(dirname "$(dirname "$manifest")")"
-  while IFS= read -r hookpath; do
-    [[ -z "$hookpath" ]] && continue
-    if [[ ! -f "$plugin_dir/$hookpath" ]]; then
-      red "  MISSING: $manifest declares hook '$hookpath' → $plugin_dir/$hookpath not found"
+echo "==> Check 4: declared hook commands exist"
+for hooksfile in plugins/*/hooks/hooks.json; do
+  [[ -f "$hooksfile" ]] || continue
+  plugin_dir="$(dirname "$(dirname "$hooksfile")")"
+  while IFS= read -r cmd; do
+    [[ -z "$cmd" ]] && continue
+    # resolve ${CLAUDE_PLUGIN_ROOT} to the plugin directory, strip quoting
+    resolved="${cmd//\$\{CLAUDE_PLUGIN_ROOT\}/$plugin_dir}"
+    resolved="${resolved//\"/}"
+    # take the command path only (before any arguments)
+    resolved="${resolved%% *}"
+    if [[ ! -f "$resolved" ]]; then
+      red "  MISSING: $hooksfile declares command '$cmd' → $resolved not found"
+      errors=$((errors + 1))
+    elif [[ ! -x "$resolved" ]]; then
+      red "  NOT EXECUTABLE: $resolved (chmod +x needed)"
       errors=$((errors + 1))
     fi
-  done < <(jq -r '.hooks // {} | .[]? | strings' "$manifest" 2>/dev/null)
+  done < <(jq -r '.hooks // {} | .[]?[]?.hooks[]?.command // empty' "$hooksfile" 2>/dev/null)
 done
 
 # ---------------------------------------------------------------------------
