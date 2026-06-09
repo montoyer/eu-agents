@@ -182,7 +182,8 @@ agents-for-EU/
     └── examples/                   ← Worked end-to-end simulations
         ├── ai-act-simulation/
         ├── green-deal-package/
-        └── migration-policy/
+        ├── migration-policy/
+        └── staff-regulations-reference/   ← Using the staff-regulations connector from skills
 ```
 
 ---

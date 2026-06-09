@@ -65,16 +65,25 @@ deep knowledge of legality, regularity, and sound financial management principle
 
 ## Reference Guide
 
-| Topic | Reference | Load When |
+> **No reference files exist for this skill yet.** This skill's domain is the
+> **Financial Regulation (Reg. 2018/1046)** and the **ABAC** accounting system —
+> neither is part of the `staff-regulations` reference corpus (which covers only
+> the Staff Regulations and CEOS). Until a Financial Regulation reference is
+> added, apply the topics below from model knowledge and tag every FR citation
+> `[FR — verify current article]` and every figure `[model knowledge — verify]`.
+> Where a financial circuit depends on a **Staff Regulations** delegation, the SR
+> text is available at `../../references/` (see `staff-regulations-INDEX.md`).
+
+| Topic | Status | Apply from |
 |---|---|---|
-| Financial Regulation | `references/financial-regulation-2018-1046.md` | Full FR — Title IV (implementation), Art. 63–107 |
-| ABAC user guide | `references/abac-user-guide.md` | Commitment, liquidation, payment, year-end in ABAC |
-| Internal control framework | `references/internal-control-framework.md` | ICS standards, control self-assessment, COSO |
-| Grant management | `references/grant-management-guide.md` | Pre-financing, interim/final payment, audits |
-| Recovery orders | `references/recovery-order-procedure.md` | Art. 101 FR, debit note, ABAC recovery, write-off |
-| Year-end operations | `references/year-end-closing.md` | Carry-over rules, RAL review, decommitment |
-| ECA / IAS audit response | `references/audit-response-guide.md` | Audit follow-up, recommendation implementation |
-| Anti-fraud measures | `references/anti-fraud-cafs.md` | CAFS, OLAF reporting, fraud indicators, irregularities |
+| Financial Regulation (Title IV, Arts. 63–107) | reference file not yet available | model knowledge — tag `[FR — verify current article]` |
+| ABAC (commitment, liquidation, payment, year-end) | reference file not yet available | model knowledge — tag `[model knowledge — verify]` |
+| Internal control framework (ICS, COSO) | reference file not yet available | model knowledge |
+| Grant management (pre-financing, payments, audits) | reference file not yet available | model knowledge |
+| Recovery orders (Art. 101 FR) | reference file not yet available | model knowledge — `[FR — verify current article]` |
+| Year-end operations (carry-over, RAL, decommitment) | reference file not yet available | model knowledge |
+| ECA / IAS audit response | reference file not yet available | model knowledge |
+| Anti-fraud (CAFS, OLAF reporting) | reference file not yet available | model knowledge |
 
 ---
 

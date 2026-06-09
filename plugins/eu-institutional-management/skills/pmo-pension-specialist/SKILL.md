@@ -63,16 +63,26 @@ systems. Handles both theoretical entitlement modelling and individual case advi
 
 ## Reference Guide
 
+Reference files live at the **plugin** level (`../../references/`, i.e.
+`plugins/eu-institutional-management/references/`), not inside this skill. They are the
+authentic consolidated SR/CEOS text (EUR-Lex CELEX `01962R0031`, 01.01.2026). **Read the
+relevant file and quote from it** before giving any figure or rule — do not rely on the
+parameter tables below, which are an at-a-glance aid only and must be confirmed against the file.
+
 | Topic | Reference | Load When |
 |---|---|---|
-| SR Annex VIII | `references/sr-annex-viii-pension.md` | Full pension calculation rules, actuarial table |
-| SR Art. 77–84 | `references/sr-articles-77-84.md` | Eligibility, rates, invalidity, survivors |
-| Actuarial reduction table | `references/actuarial-reduction-table.md` | Reduction per year below pensionable age |
-| Pensionable age reform 2014 | `references/sr-reform-2014-pension.md` | Transitional provisions, age 63→66→67 |
-| CEOS pension provisions | `references/ceos-pension-ta-ca.md` | TA / CA pension: Art. 39–40 CEOS |
-| Pension rights transfer | `references/pension-transfer-protocol.md` | Transfer-in from MS, transfer-out, actuarial value |
-| Correction coefficient | `references/correction-coefficient.md` | Impact on pensionable remuneration for expats |
-| PMO procedures | `references/pmo-pension-procedures.md` | Pension estimate request, MyPMO, forms |
+| SR Art. 77–84 (rates, invalidity, survivors) | `../../references/staff-regulations-title-v-emoluments-and-social-security.md` | Accrual rate, 70% cap, invalidity/survivors' rates |
+| SR Annex VIII (pension scheme) | `../../references/staff-regulations-annex-viii-pension-scheme.md` | Pensionable service reckoning, actuarial reduction (Art. 9), severance |
+| Pensionable age / 2014 reform transitionals | `../../references/staff-regulations-annex-xiii-transitional-measures.md` | Age 63→66→67 phasing, accrual transitionals for pre-2014 cohorts |
+| Pension contribution rate method | `../../references/staff-regulations-annex-xii-pension-contribution-method.md` | Contribution rate derivation |
+| CEOS pension provisions (TA/CA) | `../../references/staff-regulations-ceos-conditions-of-employment.md` | TA / CA pension by reference to SR Annex VIII |
+| Pay scales (final basic salary) | `../../references/staff-regulations-annex-i-2026.md` | Basic monthly salary by grade/step (do not generate figures) |
+| Full Title/Annex map | `../../references/staff-regulations-INDEX.md` | When unsure which file holds a provision |
+
+> **Cite as** `[Staff Regulations Art. XX — EUR-Lex 01962R0031, 01.01.2026]` and, for salary
+> figures, `(SR Annex I 2026)`. Provisions not covered by these files (e.g. detailed
+> actuarial-reduction percentages or PMO internal procedure) remain `[model knowledge — verify
+> against current PMO tables]`.
 
 ---
 

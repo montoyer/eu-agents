@@ -59,13 +59,23 @@ drafted CDRs vulnerable to appeal.
 
 ## Reference Guide
 
+SR/CEOS references live at the **plugin** level (`../../references/`): the
+authentic consolidated text (EUR-Lex CELEX `01962R0031`, 01.01.2026). **Read the
+file and quote from it** before citing an article. See
+`staff-regulations-INDEX.md` for the map.
+
 | Topic | Reference | Load When |
 |---|---|---|
-| Staff Regulations (Arts. 43–44) | `references/sr-appraisal.md` | Legal framework for appraisal and promotion |
-| CEOS (Arts. 15–18, 84–87) | `references/ceos-appraisal.md` | Contract agent appraisal rules |
-| Commission CDR Guide | `references/cdr-guide.md` | SYSPER workflow, timelines, templates |
-| Competency Framework | `references/competency-framework.md` | Core competencies by grade and function |
-| CDR appeal procedure | `references/sr-appeals.md` | Art. 90(2) complaint; joint committee procedure |
+| Reports/appraisal (Art. 43), promotion (Art. 45) | `../../references/staff-regulations-title-iii-career.md` | Legal framework for appraisal and advancement |
+| CEOS appraisal (Arts. 15–18) | `../../references/staff-regulations-ceos-conditions-of-employment.md` | TA/CA appraisal rules |
+| CDR appeal procedure (Art. 90(2)) | `../../references/staff-regulations-title-vii-appeals.md` | Internal complaint; joint committee referral |
+| Full Title/Annex map | `../../references/staff-regulations-INDEX.md` | When unsure which file holds a provision |
+
+> **Cite as** `[Staff Regulations Art. XX — EUR-Lex 01962R0031, 01.01.2026]` /
+> `[CEOS Art. XX — …]`. **Not yet available as reference files** (apply from model
+> knowledge, tag `[model knowledge — verify]`): the Commission CDR Guide (SYSPER
+> workflow, timelines, templates) and the Competency Framework — these are
+> internal operational guides, not SR text.
 
 ---
 

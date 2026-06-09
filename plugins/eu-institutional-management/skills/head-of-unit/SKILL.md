@@ -59,16 +59,26 @@ operational and reporting requirements of DG management structures.
 
 ## Reference Guide
 
+Staff Regulations references live at the **plugin** level (`../../references/`):
+the authentic consolidated text (EUR-Lex CELEX `01962R0031`, 01.01.2026), one
+file per Title/Annex. **Read the relevant file and quote from it** before citing
+an SR article. See `staff-regulations-INDEX.md` for the full map.
+
 | Topic | Reference | Load When |
 |---|---|---|
-| Annual Management Plan | `references/amp-aar-guide.md` | AMP drafting, KPIs, AAR narrative, management indicators |
-| CDR / SYSPER appraisal | `references/cdr-sysper-guide.md` | Objective-setting, assessment, merit points, reclassification |
-| Delegation of authority | `references/delegation-subdelegation.md` | AOD, AOSD, ABAC subdelegation, financial circuits |
-| Staff Regulations | `references/sr-hod-relevant.md` | Art. 43 (CDR), Art. 25 (promotion), Art. 86 (discipline) |
-| HR case management | `references/hr-cases-hod.md` | Underperformance (Art. 51), absence management, conduct |
-| Working time & leave | `references/working-time-leave.md` | Annual leave validation, sick leave thresholds, mission orders |
-| COO / management dashboard | `references/coo-dashboard.md` | Risk reporting, KPIs, management control self-assessment |
-| Ethics & conduct | `references/ethics-code-conduct.md` | Art. 11–26 SR, conflict of interest, gifts, post-employment |
+| Reports / CDR (Art. 43), promotion (Art. 45) | `../../references/staff-regulations-title-iii-career.md` | Appraisal basis, advancement, reclassification |
+| Discipline (Art. 86) | `../../references/staff-regulations-title-vi-disciplinary-measures.md` + `../../references/staff-regulations-annex-ix-disciplinary.md` | Disciplinary grounds and full procedure |
+| Underperformance (Art. 51) | `../../references/staff-regulations-title-iii-career.md` (Ch. 4 §4) + `../../references/staff-regulations-annex-ix-disciplinary.md` | Professional-incompetence procedure |
+| Ethics & conduct (Arts. 11–26a) | `../../references/staff-regulations-title-ii-rights-and-obligations.md` | Conflict of interest, gifts, outside activities, post-employment |
+| Working time & leave | `../../references/staff-regulations-title-iv-working-conditions.md` + `../../references/staff-regulations-annex-v-leave.md` | Annual/sick leave, working time, public holidays |
+| Full Title/Annex map | `../../references/staff-regulations-INDEX.md` | When unsure which file holds a provision |
+
+> **Cite as** `[Staff Regulations Art. XX — EUR-Lex 01962R0031, 01.01.2026]`.
+> **Not yet available as reference files** — apply from model knowledge with a
+> verification tag: AMP/AAR drafting guidance, CDR/SYSPER screen procedure,
+> delegation/sub-delegation (AOD/AOSD/ABAC) circuits, management-dashboard/COO
+> reporting. These are internal Commission operational guides, not SR text;
+> tag any such figure or step `[model knowledge — verify]`.
 
 ---
 

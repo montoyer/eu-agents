@@ -58,17 +58,27 @@ and individual case management under the CEOS and Staff Regulations as applied t
 
 ## Reference Guide
 
+Reference files live at the **plugin** level (`../../references/`, i.e.
+`plugins/eu-institutional-management/references/`): the authentic consolidated
+SR/CEOS text (EUR-Lex CELEX `01962R0031`, 01.01.2026). **Read the relevant file
+and quote from it** before stating a CEOS article or figure. The full CEOS text
+(Arts. 1–119: TA regime, selection, grading, notice/termination, probation,
+working conditions, social rights) is in one file — open it and locate the
+article. See `staff-regulations-INDEX.md` for the Title/Annex map.
+
 | Topic | Reference | Load When |
 |---|---|---|
-| CEOS (TA provisions) | `references/ceos-title-ii-ta.md` | Full TA regime: Arts. 8–46 CEOS |
-| CEOS selection rules | `references/ceos-selection-ta.md` | CAST, internal procedures, IIA procedures |
-| SR as applied to TAs | `references/sr-application-ta.md` | Which SR provisions apply by reference to TAs |
-| Grading & step rules | `references/grading-step-advancement.md` | Art. 32 CEOS, grade on entry, step advancement |
-| Notice & termination | `references/notice-termination-ceos.md` | Art. 47 CEOS, notice periods, termination grounds |
-| Probation assessment | `references/probation-ta.md` | Length, assessment report, unsatisfactory outcome |
-| Working conditions | `references/working-conditions-ta.md` | Leave, sick leave, working time, telework |
-| Pension & social rights | `references/ceos-social-rights.md` | JSIS, pension, unemployment, accident coverage |
-| Pay table (2026) | `references/staff-regulations-annex-i-2026.md` | Basic monthly salaries, allowances, deduction rates — read; do not generate |
+| CEOS — full text (TA Arts. 8–50: selection, grading Art. 15, notice/termination Art. 47–48, probation Art. 14, social rights) | `../../references/staff-regulations-ceos-conditions-of-employment.md` | Any TA contract question — this single file holds the whole CEOS |
+| SR applied to TAs by analogy | `../../references/staff-regulations-title-ii-rights-and-obligations.md`, `../../references/staff-regulations-title-iii-career.md` | Which SR provisions apply to TAs (CEOS cross-refers to these by analogy) |
+| Working conditions (leave, hours) | `../../references/staff-regulations-title-iv-working-conditions.md`, `../../references/staff-regulations-annex-v-leave.md` | Leave, sick leave, working time (applied to TAs via CEOS Art. 16) |
+| Pension & social rights | `../../references/staff-regulations-annex-viii-pension-scheme.md` | TA pension by analogy (CEOS Art. 41 → SR Annex VIII) |
+| Pay table (2026) | `../../references/staff-regulations-annex-i-2026.md` | Basic monthly salaries, allowances, deduction rates — read; do not generate |
+| Full Title/Annex map | `../../references/staff-regulations-INDEX.md` | When unsure which file holds a provision |
+
+> **Cite as** `[CEOS Art. XX — EUR-Lex 01962R0031, 01.01.2026]` (or `[Staff
+> Regulations Art. XX — …]` for SR provisions applied by analogy), and salary
+> figures as `(SR Annex I 2026)`. Operational system guidance not in these files
+> (CAST/EPSO procedure detail, SYSPER screens) remains `[model knowledge — verify]`.
 
 ---
 
@@ -256,7 +266,7 @@ Staff member: _______________ Date: [DD Month YYYY]
 - Force majeure leave: Up to 2 days per unforeseen family event
 
 **Salary & allowances:**
-- Basic salary: Read from `references/staff-regulations-annex-i-2026.md` — do not generate from training data
+- Basic salary: Read from `../../references/staff-regulations-annex-i-2026.md` — do not generate from training data
 - Correction coefficient: Applied to salary based on place of employment
 - Expatriation allowance: If applicable (Art. 4 SR Annex VII) — 16% of basic salary
 - Household allowance: Varies by family situation

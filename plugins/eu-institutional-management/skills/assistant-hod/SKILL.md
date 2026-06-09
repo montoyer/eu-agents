@@ -61,16 +61,26 @@ deadlines are met, and the HoU's time is optimally used.
 
 ## Reference Guide
 
-| Topic | Reference | Load When |
+> **No reference files exist for this skill yet.** Its domain is internal
+> Commission operational systems (ARES, MIPS/C2, SYSPER, SharePoint/Teams) and
+> drafting conventions — none of which are part of the `staff-regulations`
+> reference corpus. Apply the topics below from model knowledge and tag
+> accordingly. Where a task turns on a **Staff Regulations** entitlement (e.g.
+> the legal basis for a leave type before validating it in SYSPER), the SR text
+> is available at `../../references/` — see `staff-regulations-INDEX.md`
+> (leave: Title IV + Annex V) and cite `[Staff Regulations Art. XX — EUR-Lex
+> 01962R0031, 01.01.2026]`.
+
+| Topic | Status | Apply from |
 |---|---|---|
-| ARES (document management) | `references/ares-user-guide.md` | Registration, routing, workflow, ARES numbers |
-| MIPS / C2 (missions) | `references/mission-system-guide.md` | Mission order creation, expense reimbursement |
-| SYSPER (HR system) | `references/sysper-assistant-guide.md` | Leave validation, CDR tracking, probation alerts |
-| Parliamentary Questions | `references/pq-procedure.md` | PQ types, deadlines, internal clearance process |
-| Correspondence standards | `references/correspondence-style-guide.md` | Commission letter format, salutations, sign-off |
-| Meeting minutes | `references/minutes-drafting-guide.md` | Action points, decisions, confidentiality |
-| Agenda management | `references/agenda-best-practices.md` | Buffer time, preparation time, priority filtering |
-| SharePoint / Teams admin | `references/sharepoint-teams-guide.md` | Permissions, document libraries, channels |
+| ARES (registration, routing, ARES numbers) | reference file not yet available | model knowledge — `[model knowledge — verify]` |
+| MIPS / C2 missions (orders, reimbursement) | reference file not yet available | model knowledge |
+| SYSPER (leave validation, CDR/probation alerts) | reference file not yet available | model knowledge (SR leave basis: Title IV + Annex V) |
+| Parliamentary Questions (types, deadlines, clearance) | reference file not yet available | model knowledge |
+| Correspondence standards (Commission letter format) | reference file not yet available | model knowledge |
+| Meeting minutes (action points, confidentiality) | reference file not yet available | model knowledge |
+| Agenda management | reference file not yet available | model knowledge |
+| SharePoint / Teams admin | reference file not yet available | model knowledge |
 
 ---
 

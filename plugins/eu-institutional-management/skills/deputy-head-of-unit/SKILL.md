@@ -69,16 +69,21 @@ to motivate and support policy officers without overstepping the HoU's authority
 
 ## Reference Guide
 
-| Topic | Reference | Load When |
+The Staff Regulations text is available at the **plugin** level
+(`../../references/`, EUR-Lex CELEX `01962R0031`, 01.01.2026) — read and quote
+from it for any SR question (see `staff-regulations-INDEX.md`). The other topics
+below are internal operational guides not yet captured as reference files.
+
+| Topic | Reference / status | Apply from |
 |---|---|---|
-| Unit work programme | `references/unit-work-programme.md` | Delivery tracking, milestone review |
-| ARES workflow management | `references/ares-user-guide.md` | Incoming/outgoing document tracking |
-| ISC tracking | `references/isc-procedure.md` | Monitoring ISC deadlines, contributions due |
-| Delegation of authority (AOD) | `references/delegation-subdelegation.md` | What the Deputy HoU can sign A.I. |
-| Commission quality standards | `references/commission-drafting-quality.md` | Output review — what to check |
-| Deadline management best practices | `references/deadline-management.md` | Tracker, escalation, mitigation |
-| Staff Regulations — delegation | `references/sr-delegation.md` | Who can sign what during HoU absence |
-| Unit meeting management | `references/unit-meeting-guide.md` | Chairing, agenda, action points |
+| Staff Regulations (rights/obligations, leave, career) | `../../references/staff-regulations-INDEX.md` → relevant Title file | the file — cite `[Staff Regulations Art. XX — EUR-Lex 01962R0031, 01.01.2026]` |
+| Unit work programme / delivery tracking | not yet available | model knowledge — `[model knowledge — verify]` |
+| ARES workflow management | not yet available | model knowledge |
+| ISC tracking (deadlines, contributions) | not yet available | model knowledge |
+| Delegation of authority (AOD/AOSD — what the Deputy can sign A.I.) | not yet available (Financial Regulation / internal rules, not SR text) | model knowledge — `[FR — verify current article]` |
+| Commission output quality standards | not yet available | model knowledge |
+| Deadline management / escalation | not yet available | model knowledge |
+| Unit meeting management | not yet available | model knowledge |
 
 ---
 

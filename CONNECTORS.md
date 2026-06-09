@@ -34,6 +34,7 @@ citations.
 | `f-and-t-portal` | planned | EU Login | — |
 | `chap` | planned | EU Login (intranet) | — |
 | `epso-eu` | planned | none | `eu-careers/references/staff-regulations-annex-i-2026.md` |
+| `staff-regulations` | manual | none | `eu-institutional-management/references/staff-regulations-*.md` |
 | `sysper` | planned | EU Login (intranet) | — |
 | `abac` | planned | EU Login (intranet) | — |
 | `edps-register` | planned | none | — |
@@ -310,6 +311,40 @@ competition timelines and grade requirements.
 
 ---
 
+### `staff-regulations`
+**Staff Regulations & CEOS — Consolidated Text (CELEX 01962R0031)**
+
+The full authentic text of the Staff Regulations of Officials and the Conditions
+of Employment of Other Servants, split one markdown file per Title and per Annex.
+Unlike the API-backed connectors above, this is **`manual`**: there is no live
+endpoint — the text is retrieved once from EUR-Lex, converted to markdown, and
+read from `references/*.md`. Skills quote the article text directly and tag it
+`[Staff Regulations Art. XX — EUR-Lex 01962R0031, 01.01.2026]` instead of
+`[model knowledge — verify]`.
+
+- Source: `https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:01962R0031`
+- API: none — consolidated HTML downloaded and converted offline
+- Used by: `eu-institutional-management`, `eu-careers`
+- Index: `eu-institutional-management/references/staff-regulations-INDEX.md`
+- Primary use cases:
+  - Quote the current wording of an SR/CEOS article in an HR decision
+  - Disciplinary procedure (Title VI + Annex IX) and underperformance (Title III §4)
+  - Pension scheme (Annex VIII), pension contribution method (Annex XII)
+  - Leave entitlements (Title IV + Annex V), allowances (Annex VII)
+- Refresh: when a new consolidation is published, download the new EUR-Lex HTML
+  and re-run `references/.convert_sr.py` (offsets may need updating).
+
+```json
+{
+  "connector": "staff-regulations",
+  "endpoint": "manual — references/staff-regulations-*.md (CELEX 01962R0031, consol. 01.01.2026)",
+  "auth": "none",
+  "notes": "No live API; full text converted from EUR-Lex HTML. Pay scales remain in staff-regulations-annex-i-2026.md (updated each January)."
+}
+```
+
+---
+
 ### `sysper`
 **Sysper — Commission HR Management System**
 
@@ -434,6 +469,7 @@ for full connector setup instructions.
 | `f-and-t-portal` | — | — | — | — | ✓ | — | — | — |
 | `chap` | — | — | — | — | ✓ | — | — | — |
 | `epso-eu` | — | — | — | — | — | — | ✓ | — |
+| `staff-regulations` | — | — | ✓ | — | — | — | ✓ | — |
 | `sysper` | — | — | ✓ | — | — | — | — | — |
 | `abac` | — | — | ✓ | — | — | — | — | — |
 | `edps-register` | — | — | — | — | — | — | — | ✓ |

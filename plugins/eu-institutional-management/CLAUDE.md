@@ -103,6 +103,13 @@ Not an official Commission decision or position.
   that file; do not generate salary figures from training data. Cite as
   `(SR Annex I 2026 — verify if after January 2027)`. Pension rates and PMO-specific
   figures not in the reference file remain `[model knowledge — verify against current PMO tables]`
+- **Full SR & CEOS text is in `references/staff-regulations-*.md`** — the authentic
+  consolidated text (CELEX 01962R0031, 01.01.2026) is split one file per Title and
+  per Annex. Before citing an SR/CEOS article, read the relevant file (see
+  `references/staff-regulations-INDEX.md` for the Title/Annex → file map) and quote
+  from it. Cite as `[Staff Regulations Art. XX — EUR-Lex 01962R0031, 01.01.2026]`.
+  Only fall back to `[SR — verify current article]` when the file does not cover the
+  point (e.g. a provision changed after the 01.01.2026 consolidation)
 - **CDR process follows SYSPER deadlines** — the Commission CDR calendar is binding;
   late CDR objectives or appraisals create formal HR complications; flag any slippage
 - **A.I. acting scope is limited** — the Deputy HoU acting A.I. takes operational
