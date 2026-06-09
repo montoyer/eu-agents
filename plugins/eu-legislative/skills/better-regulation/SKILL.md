@@ -66,10 +66,10 @@ the evidential basis for any subsequent revision proposal.
 
 | Topic | Reference | Load When |
 |---|---|---|
-| Better Regulation Toolbox | `references/better-regulation-toolbox.md` | Selecting evaluation methods and tools |
+| Better Regulation Toolbox | `references/better-regulation-toolbox-2023.md` | Selecting evaluation methods and tools |
 | REFIT platform outputs | `references/refit-platform.md` | Stakeholder simplification suggestions |
-| SME test methodology | `references/better-regulation-toolbox.md` | Efficiency criterion — SME burden |
-| Fitness Check methodology | `references/fitness-check-methodology.md` | Multi-legislation package reviews |
+| SME test methodology | `references/better-regulation-toolbox-2023.md` | Efficiency criterion — SME burden |
+| Fitness Check methodology | `references/evaluation-methodology.md` | Multi-legislation package reviews |
 
 ---
 

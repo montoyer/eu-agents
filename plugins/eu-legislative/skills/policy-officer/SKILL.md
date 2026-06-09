@@ -64,7 +64,7 @@ and procedurally correct.
 
 | Topic | Reference | Load When |
 |---|---|---|
-| Better Regulation Guidelines | `references/better-regulation-guidelines.md` | Any new initiative — proportionality of process |
+| Better Regulation Guidelines | `references/better-regulation-guidelines-2023.md` | Any new initiative — proportionality of process |
 | Commission Communication drafting | `references/communication-drafting-guide.md` | Drafting Communications, Green/White Papers |
 | Council working party procedures | `references/council-wp-procedure.md` | Preparing for and reporting from Council WP meetings |
 | Expert group management | `references/expert-group-rules.md` | Setting up, managing, minuting expert groups |

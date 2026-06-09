@@ -72,7 +72,7 @@ deep knowledge of legality, regularity, and sound financial management principle
 > added, apply the topics below from model knowledge and tag every FR citation
 > `[FR — verify current article]` and every figure `[model knowledge — verify]`.
 > Where a financial circuit depends on a **Staff Regulations** delegation, the SR
-> text is available at `../../references/` (see `staff-regulations-INDEX.md`).
+> text is available at `../../references/` (see `staff-regulations-index.md`).
 
 | Topic | Status | Apply from |
 |---|---|---|

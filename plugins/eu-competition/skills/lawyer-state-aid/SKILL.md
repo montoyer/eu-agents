@@ -72,14 +72,14 @@ and CJEU case law.
 | Topic | Reference | Load When |
 |---|---|---|
 | Art. 107–109 TFEU | `references/art107-109-tfeu.md` | Treaty text, derogations, procedure |
-| GBER (Reg. 651/2014 as amended) | `references/gber-2014.md` | Block exemption conditions, aid categories, intensity tables |
-| De minimis (Reg. 2023/2831) | `references/de-minimis-regulation.md` | €300k over 3 years, de minimis register |
+| GBER (Reg. 651/2014 as amended) | `references/gber-de-minimis-2024.md` | Block exemption conditions, aid categories, intensity tables |
+| De minimis (Reg. 2023/2831) | `references/gber-de-minimis-2024.md` | €300k over 3 years, de minimis register |
 | Procedural Regulation (Reg. 2015/1589) | `references/sa-procedure-regulation.md` | Preliminary examination, formal investigation, recovery |
 | GBER R&D&I provisions | `references/gber-rdni.md` | Art. 25–30 GBER — fundamental research, industrial, experimental |
 | Environmental & Energy Aid Guidelines | `references/eeag-2022.md` | Renewable energy, decarbonisation, ETS, IPCEI |
 | Regional Aid Guidelines 2022 | `references/rag-2022.md` | A-regions, C-regions, maps, investment aid |
 | R&D&I Framework 2022 | `references/rdni-framework-2022.md` | Aid intensities, eligible costs, large projects |
-| ABER (Agriculture Block Exemption) | `references/aber.md` | Agricultural sector exemptions |
+| ABER (Agriculture Block Exemption) | `references/aber-2022.md` | Agricultural sector exemptions |
 | SGEI / Altmark | `references/sgei-altmark.md` | Compensation for public services — four Altmark criteria |
 
 ---

@@ -69,10 +69,10 @@ its deadline warrants direct LFN without EU Pilot.
 
 | Topic | Reference | Load When |
 |---|---|---|
-| TFEU Arts. 258–260 | `references/tfeu-infringement.md` | All steps — primary legal basis |
+| TFEU Arts. 258–260 | `references/art258-procedure.md` | All steps — primary legal basis |
 | Art. 260(3) penalty methodology | `references/penalty-calculation.md` | Step 5 — non-transposition penalties |
 | Penalty coefficients & country factors | `references/procurement-thresholds-2024.md` | Art. 260 basic amount, country factors, minimum lump sums (2024) — read; do not generate |
-| EU Pilot guidelines | `references/eu-pilot.md` | Step 4 — pre-formal infringement track |
+| EU Pilot guidelines | `references/eu-pilot-guide.md` | Step 4 — pre-formal infringement track |
 | Transposition monitoring | connector: chap | Checking existing CHAP/INFR case records |
 | ECJ judgment database | connector: eur-lex | Verifying existing judgments on same MS/breach |
 

@@ -64,7 +64,7 @@ strengthens the final act.
 |---|---|---|
 | ISC procedure (SG guidance) | `references/isc-procedure.md` | ISC deadlines, opinion types, second round rules |
 | Joint Practical Guide | `references/joint-practical-guide.md` | Checking legislative drafting quality in the lead DG's text |
-| Better Regulation toolbox | `references/better-regulation-toolbox.md` | Assessing impact assessment quality in the IA accompanying the proposal |
+| Better Regulation toolbox | `references/better-regulation-toolbox-2023.md` | Assessing impact assessment quality in the IA accompanying the proposal |
 | GDPR (Regulation 2016/679) | `references/gdpr.md` | Data protection impact — Art. 35 DPIA trigger |
 | Charter of Fundamental Rights | `references/eu-charter.md` | Fundamental rights impact check — Art. 51 scope |
 

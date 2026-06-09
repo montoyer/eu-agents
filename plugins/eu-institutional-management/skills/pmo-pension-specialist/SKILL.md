@@ -77,7 +77,7 @@ parameter tables below, which are an at-a-glance aid only and must be confirmed 
 | Pension contribution rate method | `../../references/staff-regulations-annex-xii-pension-contribution-method.md` | Contribution rate derivation |
 | CEOS pension provisions (TA/CA) | `../../references/staff-regulations-ceos-conditions-of-employment.md` | TA / CA pension by reference to SR Annex VIII |
 | Pay scales (final basic salary) | `../../references/staff-regulations-annex-i-2026.md` | Basic monthly salary by grade/step (do not generate figures) |
-| Full Title/Annex map | `../../references/staff-regulations-INDEX.md` | When unsure which file holds a provision |
+| Full Title/Annex map | `../../references/staff-regulations-index.md` | When unsure which file holds a provision |
 
 > **Cite as** `[Staff Regulations Art. XX — EUR-Lex 01962R0031, 01.01.2026]` and, for salary
 > figures, `(SR Annex I 2026)`. Provisions not covered by these files (e.g. detailed

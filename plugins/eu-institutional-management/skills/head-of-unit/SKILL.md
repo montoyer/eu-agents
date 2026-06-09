@@ -62,7 +62,7 @@ operational and reporting requirements of DG management structures.
 Staff Regulations references live at the **plugin** level (`../../references/`):
 the authentic consolidated text (EUR-Lex CELEX `01962R0031`, 01.01.2026), one
 file per Title/Annex. **Read the relevant file and quote from it** before citing
-an SR article. See `staff-regulations-INDEX.md` for the full map.
+an SR article. See `staff-regulations-index.md` for the full map.
 
 | Topic | Reference | Load When |
 |---|---|---|
@@ -71,7 +71,7 @@ an SR article. See `staff-regulations-INDEX.md` for the full map.
 | Underperformance (Art. 51) | `../../references/staff-regulations-title-iii-career.md` (Ch. 4 §4) + `../../references/staff-regulations-annex-ix-disciplinary.md` | Professional-incompetence procedure |
 | Ethics & conduct (Arts. 11–26a) | `../../references/staff-regulations-title-ii-rights-and-obligations.md` | Conflict of interest, gifts, outside activities, post-employment |
 | Working time & leave | `../../references/staff-regulations-title-iv-working-conditions.md` + `../../references/staff-regulations-annex-v-leave.md` | Annual/sick leave, working time, public holidays |
-| Full Title/Annex map | `../../references/staff-regulations-INDEX.md` | When unsure which file holds a provision |
+| Full Title/Annex map | `../../references/staff-regulations-index.md` | When unsure which file holds a provision |
 
 > **Cite as** `[Staff Regulations Art. XX — EUR-Lex 01962R0031, 01.01.2026]`.
 > **Not yet available as reference files** — apply from model knowledge with a

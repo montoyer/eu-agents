@@ -69,9 +69,9 @@ the Commission's Better Regulation and competition assessment frameworks.
 
 | Topic | Reference | Load When |
 |---|---|---|
-| Better Regulation Toolbox (economic tools) | `references/br-toolbox-economics.md` | CBA, CEA, MCA methodology — Tools #20–27 |
-| Commission CBA guidelines | `references/cba-guidelines.md` | Monetisation methods, discount rate, time horizon |
-| SME test methodology | `references/sme-test-methodology.md` | Estimating compliance costs for SMEs |
+| Better Regulation Toolbox (economic tools) | `references/better-regulation-toolbox-2023.md` | CBA, CEA, MCA methodology — Tools #20–27 |
+| Commission CBA guidelines | `references/cba-methodology.md` | Monetisation methods, discount rate, time horizon |
+| SME test methodology | `references/sme-test.md` | Estimating compliance costs for SMEs |
 | DG COMP market definition notice | `references/market-definition-notice.md` | SSNIP test, product/geographic market |
 | Merger assessment guidelines | `references/merger-assessment-guidelines.md` | SIEC test, unilateral/coordinated effects |
 | European Semester methodology | `references/european-semester-methodology.md` | Output gap, structural balance, CAB, fiscal stance |

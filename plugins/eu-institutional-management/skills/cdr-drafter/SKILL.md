@@ -62,14 +62,14 @@ drafted CDRs vulnerable to appeal.
 SR/CEOS references live at the **plugin** level (`../../references/`): the
 authentic consolidated text (EUR-Lex CELEX `01962R0031`, 01.01.2026). **Read the
 file and quote from it** before citing an article. See
-`staff-regulations-INDEX.md` for the map.
+`staff-regulations-index.md` for the map.
 
 | Topic | Reference | Load When |
 |---|---|---|
 | Reports/appraisal (Art. 43), promotion (Art. 45) | `../../references/staff-regulations-title-iii-career.md` | Legal framework for appraisal and advancement |
 | CEOS appraisal (Arts. 15–18) | `../../references/staff-regulations-ceos-conditions-of-employment.md` | TA/CA appraisal rules |
 | CDR appeal procedure (Art. 90(2)) | `../../references/staff-regulations-title-vii-appeals.md` | Internal complaint; joint committee referral |
-| Full Title/Annex map | `../../references/staff-regulations-INDEX.md` | When unsure which file holds a provision |
+| Full Title/Annex map | `../../references/staff-regulations-index.md` | When unsure which file holds a provision |
 
 > **Cite as** `[Staff Regulations Art. XX — EUR-Lex 01962R0031, 01.01.2026]` /
 > `[CEOS Art. XX — …]`. **Not yet available as reference files** (apply from model

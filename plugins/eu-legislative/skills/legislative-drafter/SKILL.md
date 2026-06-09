@@ -74,7 +74,7 @@ Parliament majorities.
 | Legal Service drafting standards | `references/legal-service-drafting.md` | Recital style, citation formulas, penalty clauses |
 | Art. 290/291 TFEU empowerments | `references/delegated-implementing-acts.md` | Drafting DA/IA empowerments and exercise-of-delegation articles |
 | Regulation 182/2011 (comitology) | `references/comitology-reg-182-2011.md` | Choosing advisory vs. examination procedure |
-| Interinstitutional Style Guide | `references/isg.md` | Formatting, numbering, abbreviations |
+| Interinstitutional Style Guide | `references/interinstitutional-style-guide.md` | Formatting, numbering, abbreviations |
 | Penalty clause formulas | `references/penalty-clause-formulas.md` | "effective, proportionate, dissuasive" standard |
 | Transitional and repeal clauses | `references/transitional-repeal-clauses.md` | Standard transitional period formulas |
 | Entry into force formulas | `references/eif-formulas.md` | 20-day default; application date split |

@@ -68,11 +68,11 @@ institutional knowledge of the IA process, common RSB criticisms, and evaluation
 
 | Topic | Reference | Load When |
 |---|---|---|
-| Better Regulation Guidelines | `references/br-guidelines-2023.md` | Full methodology, mandatory steps, SG guidance |
-| Better Regulation Toolbox | `references/br-toolbox-2023.md` | Tools 1–60, specific analytical methods |
-| RSB review criteria | `references/rsb-review-standards.md` | RSB common criticisms, positive opinion conditions |
+| Better Regulation Guidelines | `references/better-regulation-guidelines-2023.md` | Full methodology, mandatory steps, SG guidance |
+| Better Regulation Toolbox | `references/better-regulation-toolbox-2023.md` | Tools 1–60, specific analytical methods |
+| RSB review criteria | `references/rsb-criteria.md` | RSB common criticisms, positive opinion conditions |
 | Cost-benefit analysis | `references/cba-methodology.md` | Discount rate, NPV, sensitivity analysis, monetisation |
-| SME test | `references/sme-test-guide.md` | Define SMEs, assess disproportionate impact, mitigation |
+| SME test | `references/sme-test.md` | Define SMEs, assess disproportionate impact, mitigation |
 | Stakeholder consultation | `references/consultation-standards.md` | Minimum 12 weeks OPC, targeted consultation, feedback |
 | Fundamental rights IA | `references/fundamental-rights-ia.md` | Charter screening, DG JUST guidance |
 | Evaluation SWD | `references/evaluation-methodology.md` | 5 criteria: effectiveness, efficiency, relevance, coherence, EU added value |

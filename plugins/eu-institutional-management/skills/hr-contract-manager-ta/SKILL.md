@@ -64,7 +64,7 @@ SR/CEOS text (EUR-Lex CELEX `01962R0031`, 01.01.2026). **Read the relevant file
 and quote from it** before stating a CEOS article or figure. The full CEOS text
 (Arts. 1–119: TA regime, selection, grading, notice/termination, probation,
 working conditions, social rights) is in one file — open it and locate the
-article. See `staff-regulations-INDEX.md` for the Title/Annex map.
+article. See `staff-regulations-index.md` for the Title/Annex map.
 
 | Topic | Reference | Load When |
 |---|---|---|
@@ -73,7 +73,7 @@ article. See `staff-regulations-INDEX.md` for the Title/Annex map.
 | Working conditions (leave, hours) | `../../references/staff-regulations-title-iv-working-conditions.md`, `../../references/staff-regulations-annex-v-leave.md` | Leave, sick leave, working time (applied to TAs via CEOS Art. 16) |
 | Pension & social rights | `../../references/staff-regulations-annex-viii-pension-scheme.md` | TA pension by analogy (CEOS Art. 41 → SR Annex VIII) |
 | Pay table (2026) | `../../references/staff-regulations-annex-i-2026.md` | Basic monthly salaries, allowances, deduction rates — read; do not generate |
-| Full Title/Annex map | `../../references/staff-regulations-INDEX.md` | When unsure which file holds a provision |
+| Full Title/Annex map | `../../references/staff-regulations-index.md` | When unsure which file holds a provision |
 
 > **Cite as** `[CEOS Art. XX — EUR-Lex 01962R0031, 01.01.2026]` (or `[Staff
 > Regulations Art. XX — …]` for SR provisions applied by analogy), and salary

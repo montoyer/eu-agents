@@ -106,7 +106,7 @@ Not an official Commission decision or position.
 - **Full SR & CEOS text is in `references/staff-regulations-*.md`** — the authentic
   consolidated text (CELEX 01962R0031, 01.01.2026) is split one file per Title and
   per Annex. Before citing an SR/CEOS article, read the relevant file (see
-  `references/staff-regulations-INDEX.md` for the Title/Annex → file map) and quote
+  `references/staff-regulations-index.md` for the Title/Annex → file map) and quote
   from it. Cite as `[Staff Regulations Art. XX — EUR-Lex 01962R0031, 01.01.2026]`.
   Only fall back to `[SR — verify current article]` when the file does not cover the
   point (e.g. a provision changed after the 01.01.2026 consolidation)

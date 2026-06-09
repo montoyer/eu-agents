@@ -75,7 +75,7 @@ when dialogue better serves the effective application of EU law.
 | Art. 260 TFEU — non-compliance penalties | `references/art260-penalties.md` | Lump sum and daily penalty calculation formulas |
 | Art. 260(3) — non-transposition penalties | `references/art260-3-non-transposition.md` | Penalty in initial referral — specific formula |
 | EU Pilot procedure | `references/eu-pilot-guide.md` | Opening, managing, closing EU Pilot cases |
-| Transposition monitoring methodology | `references/transposition-monitoring.md` | Checking NIM completeness and conformity |
+| Transposition monitoring methodology | `references/transposition-guide.md` | Checking NIM completeness and conformity |
 | Infringement prioritisation criteria | `references/infringement-priorities.md` | Commission criteria for opening/closing cases |
 | LFN drafting standards | `references/lfn-drafting-guide.md` | Structure, legal precision, deadline setting |
 | Reasoned Opinion drafting | `references/ro-drafting-guide.md` | Definitive legal statement — structure and standards |

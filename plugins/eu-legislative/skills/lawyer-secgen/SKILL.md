@@ -65,12 +65,12 @@ consistent, and procedurally correct before inter-institutional submission.
 
 | Topic | Reference | Load When |
 |---|---|---|
-| Better Regulation Toolbox | `references/br-toolbox-2023.md` | Problem definition, IA options, proportionality test |
-| ISC Procedure | `references/isc-guide.md` | Mandatory consultees, timelines, SG coordination |
-| Comitology | `references/comitology-delegated-acts.md` | Art. 290/291 TFEU, examination/advisory procedure |
-| Legal base selection | `references/legal-base-treaty.md` | TFEU articles, Centre of gravity test, dual base |
+| Better Regulation Toolbox | `references/better-regulation-toolbox-2023.md` | Problem definition, IA options, proportionality test |
+| ISC Procedure | `references/isc-procedure.md` | Mandatory consultees, timelines, SG coordination |
+| Comitology | `references/comitology-reg-182-2011.md` | Art. 290/291 TFEU, examination/advisory procedure |
+| Legal base selection | `references/tfeu-teu-consolidated.md` | TFEU articles, Centre of gravity test, dual base |
 | Subsidiarity & Proportionality | `references/subsidiarity-protocol.md` | Protocol 2 TEU, yellow/orange card, COSAC |
-| Legislative Drafting | `references/jpo-drafting-guide.md` | Joint Practical Guide, Common Approach on DAs |
+| Legislative Drafting | `references/joint-practical-guide.md` | Joint Practical Guide, Common Approach on DAs |
 | Financial Regulation | `references/financial-regulation-2018.md` | Art. 41 budget implications, legislative FS |
 | SWD / IA format | `references/swd-ia-templates.md` | RSB expectations, SWD structure, executive summary |
 

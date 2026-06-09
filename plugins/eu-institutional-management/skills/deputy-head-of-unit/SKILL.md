@@ -71,12 +71,12 @@ to motivate and support policy officers without overstepping the HoU's authority
 
 The Staff Regulations text is available at the **plugin** level
 (`../../references/`, EUR-Lex CELEX `01962R0031`, 01.01.2026) — read and quote
-from it for any SR question (see `staff-regulations-INDEX.md`). The other topics
+from it for any SR question (see `staff-regulations-index.md`). The other topics
 below are internal operational guides not yet captured as reference files.
 
 | Topic | Reference / status | Apply from |
 |---|---|---|
-| Staff Regulations (rights/obligations, leave, career) | `../../references/staff-regulations-INDEX.md` → relevant Title file | the file — cite `[Staff Regulations Art. XX — EUR-Lex 01962R0031, 01.01.2026]` |
+| Staff Regulations (rights/obligations, leave, career) | `../../references/staff-regulations-index.md` → relevant Title file | the file — cite `[Staff Regulations Art. XX — EUR-Lex 01962R0031, 01.01.2026]` |
 | Unit work programme / delivery tracking | not yet available | model knowledge — `[model knowledge — verify]` |
 | ARES workflow management | not yet available | model knowledge |
 | ISC tracking (deadlines, contributions) | not yet available | model knowledge |

@@ -325,7 +325,7 @@ read from `references/*.md`. Skills quote the article text directly and tag it
 - Source: `https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:01962R0031`
 - API: none — consolidated HTML downloaded and converted offline
 - Used by: `eu-institutional-management`, `eu-careers`
-- Index: `eu-institutional-management/references/staff-regulations-INDEX.md`
+- Index: `eu-institutional-management/references/staff-regulations-index.md`
 - Primary use cases:
   - Quote the current wording of an SR/CEOS article in an HR decision
   - Disciplinary procedure (Title VI + Annex IX) and underperformance (Title III §4)

@@ -243,6 +243,49 @@ skill in `plugins/eu-simulation/` that loads it.
 
 ---
 
+## 3a. Reference files (`plugins/<domain>/references/`)
+
+Reference files are documents loaded by skills (legal texts, guidelines,
+methodologies). The open backlog of cited-but-missing references is tracked in
+[docs/reference-backlog.md](docs/reference-backlog.md).
+
+### Naming convention
+
+1. **Lowercase kebab-case ASCII only**: `[a-z0-9]+(-[a-z0-9]+)*.md`. No
+   underscores, spaces, or capitals.
+2. **Topic first, official identifier second**: start with the searchable
+   subject, append the instrument number when one exists —
+   `comitology-reg-182-2011.md`, `financial-regulation-2018-1046.md`,
+   `subsidiarity-protocol.md`.
+3. **Treaty-article files**: `art<numbers>-<topic>.md` —
+   `art258-procedure.md`, `art290-291-delegated-acts.md`.
+4. **Year suffix only for versioned documents** that get revised (guidelines,
+   frameworks, thresholds, pay tables): `gber-de-minimis-2024.md`,
+   `better-regulation-toolbox-2023.md`. A revision means a new filename and a
+   citation update — never silently overwrite figures under an old year.
+5. **No opaque abbreviations** that have a spelled-out twin elsewhere
+   (`br-` vs `better-regulation-`): use the full form. Established EU acronyms
+   that *are* the common name (GBER, SGEI, RSB, SME, CBA, ISC, PQ) are fine.
+6. **One document = one file = one name.** Before creating a file, check the
+   backlog and the existing `references/` directory for a name that already
+   covers it — update citations rather than adding an alias.
+
+### Sharing a reference across plugins
+
+Plugins install via `git-subdir`, so each plugin must physically contain every
+file it cites — **symlinks dangle on install, and hand-made copies drift**.
+Instead:
+
+1. The file has exactly **one canonical location** (the plugin that owns the
+   domain — e.g. Staff Regulations live in `eu-institutional-management`).
+2. Register the consumer copy in `scripts/sync-shared-references.sh` (one
+   `canonical|copy` line) and run the script. Copies carry a
+   `SYNCED COPY — do not edit` header.
+3. `scripts/validate.sh` (check 6) fails the build if a copy drifts from its
+   canonical — edit the canonical, re-run the sync script.
+
+---
+
 ## 4. Quality standards
 
 ### Legal accuracy

@@ -67,7 +67,7 @@ deadlines are met, and the HoU's time is optimally used.
 > reference corpus. Apply the topics below from model knowledge and tag
 > accordingly. Where a task turns on a **Staff Regulations** entitlement (e.g.
 > the legal basis for a leave type before validating it in SYSPER), the SR text
-> is available at `../../references/` — see `staff-regulations-INDEX.md`
+> is available at `../../references/` — see `staff-regulations-index.md`
 > (leave: Title IV + Annex V) and cite `[Staff Regulations Art. XX — EUR-Lex
 > 01962R0031, 01.01.2026]`.
 

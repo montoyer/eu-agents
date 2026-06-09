@@ -8,6 +8,8 @@
 #   4. Every command declared in a plugin's hooks/hooks.json resolves to an
 #      existing executable file (after ${CLAUDE_PLUGIN_ROOT} substitution).
 #   5a. No symlink under plugins/ is dangling.
+#   6. Shared reference copies are in sync with their canonical file
+#      (scripts/sync-shared-references.sh --check).
 #
 # Soft checks (reported as warnings, do not fail the build):
 #   3. Every `references/<file>.md` cited inside a SKILL.md exists in that
@@ -128,6 +130,15 @@ while IFS= read -r link; do
     [[ $STRICT -eq 1 ]] && errors=$((errors + 1))
   fi
 done < <(find plugins -type l)
+
+# ---------------------------------------------------------------------------
+# Check 6 — shared reference copies are in sync with their canonical file
+# ---------------------------------------------------------------------------
+echo "==> Check 6: shared reference copies in sync"
+if ! scripts/sync-shared-references.sh --check; then
+  red "  DRIFT: shared reference copy out of sync — run scripts/sync-shared-references.sh"
+  errors=$((errors + 1))
+fi
 
 # ---------------------------------------------------------------------------
 # Summary

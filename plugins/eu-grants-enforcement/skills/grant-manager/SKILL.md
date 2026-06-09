@@ -70,7 +70,7 @@ manage financial corrections in a way that is legally sound, auditable, and fair
 
 | Topic | Reference | Load When |
 |---|---|---|
-| Financial Regulation (FR) — grants chapter | `references/fr-grants-chapter.md` | Arts. 180–211 FR — grant rules, eligibility, payment |
+| Financial Regulation (FR) — grants chapter | `references/financial-regulation-2018-1046.md` | Arts. 180–211 FR — grant rules, eligibility, payment |
 | Horizon Europe Model Grant Agreement (MGA) | `references/he-mga.md` | HE grant agreements — all Art. references |
 | Eligible costs guide — Horizon Europe | `references/he-eligible-costs.md` | Personnel, overheads, subcontracting, equipment |
 | LIFE Grant Management Guide | `references/life-grant-guide.md` | LIFE-specific eligibility and reporting |
@@ -80,7 +80,7 @@ manage financial corrections in a way that is legally sound, auditable, and fair
 | Financial correction methodology | `references/financial-correction-methodology.md` | Flat-rate corrections, extrapolation, 100% correction |
 | Flat-rate correction rates (cross-programme) | `references/procurement-thresholds-2024.md` | Standard correction scale, Horizon Europe rates, cohesion fund rates — read; do not generate |
 | Audit preparation checklist | `references/audit-preparation-checklist.md` | ECA, IAS, OLAF — document retention, response drafting |
-| Recovery order procedure | `references/recovery-order-guide.md` | Issuing recovery orders, debtor notification, ABAC |
+| Recovery order procedure | `references/financial-correction-methodology.md` | Issuing recovery orders, debtor notification, ABAC |
 
 ---
 

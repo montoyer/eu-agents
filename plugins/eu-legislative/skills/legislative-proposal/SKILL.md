@@ -71,7 +71,7 @@ not a policy paper: precision and internal consistency are non-negotiable.
 | Legal basis case law | `references/cjeu-legal-basis.md` | Steps 2 and 3 — centre of gravity test |
 | Subsidiarity Protocol No. 2 | `references/subsidiarity-protocol.md` | Step 3 — subsidiarity statement |
 | Delegated / implementing acts | `references/delegated-implementing-acts.md` | Step 6 — Art. 290/291 formulas |
-| Comitology Regulation | `references/comitology-regulation.md` | Step 6 — committee procedure type |
+| Comitology Regulation | `references/comitology-reg-182-2011.md` | Step 6 — committee procedure type |
 | Charter of Fundamental Rights | `references/eu-charter.md` | Preamble recital on fundamental rights |
 
 ---

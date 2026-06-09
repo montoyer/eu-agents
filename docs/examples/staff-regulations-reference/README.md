@@ -29,7 +29,7 @@ A skill does **not** load the whole corpus. It consults the index, opens the one
 file covering the Title or Annex it needs, and quotes from it. The map lives in:
 
 ```
-plugins/eu-institutional-management/references/staff-regulations-INDEX.md
+plugins/eu-institutional-management/references/staff-regulations-index.md
 ```
 
 Each skill's `SKILL.md` lists the specific files it should read in its **Reference
@@ -139,7 +139,7 @@ or ISC simulation that needs an HR or budget figure can instruct the relevant
 sub-agent to:
 
 ```
-Read plugins/eu-institutional-management/references/staff-regulations-INDEX.md,
+Read plugins/eu-institutional-management/references/staff-regulations-index.md,
 open the file for the Title/Annex you need, and quote the article verbatim with
 the citation [Staff Regulations Art. XX — EUR-Lex 01962R0031, 01.01.2026].
 ```
