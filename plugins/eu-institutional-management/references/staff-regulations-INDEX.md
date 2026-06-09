@@ -73,6 +73,6 @@ to a user, use `[Staff Regulations Art. XX — EUR-Lex 01962R0031, 01.01.2026]`
 
 ---
 
-*Regenerated from source with `.convert_sr.py`. To refresh after a new
+*Regenerated from source with `scripts/convert-staff-regulations.py`. To refresh after a new
 consolidation: download the new EUR-Lex HTML, update offsets in the script,
 re-run.*

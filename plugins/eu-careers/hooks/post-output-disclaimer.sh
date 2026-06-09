@@ -1,0 +1,1 @@
+../../../lib/hooks/post-output-disclaimer.sh

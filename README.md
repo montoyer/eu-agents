@@ -140,7 +140,6 @@ agents-for-EU/
 ├── QUICKSTART.md                   ← 5-minute onboarding guide
 ├── SKILL.md                        ← SKILL.md authoring standard
 ├── .claude-plugin/marketplace.json ← plugin marketplace registry (/plugin marketplace add montoyer/eu-agents)
-├── marketplace.json                ← legacy plugin registry (kept for reference)
 │
 ├── plugins/                        ← installable skill packages
 │   ├── eu-legislative/             ← Policy, legislative drafting, ISC, PQ
@@ -167,13 +166,10 @@ agents-for-EU/
 │   └── agents/                     ← Multi-agent session definitions (college, ISC, trilogue, DPIA, EDPS)
 │
 ├── lib/                            ← Shared technical assets
-│   ├── hooks/                      ← Event hook shell scripts
-│   │   ├── post-output-disclaimer.sh
-│   │   ├── post-subsidiarity-prompt.sh
-│   │   ├── post_tool_use_citation_matcher.sh
-│   │   ├── post_tool_use_eurlex_resolver.sh
-│   │   └── pre-legal-basis-check.sh
-│   └── legacy-skills/              ← Pre-SKILL.md flat skills (pending conversion)
+│   └── hooks/                      ← Event hook shell scripts
+│       ├── post-output-disclaimer.sh
+│       ├── post-subsidiarity-prompt.sh
+│       └── pre-legal-basis-check.sh
 │
 └── docs/                           ← Guides and reference material
     ├── getting-started.md

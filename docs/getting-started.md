@@ -95,4 +95,4 @@ They are not legal opinions and should not be relied upon as such.
 - [ARCHITECTURE.md](../ARCHITECTURE.md) — system design and layer structure
 - [CLAUDE.md](../CLAUDE.md) — full command reference
 - [docs/glossary.md](glossary.md) — EU terminology
-- [examples/](../examples/) — worked simulations
+- [examples/](examples/) — worked simulations

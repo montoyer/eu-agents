@@ -156,7 +156,7 @@ Pay scales change every January; the consolidated text changes on each amendment
 | What changed | What to do |
 |---|---|
 | **Annual pay adjustment** (each January) | Replace `staff-regulations-annex-i-2026.md` with the new Council regulation figures; rename to the new year. |
-| **New consolidation** of the SR/CEOS | Download the new EUR-Lex HTML, then re-run `references/.convert_sr.py` (the byte-offset boundaries in the script may need updating for the new file). |
+| **New consolidation** of the SR/CEOS | Download the new EUR-Lex HTML, then re-run `scripts/convert-staff-regulations.py` (the byte-offset boundaries in the script may need updating for the new file). |
 
 After refreshing, the citation date (`01.01.2026`) in the file headers should be
 bumped so outputs cite the correct consolidation.

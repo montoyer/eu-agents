@@ -332,7 +332,7 @@ read from `references/*.md`. Skills quote the article text directly and tag it
   - Pension scheme (Annex VIII), pension contribution method (Annex XII)
   - Leave entitlements (Title IV + Annex V), allowances (Annex VII)
 - Refresh: when a new consolidation is published, download the new EUR-Lex HTML
-  and re-run `references/.convert_sr.py` (offsets may need updating).
+  and re-run `scripts/convert-staff-regulations.py` (offsets may need updating).
 
 ```json
 {

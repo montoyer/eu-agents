@@ -27,11 +27,11 @@ agents-for-EU/
 │   ├── workflows/                  ← OLP, policy cycle sequences
 │   └── agents/                     ← College, ISC, trilogue protocols
 ├── lib/
-│   ├── hooks/                      ← shared hook shell scripts
-│   └── legacy-skills/              ← pre-SKILL.md flat skills (pending conversion)
+│   └── hooks/                      ← shared hook shell scripts
 ├── docs/                           ← user guides and examples
 │   └── examples/
-└── marketplace.json                ← plugin registry
+└── .claude-plugin/
+    └── marketplace.json            ← plugin marketplace registry
 ```
 
 ---
@@ -187,17 +187,22 @@ point and adapt the questions to the new domain's context.
 ln -s ../../../lib/hooks/post-output-disclaimer.sh plugins/[new-domain]/hooks/post-output-disclaimer.sh
 ```
 
-### Step 6 — Register in marketplace.json
+### Step 6 — Register in the marketplace
 
-Add an entry to `marketplace.json` under `"plugins"`:
+Add an entry to `.claude-plugin/marketplace.json` under `"plugins"`:
 
 ```json
 {
-  "id": "[new-domain]",
-  "name": "[Human-readable name]",
+  "name": "[new-domain]",
   "description": "[What this package covers and who it is for]",
-  "path": "plugins/[new-domain]",
-  "skills": ["cold-start-interview"]
+  "category": "productivity",
+  "source": {
+    "source": "git-subdir",
+    "url": "https://github.com/montoyer/eu-agents",
+    "path": "plugins/[new-domain]",
+    "ref": "main"
+  },
+  "homepage": "https://github.com/montoyer/eu-agents"
 }
 ```
 
@@ -263,7 +268,7 @@ Run through this list before opening a pull request:
 □ Skill is registered in plugin.json
 □ Skill appears in the domain CLAUDE.md playbook
 □ If new package: hook symlink created and resolves
-□ If new package: registered in marketplace.json with correct path (plugins/[domain])
+□ If new package: registered in .claude-plugin/marketplace.json with correct source path (plugins/[domain])
 □ All output templates end with the DRAFT disclaimer
 □ All legal citations use trust tags
 □ MUST DO / MUST NOT DO constraints are specific and include a reason

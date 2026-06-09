@@ -217,7 +217,6 @@ These require all 21 Commissioner agents and are structurally impossible with a 
 | `knowledge/workflows/` | Sequenced multi-step process definitions |
 | `knowledge/agents/` | Multi-agent session protocols (College, ISC, trilogue) |
 | `lib/hooks/` | Shared hook shell scripts |
-| `lib/legacy-skills/` | Pre-SKILL.md flat skills (pending conversion) |
 | `docs/` | User guides and reference material |
 | `docs/examples/` | Worked end-to-end simulations |
 
