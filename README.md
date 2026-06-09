@@ -14,7 +14,7 @@
 &nbsp;
 ![Last Commit](https://img.shields.io/github/last-commit/montoyer/eu-agents?style=flat-square&color=brightgreen&label=last+commit)
 &nbsp;
-![License](https://img.shields.io/github/license/montoyer/eu-agents?style=flat-square&color=lightgrey)
+![License](https://img.shields.io/badge/license-EUPL--1.2-blue?style=flat-square)
 
 </div>
 
@@ -250,4 +250,8 @@ Every star increases the project's visibility and helps researchers, policy wonk
 
 ## License
 
-MIT
+This project is licensed under the **European Union Public Licence v. 1.2 (EUPL-1.2)**.
+
+The EUPL is the official open-source licence of the European Union. It is a copyleft licence compatible with GPL v2/v3, AGPL v3, MPL v2, and other major open-source licences listed in its Appendix.
+
+See [LICENSE](LICENSE) for the full licence text, or visit [joinup.ec.europa.eu/collection/eupl](https://joinup.ec.europa.eu/collection/eupl) for translations in all 23 EU official languages.
