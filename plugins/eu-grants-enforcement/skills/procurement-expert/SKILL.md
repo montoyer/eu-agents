@@ -66,7 +66,7 @@ Specialises in framework contracts with cascade mechanisms and mini-competitions
 
 | Topic | Reference | Load When |
 |---|---|---|
-| Financial Regulation | `references/financial-regulation-2018-1046.md` | Thresholds, procedures, exceptions, Art. 160–172 |
+| Financial Regulation | `references/financial-regulation-2024-2509.md` | Thresholds, procedures, exceptions, Art. 160–172 |
 | RAP (Rules of Application) | `references/rap-delegated-regulation.md` | Detailed procedural rules, templates |
 | Framework Contracts | `references/framework-contracts-guide.md` | Cascade, mini-competition, max amount, duration |
 | eSubmission / eTendering | `references/etendering-guide.md` | TED publication, submission system, e-Certis |

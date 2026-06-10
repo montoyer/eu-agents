@@ -1,0 +1,19 @@
+name: Watch reference sources
+
+on:
+  schedule:
+    - cron: "0 6 1 * *"   # 06:00 UTC on the 1st of each month
+  workflow_dispatch:        # manual trigger
+
+jobs:
+  watch:
+    name: Check official sources for changes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Exit 1 (sources changed) fails the job -> GitHub notifies watchers.
+      # Review the flagged references/*.md, then run locally:
+      #   scripts/watch-sources.sh --update   and commit the new baseline.
+      - name: Run source watch
+        run: bash scripts/watch-sources.sh

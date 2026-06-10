@@ -1,0 +1,119 @@
+{
+  "_comment": "Source freshness manifest for scripts/watch-sources.sh. Two types: 'celex' counts amending/correcting/consolidating acts in the Publications Office SPARQL endpoint (original acts are immutable - the signal is a NEW related act); 'hash' downloads the URL and compares a normalized sha256 (for living documents like Toolbox PDFs). 'backs' lists the reference file(s) to review when the source changes.",
+  "sources": [
+    {
+      "id": "reg-182-2011",
+      "type": "celex",
+      "celex": "32011R0182",
+      "backs": "plugins/eu-legislative/references/comitology-reg-182-2011.md"
+    },
+    {
+      "id": "iia-2016",
+      "type": "celex",
+      "celex": "32016Q0512(01)",
+      "backs": "plugins/eu-legislative/references/iia-2016-comitology.md"
+    },
+    {
+      "id": "staff-regulations",
+      "type": "celex",
+      "celex": "31962R0031(01)",
+      "backs": "plugins/eu-institutional-management/references/staff-regulations-*.md"
+    },
+    {
+      "id": "reg-1-2003",
+      "type": "celex",
+      "celex": "32003R0001",
+      "backs": "plugins/eu-competition/references/reg-1-2003.md"
+    },
+    {
+      "id": "merger-regulation",
+      "type": "celex",
+      "celex": "32004R0139",
+      "backs": "plugins/eu-competition/references/merger-regulation.md"
+    },
+    {
+      "id": "sa-procedure-2015-1589",
+      "type": "celex",
+      "celex": "32015R1589",
+      "backs": "plugins/eu-competition/references/sa-procedure-regulation.md"
+    },
+    {
+      "id": "vber-2022-720",
+      "type": "celex",
+      "celex": "32022R0720",
+      "backs": "plugins/eu-competition/references/vber-2022.md"
+    },
+    {
+      "id": "dma-2022-1925",
+      "type": "celex",
+      "celex": "32022R1925",
+      "backs": "plugins/eu-competition/references/dma-gatekeeper.md"
+    },
+    {
+      "id": "art102-guidance-2009",
+      "type": "celex",
+      "celex": "52009XC0224(01)",
+      "backs": "plugins/eu-competition/references/art102-guidance.md"
+    },
+    {
+      "id": "finreg-2024-2509",
+      "type": "celex",
+      "celex": "32024R2509",
+      "backs": "plugins/eu-grants-enforcement/references/financial-regulation-2024-2509.md"
+    },
+    {
+      "id": "infringement-comm-2016",
+      "type": "celex",
+      "celex": "52017XC0119(01)",
+      "backs": "plugins/eu-grants-enforcement/references/infringement-procedure-guide.md, infringement-priorities.md"
+    },
+    {
+      "id": "br-guidelines-swd-2021-305",
+      "type": "hash",
+      "url": "https://commission.europa.eu/document/download/d0bbd77f-bee5-4ee5-b5c4-6110c7605476_en?filename=swd2021_305_en.pdf",
+      "backs": "plugins/eu-legislative/references/better-regulation-guidelines-2021.md"
+    },
+    {
+      "id": "br-toolbox-landing",
+      "type": "hash",
+      "url": "https://commission.europa.eu/law/law-making-process/better-regulation/better-regulation-guidelines-and-toolbox/better-regulation-toolbox_en",
+      "backs": "plugins/eu-legislative/references/better-regulation-toolbox-2025.md (a new edition changes the chapter download links on this page)"
+    },
+    {
+      "id": "br-toolbox-ch1",
+      "type": "hash",
+      "url": "https://commission.europa.eu/document/download/0d46029a-aaa8-4c21-bc51-cf9fdbef1f51_en",
+      "backs": "plugins/eu-legislative/references/better-regulation-toolbox-2025.md, rsb-criteria.md, refit-platform.md"
+    },
+    {
+      "id": "br-toolbox-ch2",
+      "type": "hash",
+      "url": "https://commission.europa.eu/document/download/c0561a9c-d112-4d20-b1ec-145748e2c61c_en",
+      "backs": "plugins/eu-legislative/references/swd-ia-templates.md"
+    },
+    {
+      "id": "br-toolbox-ch3",
+      "type": "hash",
+      "url": "https://commission.europa.eu/document/download/de79fb8e-4cc1-45a0-ac34-72f73a5147ca_en",
+      "backs": "plugins/eu-legislative/references/sme-test.md, fundamental-rights-ia.md, dnsh-guidance.md"
+    },
+    {
+      "id": "br-toolbox-ch6",
+      "type": "hash",
+      "url": "https://commission.europa.eu/document/download/88ebf8bb-79c1-4cf2-975b-c643dcc766f8_en",
+      "backs": "plugins/eu-legislative/references/evaluation-methodology.md"
+    },
+    {
+      "id": "br-toolbox-ch7",
+      "type": "hash",
+      "url": "https://commission.europa.eu/document/download/7b10fdd6-a992-4c65-b23d-185d45a5589f_en",
+      "backs": "plugins/eu-legislative/references/consultation-standards.md, stakeholder-categories.md"
+    },
+    {
+      "id": "br-toolbox-ch8",
+      "type": "hash",
+      "url": "https://commission.europa.eu/document/download/0d32ee11-92da-434d-9c86-fd4579d95dc6_en",
+      "backs": "plugins/eu-legislative/references/cba-methodology.md"
+    }
+  ]
+}

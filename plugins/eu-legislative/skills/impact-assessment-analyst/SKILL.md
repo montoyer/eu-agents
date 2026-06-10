@@ -68,7 +68,7 @@ institutional knowledge of the IA process, common RSB criticisms, and evaluation
 
 | Topic | Reference | Load When |
 |---|---|---|
-| Better Regulation Guidelines | `references/better-regulation-guidelines-2023.md` | Full methodology, mandatory steps, SG guidance |
+| Better Regulation Guidelines | `references/better-regulation-guidelines-2021.md` | Full methodology, mandatory steps, SG guidance |
 | Better Regulation Toolbox | `references/better-regulation-toolbox-2025.md` | Tools 1–60, specific analytical methods |
 | RSB review criteria | `references/rsb-criteria.md` | RSB common criticisms, positive opinion conditions |
 | Cost-benefit analysis | `references/cba-methodology.md` | Discount rate, NPV, sensitivity analysis, monetisation |

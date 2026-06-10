@@ -284,6 +284,23 @@ Instead:
 3. `scripts/validate.sh` (check 6) fails the build if a copy drifts from its
    canonical — edit the canonical, re-run the sync script.
 
+### Watching the official sources
+
+Reference files summarise official documents that can change. Register every
+new source in `scripts/source-watch.json`:
+
+- **`celex`** type for legal acts — the original is immutable, so the watcher
+  counts amending/correcting/consolidating acts in the Publications Office
+  SPARQL graph; a new related act changes the count.
+- **`hash`** type for living documents (PDFs, web pages) — normalized sha256.
+
+`scripts/watch-sources.sh` checks against the committed baseline
+(`source-watch.baseline.json`); it runs monthly via
+`.github/workflows/source-watch.yml` and can be run manually. When it flags a
+change: review the listed reference file(s), update them (bump the filename
+year for versioned documents, per the naming convention above), then run
+`scripts/watch-sources.sh --update` and commit the new baseline.
+
 ---
 
 ## 4. Quality standards

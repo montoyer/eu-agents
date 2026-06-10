@@ -24,6 +24,8 @@ cd "$ROOT"
 SHARED=(
   "plugins/eu-institutional-management/references/staff-regulations-annex-i-2026.md|plugins/eu-careers/references/staff-regulations-annex-i-2026.md"
   "plugins/eu-legislative/references/eu-charter.md|plugins/eu-competition/references/eu-charter.md"
+  "plugins/eu-legislative/references/tfeu-teu-consolidated.md|plugins/eu-competition/references/tfeu-teu-consolidated.md"
+  "plugins/eu-legislative/references/tfeu-teu-consolidated.md|plugins/eu-grants-enforcement/references/tfeu-teu-consolidated.md"
 )
 
 CHECK=0

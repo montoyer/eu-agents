@@ -36,7 +36,7 @@ file exists).
 
 | Cited name | Canonical (to write in Phase 2/3) |
 |---|---|
-| `eu-legislative/br-guidelines-2023.md`, `better-regulation-guidelines.md` | `better-regulation-guidelines-2023.md` |
+| `eu-legislative/br-guidelines-2023.md`, `better-regulation-guidelines.md` | `better-regulation-guidelines-2021.md` |
 | `eu-legislative/br-toolbox-2023.md` (×2), `br-toolbox-economics.md` | `better-regulation-toolbox-2025.md` |
 | `eu-legislative/better-regulation-toolbox.md` (×5) | `better-regulation-toolbox-2025.md` |
 | `eu-legislative/protocol-2-subsidiarity.md` | `subsidiarity-protocol.md` |
@@ -54,7 +54,7 @@ file exists).
 | `eu-grants-enforcement/eu-pilot.md` | `eu-pilot-guide.md` |
 | `eu-grants-enforcement/transposition-monitoring.md` | `transposition-guide.md` |
 | `eu-grants-enforcement/tfeu-infringement.md` | `art258-procedure.md` |
-| `eu-grants-enforcement/fr-grants-chapter.md` | `financial-regulation-2018-1046.md` |
+| `eu-grants-enforcement/fr-grants-chapter.md` | `financial-regulation-2024-2509.md` |
 | `eu-grants-enforcement/recovery-order-guide.md` | `financial-correction-methodology.md` |
 
 ## Phase 2 — Tier-1 shared primers (top-cited)
@@ -68,12 +68,14 @@ register the consumer copies in `scripts/sync-shared-references.sh`.
 - [x] `eu-legislative/references/joint-practical-guide.md` — JPG 22 guidelines + DA/IA drafting standard — 5 citations ✅ written 2026-06-10
 - [x] `eu-legislative/references/eu-charter.md` — Charter structure, Art. 51 scope, Art. 52(1) restriction test, rights-engagement screen — 4 citations ✅ written 2026-06-10
 - [x] `eu-competition/references/eu-charter.md` — synced copy of the above via `sync-shared-references.sh` ✅ 2026-06-10
-- [ ] `eu-legislative/references/tfeu-teu-consolidated.md` — key legal-basis articles index — 3 citations after alias pass
-- [ ] `eu-competition/references/tfeu-teu-consolidated.md`
-- [ ] `eu-grants-enforcement/references/tfeu-teu-consolidated.md` — ×2 citations
-- [ ] `eu-legislative/references/better-regulation-guidelines-2023.md` — 2 citations after alias pass
-- [ ] `eu-legislative/references/comitology-reg-182-2011.md` — 4 citations after alias pass
-- [ ] `eu-legislative/references/cjeu-legal-basis.md` — centre-of-gravity case law — 2 citations
+- [x] `eu-legislative/references/tfeu-teu-consolidated.md` — key-articles index: TEU foundations, legal-basis table, Arts. 288–294 (OLP stages), 258–260, judicial review ✅ written 2026-06-10
+- [x] `eu-competition/references/tfeu-teu-consolidated.md` — synced copy ✅ 2026-06-10
+- [x] `eu-grants-enforcement/references/tfeu-teu-consolidated.md` — synced copy ✅ 2026-06-10
+- [x] `eu-legislative/references/better-regulation-guidelines-2021.md` — verified against the SWD(2021) 305 PDF; notes the Guidelines-vs-Toolbox edition split ✅ written 2026-06-10
+- [x] `eu-legislative/references/comitology-reg-182-2011.md` — verified verbatim against the OJ text via the Publications Office Cellar API (EUR-Lex itself is WAF-blocked for non-browser clients; Cellar `publications.europa.eu/resource/celex/<CELEX>` works) ✅ written 2026-06-10
+- [x] `eu-legislative/references/cjeu-legal-basis.md` — centre-of-gravity doctrine, Art. 114 limits, boundary disputes, drafting checklist; all holdings Curia-tagged ✅ written 2026-06-10
+
+**Phase 2 complete** (2026-06-10): all 11 primers written; citations 189 → 132.
 
 ## Phase 3 — thematic packs per plugin (WRITE unless tagged)
 
@@ -90,8 +92,10 @@ into `subsidiarity-protocol.md` (citation updated). Still open from this pack:
 - [ ] `cjeu-subsidiarity-caselaw.md` — case law, not a Toolbox topic; write
       from CJEU sources with Curia trust tags
 
-**Comitology / delegated acts pack** — `delegated-implementing-acts.md` (×2),
-`art290-291-tfeu.md`, `iia-2016-comitology.md`, `comitology-urgency.md`,
+**Comitology / delegated acts pack** — `iia-2016-comitology.md` ✅ written
+2026-06-10 (verified against OJ L 123/2016). Remaining:
+`delegated-implementing-acts.md` (×2),
+`art290-291-tfeu.md`, `comitology-urgency.md`,
 `comitology-preamble-templates.md`, `da-empowerment-analysis.md`,
 `da-scrutiny-management.md`, `committee-meeting-guide.md`
 
@@ -120,18 +124,22 @@ domain — cite inline)
 
 ### eu-competition (remaining)
 
-**Antitrust pack** — `art101-102-tfeu.md`, `reg-1-2003.md`,
-`horizontal-guidelines-2023.md`, `vber-2022.md`, `art102-guidance.md` (×2),
-`fines-guidelines-2006.md`, `leniency-notice-2006.md`, `settlement-notice.md`,
-`cls-privilege.md`
+**Antitrust pack** — ✅ partially written 2026-06-10 from user-saved OJ HTML
+(verified): `reg-1-2003.md`, `vber-2022.md`, `art102-guidance.md` (×2),
+`fines-guidelines-2006.md`. Remaining: `art101-102-tfeu.md` (consider alias →
+synced `tfeu-teu-consolidated.md`), `horizontal-guidelines-2023.md`,
+`leniency-notice-2006.md`, `settlement-notice.md`, `cls-privilege.md`
+(case law)
 
-**State aid pack** — `art107-109-tfeu.md`, `sa-procedure-regulation.md`,
+**State aid pack** — `sa-procedure-regulation.md` ✅ written 2026-06-10 (verified against OJ L 248/2015). Remaining: `art107-109-tfeu.md`,
 `state-aid-manual.md`, `aber-2022.md`, `gber-rdni.md`, `eeag-2022.md`,
 `rag-2022.md`, `rdni-framework-2022.md`, `ipcei-communication.md`, `tctf.md`,
 `sgei-framework.md`, `sgei-altmark.md`
 
-**Merger / market pack** — `merger-regulation.md`, `market-definition-notice.md`
-(×2), `market-definition-caselaw.md`, `dma-gatekeeper.md` (×2)
+**Merger / market pack** — ✅ mostly written 2026-06-10 from user-saved OJ
+HTML (verified): `merger-regulation.md`, `market-definition-notice.md` (×2,
+2024 Notice), `dma-gatekeeper.md` (×2). Remaining:
+`market-definition-caselaw.md`
 
 **Litigation pack** — `art263-standing.md`, `art267-preliminary.md`,
 `art218-procedure.md`, `cjeu-statute-rp.md`, `gc-rules-procedure.md`,
@@ -141,13 +149,12 @@ domain — cite inline)
 
 ### eu-grants-enforcement (remaining)
 
-**Infringement pack** — `art258-procedure.md`, `art260-penalties.md`,
-`art260-3-non-transposition.md`, `infringement-procedure-guide.md` (×2),
-`infringement-priorities.md`, `infringement-case-law.md`, `eu-pilot-guide.md`
+**Infringement pack** — `infringement-procedure-guide.md` (×2) + `infringement-priorities.md` ✅ written 2026-06-10 (verified against OJ C 18/2017). Remaining: `art258-procedure.md`, `art260-penalties.md`,
+`art260-3-non-transposition.md`, `infringement-case-law.md`, `eu-pilot-guide.md`
 (×2), `lfn-drafting-guide.md`, `ro-drafting-guide.md`, `penalty-calculation.md`,
 `transposition-guide.md` (×2), `mne-guide.md`
 
-**Grants pack** — `financial-regulation-2018-1046.md`, `he-mga.md`,
+**Grants pack** — `financial-regulation-2024-2509.md` ✅ written 2026-06-10 (verified against the 2024 recast OJ text; canonical renamed from financial-regulation-2018-1046 — the 2018 FR was recast by Reg 2024/2509). Remaining: `he-mga.md`,
 `he-eligible-costs.md`, `cef-grant-guide.md`, `life-grant-guide.md`,
 `rap-delegated-regulation.md`, `audit-preparation-checklist.md`,
 `financial-correction-methodology.md`, `alt-analysis.md`
