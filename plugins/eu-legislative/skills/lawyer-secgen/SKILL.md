@@ -65,7 +65,7 @@ consistent, and procedurally correct before inter-institutional submission.
 
 | Topic | Reference | Load When |
 |---|---|---|
-| Better Regulation Toolbox | `references/better-regulation-toolbox-2023.md` | Problem definition, IA options, proportionality test |
+| Better Regulation Toolbox | `references/better-regulation-toolbox-2025.md` | Problem definition, IA options, proportionality test |
 | ISC Procedure | `references/isc-procedure.md` | Mandatory consultees, timelines, SG coordination |
 | Comitology | `references/comitology-reg-182-2011.md` | Art. 290/291 TFEU, examination/advisory procedure |
 | Legal base selection | `references/tfeu-teu-consolidated.md` | TFEU articles, Centre of gravity test, dual base |

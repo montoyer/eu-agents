@@ -9,9 +9,12 @@
 .env.local
 *.local.json
 
-# Reference source artefacts — large EUR-Lex HTML downloads converted into the
-# committed staff-regulations-*.md files; keep the source out of the repo.
+# Reference source artefacts — large EUR-Lex HTML downloads and official PDF
+# editions (e.g. BR Toolbox chapters) summarised into committed references/*.md
+# files; keep the sources out of the repo.
 plugins/**/references/*.html
+plugins/**/references/*.pdf
+plugins/**/references/br-ch*.txt
 
 # Python build/conversion tooling cache
 __pycache__/

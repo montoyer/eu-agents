@@ -69,7 +69,7 @@ the Commission's Better Regulation and competition assessment frameworks.
 
 | Topic | Reference | Load When |
 |---|---|---|
-| Better Regulation Toolbox (economic tools) | `references/better-regulation-toolbox-2023.md` | CBA, CEA, MCA methodology — Tools #20–27 |
+| Better Regulation Toolbox (economic tools) | `references/better-regulation-toolbox-2025.md` | CBA, CEA, MCA methodology — Ch. 8, Tools #56, #63 (Dec 2025 ed.) |
 | Commission CBA guidelines | `references/cba-methodology.md` | Monetisation methods, discount rate, time horizon |
 | SME test methodology | `references/sme-test.md` | Estimating compliance costs for SMEs |
 | DG COMP market definition notice | `references/market-definition-notice.md` | SSNIP test, product/geographic market |
@@ -289,7 +289,7 @@ EU-level spillovers that justify a CSR rather than leaving it to national policy
 
 ## Knowledge Reference
 
-Better Regulation Toolbox Tools #20–27 (economic assessment methods), Commission Guide
+Better Regulation Toolbox Ch. 8 — Methodologies, Tools #56 and #63 (Dec 2025 ed.), Commission Guide
 to Cost-Benefit Analysis of Investment Projects (2014, DG REGIO), EU CBA methodology for
 regulatory proposals (SG Better Regulation), SME test methodology guide (DG GROW),
 European Semester methodology (DG ECFIN), AMECO database (Annual Macro-Economic Database),

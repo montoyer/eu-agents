@@ -261,7 +261,7 @@ methodologies). The open backlog of cited-but-missing references is tracked in
    `art258-procedure.md`, `art290-291-delegated-acts.md`.
 4. **Year suffix only for versioned documents** that get revised (guidelines,
    frameworks, thresholds, pay tables): `gber-de-minimis-2024.md`,
-   `better-regulation-toolbox-2023.md`. A revision means a new filename and a
+   `better-regulation-toolbox-2025.md`. A revision means a new filename and a
    citation update — never silently overwrite figures under an old year.
 5. **No opaque abbreviations** that have a spelled-out twin elsewhere
    (`br-` vs `better-regulation-`): use the full form. Established EU acronyms

@@ -64,8 +64,8 @@ submitted.
 
 | Topic | Reference | Load When |
 |---|---|---|
-| Better Regulation Toolbox | `references/better-regulation-toolbox-2023.md` | Selecting the right tool for each IA step |
-| SME test methodology | `references/better-regulation-toolbox-2023.md` | Step 5 economic impacts — SME threshold |
+| Better Regulation Toolbox | `references/better-regulation-toolbox-2025.md` | Selecting the right tool for each IA step |
+| SME test methodology | `references/better-regulation-toolbox-2025.md` | Step 5 economic impacts — SME threshold |
 | DNSH technical guidance | `references/dnsh-guidance.md` | Step 5 environmental impacts |
 | EU Charter of Fundamental Rights | `references/eu-charter.md` | Step 5 social impacts — Charter rights check |
 | Subsidiarity Protocol No. 2 | `references/subsidiarity-protocol.md` | Step 1 — subsidiarity justification |

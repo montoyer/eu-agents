@@ -23,6 +23,7 @@ cd "$ROOT"
 # canonical|consumer-copy  (paths relative to repo root)
 SHARED=(
   "plugins/eu-institutional-management/references/staff-regulations-annex-i-2026.md|plugins/eu-careers/references/staff-regulations-annex-i-2026.md"
+  "plugins/eu-legislative/references/eu-charter.md|plugins/eu-competition/references/eu-charter.md"
 )
 
 CHECK=0

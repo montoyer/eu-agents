@@ -63,7 +63,7 @@ ambiguous conclusions that obscure real legal risk are not useful.
 |---|---|---|
 | CJEU legal basis case law | `references/cjeu-legal-basis.md` | Step 1 — centre-of-gravity analysis |
 | Subsidiarity Protocol No. 2 | `references/subsidiarity-protocol.md` | Step 2 — subsidiarity two-limb test |
-| Early Warning Mechanism | `references/early-warning-mechanism.md` | Step 2 — yellow/orange card risk |
+| Early Warning Mechanism | `references/subsidiarity-protocol.md` | Step 2 — yellow/orange card risk |
 | Charter of Fundamental Rights | `references/eu-charter.md` | Step 4 — rights engagement mapping |
 | Art. 52(1) restriction test | `references/eu-charter.md` | Step 4 — restriction analysis |
 

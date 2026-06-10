@@ -66,7 +66,7 @@ and will be scrutinised by the Regulatory Scrutiny Board and the Court.
 
 | Topic | Reference | Load When |
 |---|---|---|
-| Better Regulation Guidelines | `references/better-regulation-toolbox-2023.md` | Step 1 — consultation question design |
+| Better Regulation Guidelines | `references/better-regulation-toolbox-2025.md` | Step 1 — consultation question design |
 | Stakeholder register | `references/stakeholder-categories.md` | Step 2 — stakeholder mapping |
 | Have Your Say portal | `references/have-your-say.md` | OPC publication and management |
 | Minimum standards for consultation | `references/consultation-standards.md` | Step 1 — 12-week minimum, language requirements |

@@ -65,7 +65,7 @@ Protocol No. 2), and national parliaments within the 8-week reasoned opinion win
 |---|---|---|
 | Art. 5 TEU text | `references/tfeu-teu-consolidated.md` | Treaty text for subsidiarity/proportionality |
 | Protocol No. 2 | `references/subsidiarity-protocol.md` | Reasoned opinion procedure, thresholds |
-| Better Regulation Guidelines — subsidiarity | `references/better-regulation-toolbox-2023.md` | Tool #5 — subsidiarity and proportionality |
+| Better Regulation Guidelines — subsidiarity | `references/better-regulation-toolbox-2025.md` | Tool #5 — subsidiarity and proportionality |
 | RSB quality checklist | `references/rsb-criteria.md` | RSB subsidiarity criteria |
 | CJEU subsidiarity case law | `references/cjeu-subsidiarity-caselaw.md` | Tobacco Advertising, Germany v Parliament |
 

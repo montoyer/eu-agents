@@ -37,8 +37,8 @@ file exists).
 | Cited name | Canonical (to write in Phase 2/3) |
 |---|---|
 | `eu-legislative/br-guidelines-2023.md`, `better-regulation-guidelines.md` | `better-regulation-guidelines-2023.md` |
-| `eu-legislative/br-toolbox-2023.md` (×2), `br-toolbox-economics.md` | `better-regulation-toolbox-2023.md` |
-| `eu-legislative/better-regulation-toolbox.md` (×5) | `better-regulation-toolbox-2023.md` |
+| `eu-legislative/br-toolbox-2023.md` (×2), `br-toolbox-economics.md` | `better-regulation-toolbox-2025.md` |
+| `eu-legislative/better-regulation-toolbox.md` (×5) | `better-regulation-toolbox-2025.md` |
 | `eu-legislative/protocol-2-subsidiarity.md` | `subsidiarity-protocol.md` |
 | `eu-legislative/jpo-drafting-guide.md` | `joint-practical-guide.md` |
 | `eu-legislative/sme-test-guide.md`, `sme-test-methodology.md` | `sme-test.md` |
@@ -63,11 +63,11 @@ For documents needed by several plugins (`eu-charter.md`,
 `tfeu-teu-consolidated.md`): write the canonical once in `eu-legislative`, then
 register the consumer copies in `scripts/sync-shared-references.sh`.
 
-- [ ] `eu-legislative/references/better-regulation-toolbox-2023.md` — 8 citations after alias pass
-- [ ] `eu-legislative/references/subsidiarity-protocol.md` — Protocol No 2 (9 articles, short enough for full text) + early-warning summary — 5 citations
-- [ ] `eu-legislative/references/joint-practical-guide.md` — JPG key drafting rules — 5 citations
-- [ ] `eu-legislative/references/eu-charter.md` — Charter structure + most-litigated articles — 4 citations
-- [ ] `eu-competition/references/eu-charter.md` — same content, competition-litigation angle
+- [x] `eu-legislative/references/better-regulation-toolbox-2025.md` — 8 citations after alias pass ✅ written 2026-06-10
+- [x] `eu-legislative/references/subsidiarity-protocol.md` — Protocol No 2 article-by-article + early-warning mechanism — 5 citations ✅ written 2026-06-10
+- [x] `eu-legislative/references/joint-practical-guide.md` — JPG 22 guidelines + DA/IA drafting standard — 5 citations ✅ written 2026-06-10
+- [x] `eu-legislative/references/eu-charter.md` — Charter structure, Art. 51 scope, Art. 52(1) restriction test, rights-engagement screen — 4 citations ✅ written 2026-06-10
+- [x] `eu-competition/references/eu-charter.md` — synced copy of the above via `sync-shared-references.sh` ✅ 2026-06-10
 - [ ] `eu-legislative/references/tfeu-teu-consolidated.md` — key legal-basis articles index — 3 citations after alias pass
 - [ ] `eu-competition/references/tfeu-teu-consolidated.md`
 - [ ] `eu-grants-enforcement/references/tfeu-teu-consolidated.md` — ×2 citations
@@ -79,11 +79,16 @@ register the consumer copies in `scripts/sync-shared-references.sh`.
 
 ### eu-legislative (remaining)
 
-**Better Regulation / IA pack** — `rsb-criteria.md`, `swd-ia-templates.md`,
-`consultation-standards.md` (×2), `stakeholder-categories.md`, `sme-test.md`,
-`cba-methodology.md`, `evaluation-methodology.md`, `fundamental-rights-ia.md`,
-`dnsh-guidance.md`, `refit-platform.md`, `cjeu-subsidiarity-caselaw.md`,
-`early-warning-mechanism.md` (or fold into `subsidiarity-protocol.md`)
+**Better Regulation / IA pack** ✅ written 2026-06-10 from the December 2025
+Toolbox chapter PDFs (verified source text): `rsb-criteria.md` (Tool #3),
+`swd-ia-templates.md` (Tool #11), `consultation-standards.md` (Tools #51–#55),
+`stakeholder-categories.md` (Tool #52), `sme-test.md` (Tool #23),
+`cba-methodology.md` (Tools #56–#65), `evaluation-methodology.md`
+(Tools #45–#50), `fundamental-rights-ia.md` (Tool #29), `dnsh-guidance.md`
+(Tool #36), `refit-platform.md` (Tool #2). `early-warning-mechanism.md` folded
+into `subsidiarity-protocol.md` (citation updated). Still open from this pack:
+- [ ] `cjeu-subsidiarity-caselaw.md` — case law, not a Toolbox topic; write
+      from CJEU sources with Curia trust tags
 
 **Comitology / delegated acts pack** — `delegated-implementing-acts.md` (×2),
 `art290-291-tfeu.md`, `iia-2016-comitology.md`, `comitology-urgency.md`,
