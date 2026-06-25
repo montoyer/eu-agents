@@ -1,6 +1,6 @@
-# EU Commission AI Agents — Simulate EU Policy, Law, and Institutions with Claude Code
+# Agents for EU — Simulate EU Policy, Law, and Institutions with Claude Code
 
-> 30,000 EU staff. 21 Commissioners. 70 years to build. Now running on your laptop.
+> 30,000 staff. 21 Commissioners. Real procedures. Now on your laptop.
 
 <div align="center">
   <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjByaDMyMXFqcmo4aXZxNWVwdHJzbXZlZnN4bWEzNmp3b3g2Z3doeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/UqASWHeU91ADUSk5co/giphy.gif" width="520" alt="EU Commission in session"/>
@@ -8,8 +8,6 @@
 
 <div align="center">
 
-![Profile Views](https://komarev.com/ghpvc/?username=montoyer&color=0052cc&style=flat-square&label=views)
-&nbsp;
 ![GitHub Stars](https://img.shields.io/github/stars/montoyer/eu-agents?style=flat-square&color=gold&label=stars)
 &nbsp;
 ![Last Commit](https://img.shields.io/github/last-commit/montoyer/eu-agents?style=flat-square&color=brightgreen&label=last+commit)
@@ -20,229 +18,160 @@
 
 ---
 
-**You're a startup lawyer asked about GDPR compliance for an AI hiring tool. You open ChatGPT. You get confident-sounding text you can't cite in front of a client.** `/eu-privacy:dpia "AI hiring tool"` gives you a complete Art. 39 EUDPR assessment voiced by five specialist roles — DPO, IT architect, legal officer, security officer, EDPS reviewer — with trust-tagged citations and a draft ready for your DPO to sign off. In 3 minutes.
+**A startup lawyer needs a defensible GDPR DPIA for an AI hiring tool.**  
+`/eu-privacy:dpia "AI hiring tool"` produces the full Art. 39 EUDPR assessment — DPO threshold, architecture, legal basis, security, EDPS determination — with citations the DPO can actually sign.
 
-**Your team needs to know whether a proposed regulation would survive inter-service consultation. Normally that's a 500 euro/hour Brussels consultant and a three-week wait.** `/eu-simulation:inter-service-consultation "Regulation on algorithmic pricing"` runs all affected DGs in sequence, surfaces every objection with the legal basis behind it, and produces a synthesis note. In 3 minutes.
+**Your team must know if a draft regulation will die in inter-service consultation.**  
+`/eu-simulation:inter-service-consultation "Algorithmic pricing regulation"` runs every affected DG and returns their objections with the exact treaty or regulatory basis.
 
-**A journalist asks you about the EU's position on carbon border adjustments. You guess.** `/eu-simulation:commissioner climate` gives you the institutional position, the TFEU legal basis, and the live tension with the Trade Commissioner. In 30 seconds.
+**You are drafting and want to know which Commissioners will fight it.**  
+`/eu-simulation:mandate-conflict "AI liability regulation"` maps every structural conflict across all 21 portfolios, with the legal basis on each side and severity.
 
-**You're drafting a regulation and want to know which parts will get blocked at College before you write a word.** `/eu-simulation:mandate-conflict "Regulation on AI liability"` reads all 21 Commissioner knowledge files, identifies every structurally guaranteed conflict, names the treaty basis on each side, and tells you which fights require Presidential arbitration. No consultant has ever done this in under an hour.
+**You need to know whether your proposal even passes subsidiarity.**  
+`/eu-simulation:subsidiarity-stress "Harmonised SME insolvency rules"` tests the necessity argument against five different member-state configurations.
 
-**You want to know if your proposal will even hold up legally at the member-state level before it goes anywhere near the Council.** `/eu-simulation:subsidiarity-stress "Harmonised insolvency rules for SMEs"` tests your necessity argument against five different member-state configurations and tells you exactly where it fails. That test normally lives inside a Staff Working Document that takes six months to produce.
-
----
-
-Inspired by [gstack](https://github.com/garrytan/gstack) — which turns Claude Code into a virtual engineering team — **Agents for EU** models the entire European Commission as a structured system of specialized AI agents: one per Commissioner portfolio, backed by Directorate-General agents, wired together through the EU's real legislative and policy workflows.
-
-The goal is not satire. It is a serious attempt to simulate how the EU Commission thinks, deliberates, and produces policy — and to use that simulation as a tool for research, policy drafting, scenario testing, and civic education.
+This is not generic prompting. It is the European Commission's institutional machinery — mandates, procedures, and adversarial checks — made executable.
 
 ---
 
-## Why this exists — the non-obvious insight
+## The non-obvious insight
 
-> **The EU Commission is not primarily a regulatory body. It is the most sophisticated structured argumentation engine ever built by human institutions.**
+The EU Commission is not primarily a regulator. It is a **structured argumentation engine**: 21 mandate-scoped agents forced to reconcile conflicting treaty obligations through explicit procedures (subsidiarity, impact assessment, inter-service consultation, College deliberation, trilogue).
 
-Every regulation it produces is the residue of a scored debate across 21 mandates, each grounded in a different treaty basis, each representing a different theory of what the EU is for. Competition law versus industrial policy. Climate targets versus energy security. Digital sovereignty versus open markets. The College does not resolve these tensions by consensus — it forces them to a legally defensible equilibrium, on the record, with citations.
+That machinery is reusable. The same scaffold that produces defensible policy for 450 million people works for any high-stakes decision where multiple legitimate perspectives must survive adversarial scrutiny.
 
-That structure is the insight. The EU's deliberative machinery — subsidiarity tests, inter-service consultation, impact assessments, trilogue — is a **general-purpose scaffold for high-stakes collective reasoning**. It was designed for policy, but it works on any problem where multiple legitimate perspectives must be reconciled under constraint.
+The most powerful commands in this system are the ones that are impossible for a single model:
 
-This repository makes that scaffold programmable. The use case is not "simulate the EU." The use case is: **use EU deliberative procedure as a reasoning framework for any domain where the quality of a decision depends on how many well-grounded objections it has survived.**
-
-Practically, this means the system's most powerful commands are not the single-agent skill invocations but the **compound commands** that only work because 21 agents are running in parallel with conflicting mandates:
-
-| Command | What it does that a single agent cannot |
-|---|---|
-| `/eu-simulation:mandate-conflict <proposal>` | Identifies every structurally guaranteed conflict between Commissioner portfolios, with the legal basis for each position |
-| `/eu-simulation:red-team-college <proposal>` | Runs a proposal through all 21 Commissioners, returns only the severe objections — token-efficient College stress test |
-| `/eu-simulation:subsidiarity-stress <proposal>` | Tests the same proposal against 5 different member-state configurations to find where the subsidiarity check fails |
-| `/eu-simulation:timeline <proposal>` | Produces a realistic OLP timeline with blocking dependencies, QMV thresholds, and trilogue risk points |
+| Command                        | What only multi-agent + real mandates can do |
+|--------------------------------|---------------------------------------------|
+| `/eu-simulation:mandate-conflict` | Maps every structurally guaranteed clash across 21 portfolios with treaty bases and severity |
+| `/eu-simulation:red-team-college` | Runs the proposal through all 21; returns only SEVERE objections + adoptability verdict |
+| `/eu-simulation:subsidiarity-stress` | Tests the necessity argument against 5 different member-state configurations |
+| `/eu-simulation:timeline`       | Produces a realistic OLP timeline with QMV thresholds and trilogue risk points |
 
 See [NOI.md](NOI.md) for the full argument.
-
----
-
-## What this is
-
-| Layer | What it models |
-|---|---|
-| **Commissioners** | 21 portfolio agents, each with mandate, legal basis, political persona |
-| **DGs** | Operational directorate agents that produce technical analysis |
-| **Skills** | Reusable EU policy tools: impact assessment, consultation, treaty check… |
-| **Workflows** | End-to-end processes: ordinary legislative procedure, budget cycle, infringement |
-| **Agents** | Multi-agent sessions: College deliberation, trilogue, inter-service consultation |
-| **Institutions** | Counter-party agents: Parliament, Council, ECJ, ECB, EEAS |
-
----
-
-## Installation
-
-```bash
-# Register the marketplace (once)
-/plugin marketplace add montoyer/eu-agents
-
-# Install the plugins you need
-/plugin install eu-simulation        # 21 Commissioners + compound commands
-/plugin install eu-legislative       # Policy drafting, impact assessment, ISC
-/plugin install eu-privacy           # Full DPIA workflow
-/plugin install eu-competition       # Antitrust and state aid
-/plugin install eu-trade             # Trade defence instruments
-/plugin install eu-grants-enforcement # Grants, infringement, procurement
-/plugin install eu-institutional-management # HR, finance, unit management
-/plugin install eu-data-communication # Data analysis, press, speeches
-/plugin install eu-careers           # EPSO preparation
-```
-
-Or install everything at once:
-
-```bash
-/plugin marketplace add montoyer/eu-agents && /plugin install all
-```
 
 ---
 
 ## Quick start
 
 ```bash
-# Run a full College deliberation on a topic
+# 1. Add the marketplace (once)
+/plugin marketplace add montoyer/eu-agents
+
+# 2. Install what you need
+/plugin install eu-simulation@eu-agents
+/plugin install eu-legislative@eu-agents
+/plugin install eu-privacy@eu-agents
+
+# Or install everything:
+/plugin install --all@eu-agents
+```
+
+```markdown
+# Run a Commissioner
+/eu-simulation:commissioner competition
+
+# Full College deliberation
 /eu-simulation:college-deliberation "Should the EU ban algorithmic pricing in retail?"
 
-# Draft a legislative proposal via the standard workflow
-/eu-legislative:legislative-proposal "Regulation on synthetic biology"
+# Draft a regulation
+/eu-legislative:legislative-proposal "Regulation on synthetic biology, legal basis Art. 114 TFEU"
 
-# Stress-test a policy against all Commissioner portfolios
-/eu-legislative:impact-assessment "Carbon border adjustment expansion to agriculture"
-
-# --- Compound commands (multi-agent only) ---
-
-# Find every structurally guaranteed conflict across 21 portfolios
+# Compound stress tests
 /eu-simulation:mandate-conflict "Regulation on AI liability in critical infrastructure"
-
-# Run all 21 Commissioners, surface only severe objections
-/eu-simulation:red-team-college "Carbon border adjustment expansion to agriculture"
-
-# Test subsidiarity failure across 5 member-state configurations
+/eu-simulation:red-team-college "Carbon border adjustment for agriculture"
 /eu-simulation:subsidiarity-stress "Harmonised insolvency rules for SMEs"
+```
 
-# Produce a realistic OLP timeline with blocking dependencies
-/eu-simulation:timeline "Platform regulation for financial services"
+Every skill output ends with:
+```
+DRAFT — For review by an EU official before use. Not an official Commission position.
 ```
 
 ---
 
-## Repository layout
+## What you get
 
-```
-agents-for-EU/
-├── CLAUDE.md                       ← how to operate this system
-├── ARCHITECTURE.md                 ← design rationale & extension guide
-├── CONTRIBUTING.md                 ← how to extend the system
-├── CONNECTORS.md                   ← MCP connector catalogue
-├── QUICKSTART.md                   ← 5-minute onboarding guide
-├── SKILL.md                        ← SKILL.md authoring standard
-├── .claude-plugin/marketplace.json ← plugin marketplace registry (/plugin marketplace add montoyer/eu-agents)
-│
-├── plugins/                        ← installable skill packages
-│   ├── eu-legislative/             ← Policy, legislative drafting, ISC, PQ
-│   ├── eu-competition/             ← Antitrust, state aid, Legal Service
-│   ├── eu-institutional-management/← Unit management, HR, finance, CDR
-│   ├── eu-trade/                   ← Trade defence instruments
-│   ├── eu-grants-enforcement/      ← Grants, infringement, procurement
-│   ├── eu-data-communication/      ← Data analysis, press, speeches
-│   ├── eu-simulation/              ← Commissioner personas, College, trilogue, OLP
-│   └── eu-privacy/                 ← DPIA workflow, DPO, IT security, legal officer
-│       Each contains:
-│           CLAUDE.md               ← domain practice profile
-│           .claude-plugin/         ← plugin.json manifest
-│           skills/<name>/SKILL.md  ← individual skills
-│           skills/cold-start-interview/ ← plugin onboarding skill
-│           hooks/                  ← optional hooks.json + scripts (eu-legislative only)
-│           references/             ← reference documents loaded by skills
-│
-├── knowledge/                      ← EU institutional knowledge base
-│   ├── commissioners/              ← 21 Commissioner agent definitions + _template.md
-│   ├── dgs/                        ← 17 Directorate-General operational agents
-│   ├── institutions/               ← Counter-party agents (EP, Council, ECJ, ECB, EEAS, European Council)
-│   ├── workflows/                  ← End-to-end policy processes (legislative-cycle, policy-cycle)
-│   └── agents/                     ← Multi-agent session definitions (college, ISC, trilogue, DPIA, EDPS)
-│
-└── docs/                           ← Guides and reference material
-    ├── getting-started.md
-    ├── glossary.md
-    ├── using-skills-beginners-guide.md
-    └── examples/                   ← Worked end-to-end simulations
-        ├── ai-act-simulation/
-        ├── green-deal-package/
-        ├── migration-policy/
-        └── staff-regulations-reference/   ← Using the staff-regulations connector from skills
-```
+| Plugin                        | Purpose |
+|-------------------------------|---------|
+| `eu-simulation`               | 21 Commissioners + College + ISC + trilogue + OLP + compound analysis commands |
+| `eu-legislative`              | Impact assessment, legislative drafting, treaty check, consultation, REFIT, policy cycle |
+| `eu-privacy`                  | Full Art. 39 EUDPR DPIA workflow (DPO → IT-PM → Legal → Security → EDPS) |
+| `eu-competition`              | Antitrust (Arts. 101-102), state aid (107-109), mergers, dawn raids, Legal Service |
+| `eu-trade`                    | Trade defence: anti-dumping, anti-subsidy, safeguards |
+| `eu-grants-enforcement`       | Grant management, infringement procedures (Arts. 258-260), public procurement |
+| `eu-institutional-management` | HR, unit management, financial circuits, CDR/AAR/AMP, access to documents |
+| `eu-data-communication`       | Eurostat, scoreboards, press releases, lines to take, transparency |
+| `eu-careers`                  | EPSO grade/step estimation, presentation coaching, offer analysis |
+
+See [CLAUDE.md](CLAUDE.md) for the complete command reference.
+
+---
+
+## How commands work
+
+- Single-skill: `/eu-legislative:impact-assessment "brief here"`
+- Commissioner persona: `/eu-simulation:commissioner digital`
+- Multi-agent sessions: `/eu-simulation:inter-service-consultation "proposal"`
+- Compound (unique value): `/eu-simulation:mandate-conflict`, `red-team-college`, `subsidiarity-stress`, `timeline`
+
+Most plugins also include a `/eu-xxx:cold-start-interview` to tailor behaviour to your DG or dossier.
 
 ---
 
 ## Design principles
 
-**One agent per mandate.** Each Commissioner's agent is scoped strictly to its treaty-based competence. The Competition Commissioner cannot speak for Agriculture; the President arbitrates conflicts.
-
-**Real procedures, not shortcuts.** Workflows follow actual EU procedures — subsidiarity checks, impact assessments, inter-service consultations — so outputs are structurally realistic.
-
-**Adversarial by design.** Commissioners disagree. The Council pushes back. Parliament amends. The system is built for productive tension, not rubber-stamping.
-
-**Composable.** Every skill, commissioner, and workflow can be invoked standalone or composed into larger multi-agent sessions.
+- **One agent per mandate.** The Competition Commissioner never speaks for Agriculture.
+- **Real procedures.** Workflows follow actual EU rules (Better Regulation, Joint Practical Guide, subsidiarity protocol, etc.).
+- **Adversarial by design.** Commissioners disagree. The system surfaces conflict rather than smoothing it over.
+- **Grounded output.** Every claim that needs verification carries an attribution tag.
 
 ---
 
 ## Who this is for
 
-- **EU policy officers and legislative drafters** — impact assessments, ISC notes, treaty checks, legislative proposals without starting from scratch
-- **Lawyers working on EU compliance** — GDPR DPIA, state aid analysis, antitrust under Arts. 101-102 TFEU, infringement procedures
-- **Consultants and lobbyists** — understand the institutional position of any Commissioner portfolio before walking into a meeting in Brussels
-- **Researchers and academics** — simulate the full ordinary legislative procedure, model College deliberation, test policy options against all DG mandates
-- **Journalists and policy analysts** — get the TFEU legal basis and inter-institutional tensions behind any EU dossier in plain language
-- **Law and political science students** — walk through real EU procedures interactively: subsidiarity, proportionality, trilogue, comitology
-- **Civic technologists** — build tools that make EU decision-making legible to citizens
+- EU policy officers and legislative drafters
+- Lawyers doing EU compliance, state aid, or antitrust work
+- Consultants and lobbyists who need the institutional position fast
+- Researchers modelling policy processes
+- Journalists who want the legal basis and cross-portfolio tensions
+- Students learning the ordinary legislative procedure interactively
+- Anyone who needs structured, multi-perspective reasoning under constraint
 
 ---
 
-## Use cases
+## Documentation
 
-- **Policy research** — Simulate how a new regulation would be received across all Commission portfolios before it is written. `/eu-simulation:mandate-conflict` finds the structural fault lines in under a minute.
-- **Legislative drafting** — Use `/eu-legislative:legislative-proposal` to produce a structurally compliant draft from a one-line brief; use `/eu-simulation:red-team-college` to find the objections that will survive committee.
-- **Education** — Walk students through the full ordinary legislative procedure with live agent interactions; `/eu-simulation:timeline` makes the blocking dependencies visible.
-- **Scenario testing** — Test geopolitical shocks, climate events, or market crises against the College's deliberative capacity. `/eu-simulation:subsidiarity-stress` reveals when a proposed EU intervention loses its legal justification.
-- **General-purpose structured reasoning** — Use EU deliberative procedure as a scaffold for any high-stakes collective decision outside government: a corporate strategy review, a standards body proposal, a research consortium priority-setting. The scaffold works whenever multiple legitimate perspectives must survive adversarial scrutiny under constraint.
-- **Civic tech** — Build tools that explain EU decisions in plain language by running them backward through the agents that produced them.
+- [QUICKSTART.md](QUICKSTART.md) — 5-minute onboarding
+- [CLAUDE.md](CLAUDE.md) — Complete command reference and agent rules
+- [docs/getting-started.md](docs/getting-started.md)
+- [docs/examples/](docs/examples/) — Full worked simulations
+- [NOI.md](NOI.md) — Why the EU's reasoning machinery is worth programming
+- [ARCHITECTURE.md](ARCHITECTURE.md) — How the layers fit together
 
 ---
 
 ## Status
 
-Early scaffolding. Commissioners and core skills are defined; multi-agent orchestration and tooling are in active development.
-
-<div align="center">
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHVzbnVxZm95anh5c2gydjBtb3FwMDl5YmFzajloZzZnOHgzNXVlayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohze27VlwTv7VmoTe/giphy.gif" width="360" alt="The College is deliberating..."/>
-  <br/>
-  <sub><i>The College is deliberating. Stand by.</i></sub>
-</div>
-
----
-
-## Spread the word
-
-If this project is useful to you — or just makes you smile — help it reach more people.
-
-<div align="center">
-
-[![GitHub Stars](https://img.shields.io/github/stars/montoyer/eu-agents?style=for-the-badge&color=gold&label=⭐%20Star%20this%20repo)](https://github.com/montoyer/eu-agents/stargazers)
-
-</div>
-
-Every star increases the project's visibility and helps researchers, policy wonks, and civic technologists find it. It takes one click and means a lot.
+Production scaffolding for serious use. Core Commissioners, DGs, legislative and privacy workflows are stable. Compound simulation commands and additional domains are under active development.
 
 ---
 
 ## License
 
-This project is licensed under the **European Union Public Licence v. 1.2 (EUPL-1.2)**.
+**European Union Public Licence v. 1.2 (EUPL-1.2)**
 
-The EUPL is the official open-source licence of the European Union. It is a copyleft licence compatible with GPL v2/v3, AGPL v3, MPL v2, and other major open-source licences listed in its Appendix.
+See [LICENSE](LICENSE) and [joinup.ec.europa.eu/collection/eupl](https://joinup.ec.europa.eu/collection/eupl).
 
-See [LICENSE](LICENSE) for the full licence text, or visit [joinup.ec.europa.eu/collection/eupl](https://joinup.ec.europa.eu/collection/eupl) for translations in all 23 EU official languages.
+---
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md). New skills, Commissioners, DGs, and connectors are welcome.
+
+---
+
+<div align="center">
+  <sub>If this helps you do better EU work, star the repo. It helps other people find it.</sub>
+</div>
