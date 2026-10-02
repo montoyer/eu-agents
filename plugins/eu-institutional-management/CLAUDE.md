@@ -41,6 +41,8 @@ ABAC delegation level:  [run cold-start-interview to set]
 | Handle a Regulation 1049/2001 access to documents request | `access-to-documents` |
 | Manage a formal Art. 51 SR underperformance procedure | `underperformance-advisor` |
 | Plan the unit's operational budget and monitor execution | `budget-planner` |
+| Assess a gift, conflict of interest, outside activity or post-service job (SR Arts. 11–16) | `ethics-officer` |
+| Draft an Art. 12b request, an Art. 11a recusal note or an Art. 16 declaration | `ethics-officer` |
 
 ---
 

@@ -699,7 +699,7 @@ See `CLAUDE.md` — the "Extending the system" section — for the step-by-step 
 
 ## 13. Complete skill reference
 
-All 97 skills across 9 plugins. Add the marketplace with `/plugin marketplace add montoyer/eu-agents`, then install the plugin you need with `/plugin install <plugin-name>@eu-agents`.
+All 104 skills across 9 plugins. Add the marketplace with `/plugin marketplace add montoyer/eu-agents`, then install the plugin you need with `/plugin install <plugin-name>@eu-agents`.
 
 ### `eu-legislative` — Legislative & Policy
 
@@ -724,6 +724,7 @@ All 97 skills across 9 plugins. Add the marketplace with `/plugin marketplace ad
 | `/eu-legislative:fundamental-rights-assessor` | Charter of Fundamental Rights full assessment — Art. 51 scope, Art. 52(1) limitation test, all 54 articles |
 | `/eu-legislative:regulatory-impact-quantifier` | CBA/CEA quantification — compliance costs, SME test, OIOO, benefit monetisation, RSB-ready tables |
 | `/eu-legislative:policy-cycle` | Full EU policy lifecycle — agenda-setting through evaluation, all 7 phases, Better Regulation methodology |
+| `/eu-legislative:flash-report-drafter` | Flash report from meeting notes — Council working party, COREPER, comitology, EP committee, trilogue; positions by delegation, reservations, next steps, majority picture |
 
 ### `eu-competition` — Competition & Legal Service
 
@@ -794,6 +795,7 @@ All 97 skills across 9 plugins. Add the marketplace with `/plugin marketplace ad
 | `/eu-institutional-management:access-to-documents` | Regulation 1049/2001 access requests — exception assessment, partial access, refusal letters, confirmatory procedure |
 | `/eu-institutional-management:underperformance-advisor` | Art. 51 SR underperformance procedure — warning letter, improvement plan, monitoring, JEC submission |
 | `/eu-institutional-management:budget-planner` | Budget planning and execution — CA/PA programming, virements, carry-overs, execution monitoring, AAR reporting |
+| `/eu-institutional-management:ethics-officer` | Staff ethics under SR Title II — gifts, conflicts of interest, outside activities, public office, post-service activity, whistleblowing; drafts declarations, requests and opinions |
 
 ### `eu-grants-enforcement` — Grants, Procurement & Enforcement
 

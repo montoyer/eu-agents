@@ -73,6 +73,11 @@
       "id": "budget-planner",
       "path": "skills/budget-planner/SKILL.md",
       "description": "Budget planning and execution — CA/PA programming, virements, carry-overs, execution monitoring, AAR reporting"
+    },
+    {
+      "id": "ethics-officer",
+      "path": "skills/ethics-officer/SKILL.md",
+      "description": "Staff ethics under SR Title II — gifts, conflicts of interest, outside activities, public office, post-service activity, whistleblowing; drafts declarations, requests and opinions"
     }
   ],
   "connectors": [

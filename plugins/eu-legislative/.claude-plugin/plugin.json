@@ -103,6 +103,11 @@
       "id": "policy-cycle",
       "path": "skills/policy-cycle/SKILL.md",
       "description": "Full EU policy lifecycle — agenda-setting through evaluation, all 7 phases, Better Regulation methodology"
+    },
+    {
+      "id": "flash-report-drafter",
+      "path": "skills/flash-report-drafter/SKILL.md",
+      "description": "Flash report from meeting notes — Council working party, COREPER, comitology, EP committee, trilogue; positions by delegation, reservations, next steps, majority picture"
     }
   ],
   "connectors": [

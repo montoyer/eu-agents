@@ -65,6 +65,7 @@ Open-ended specialist personas. Adapt to whatever the user asks within their man
 /fundamental-rights-assessor — Charter of Fundamental Rights compatibility check
 /regulatory-impact-quantifier — Quantify regulatory costs and benefits for impact assessments
 /policy-cycle                — Full policy cycle management from agenda-setting to evaluation
+/flash-report-drafter        — Flash report from Council working party, COREPER, committee or trilogue notes
 
 // Competition & Legal Service (eu-competition)
 /lawyer-competition-antitrust — Antitrust analysis (Arts. 101–102 TFEU)
@@ -91,6 +92,7 @@ Open-ended specialist personas. Adapt to whatever the user asks within their man
 /access-to-documents         — Regulation 1049/2001 access-to-documents requests and exceptions
 /underperformance-advisor    — Underperformance procedures under Staff Regulations
 /budget-planner              — DG budget planning, commitment/payment appropriations, BIA
+/ethics-officer              — Staff ethics: gifts, conflicts of interest, outside activities, post-service (SR Arts. 11–16)
 
 // Trade Defence (eu-trade)
 /trade-defence-investigator  — Anti-dumping, anti-subsidy, safeguards
@@ -227,9 +229,9 @@ These require all 21 Commissioner agents and are structurally impossible with a 
 
 | Plugin ID | Domain | Key skills |
 |---|---|---|
-| `eu-legislative` | Legislative & Policy | `policy-officer`, `legislative-drafter`, `lawyer-secgen`, `impact-assessment`, `legislative-proposal`, `treaty-check`, `better-regulation`, `consultation`, `comitology-officer`, `economist`, `isc-contributor`, `pq-responder`, `subsidiarity-checker`, `trilogue-position-tracker`, `delegated-acts-drafter`, `fundamental-rights-assessor`, `regulatory-impact-quantifier`, `policy-cycle` |
+| `eu-legislative` | Legislative & Policy | `policy-officer`, `legislative-drafter`, `lawyer-secgen`, `impact-assessment`, `legislative-proposal`, `treaty-check`, `better-regulation`, `consultation`, `comitology-officer`, `economist`, `isc-contributor`, `pq-responder`, `subsidiarity-checker`, `trilogue-position-tracker`, `delegated-acts-drafter`, `fundamental-rights-assessor`, `regulatory-impact-quantifier`, `policy-cycle`, `flash-report-drafter` |
 | `eu-competition` | Competition & Legal Service | `lawyer-competition-antitrust`, `lawyer-state-aid`, `lawyer-legal-service`, `state-aid-review`, `market-definer`, `gber-screener`, `merger-screener`, `dawn-raid-advisor`, `eu-liability-advisor` |
-| `eu-institutional-management` | Institutional Management | `head-of-unit`, `deputy-head-of-unit`, `assistant-hod`, `hr-contract-manager-ta`, `financial-officer`, `pmo-pension-specialist`, `cdr-drafter`, `amp-drafter`, `aar-drafter`, `selection-board`, `access-to-documents`, `underperformance-advisor`, `budget-planner` |
+| `eu-institutional-management` | Institutional Management | `head-of-unit`, `deputy-head-of-unit`, `assistant-hod`, `hr-contract-manager-ta`, `financial-officer`, `pmo-pension-specialist`, `cdr-drafter`, `amp-drafter`, `aar-drafter`, `selection-board`, `access-to-documents`, `underperformance-advisor`, `budget-planner`, `ethics-officer` |
 | `eu-trade` | Trade Defence | `trade-defence-investigator`, `dumping-margin-calculator`, `sanctions-screener` |
 | `eu-grants-enforcement` | Grants, Procurement & Enforcement | `grant-manager`, `infringement-officer`, `infringement`, `procurement-expert`, `lfn-drafter`, `transposition-tracker`, `reasoned-opinion-drafter`, `grant-audit-advisor`, `grant-amendment-officer`, `tender-evaluator`, `olaf-referral-advisor`, `direct-award-advisor`, `eppo-jurisdiction-advisor`, `cohesion-fund-manager` |
 | `eu-data-communication` | Data & Communication | `data-analyst`, `communication-officer`, `lines-to-take-drafter`, `digit-project-manager`, `data-steward`, `cybersecurity-officer`, `transparency-officer` |

@@ -56,6 +56,7 @@ Investigation period:   [run cold-start-interview to set]
 | Run a full Charter of Fundamental Rights compatibility assessment | `fundamental-rights-assessor` |
 | Quantify costs and benefits for the RSB — CBA, SME test, OIOO | `regulatory-impact-quantifier` |
 | Model the full EU policy lifecycle end-to-end (all 7 phases) | `policy-cycle` |
+| Turn meeting notes into a flash report (Council WP, COREPER, comitology, EP committee) | `flash-report-drafter` |
 
 ---
 
