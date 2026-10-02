@@ -121,7 +121,7 @@ referral.
 
 *[Commission letterhead]*
 **INFR([YYYY])[NNNN]**
-**LIMITE**
+**SENSITIVE — RELEASABLE TO: [MEMBER STATE]**
 
 [City], [DD Month YYYY]
 

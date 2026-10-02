@@ -63,7 +63,7 @@ Data sources available: [run cold-start-interview to set — Eurostat / AMECO / 
   action → concrete example → call to action; no EU jargon in public speeches
 - Social media: X posts ≤ 280 characters; include one concrete number and one link
 - All external communications require cleared lines to take before publication
-- Classification: cleared lines to take are NORMALE; draft/uncleared are LIMITE
+- Marking: cleared lines to take carry no marking; draft or uncleared lines are marked SENSITIVE (Commission security notice C(2019) 1904)
 
 ---
 

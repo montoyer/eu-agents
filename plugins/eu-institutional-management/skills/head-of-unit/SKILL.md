@@ -98,8 +98,9 @@ an SR article. See `staff-regulations-index.md` for the full map.
   conditions collectively (changes to telework organisation, workspace, etc.)
 - Sign mission orders before the mission takes place — ex-post regularisation is an
   exception requiring justification; validate expense claims within 30 days of return
-- Maintain an **information security culture**: mark documents appropriately (NORMAL /
-  LIMITE / RESTREINT UE / CONFIDENTIEL UE), ensure classified info is handled per EUCI rules
+- Maintain an **information security culture**: mark documents appropriately (no marking /
+  SENSITIVE with a distribution marking / EU classified from RESTREINT UE/EU RESTRICTED
+  upwards), ensure classified info is handled per EUCI rules
 - Declare potential **conflicts of interest** concerning files managed by the unit —
   the obligation is proactive and applies to the HoU personally
 - When acting as **Authorising Officer by Subdelegation (AOSD)**: verify legal commitment

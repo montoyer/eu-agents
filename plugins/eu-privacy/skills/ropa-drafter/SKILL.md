@@ -211,7 +211,7 @@ If YES:
 
 ### 11. Security Measures
 
-**Data classification:** [NORMALE / SENSITIVE / EU RESTRICTED]
+**Data classification:** [Publicly Available / Commission Use / Sensitive non-classified (SENSITIVE) / EU RESTRICTED]
 **ISP / security ref:** [ISP reference or "pending"]
 **Key measures:** [encryption at rest/transit, RBAC, MFA, audit logs — brief summary]
 

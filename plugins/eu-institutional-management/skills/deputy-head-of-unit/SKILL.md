@@ -226,7 +226,7 @@ Document type:  - [ ] Briefing note  - [ ] Council WP brief  - [ ] ISC contribut
 
 - [ ] Commission style guide applied
 - [ ] Template/format correct for document type
-- [ ] Classification marked (NORMAL / LIMITE)
+- [ ] Marking applied where needed (none / SENSITIVE)
 - [ ] "Cleared by" status indicated on draft
 
 ---

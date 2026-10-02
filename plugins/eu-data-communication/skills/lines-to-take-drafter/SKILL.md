@@ -178,7 +178,7 @@ TOPICS THE COMMISSIONER CANNOT COMMENT ON:
   did not intend to make
 - **Include background information that would itself need to be classified** —
   the LTT package (or at least the Q&A section) will be in the Commissioner's
-  hands during a public event; do not include LIMITE information in the
+  hands during a public event; do not include SENSITIVE-marked or Council LIMITE information in the
   document the Commissioner takes into the hearing room
 
 ---

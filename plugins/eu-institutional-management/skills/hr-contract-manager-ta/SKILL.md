@@ -180,7 +180,7 @@ article. See `staff-regulations-index.md` for the Title/Annex map.
 ### 2. Non-Renewal Notification Letter
 
 *[INSTITUTION LETTERHEAD]*
-*[LIMITE — PERSONAL]*
+*[SENSITIVE: Staff matter]*
 
 [City], [DD Month YYYY]
 

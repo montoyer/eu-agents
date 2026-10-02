@@ -56,8 +56,10 @@ ABAC delegation level:  [run cold-start-interview to set]
   do not make HR recommendations without an SR basis
 - **CDR objectives**: SMART criteria (Specific, Measurable, Achievable, Relevant,
   Time-bound); avoid generic phrasing such as "contribute to the work of the unit"
-- **Classification**: most HR and financial documents are NORMALE;
-  disciplinary documents and sensitive HR cases are LIMITE
+- **Handling marking** (Commission security notice C(2019) 1904): most HR and financial
+  documents carry no marking; individual staff matters are marked `SENSITIVE: Staff
+  matter`; information processed by IDOC is marked `SENSITIVE: Investigations and
+  disciplinary matters`
 - **Delegation**: every document signed by the Deputy HoU A.I. must record the
   delegation basis; never sign a financial document without ABAC subdelegation
 

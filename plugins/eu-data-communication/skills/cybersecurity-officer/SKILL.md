@@ -81,7 +81,7 @@ and institutional governance requirements.
 ### Security Incident Report
 ```
 INCIDENT REFERENCE: [IR-YYYY-NNN]
-Classification: [CONFIDENTIAL / LIMITE / NORMAL]
+Marking: [none / SENSITIVE / SENSITIVE + TLP AMBER when shared with third parties]
 Severity: [P1-Critical / P2-High / P3-Medium / P4-Low]
 Date/time detected: [YYYY-MM-DD HH:MM UTC]
 Date/time reported to CERT-EU: [YYYY-MM-DD HH:MM UTC]

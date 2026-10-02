@@ -121,7 +121,7 @@ and requires strict adherence to procedural requirements.
 
 ## Warning Letter Template
 
-[Institutional letterhead — LIMITE / NORMALE as appropriate]
+[Institutional letterhead — SENSITIVE: Staff matter]
 [Date]
 ARES([YYYY])XXXXXXX
 
@@ -207,7 +207,8 @@ cc: DG HR [name]; Director [name]; ARES file
 ## Improvement Plan Template
 
 IMPROVEMENT PLAN
-Staff member:       [name and grade — LIMITE]
+Marking:            SENSITIVE: Staff matter
+Staff member:       [name and grade]
 Post:               [function title / DG / Unit]
 Plan period:        [DD Month YYYY] to [DD Month YYYY]
 HoU:                [name]

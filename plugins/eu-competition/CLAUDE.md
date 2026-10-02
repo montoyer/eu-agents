@@ -14,7 +14,7 @@ Case type:              [AD case / State aid case / CLS opinion / Litigation]
 Case reference:         [run cold-start-interview to set]
 Sector:                 [run cold-start-interview to set]
 Working language(s):    [run cold-start-interview to set — default: EN]
-Confidentiality level:  [run cold-start-interview to set — default: NORMALE]
+Confidentiality level:  [run cold-start-interview to set — default: no marking]
 ```
 
 ---
@@ -56,8 +56,10 @@ Confidentiality level:  [run cold-start-interview to set — default: NORMALE]
   `SA.XXXXX(YYYY/N)`; Legal Service opinions cite `SJ-YYYY-NNNN`
 - **CJEU case law**: cite by case name and case number, e.g.,
   *Intel v Commission*, C-413/14 P — do not cite by name alone
-- **Classification**: all Legal Service opinions are LIMITE by default;
-  state aid notification documents may be NORMALE unless they contain SBI
+- **Handling marking** (Commission security notice C(2019) 1904): Legal Service opinions
+  carry `SENSITIVE: Opinion of the Legal Service`, a marking only the Legal Service
+  applies; DG COMP case documents carry `SENSITIVE: COMP Operations`, applied only by
+  DG COMP; state aid notification documents may carry no marking unless they contain SBI
 - **Confidentiality**: sensitive business information (SBI) submitted by parties
   must be flagged; never include SBI in non-confidential versions of outputs
 - **Market definition**: always precedes dominance and effects analysis —

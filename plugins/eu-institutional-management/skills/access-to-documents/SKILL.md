@@ -22,7 +22,7 @@ metadata:
     partial access, redaction, confirmatory application, Secretary-General review,
     Ombudsman complaint, CJEU access case, 15 working days, deadline extension,
     third-party consultation, Art. 4(4), Art. 4(5), proactive transparency, Art. 12,
-    public register, ARES document, classified document, LIMITE document, access refusal,
+    public register, ARES document, classified document, SENSITIVE document, LIMITE document, access refusal,
     initial request, confirmatory request, access request handling, transparency officer
   role: specialist
   scope: access-to-documents-handling-response
@@ -55,7 +55,7 @@ in the name of the Secretary-General or the responsible Director-General.
    means any content regardless of medium (paper, electronic, audio, video). Check:
    - Documents held by the Commission (not necessarily authored by it)
    - Documents from third parties held by the Commission
-   - LIMITE documents (restricted internal circulation — not automatically exempt)
+   - Marked documents: Commission SENSITIVE or SPECIAL HANDLING, Council LIMITE (a marking restricts circulation — it is not automatically an exemption)
    - Documents linked to ongoing legislative procedures (presumption of wider access)
    - Classified documents (EU SECRET / CONFIDENTIEL UE — specific rules apply)
 
@@ -260,7 +260,7 @@ Yours faithfully, [Director-General]
 **Extended deadline:** [DD Month YYYY] (Working day 30)
 
 **Third-party consultation:** - [ ] YES — sent [date]; response due [date]
-**LIMITE / classified check:** - [ ] Checked — result: [N documents LIMITE / none]
+**Marking / classification check:** - [ ] Checked — result: [N documents marked SENSITIVE or LIMITE / N classified / none]
 
 **Confirmatory application received:** - [ ] YES — date: [DD Month YYYY]
 **SG confirmatory deadline:** [DD Month YYYY] (Working day 15 from confirmatory)
@@ -285,9 +285,10 @@ Yours faithfully, [Director-General]
   concerning third parties that have requested non-disclosure.
 
 ### MUST NOT DO
-- Treat LIMITE classification as an automatic exemption — LIMITE indicates internal
-  restricted circulation, not an Art. 4 exception. Each LIMITE document must be
-  individually assessed against the Art. 4 exceptions.
+- Treat a marking as an automatic exemption — SENSITIVE, SPECIAL HANDLING and the
+  Council's LIMITE govern internal handling and are not Art. 4 exceptions. Each marked
+  document must be individually assessed against the Art. 4 exceptions, in the light
+  of the circumstances at the time of the decision on access.
 - Extend the deadline without notifying the applicant within the initial 15-day period —
   a silent extension is legally ineffective.
 - Refuse access on grounds not listed in Art. 4 — the list is exhaustive; "administrative

@@ -117,7 +117,7 @@ To:       [Name, Title]
 From:     [Unit, DG]
 Date:     [DD Month YYYY]
 Subject:  [Concise policy topic — max 10 words]
-Security: LIMITE / RESTREINT UE / Non-classified [choose one]
+Marking:  none / SENSITIVE / EU classified (RESTREINT UE/EU RESTRICTED or above) [choose one]
 
 1. PURPOSE
    [One paragraph: why this note is needed, by when, for what decision.]

@@ -16,7 +16,7 @@ metadata:
   triggers: >
     IT security plan, ISP, information security policy, ISO 27001, CIS controls,
     NIS2, ENISA, risk register, risk treatment, security controls, asset classification,
-    NORMALE, SENSITIVE, EU RESTRICTED, CERT-EU, incident response plan, penetration testing,
+    Commission Use, sensitive non-classified, SENSITIVE, EU RESTRICTED, CERT-EU, incident response plan, penetration testing,
     security audit, annual security review, technical and organisational measures,
     Art. 33 EUDPR, information classification, vulnerability assessment, threat assessment,
     business continuity, security governance, access control policy, encryption policy
@@ -48,9 +48,11 @@ Annex A and CIS Controls v8.
    APIs, third-party services). Assign an asset criticality rating (LOW / MEDIUM / HIGH /
    CRITICAL) based on CIA impact.
 
-3. **Information classification review** — Apply the Commission classification scheme:
-   NORMALE → SENSITIVE → EU RESTRICTED → EU CONFIDENTIAL. Confirm handling requirements
-   per classification level.
+3. **Information classification review** — Apply the Commission scheme: Publicly
+   Available → Commission Use → sensitive non-classified (marked SENSITIVE or SPECIAL
+   HANDLING under security notice C(2019) 1904) → EU classified information (RESTREINT
+   UE/EU RESTRICTED and above, Decision (EU, Euratom) 2015/444). Confirm handling
+   requirements per level.
 
 4. **Threat and vulnerability assessment** — Identify relevant threats (external attacker,
    insider, accidental disclosure, supply chain, natural event) and existing vulnerabilities.
@@ -87,7 +89,7 @@ Annex A and CIS Controls v8.
 **Document reference:** ISP-[DG]-[SYSTEM]-[YYYY]-[NNN]
 **System name:** [system name]
 **System owner:** [DG / Unit / HoU]
-**Data classification:** [NORMALE / SENSITIVE / EU RESTRICTED]
+**Data classification:** [Publicly Available / Commission Use / Sensitive non-classified (SENSITIVE) / EU RESTRICTED]
 **Environment:** [on-premise / cloud provider / hybrid]
 **Date of issue:** [DD Month YYYY]
 **Next review due:** [DD Month YYYY]
@@ -197,8 +199,8 @@ Root cause analysis; update risk register; update ISP if controls failed.
 ## Constraints
 
 ### MUST DO
-- Apply Commission information classification levels (NORMALE / SENSITIVE / EU RESTRICTED /
-  EU CONFIDENTIAL), not generic commercial classifications.
+- Apply Commission information classification levels (Publicly Available / Commission Use /
+  sensitive non-classified / EU classified), not generic commercial classifications.
 - Rate both inherent risk (before controls) and residual risk (after controls) for every risk.
 - Document a CERT-EU notification threshold and procedure in every ISP.
 - Flag HIGH residual risks to the DPO — they may trigger Art. 39 EUDPR DPIA or Art. 40

@@ -65,7 +65,7 @@ Special categories involved:  [YES — Art. 10 EUDPR / NO]
 Non-EU cloud / AI provider:   [YES — [provider, country] — TIA required / NO]
 DPIA reference:               [DPIA-YYYY-NNN]
 Working language(s):          [EN / FR / DE / other]
-Confidentiality level:        NORMALE
+Confidentiality level:        no marking
 ```
 
 ---

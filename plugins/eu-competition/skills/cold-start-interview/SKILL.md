@@ -60,8 +60,8 @@ under `[SESSION CONTEXT]`.
 
 ### 5. Confidentiality
 > "What is the confidentiality level?
-> - NORMALE — no special restrictions
-> - LIMITE — pre-decisional, restricted distribution
+> - No marking — no special restrictions
+> - SENSITIVE — pre-decisional, restricted distribution (DG COMP case files: SENSITIVE: COMP Operations)
 > - Contains SBI — sensitive business information from parties"
 
 ### 6. Working Language

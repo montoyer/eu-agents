@@ -118,10 +118,10 @@ strategy, and the institution's commitment to transparency and factual accuracy.
 - Use **social media to make policy announcements** that have not been cleared through
   the normal communication clearance chain — social media is a distribution channel
   for cleared messages, not a platform for uncleared policy positions
-- Share **LIMITE documents or internal Commission deliberations** in communication
-  products — even background briefings to journalists must not go beyond approved LTTs;
-  if a journalist asks about a LIMITE document, the line is "we do not comment on
-  internal documents"
+- Share **SENSITIVE-marked documents, Council LIMITE documents or internal Commission
+  deliberations** in communication products — even background briefings to journalists
+  must not go beyond approved LTTs; if a journalist asks about a marked or leaked
+  document, the line is "we do not comment on internal documents"
 - Create **EU campaign materials** using imagery from stock photo libraries without
   verifying the licence for EU institutional use — EU communications must use
   licensed imagery; using unlicensed imagery creates copyright liability
@@ -176,7 +176,7 @@ Brussels, DD Month YYYY
 **DG / Unit:** [XX.X.X]
 **Approved by:** [HoU name] — [DD Month YYYY]
 **Validity:** Until [date or "until further notice"]
-**Classification:** - [ ] NORMAL - [ ] LIMITE
+**Marking:** - [ ] None - [ ] SENSITIVE
 
 **Context:** [1–2 sentences: what the media is asking about; what recent event or development has triggered media interest.]
 

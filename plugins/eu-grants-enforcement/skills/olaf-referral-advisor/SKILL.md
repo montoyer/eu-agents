@@ -113,7 +113,7 @@ could compromise evidence or alert the subject.
 **File reference:** [Grant Agreement / Procurement reference]
 **Beneficiary / Contractor:** [Name]
 **Assessed by:** [Name / unit] — **Date:** [DD Month YYYY]
-**Confidentiality:** LIMITE — do not share outside the management chain
+**Marking:** SENSITIVE — do not share outside the management chain
 
 ---
 
@@ -166,7 +166,7 @@ could compromise evidence or alert the subject.
 
 **Submitted via:** iOLAF Portal — **Date:** [DD Month YYYY]
 **DG / Agency:** [Name] — **Contact:** [Name, email, phone]
-**Classification:** LIMITE
+**Marking:** SENSITIVE: OLAF Investigations
 
 ---
 
@@ -212,7 +212,7 @@ could compromise evidence or alert the subject.
 We request that OLAF does not disclose this referral to the subject of the investigation until OLAF considers it appropriate to do so.
 
 `[review — must be cleared by HoU and Director before submission]`
-`[LIMITE — do not distribute outside the management chain]`
+`[SENSITIVE — do not distribute outside the management chain]`
 
 ---
 

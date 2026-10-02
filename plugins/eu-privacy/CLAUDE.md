@@ -17,7 +17,7 @@ Special categories involved:  [run cold-start-interview to set — Art. 10 EUDPR
 Non-EU cloud / AI provider:   [run cold-start-interview to set — TIA required yes/no]
 DPIA reference:               [run cold-start-interview to set — e.g. DPIA-2026-001]
 Working language(s):          [run cold-start-interview to set — default: EN]
-Confidentiality level:        [run cold-start-interview to set — default: NORMALE]
+Confidentiality level:        [run cold-start-interview to set — default: no marking]
 ```
 
 ---
@@ -52,7 +52,7 @@ Confidentiality level:        [run cold-start-interview to set — default: NORM
 - **Risk rating:** Use a three-level scale — LOW / MEDIUM / HIGH — for both inherent and residual risk.
 - **EDPS references:** Cite EDPS Guidelines and Opinions with their reference number and date.
 - **AI systems:** Apply both EUDPR Art. 39 risk criteria and AI Act risk classification where an AI module is involved.
-- **Classification:** default to `NORMALE`; mark `LIMITE` only if the DPIA reveals sensitive infrastructure details or ongoing enforcement context.
+- **Handling marking:** no marking by default; mark `SENSITIVE` (Commission security notice C(2019) 1904) only if the DPIA reveals sensitive infrastructure details or ongoing enforcement context.
 - **Language:** Formal institutional register. Avoid GDPR terminology when EUDPR has distinct wording.
 
 ---

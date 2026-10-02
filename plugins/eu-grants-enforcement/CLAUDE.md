@@ -68,8 +68,10 @@ F&T Portal access:      [run cold-start-interview to set]
 - **Deadlines**: Art. 258 TFEU procedure has no statutory deadline, but flag
   any case open more than 24 months without a Reasoned Opinion as at risk of
   becoming legally stale
-- **Classification**: CHAP complaints and pre-litigation correspondence are LIMITE;
-  OJEU publications (calls for tender, contract award notices) are NORMALE
+- **Handling marking**: CHAP complaints and pre-litigation correspondence are marked
+  SENSITIVE (Commission security notice C(2019) 1904); information processed by OLAF is
+  marked `SENSITIVE: OLAF Investigations`; OJEU publications (calls for tender, contract
+  award notices) carry no marking
 
 ---
 

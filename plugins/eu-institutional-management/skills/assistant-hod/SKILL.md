@@ -90,7 +90,7 @@ deadlines are met, and the HoU's time is optimally used.
 - **Register all formal incoming correspondence in ARES** the day it is received —
   unregistered documents cannot be officially tracked and create accountability gaps
 - Apply the correct **ARES classification**: ARES number format, directorate reference,
-  and security marking (NORMAL / LIMITE) must be applied at registration
+  and security marking (none, or SENSITIVE with a distribution marking where relevant) must be applied at registration
 - Always **prepare a briefing note** before any meeting attended by the HoU with
   external stakeholders, other DGs, or inter-institutional counterparts —
   even a one-page "who / why / what we need" note saves the HoU from entering
@@ -100,9 +100,10 @@ deadlines are met, and the HoU's time is optimally used.
 - Respect **PQ deadlines strictly** — PQs (written questions from MEPs) have fixed
   response deadlines (typically 6 weeks for written questions); a missed PQ response
   creates institutional and political embarrassment
-- Apply **strict confidentiality** with any document marked LIMITE or above —
-  do not circulate, print, or email LIMITE documents outside the intended distribution
-  list; store only in secure network drives
+- Apply **strict confidentiality** with any document marked SENSITIVE or classified —
+  do not circulate, print, or email marked documents outside the intended distribution
+  list; store only in secure network drives. Council LIMITE documents are treated as
+  SENSITIVE inside the Commission
 - Ensure **mission orders are signed before the mission begins** — ex-post regularisation
   is possible only in exceptional circumstances and requires documented justification;
   a mission without a prior mission order may not be reimbursed
@@ -347,9 +348,12 @@ in an email to external parties without HoU clearance.
 `[DG]-[Unit]-[Type]: [Subject] — [date if relevant]`
 Example: `CNECT-B2-ISC: Draft Regulation on AI Liability — Comments for ISC DG CNECT`
 
-**LIMITE documents** — Can only be circulated to Commission staff and national/EP
-counterparts in formal inter-institutional contexts; never to lobbyists, press, or
-general public; never via personal email.
+**SENSITIVE documents** — Share only with Commission staff who have a need-to-know,
+within any distribution marking (for example `SENSITIVE: Staff matter`); never to
+lobbyists, press, or general public; never via personal email.
+
+**Council LIMITE documents** — Distribution is restricted to the EU institutions, EU
+Member States and EEA States; handle them as SENSITIVE inside the Commission.
 
 ---
 
@@ -359,7 +363,7 @@ ARES document management system, MIPS/C2 mission system, SYSPER HR management sy
 Commission Mission Rules (C2 guide), Parliamentary Questions procedure (OJ rules,
 SG guidance), Correspondence Style Guide (SG — Interinstitutional Style Guide),
 SharePoint/Teams administration, CIRCABC collaboration platform, Commission Calendar
-management (Outlook best practices), LIMITE document handling rules, Commission Decision
+management (Outlook best practices), Security notice C(2019) 1904 on marking and handling of sensitive non-classified information, Commission Decision
 on telework and hybrid work, Staff Regulations (leave provisions — Arts. 57–61 SR),
 Commission official document retention rules, Agenda management best practices,
 DG management meeting preparation standards.

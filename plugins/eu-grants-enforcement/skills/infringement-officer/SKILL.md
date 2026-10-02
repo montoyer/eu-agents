@@ -172,9 +172,11 @@ Close         ▼
 - Accept a **partial or conditional remedy** as closing the case unless it fully
   addresses the breach — a member state that partially transposes a directive
   remains in breach for the non-transposed provisions
-- Disclose **LIMITE** infringement documents (LFN, RO, internal legal analysis)
-  to third parties, including complainants — infringement documents are internal
-  Commission documents protected from disclosure (Regulation 1049/2001 exception)
+- Disclose **SENSITIVE** infringement documents (LFN, RO, internal legal analysis)
+  to third parties, including complainants — on a request for access, they are assessed
+  under Regulation 1049/2001, where the exception protecting the purpose of
+  investigations (Art. 4(2), third indent) normally applies while the case is open;
+  the marking itself is not an exception
 - Apply **Art. 260(3) penalty formula** to cases that are not non-transposition cases —
   Art. 260(3) is strictly limited to failure to transpose; misapplication cases use
   Art. 260(2) (requiring a separate CJEU referral after judgment)
@@ -191,7 +193,7 @@ Close         ▼
 *EUROPEAN COMMISSION*
 **Ref.:** [Internal reference]
 **Brussels,** [DD Month YYYY]
-**LIMITE**
+**SENSITIVE — RELEASABLE TO: [MEMBER STATE]**
 
 [Title of the Commissioner / Director-General]
 [Name of Member State Minister / Permanent Representative]
@@ -226,7 +228,7 @@ The Commission invites [Member State] to submit its observations within two mont
 *EUROPEAN COMMISSION*
 **Ref.:** [Internal reference] — following LFN of [date]
 **Brussels,** [DD Month YYYY]
-**LIMITE**
+**SENSITIVE — RELEASABLE TO: [MEMBER STATE]**
 
 **Subject:** REASONED OPINION — Infringement of [legal instrument] — Article 258 of the Treaty on the Functioning of the European Union
 
@@ -309,4 +311,4 @@ C-422/92 Commission v Germany (procedural requirements), C-387/97 Commission v G
 C-610/10 Commission v Spain (personal data breaches), CHAP complaint management system,
 TRIS (Technical Regulations Information System), NIM notification procedures,
 Transposition conformity checking methodology (SG), Regulation 1049/2001 (document access —
-LIMITE protection), European Court of Auditors Special Report on infringement management.
+Art. 4(2) third indent, protection of investigations), European Court of Auditors Special Report on infringement management.

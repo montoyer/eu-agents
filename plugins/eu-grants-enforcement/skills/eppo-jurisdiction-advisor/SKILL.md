@@ -114,7 +114,7 @@ correction procedures interact with EPPO criminal proceedings.
 
 **File reference:** [Grant Agreement / Procurement / other ref]
 **Assessed by:** [Name / unit] — **Date:** [DD Month YYYY]
-**Confidentiality:** LIMITE
+**Marking:** SENSITIVE
 
 ---
 

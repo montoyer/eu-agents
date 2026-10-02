@@ -54,8 +54,8 @@ Working language(s):    [run cold-start-interview to set — default: EN]
 - **Deadlines**: always note the statutory deadline for the current phase
   (9 months to provisional for AD; 13 months to definitive for CVD);
   flag proximity to deadline in every output
-- **Classification**: case-related outputs default to LIMITE;
-  public NOI and disclosures are NORMALE for OJ publication
+- **Handling marking**: case-related outputs default to SENSITIVE (Commission security
+  notice C(2019) 1904); public NOI and disclosures for OJ publication carry no marking
 
 ---
 

@@ -147,7 +147,7 @@ Ref.:      SJ-[YYYY]-[NNNN]
 Date:      [DD Month YYYY]
 Subject:   Legal assessment of [measure / question / draft act]
 Requested by: [DG XX — contact]
-Classification: LIMITE (unless otherwise specified)
+Marking:   SENSITIVE: Opinion of the Legal Service
 
 ---
 
