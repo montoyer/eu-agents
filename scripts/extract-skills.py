@@ -39,12 +39,16 @@ ACRONYMS = {
 MIXED_CASE = {"ropa": "RoPA"}
 SKIP_SKILLS = {"cold-start-interview"}
 
-# Sections that are internal/Claude-Code-specific — stop extracting prompt body here
-BODY_STOP_SECTIONS = [
-    "\n## Output Template",
-    "\n## Knowledge Reference",
-    "\n## Reference Guide",
-]
+# Sections that are internal/Claude-Code-specific — dropped from the prompt body.
+# Only the section itself is removed; the sections after it are kept.
+BODY_DROP_SECTIONS = (
+    "## Output Template",
+    "## Knowledge Reference",
+)
+# A Reference Guide is dropped only when it is a table of local files to load
+# (useless outside Claude Code); a table of legal provisions is kept.
+REFERENCE_GUIDE_HEADING = "## Reference Guide"
+LOCAL_FILE_POINTER = re.compile(r"`[^`\n]*(?:references|knowledge)/[^`\n]*`|\|\s*Load when\s*\|", re.IGNORECASE)
 
 COMPLEX_FORMATS = {
     "swd-impact-assessment",
@@ -158,15 +162,34 @@ def infer_difficulty(role: str, output_format: str) -> str:
 
 # ── Prompt body extraction ────────────────────────────────────────────────────
 
+def split_sections(body: str) -> list[str]:
+    """Split a body into its preamble and `## ` sections, ignoring headings inside code fences."""
+    sections, current, in_fence = [], [], False
+    for line in body.split("\n"):
+        if line.lstrip().startswith("```"):
+            in_fence = not in_fence
+        elif line.startswith("## ") and not in_fence:
+            sections.append("\n".join(current))
+            current = []
+        current.append(line)
+    sections.append("\n".join(current))
+    return sections
+
+
+def is_dropped_section(section: str) -> bool:
+    if section.startswith(BODY_DROP_SECTIONS):
+        return True
+    return section.startswith(REFERENCE_GUIDE_HEADING) and bool(LOCAL_FILE_POINTER.search(section))
+
+
 def clean_prompt_body(body: str) -> str:
     """Return the persona+workflow portion of a SKILL.md body — usable in any LLM."""
-    for stop in BODY_STOP_SECTIONS:
-        idx = body.find(stop)
-        if idx != -1:
-            body = body[:idx]
-    # Strip trailing separators and DRAFT lines
-    body = re.sub(r"\n---\s*\nDRAFT.*$", "", body, flags=re.DOTALL)
-    return body.strip()
+    # Strip the closing DRAFT block (never one that is followed by further sections)
+    body = re.sub(r"\n---\s*\nDRAFT(?:(?!\n## ).)*$", "", body, flags=re.DOTALL)
+    # Each section carries the `---` separator that follows it, so dropping one
+    # leaves the separators between the remaining sections intact.
+    body = "\n".join(s for s in split_sections(body) if not is_dropped_section(s))
+    return re.sub(r"(?:\n\s*---\s*)+$", "", body.rstrip()).strip()
 
 
 # ── Extractors ────────────────────────────────────────────────────────────────
