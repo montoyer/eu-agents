@@ -1,164 +1,207 @@
 <!-- SYNCED COPY — do not edit. Canonical: plugins/eu-institutional-management/references/staff-regulations-annex-i-2026.md — edit there, then run scripts/sync-shared-references.sh -->
 
-# Staff Regulations — Annex I Pay Table 2026
+# Staff Regulations: pay table, allowances and deductions in force during 2026
 
-**Source:** Council Regulation (EU) adjusting the remuneration and pensions of officials and other servants of the EU — applicable from 1 January 2026.
-**EUR-Lex reference:** Verify current version — search "annual salary adjustment Staff Regulations 2026" on EUR-Lex.
-**Next update due:** January 2027 (annual Council regulation).
-**Maintained by:** Update this file each January when the Council adopts the annual adjustment regulation.
+**Figures applicable from 1 July 2025.** They stay in force until the 2026 annual update is published.
 
----
+**Source:** 2025 annual update of the remuneration and pensions of the officials and other servants of the European Union and the correction coefficients applied thereto, OJ C/2025/6564 (ELI: `http://data.europa.eu/eli/C/2025/6564/oj`). Cross-checked against the consolidated Staff Regulations of 1 January 2026 (`http://data.europa.eu/eli/reg/1962/31(1)/2026-01-01`) and COM(2025) 736 final, Annex I.
 
-## Basic Monthly Salaries — SR Annex I (Brussels, gross, EUR)
+**How updates work:** Eurostat reports each autumn, the Commission publishes the update in the OJ C series in December, and the new amounts apply retroactively from 1 July of that year (SR Art. 65 and Annex XI). The 2026 update is therefore expected in December 2026 with effect from 1 July 2026.
 
-Figures apply to permanent officials (SR) and by reference to temporary agents (CEOS Art. 20).
-All figures are gross basic salary before allowances and deductions.
-Correction coefficient for Brussels/Luxembourg: 1.0 (base). Other duty stations: multiply by applicable coefficient (see Section 3).
-
-### Function Group AD
-
-| Grade | Step 1 | Step 2 | Step 3 | Step 4 | Step 5 |
-|---|---|---|---|---|---|
-| AD 16 | 18,937.55 | 19,689.87 | 20,471.86 | 20,471.86 | 20,471.86 |
-| AD 15 | 16,745.03 | 17,411.21 | 18,104.48 | 18,825.96 | 19,577.28 |
-| AD 14 | 14,811.58 | 15,400.54 | 16,015.85 | 16,659.34 | 17,331.78 |
-| AD 13 | 13,098.18 | 13,620.05 | 14,165.49 | 14,735.49 | 15,330.97 |
-| AD 12 | 11,585.85 | 12,046.79 | 12,530.30 | 13,037.78 | 13,569.56 |
-| AD 11 | 10,249.53 | 10,655.99 | 11,082.22 | 11,529.96 | 12,000.00 |
-| AD 10 | 9,067.62 | 9,425.71 | 9,800.92 | 10,193.80 | 10,605.02 |
-| AD 9  | 8,022.60 | 8,337.56 | 8,666.72 | 9,010.73 | 9,370.26 |
-| AD 8  | 7,098.93 | 7,376.39 | 7,666.70 | 7,970.63 | 8,288.93 |
-| AD 7  | 6,281.12 | 6,526.17 | 6,782.26 | 7,050.19 | 7,330.74 |
-| AD 6  | 5,556.30 | 5,772.48 | 6,098.47 | 6,238.13 | 6,484.17 |
-| AD 5  | 4,914.07 | 5,109.89 | 5,313.26 | 5,524.54 | 5,744.10 |
-
-### Function Group AST
-
-| Grade | Step 1 | Step 2 | Step 3 | Step 4 | Step 5 |
-|---|---|---|---|---|---|
-| AST 11 | 10,249.53 | 10,655.99 | 11,082.22 | 11,529.96 | 12,000.00 |
-| AST 10 | 9,067.62 | 9,425.71 | 9,800.92 | 10,193.80 | 10,605.02 |
-| AST 9  | 8,022.60 | 8,337.56 | 8,666.72 | 9,010.73 | 9,370.26 |
-| AST 8  | 7,098.93 | 7,376.39 | 7,666.70 | 7,970.63 | 8,288.93 |
-| AST 7  | 6,281.12 | 6,526.17 | 6,782.26 | 7,050.19 | 7,330.74 |
-| AST 6  | 5,556.30 | 5,772.48 | 5,998.12 | 6,234.00 | 6,480.81 |
-| AST 5  | 4,914.07 | 5,109.89 | 5,313.26 | 5,524.54 | 5,744.10 |
-| AST 4  | 4,346.37 | 4,519.63 | 4,699.79 | 4,887.21 | 5,082.26 |
-| AST 3  | 3,843.81 | 3,997.85 | 4,158.48 | 4,326.15 | 4,501.28 |
-| AST 2  | 3,399.21 | 3,536.68 | 3,679.73 | 3,828.75 | 3,984.19 |
-| AST 1  | 3,006.07 | 3,128.67 | 3,256.71 | 3,390.62 | 3,530.89 |
-
-### Function Group AST/SC
-
-| Grade | Step 1 | Step 2 | Step 3 | Step 4 | Step 5 |
-|---|---|---|---|---|---|
-| AST/SC 6 | 5,556.30 | 5,772.48 | 5,998.12 | 6,234.00 | 6,480.81 |
-| AST/SC 5 | 4,914.07 | 5,109.89 | 5,313.26 | 5,524.54 | 5,744.10 |
-| AST/SC 4 | 4,346.37 | 4,519.63 | 4,699.79 | 4,887.21 | 5,082.26 |
-| AST/SC 3 | 3,843.81 | 3,997.85 | 4,158.48 | 4,326.15 | 4,501.28 |
-| AST/SC 2 | 3,399.21 | 3,536.68 | 3,679.73 | 3,828.75 | 3,984.19 |
-| AST/SC 1 | 3,006.07 | 3,128.67 | 3,256.71 | 3,390.62 | 3,530.89 |
-
-### Contract Agents — Function Groups (CEOS Annex I)
-
-| Function group | Grade | Step 1 | Step 2 | Step 3 | Step 4 |
-|---|---|---|---|---|---|
-| FG IV | 18 | 5,556.30 | 5,772.48 | 5,998.12 | 6,234.00 |
-| FG IV | 17 | 4,914.07 | 5,109.89 | 5,313.26 | 5,524.54 |
-| FG IV | 16 | 4,346.37 | 4,519.63 | 4,699.79 | 4,887.21 |
-| FG III | 15 | 3,843.81 | 3,997.85 | 4,158.48 | 4,326.15 |
-| FG III | 14 | 3,399.21 | 3,536.68 | 3,679.73 | 3,828.75 |
-| FG III | 13 | 3,006.07 | 3,128.67 | 3,256.71 | 3,390.62 |
-| FG II  | 12 | 2,659.71 | 2,766.66 | 2,878.01 | 2,994.01 |
-| FG II  | 11 | 2,352.78 | 2,446.25 | 2,543.57 | 2,645.00 |
-| FG II  | 10 | 2,081.82 | 2,163.38 | 2,248.46 | 2,337.26 |
-| FG I   | 9  | 1,841.95 | 1,913.37 | 1,988.00 | 2,066.01 |
-| FG I   | 8  | 1,628.65 | 1,691.76 | 1,757.82 | 1,826.97 |
-| FG I   | 7  | 1,440.10 | 1,496.38 | 1,554.91 | 1,615.83 |
+**Maintained by:** replace every figure in this file when the December update is published, then run `scripts/sync-shared-references.sh`.
 
 ---
 
-## Allowances — SR Annex VII (2026 values)
+## Basic monthly salaries, SR Art. 66 (gross, EUR)
 
-### Household Allowance (Art. 1 Annex VII)
-Payable if: married/legally recognised equivalent, or single parent with dependent child.
+These apply to officials and, by reference, to temporary agents (CEOS Art. 20). Amounts are before allowances, deductions and the correction coefficient.
 
-| Component | Amount |
-|---|---|
-| Fixed part | EUR 210.62 / month |
-| Variable part | 2% of basic monthly salary |
+### Function groups AD and AST
 
-### Dependent Child Allowance (Art. 2 Annex VII)
+The AD and AST scales share one table. AD starts at grade 5; AST runs from grade 1 to grade 11.
 
-| Allowance | Amount |
-|---|---|
-| Per dependent child | EUR 432.38 / month |
-| Education allowance (child in full-time education, 5–26) | EUR 89.22 / month (or up to EUR 287.64 if not at duty station) |
+| Grade | Step 1 | Step 2 | Step 3 | Step 4 | Step 5 |
+|---|---|---|---|---|---|
+| 16 | 23,932.55 | 24,938.24 | 25,986.17 | | |
+| 15 | 21,152.38 | 22,041.25 | 22,967.41 | 23,606.42 | 23,932.55 |
+| 14 | 18,695.13 | 19,480.76 | 20,299.36 | 20,864.11 | 21,152.38 |
+| 13 | 16,523.41 | 17,217.74 | 17,941.22 | 18,440.42 | 18,695.13 |
+| 12 | 14,603.92 | 15,217.59 | 15,857.08 | 16,298.23 | 16,523.41 |
+| 11 | 12,907.41 | 13,449.79 | 14,014.97 | 14,404.91 | 14,603.92 |
+| 10 | 11,408.03 | 11,887.38 | 12,386.92 | 12,731.53 | 12,907.41 |
+| 9 | 10,082.77 | 10,506.46 | 10,947.98 | 11,252.54 | 11,408.03 |
+| 8 | 8,911.48 | 9,285.95 | 9,676.16 | 9,945.37 | 10,082.77 |
+| 7 | 7,876.27 | 8,207.25 | 8,552.11 | 8,790.06 | 8,911.48 |
+| 6 | 6,961.29 | 7,253.84 | 7,558.62 | 7,768.94 | 7,876.27 |
+| 5 | 6,152.64 | 6,411.17 | 6,680.58 | 6,866.46 | 6,961.29 |
+| 4 | 5,437.91 | 5,666.40 | 5,904.51 | 6,068.80 | 6,152.64 |
+| 3 | 4,806.17 | 5,008.16 | 5,218.60 | 5,363.78 | 5,437.91 |
+| 2 | 4,247.86 | 4,426.36 | 4,612.36 | 4,740.70 | 4,806.17 |
+| 1 | 3,754.39 | 3,912.16 | 4,076.54 | 4,190.01 | 4,247.86 |
 
-### Expatriation Allowance (Art. 4 Annex VII)
-Rate: **16%** of (basic salary + household allowance + dependent child allowance).
-Eligibility: not a national of duty station country AND habitual residence/main occupation was not in that country during the 5-year period ending 6 months before taking up post.
+### Function group AST/SC
+
+| Grade | Step 1 | Step 2 | Step 3 | Step 4 | Step 5 |
+|---|---|---|---|---|---|
+| SC 6 | 6,103.81 | 6,360.31 | 6,627.58 | 6,811.93 | 6,906.06 |
+| SC 5 | 5,394.73 | 5,621.43 | 5,858.49 | 6,020.63 | 6,103.81 |
+| SC 4 | 4,768.06 | 4,968.40 | 5,177.20 | 5,321.23 | 5,394.73 |
+| SC 3 | 4,214.15 | 4,391.23 | 4,575.79 | 4,703.06 | 4,768.06 |
+| SC 2 | 3,724.60 | 3,881.14 | 4,044.24 | 4,156.73 | 4,214.15 |
+| SC 1 | 3,291.94 | 3,430.28 | 3,574.43 | 3,673.85 | 3,724.60 |
+
+### Contract staff, CEOS Art. 93
+
+| Function group | Grade | Step 1 | Step 2 | Step 3 | Step 4 | Step 5 | Step 6 | Step 7 |
+|---|---|---|---|---|---|---|---|---|
+| IV | 18 | 8,250.16 | 8,421.72 | 8,596.83 | 8,775.63 | 8,958.15 | 9,144.43 | 9,334.57 |
+| IV | 17 | 7,291.72 | 7,443.33 | 7,598.11 | 7,756.14 | 7,917.43 | 8,082.07 | 8,250.16 |
+| IV | 16 | 6,444.59 | 6,578.60 | 6,715.41 | 6,855.06 | 6,997.63 | 7,143.17 | 7,291.72 |
+| IV | 15 | 5,695.87 | 5,814.33 | 5,935.25 | 6,058.69 | 6,184.69 | 6,313.28 | 6,444.59 |
+| IV | 14 | 5,034.18 | 5,138.87 | 5,245.74 | 5,354.82 | 5,466.21 | 5,579.84 | 5,695.87 |
+| IV | 13 | 4,449.31 | 4,541.86 | 4,636.31 | 4,732.75 | 4,831.14 | 4,931.62 | 5,034.18 |
+| III | 12 | 5,695.80 | 5,814.24 | 5,935.17 | 6,058.57 | 6,184.54 | 6,313.16 | 6,444.44 |
+| III | 11 | 5,034.15 | 5,138.79 | 5,245.67 | 5,354.74 | 5,466.11 | 5,579.76 | 5,695.80 |
+| III | 10 | 4,449.30 | 4,541.83 | 4,636.29 | 4,732.72 | 4,831.11 | 4,931.59 | 5,034.15 |
+| III | 9 | 3,932.44 | 4,014.22 | 4,097.70 | 4,182.92 | 4,269.92 | 4,358.67 | 4,449.30 |
+| III | 8 | 3,475.62 | 3,547.90 | 3,621.70 | 3,696.99 | 3,773.89 | 3,852.34 | 3,932.44 |
+| II | 7 | 3,932.35 | 4,014.17 | 4,097.64 | 4,182.85 | 4,269.89 | 4,358.67 | 4,449.31 |
+| II | 6 | 3,475.47 | 3,547.72 | 3,621.53 | 3,696.86 | 3,773.74 | 3,852.23 | 3,932.35 |
+| II | 5 | 3,071.64 | 3,135.51 | 3,200.74 | 3,267.31 | 3,335.25 | 3,404.64 | 3,475.47 |
+| II | 4 | 2,714.73 | 2,771.20 | 2,828.85 | 2,887.69 | 2,947.75 | 3,009.05 | 3,071.64 |
+| I | 3 | 3,344.35 | 3,413.74 | 3,484.60 | 3,556.91 | 3,630.72 | 3,706.09 | 3,783.03 |
+| I | 2 | 2,956.54 | 3,017.89 | 3,080.53 | 3,144.47 | 3,209.74 | 3,276.36 | 3,344.35 |
+| I | 1 | 2,613.72 | 2,667.98 | 2,723.33 | 2,779.84 | 2,837.55 | 2,896.43 | 2,956.54 |
 
 ---
 
-## Standard Deduction Rates (2026)
+## Allowances, SR Annex VII
 
-| Deduction | Rate | Base |
+| Allowance | Provision | Amount |
 |---|---|---|
-| Pension contribution | 10.10% | Basic salary |
-| JSIS (sickness insurance) | 2.00% | Basic salary |
-| Unemployment insurance | 0.81% | Basic salary (temporary and contract agents only) |
+| Household allowance | Annex VII Art. 1(1) | EUR 241.21 + 2% of basic salary |
+| Dependent child allowance | Annex VII Art. 2(1) | EUR 527.06 per child |
+| Education allowance, standard ceiling | Annex VII Art. 3(1) | actual costs up to EUR 357.62 per child; doubled in the cases listed in Art. 3(1) third subparagraph |
+| Education allowance, child under five or not in full-time education | Annex VII Art. 3(2) | EUR 128.76 per child |
+| Expatriation allowance | Annex VII Art. 4(1) | 16% of (basic salary + household allowance + dependent child allowance), minimum EUR 714.89 |
+| Foreign residence allowance | Annex VII Art. 4(2) | one quarter of the expatriation allowance |
+| Installation allowance | Annex VII Art. 5(1) | two months' basic salary with household allowance, one month's without; weighted for the place of employment |
+| Installation allowance floor, temporary staff | CEOS Art. 24(3) | EUR 1,577.18 with household allowance; EUR 937.77 without |
+| Installation allowance floor, contract staff | CEOS Art. 94 | EUR 1,186.31 with household allowance; EUR 703.36 without |
+| Daily subsistence allowance | Annex VII Art. 10(1) | EUR 55.40 per day with household allowance; EUR 44.68 without |
+| Daily subsistence allowance, duration | Annex VII Art. 10(2) | 120 days without household allowance; 180 days with it, or for a probationer the probation period plus one month |
+| Parental leave allowance | SR Art. 42a | EUR 1,289.65; EUR 1,719.56 in the cases of the third paragraph |
 
-**Community tax** (Protocol No. 7 Art. 13 — progressive, applied after deductions):
+**Household allowance eligibility (Annex VII Art. 1(2)):** married officials; widowed, divorced, legally separated or unmarried officials with a dependent child; registered stable non-marital partners who have no access to legal marriage in a Member State; or by special reasoned decision. It is withheld where a spouse without dependent children earns more than the annual basic salary of AST 3 step 2 (Art. 1(3)).
 
-| Taxable band (EUR/month) | Rate |
+**Expatriation allowance eligibility (Annex VII Art. 4(1)):** (a) the official is not and has never been a national of the State of employment, and did not habitually reside or carry on their main occupation there during the five years ending six months before entering service, disregarding work for another State or an international organisation; or (b) the official is or has been a national of that State but habitually resided outside it for the ten years ending on entry into service, for reasons other than service of a State or international organisation.
+
+---
+
+## Deductions
+
+| Deduction | Provision | Rate | Base |
+|---|---|---|---|
+| Pension contribution | SR Art. 83(2) | 13.1% | basic salary |
+| Sickness insurance (JSIS) | SR Art. 72(1) | 1.7%; the Staff Regulations cap the official's share at 2% | basic salary |
+| Accident insurance | SR Art. 73 | 0.1% | basic salary |
+| Unemployment insurance, temporary staff | CEOS Art. 28a(7) | 0.81% | basic salary less a standard allowance of EUR 1,719.56 |
+| Unemployment insurance, contract staff | CEOS Art. 96(7) | 0.81% | basic salary less a standard allowance of EUR 1,289.66 |
+
+The 13.1% pension rate is the figure in Art. 83(2) of the consolidated Staff Regulations of 1 January 2026. The JSIS, accident and unemployment rates are `[model knowledge — verify]`.
+
+The solidarity levy of SR Art. 66a applied from 1 January 2014 to 31 December 2023 and is no longer deducted.
+
+### Union tax, Regulation (EEC, Euratom, ECSC) No 260/68
+
+EU remuneration is exempt from national income tax under Protocol No 7, Art. 12, and subject to a tax for the benefit of the Union.
+
+**Taxable amount (Art. 3):**
+
+1. Start from basic salary plus taxable allowances. The expatriation allowance is taxable.
+2. Leave out family allowances: household allowance, dependent child allowance, education allowance (Art. 3(3)).
+3. Deduct pension and social security contributions (Art. 3(5)).
+4. Apply a 10% abatement for occupational and personal expenses (Art. 3(4)).
+5. Deduct a further abatement of twice the dependent child allowance per dependent child: EUR 1,054.12 per child (Art. 3(4)).
+
+**Bands (Art. 4, base amounts multiplied by the coefficient 7.8037 applicable from 1 July 2025):**
+
+| Monthly taxable amount (EUR) | Rate |
 |---|---|
-| 0 – 1,156.16 | 8% |
-| 1,156.17 – 1,884.15 | 10% |
-| 1,884.16 – 2,776.54 | 12.5% |
-| 2,776.55 – 3,668.93 | 15% |
-| 3,668.94 – 4,561.31 | 17.5% |
-| 4,561.32 – 5,453.69 | 20% |
-| 5,453.70 – 6,346.07 | 22.5% |
-| 6,346.08 – 7,238.45 | 25% |
-| 7,238.46 – 8,568.31 | 27.5% |
-| 8,568.32 – 9,898.14 | 30% |
-| 9,898.15 – 11,956.13 | 32.5% |
-| 11,956.14 – 14,014.09 | 35% |
-| 14,014.10 – 16,810.92 | 37.5% |
-| above 16,810.92 | 45% |
+| up to 155.37 | 0% |
+| 155.37 to 2,742.69 | 8% |
+| 2,742.69 to 3,777.69 | 10% |
+| 3,777.69 to 4,329.41 | 12.5% |
+| 4,329.41 to 4,916.10 | 15% |
+| 4,916.10 to 5,467.82 | 17.5% |
+| 5,467.82 to 6,002.68 | 20% |
+| 6,002.68 to 6,554.64 | 22.5% |
+| 6,554.64 to 7,089.51 | 25% |
+| 7,089.51 to 7,641.23 | 27.5% |
+| 7,641.23 to 8,176.09 | 30% |
+| 8,176.09 to 8,728.05 | 32.5% |
+| 8,728.05 to 9,262.91 | 35% |
+| 9,262.91 to 9,814.64 | 40% |
+| above 9,814.64 | 45% |
 
-Taxable base = gross remuneration − pension − JSIS − unemployment − personal allowance deduction.
-Personal allowance deduction (single, no dependants): EUR 442.52/month.
-Additional deduction per dependent child: EUR 216.19/month.
+The band limits are Art. 4 amounts (EUR 19.91, 351.46, 484.09, 554.79, 629.97, 700.67, 769.21, 839.94, 908.48, 979.18, 1,047.72, 1,118.45, 1,186.99, 1,257.69) multiplied by 7.8037. When the coefficient changes, recompute every limit.
+
+### Worked checks
+
+Use these to test a calculation. Each assumes Brussels or Luxembourg (coefficient 100), JSIS 1.7%, accident 0.1%.
+
+| Case | Basic | Allowances | Contributions | Taxable amount | Tax | Net |
+|---|---|---|---|---|---|---|
+| AD 5 step 1, single, expatriation | 6,152.64 | expat 984.42 | 916.74 | 5,598.29 | 590.10 | 5,630.22 |
+| AD 5 step 1, single, no expatriation | 6,152.64 | none | 916.74 | 4,712.31 | 436.88 | 4,799.01 |
+| AD 5 step 2, married, one child, expatriation | 6,411.17 | household 369.43, child 527.06, expat 1,169.23 | 955.26 | 4,908.50 | 466.31 | 7,055.31 |
+| AD 7 step 1, single, expatriation | 7,876.27 | expat 1,260.20 | 1,173.57 | 7,166.62 | 950.09 | 7,012.82 |
+| AST 3 step 1, single, expatriation | 4,806.17 | expat 768.99 | 716.12 | 4,373.13 | 386.01 | 4,473.03 |
+
+PMO's payslip can differ by a few euros because of rounding and the order of abatements.
 
 ---
 
-## Correction Coefficients (selected duty stations, 2026)
+## Correction coefficients, SR Art. 64 (remuneration, from 1 July 2025)
 
-| Duty station | Coefficient |
+Belgium and Luxembourg are the base at 100.
+
+| Country or place | Coefficient | Country or place | Coefficient |
+|---|---|---|---|
+| Bulgaria | 66.1 | Lithuania | 87.4 |
+| Czechia | 91.2 | Hungary | 76.6 |
+| Denmark | 130.5 | Malta | 92.4 |
+| Germany | 102.7 | Netherlands | 113.2 |
+| Munich | 112.0 | Austria | 106.7 |
+| Estonia | 95.0 | Poland | 82.3 |
+| Ireland | 130.7 | Portugal | 92.4 |
+| Greece | 87.0 | Romania | 72.9 |
+| Spain | 92.4 | Slovenia | 86.6 |
+| France | 113.6 | Slovakia | 85.1 |
+| Croatia | 84.3 | Finland | 110.8 |
+| Italy | 87.5 | Sweden | 119.5 |
+| Varese | 87.0 | Cyprus | 79.0 |
+| Latvia | 84.3 | | |
+
+The coefficient applies to remuneration after compulsory deductions (SR Art. 64). The pension contribution is calculated on unweighted basic salary (Art. 83(2)), and the tax elements are weighted under Art. 5 of Regulation 260/68. Staff in third countries fall under Annex X and a separate table of weightings.
+
+---
+
+## Step and seniority rules
+
+| Rule | Provision |
 |---|---|
-| Brussels / Luxembourg | 1.0000 (base) |
-| Geneva (UNOG) | 1.1350 |
-| London (post-Brexit — verify) | — |
-| Washington DC | 0.9720 |
-| Vienna | 0.9890 |
-| Rome | 0.9680 |
-| Madrid | 0.8910 |
-| Warsaw | 0.7420 |
-| Nairobi | 0.7150 |
+| Recruitment at step 1 of the grade | SR Art. 32, first paragraph |
+| Up to 24 months' additional seniority for professional experience, which places the recruit at step 2 | SR Art. 32, second paragraph |
+| Automatic advancement to the next step after two years in a step | SR Art. 44 |
 
-Salary at other duty stations = basic Brussels salary × correction coefficient.
+Commission Decision C(2013) 8970 gives effect to Art. 32. It grants the 24 months where professional experience reaches: AD 5, 3 years; AD 6, 6 years; AD 7, 9 years; AD 8, 12 years; AD 9 to AD 11, 15 years; AD 12 and AD 13, 18 years; AD 14 to AD 16, 21 years; AST 1, 3 years; AST 2, 6 years; AST 3, 9 years; AST 4, 12 years. Experience counts from the award of the diploma giving access to the function group. For AD 7 and above it counts from a degree of at least four years; where the degree took three years, one year is deducted. Thresholds are taken from the text as mirrored in agency implementing rules `[model knowledge — verify against the institution's own decision]`.
 
 ---
 
-## How to Use This File in Skills
+## How to use this file in skills
 
-1. Read the relevant grade/step row from the table above — do not generate the figure from training data.
-2. Cite the source inline: `(SR Annex I 2026 — verify against EUR-Lex)`.
-3. Do not apply `[model knowledge — verify against current SR Annex I]` to figures drawn from this file. Instead use: `(from references/staff-regulations-annex-i-2026.md — verify if after January 2027)`.
-4. If the current date is after **31 December 2026**, flag that this table may be superseded and the 2027 adjustment regulation should be checked.
-
----
-
-> **Maintenance note:** Replace this file in January each year with the values from the Council regulation adjusting EU staff remuneration. The EUR-Lex search term is: `"Staff Regulations" "basic monthly salaries" [year]`. Update the filename and all internal references accordingly.
+1. Read the grade and step from the tables above. Do not generate figures from training data.
+2. Cite inline as `(OJ C/2025/6564, applicable from 1 July 2025)`.
+3. If today's date is after mid-December 2026, say that the 2026 update has probably been published with effect from 1 July 2026 and that the figures here need checking against it.
+4. Mark any net salary as an estimate: `[review — PMO calculation required]`.

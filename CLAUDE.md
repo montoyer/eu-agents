@@ -139,9 +139,12 @@ Open-ended specialist personas. Adapt to whatever the user asks within their man
 /ai-governance-officer       — AI system register, model cards, governance board ToR
 
 // EU Careers & EPSO (eu-careers)
-/epso-grade                  — Estimate entry grade, step, and net salary for a competition type
-/epso-presentation           — Coach and critique a 10-minute Assessment Centre oral presentation
-/epso-offer                  — Analyse a job offer letter: grade/step, remuneration, contract obligations
+/epso-application            — Decode a notice of competition, check eligibility, draft the application form, list documents and deadlines
+/epso-tests                  — Prepare the computer-based tests: priorities, study plan, timed practice, score simulator, test-day protocol
+/epso-written-test           — Coach and mark the written test (EUFTE, WT, FRWT) against EPSO's five published anchors
+/epso-presentation           — Coach presentations and interviews before EU selection panels (2023 competency framework)
+/epso-grade                  — Estimate entry grade, step, and net salary with full working
+/epso-offer                  — Analyse a job offer: contract type, grade/step check, net pay, probation, deadlines
 ```
 
 ### DPIA workflow skill (eu-privacy plugin)
@@ -158,6 +161,7 @@ These voice multiple institutional actors in sequence:
 
 ```
 /college-deliberation          — Full College vote (all 21 Commissioners in sequence)
+/college-decision              — Question to the College → decision, and on adoption the full COM document
 /inter-service-consultation    — Route a proposal through all affected DGs + Legal Service
 /trilogue                      — EP / Council / Commission three-institution negotiation
 /european-parliament           — EP committee, rapporteur, political groups, plenary vote
@@ -229,9 +233,9 @@ These require all 21 Commissioner agents and are structurally impossible with a 
 | `eu-trade` | Trade Defence | `trade-defence-investigator`, `dumping-margin-calculator`, `sanctions-screener` |
 | `eu-grants-enforcement` | Grants, Procurement & Enforcement | `grant-manager`, `infringement-officer`, `infringement`, `procurement-expert`, `lfn-drafter`, `transposition-tracker`, `reasoned-opinion-drafter`, `grant-audit-advisor`, `grant-amendment-officer`, `tender-evaluator`, `olaf-referral-advisor`, `direct-award-advisor`, `eppo-jurisdiction-advisor`, `cohesion-fund-manager` |
 | `eu-data-communication` | Data & Communication | `data-analyst`, `communication-officer`, `lines-to-take-drafter`, `digit-project-manager`, `data-steward`, `cybersecurity-officer`, `transparency-officer` |
-| `eu-simulation` | EU Institutional Simulation | `commissioner`, `college-deliberation`, `inter-service-consultation`, `trilogue`, `legislative-cycle`, `european-parliament`, `council-eu`, `coreper`, `qmv-calculator`, `advocate-general`, `council-presidency`, `mandate-conflict`, `red-team-college`, `subsidiarity-stress`, `timeline` |
+| `eu-simulation` | EU Institutional Simulation | `commissioner`, `college-deliberation`, `college-decision`, `inter-service-consultation`, `trilogue`, `legislative-cycle`, `european-parliament`, `council-eu`, `coreper`, `qmv-calculator`, `advocate-general`, `council-presidency`, `mandate-conflict`, `red-team-college`, `subsidiarity-stress`, `timeline` |
 | `eu-privacy` | Data Protection & Privacy | `dpia`, `dpo`, `it-project-manager`, `it-security`, `legal-officer`, `it-security-plan`, `data-breach-officer`, `ropa-drafter`, `ai-act-officer`, `tia-expert`, `retention-schedule`, `privacy-notice-drafter`, `data-subject-rights`, `edps-complaint-handler`, `ai-governance-officer` |
-| `eu-careers` | EU Careers & EPSO Preparation | `epso-grade`, `epso-presentation`, `epso-offer` |
+| `eu-careers` | EU Careers & EPSO Preparation | `epso-application`, `epso-tests`, `epso-written-test`, `epso-presentation`, `epso-grade`, `epso-offer` |
 
 ---
 

@@ -15,6 +15,11 @@
       "description": "Full College of Commissioners meeting — all 21 speak, President calls vote, outcome recorded"
     },
     {
+      "id": "college-decision",
+      "path": "skills/college-decision/SKILL.md",
+      "description": "Question to the College → decision, and on adoption the full COM(YYYY) NNN final legislative document"
+    },
+    {
       "id": "inter-service-consultation",
       "path": "skills/inter-service-consultation/SKILL.md",
       "description": "ISC round — lead DG circulates, all affected DGs respond, synthesis note produced"

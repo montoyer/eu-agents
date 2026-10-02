@@ -106,7 +106,7 @@
     },
     {
       "name": "eu-careers",
-      "description": "EU Careers and EPSO preparation: grade assessment, presentation coaching, and offer evaluation. For candidates preparing for EU institution competitions.",
+      "description": "EU Careers and EPSO preparation: application and eligibility, test and written-test coaching, selection panel interviews, grade and net salary, and offer evaluation. For candidates preparing for EU institution competitions.",
       "category": "productivity",
       "source": {
         "source": "git-subdir",

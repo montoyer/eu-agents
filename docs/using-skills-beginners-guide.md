@@ -707,9 +707,12 @@ All 97 skills across 9 plugins. Install a plugin with `/plugin install <plugin-n
 
 | Skill | Description |
 |---|---|
-| `/eu-careers:epso-grade` | Estimate entry grade, step, and net monthly salary for a given competition type and candidate profile under SR Annex I |
-| `/eu-careers:epso-presentation` | Coach and critique a 10-minute Assessment Centre oral presentation against EPSO Communication competency indicators |
-| `/eu-careers:epso-offer` | Analyse a job offer letter: decode grade/step, calculate gross and net remuneration, map probation and contract obligations under the SR |
+| `/eu-careers:epso-application` | Decode the notice of competition, check eligibility condition by condition, draft the application form entries, list supporting documents and deadlines |
+| `/eu-careers:epso-tests` | Prepare the computer-based tests: scoring priorities, study plan, timed practice questions, score simulator, remote-proctoring test-day protocol |
+| `/eu-careers:epso-written-test` | Coach and mark the written test (EUFTE, WT, FRWT) against EPSO's five published written-communication anchors |
+| `/eu-careers:epso-presentation` | Coach presentations and interviews before EU selection panels; score drafts against the anchors of EPSO's 2023 competency framework |
+| `/eu-careers:epso-grade` | Estimate entry grade, step (SR Art. 32) and net monthly salary with full working, from the pay table in force |
+| `/eu-careers:epso-offer` | Analyse a job offer: contract type, grade and step check, gross-to-net breakdown, one-off payments, probation, deadlines and questions for HR |
 
 ---
 

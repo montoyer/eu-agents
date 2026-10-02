@@ -103,7 +103,7 @@ DRAFT — For review by an EU official before use. Not an official Commission po
 | `eu-grants-enforcement`       | Grant management, infringement procedures (Arts. 258-260), public procurement |
 | `eu-institutional-management` | HR, unit management, financial circuits, CDR/AAR/AMP, access to documents |
 | `eu-data-communication`       | Eurostat, scoreboards, press releases, lines to take, transparency |
-| `eu-careers`                  | EPSO grade/step estimation, presentation coaching, offer analysis |
+| `eu-careers`                  | EPSO application and eligibility, test and written-test preparation, panel interviews, grade/step and net salary, offer analysis |
 
 See [CLAUDE.md](CLAUDE.md) for the complete command reference.
 

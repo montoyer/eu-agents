@@ -24,6 +24,7 @@ The skills in this plugin wire those files up as invokable commands.
 |---|---|
 | Speak as a specific Commissioner | `/commissioner <portfolio>` |
 | Run a full College vote on a dossier | `/college-deliberation` |
+| Ask the College a question and get the adopted COM document | `/college-decision` |
 | Simulate inter-service consultation | `/inter-service-consultation` |
 | Simulate trilogue rounds | `/trilogue` |
 | Run the full OLP from proposal to adoption | `/legislative-cycle` |

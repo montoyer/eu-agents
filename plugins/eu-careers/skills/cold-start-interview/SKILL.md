@@ -1,14 +1,16 @@
 ---
 name: cold-start-interview
 description: >
-  Personalise the eu-careers plugin to the candidate's competition target, profile,
-  and current preparation stage. Collects degree level, domain, years of experience,
-  family situation, and AC readiness. Writes the session context into
-  eu-careers/CLAUDE.md. Run this first before using any other skill in this package.
+  Personalise the eu-careers plugin to the candidate's competition, profile,
+  languages, stage and key dates. Collects the notice of competition reference,
+  degree and its official length, dated experience, language 1 and language 2,
+  family situation and duty station. Writes the session context into
+  eu-careers/CLAUDE.md and points the candidate to the skill that fits their
+  stage. Run this first before using any other skill in this package.
 license: MIT
 metadata:
   author: EC-Skills-Library
-  version: "1.0.0"
+  version: "2.0.0"
   domain: eu-careers-epso
   triggers: >
     cold start, setup, configure, personalise, my competition, my profile,
@@ -17,7 +19,7 @@ metadata:
   scope: session-personalisation
   output-format: session-context-block
   institution: EPSO / EU Institutions
-  related-skills: epso-grade, epso-presentation, epso-offer
+  related-skills: epso-application, epso-tests, epso-written-test, epso-presentation, epso-grade, epso-offer
 ---
 
 # Cold-Start Interview — EU Careers & EPSO Preparation
@@ -26,49 +28,55 @@ Welcome to the **EU Careers & EPSO Preparation** plugin.
 
 This short interview personalises the practice profile for your situation.
 Answers are stored in `eu-careers/CLAUDE.md` and carried across all skills
-in this package.
+in this package. Ask the questions one group at a time and accept "skip".
 
 ---
 
 ## Interview Questions
 
 ### 1. Target competition
-> "Which competition are you targeting?
-> (e.g., 'AD5 generalist administrator', 'AD7 economist', 'AST3 assistant',
-> 'CAST Permanent FG IV', 'linguist EN-FR', 'specialist — cybersecurity AD7')"
+> "Which competition or selection are you targeting? Give the reference if you
+> have it (for example EPSO/AD/427/26), or the type: AD5 graduates, AD7
+> specialist in a field, AST3, AST/SC, CAST FG IV, an agency vacancy.
+> If you have the notice of competition, paste it or its link. Every answer I
+> give on tests, deadlines and eligibility depends on that text."
 
-### 2. Candidate profile
-> "Tell me a bit about your background:
-> - Highest degree and field of study
-> - Years of relevant professional experience
-> - Any previous EU institution experience (stage, CA, SNE, TA)?
-> (e.g., 'Master's in law, 4 years as a national civil servant, no prior EU experience')"
+### 2. Where you are
+> "Where are you in the process?
+> - Deciding whether to apply
+> - Filling in the application
+> - Applied, preparing the tests
+> - Tests done, waiting for results
+> - On a reserve list, looking for a post or invited to an interview
+> - Job offer received"
 
-### 3. Current stage
-> "Where are you in the EPSO process?
-> - Not yet applied / preparing the application
-> - Talent screener submitted, waiting for CBT invitation
-> - CBT passed, preparing for Assessment Centre
-> - Assessment Centre completed, on reserve list
-> - Job offer received
-> (Answer: one of the above or describe your situation)"
+### 3. Key dates
+> "Which dates do you already know? Application deadline, document upload
+> deadline, test date, interview date, reply deadline for an offer."
 
-### 4. Family situation (for salary estimates)
-> "For salary estimates, what is your family situation?
-> - Single, no dependants
-> - Married or equivalent (or single parent)
-> - Married / single parent with dependent child(ren)
-> - Prefer not to say
-> (This affects household allowance and dependent child allowance calculations)"
+### 4. Education and experience
+> "Tell me about your background:
+> - Highest degree, field, the date it was awarded and the official length of
+>   the programme in years
+> - Jobs since then, with approximate start and end dates and whether full-time
+> - Any EU institution experience (traineeship, contract agent, temporary
+>   agent, seconded national expert)"
 
-### 5. Duty station
-> "Which duty station are you targeting or have been offered?
-> (e.g., Brussels, Luxembourg, other EU city or delegation)
-> — This affects the expatriation allowance and correction coefficient."
+### 5. Languages
+> "Which official EU languages do you have, and at what level? Which would you
+> take as language 1 and language 2, if you have decided?"
 
-### 6. Working language
-> "In which language do you want outputs?
-> (default: English)"
+### 6. Family situation (for salary estimates)
+> "For salary estimates: are you single, married or in a registered
+> partnership, and do you have dependent children? You can skip this."
+
+### 7. Duty station and nationality (for allowance estimates)
+> "Which duty station are you aiming at or have been offered? Which
+> nationalities do you hold, and where have you lived and worked over the last
+> six years? This decides the expatriation allowance."
+
+### 8. Output language
+> "In which language do you want my answers? (default: English)"
 
 ---
 
@@ -79,24 +87,33 @@ Produce a filled `[SESSION CONTEXT]` block:
 ```
 ## [SESSION CONTEXT]
 
-Target competition:       [answer to Q1]
-Candidate profile:        [answer to Q2]
-Current stage:            [answer to Q3]
-Family situation:         [answer to Q4]
-Duty station preference:  [answer to Q5]
-Working language(s):      [answer to Q6]
+Target competition:       [Q1]
+Notice of competition:    [Q1 — OJ reference, or "pasted in session", or "not supplied"]
+Candidate profile:        [Q4]
+Languages:                [Q5]
+Current stage:            [Q2]
+Key dates:                [Q3]
+Family situation:         [Q6]
+Duty station preference:  [Q7]
+Output language:          [Q8]
 ```
 
-Then confirm:
+Then tell the candidate which skill fits their stage and list the rest:
 
-> "Session context set. Here is what I can help you with based on your stage:
+> "Session context set. For where you are now, start with `/[skill]`.
 >
-> - `/epso-grade` — Estimate your entry grade, step, and indicative net monthly salary
-> - `/epso-presentation` — Prepare and get feedback on your 10-minute oral presentation
-> - `/epso-offer` — Decode a job offer: grade, step, salary breakdown, probation terms
+> - `/epso-application` — read the notice, check eligibility, fill in the form, list documents and deadlines
+> - `/epso-tests` — priorities, study plan, timed practice and test-day rules for the computer-based tests
+> - `/epso-written-test` — prepare and mark the essay or written test
+> - `/epso-presentation` — interviews and presentations before a selection panel
+> - `/epso-grade` — entry grade, step and net monthly salary with the working
+> - `/epso-offer` — decode a job offer, check the step, plan the first months
 >
-> All outputs are indicative. Salary figures require PMO verification.
-> Eligibility and grade determinations are made solely by the appointing authority."
+> My assessments are indicative. EPSO's Selection Board, the appointing
+> authority and PMO make the binding decisions."
+
+If a known date is less than two weeks away, say so first and name the one
+action that cannot wait.
 
 ---
 DRAFT — Personalisation helper. Indicative only; not official EPSO or appointing-authority advice.

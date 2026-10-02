@@ -96,7 +96,7 @@ parameter tables below, which are an at-a-glance aid only and must be confirmed 
 | Maximum pension | 70% of last pensionable remuneration (≈ 38.9 years of service) |
 | Actuarial reduction (early retirement) | Approx. 3.5% per year below pensionable age (exact rate in Annex VIII, Art. 9) |
 | Minimum service for pension entitlement | 10 years (below → deferred pension at 66 or lump-sum refund of contributions) |
-| Contribution rate (official) | 10.1% of basic salary (indexed annually) |
+| Contribution rate (official) | 13.1% of basic salary (SR Art. 83(2), consolidated text of 1 January 2026; adjusted under Annex XII) |
 | Contribution rate (institution) | ~24% of basic salary (implicit — guarantor role) |
 | Pensionable remuneration basis | Basic salary at last grade/step × correction coefficient of place of employment at time of leaving |
 | Survivors' pension (spouse) | 60% of invalidity/retirement pension the official received or would have received |

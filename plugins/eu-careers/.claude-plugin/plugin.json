@@ -1,7 +1,7 @@
 {
   "name": "eu-careers",
-  "version": "1.0.0",
-  "description": "End-to-end support for candidates targeting EU civil service competitions (EPSO). Covers eligibility screening, grade and salary calculation, Assessment Centre preparation (oral presentation, structured interview, case study), job offer analysis, and onboarding under the Staff Regulations.",
+  "version": "2.0.0",
+  "description": "End-to-end support for candidates targeting EU civil service competitions (EPSO). Covers the notice of competition, eligibility and the application form, preparation for the computer-based tests and the written test, selection panel interviews and presentations, grade and net salary calculation, and job offer analysis under the Staff Regulations.",
   "claude_md": "CLAUDE.md",
   "skills": [
     {
@@ -10,19 +10,34 @@
       "description": "Personalise this plugin to the candidate's profile, target competition, and current preparation stage"
     },
     {
+      "id": "epso-application",
+      "path": "skills/epso-application/SKILL.md",
+      "description": "Decode the notice of competition, check eligibility condition by condition, draft the application form entries, and assemble the supporting documents and deadline calendar"
+    },
+    {
+      "id": "epso-tests",
+      "path": "skills/epso-tests/SKILL.md",
+      "description": "Prepare the EPSO computer-based tests: scoring priorities, study plan, timed practice questions, score simulator, remote-proctoring test-day protocol"
+    },
+    {
+      "id": "epso-written-test",
+      "path": "skills/epso-written-test/SKILL.md",
+      "description": "Coach and mark the EPSO written test (EUFTE, WT, FRWT) against EPSO's five published written-communication anchors"
+    },
+    {
       "id": "epso-grade",
       "path": "skills/epso-grade/SKILL.md",
-      "description": "Estimate entry grade, step, and net monthly salary for a given competition type and candidate profile under SR Annex I"
+      "description": "Estimate entry grade, step (SR Art. 32) and net monthly salary with full working, from the pay table in force"
     },
     {
       "id": "epso-presentation",
       "path": "skills/epso-presentation/SKILL.md",
-      "description": "Coach and critique a 10-minute Assessment Centre oral presentation against EPSO Communication competency indicators"
+      "description": "Coach presentations and interviews before EU selection panels; score drafts against the anchors of EPSO's 2023 competency framework"
     },
     {
       "id": "epso-offer",
       "path": "skills/epso-offer/SKILL.md",
-      "description": "Analyse a job offer letter: decode grade/step, calculate gross and net remuneration, map probation and contract obligations under the SR"
+      "description": "Analyse a job offer: contract type, grade and step check, gross-to-net breakdown, one-off payments, probation, deadlines and questions for HR"
     }
   ],
   "connectors": [
