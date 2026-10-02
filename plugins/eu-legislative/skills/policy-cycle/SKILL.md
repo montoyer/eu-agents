@@ -300,7 +300,7 @@ Structure the lifecycle document as follows:
 
 ```
 POLICY CYCLE — [POLICY AREA]
-[classification: NORMALE / LIMITE]
+[marking: none / SENSITIVE]
 Lead DG: [DG]     Commissioner: [portfolio]     Date: [date]
 
 ━━━ PHASE 1 — AGENDA-SETTING ━━━

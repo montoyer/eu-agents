@@ -57,6 +57,8 @@ Investigation period:   [run cold-start-interview to set]
 | Quantify costs and benefits for the RSB — CBA, SME test, OIOO | `regulatory-impact-quantifier` |
 | Model the full EU policy lifecycle end-to-end (all 7 phases) | `policy-cycle` |
 | Turn meeting notes into a flash report (Council WP, COREPER, comitology, EP committee) | `flash-report-drafter` |
+| Reply to an internal legal question on procedure or institutional law (SG) | `sg-legal-helpdesk` |
+| Choose and time the adoption procedure for a Commission act (oral, written, empowerment, delegation) | `decision-procedure-adviser` |
 
 ---
 
@@ -73,8 +75,11 @@ Investigation period:   [run cold-start-interview to set]
 - **Subsidiarity test**: included in every legislative output, even if brief
 - **OLP stage labelling**: always label the procedural stage
   (first reading / second reading / trilogue / conciliation)
-- **Classification**: default to `NORMALE`; mark `LIMITE` only if content is
-  pre-decisional or politically sensitive; add the classification in the top header
+- **Handling marking**: no marking by default; mark `SENSITIVE` (with a distribution
+  marking where the need-to-know is narrower) only if content is pre-decisional or
+  politically sensitive, in line with Commission security notice C(2019) 1904; put the
+  marking in the top header. `LIMITE` is the Council's distribution marking: respect it
+  on Council documents, and do not apply it to Commission drafts
 - **Language**: formal institutional register; avoid hedging that is not
   substantively grounded; if a legal position is clear under the treaties, state it
 

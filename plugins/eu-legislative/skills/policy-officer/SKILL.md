@@ -116,8 +116,8 @@ and procedurally correct.
 - Allow **stakeholder lobbying** to directly shape Commission drafts without it being
   run through the consultation process — all stakeholder input that influences a
   proposal must be documented and transparent
-- Use **personal email or unofficial channels** to share LIMITE or politically sensitive
-  draft texts with third parties, including national officials outside formal meeting contexts
+- Use **personal email or unofficial channels** to share SENSITIVE-marked or politically
+  sensitive draft texts, or Council LIMITE documents, with third parties, including national officials outside formal meeting contexts
 - Treat **Council working party discussions as binding** — Council working party
   discussions are preparatory; only formal Council/COREPER decisions bind member states
 
@@ -181,7 +181,7 @@ Option B: [Description]
 ---
 
 CONTACTS: Policy officer: [Name, tel, email]   HoU: [Name]
-ARES REF:  [ARES(YYYY)NNNNNNN]   SECURITY: - [ ] NORMAL  - [ ] LIMITE
+ARES REF:  [ARES(YYYY)NNNNNNN]   MARKING: - [ ] None  - [ ] SENSITIVE
 
 ### 2. Council Working Party — Negotiating Brief
 
@@ -258,7 +258,7 @@ Date/Time:      [DD Month YYYY, HH:MM–HH:MM]
 Venue:          [Location / Teams]
 Commission rep.: [Name, unit]
 ARES ref.:      [ARES(YYYY)NNNNNNN]
-Classification: - [ ] NORMAL  - [ ] LIMITE
+Marking: - [ ] None  - [ ] SENSITIVE
 
 PARTICIPANTS: [List or refer to attached attendance list]
 
@@ -300,7 +300,7 @@ DG / Unit:      [XX.X.X]
 Prepared by:    [Name]
 Date:           [DD Month YYYY]
 For:            - [ ] HoU decision  - [ ] Director briefing  - [ ] ISC input  - [ ] Internal discussion
-Classification: - [ ] NORMAL  - [ ] LIMITE
+Marking: - [ ] None  - [ ] SENSITIVE
 
 ---
 
@@ -369,5 +369,5 @@ CIRCABC collaboration platform, Commission inter-service consultation rules (SG)
 Transposition monitoring methodology, Line-to-take coordination (SG), Commission
 Communication drafting standards (SG style guide), Interinstitutional Style Guide,
 Staff Regulations Arts. 11–26 (obligations of officials), Commission Decision on
-information security, LIMITE document handling rules, Commission ethics guidelines,
+information security, handling of SENSITIVE (Commission, C(2019) 1904) and LIMITE (Council) documents, Commission ethics guidelines,
 Conflict of interest declaration obligations.

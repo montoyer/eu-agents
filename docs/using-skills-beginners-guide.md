@@ -185,7 +185,7 @@ this scenario:
 > Initial assessment — need to draft the formal reply
 
 > **"What is the confidentiality level?"**
-> NORMALE for the reply itself; the underlying personal data is sensitive
+> No marking for the reply itself; the underlying personal data is sensitive
 
 > **"What language do you need?"**
 > English
@@ -311,7 +311,7 @@ IV. DRAFT FORMAL REPLY
 
 [DG GROW letterhead]
 [Reference: ARES(20XX)XXXXXXX]
-[Classification: NORMALE]
+[Marking: none]
 
 [City], [DD Month YYYY]
 
@@ -568,7 +568,7 @@ Commission policy function.
 
 ## Complete skill reference
 
-All 104 skills across 9 plugins. Install a plugin with `/plugin install <plugin-name>@eu-agents`.
+All 106 skills across 9 plugins. Install a plugin with `/plugin install <plugin-name>@eu-agents`.
 
 ### `eu-legislative` — Legislative & Policy
 
@@ -594,6 +594,8 @@ All 104 skills across 9 plugins. Install a plugin with `/plugin install <plugin-
 | `/eu-legislative:regulatory-impact-quantifier` | CBA/CEA quantification — compliance costs, SME test, OIOO, benefit monetisation, RSB-ready tables |
 | `/eu-legislative:policy-cycle` | Full EU policy lifecycle — agenda-setting through evaluation, all 7 phases, Better Regulation methodology |
 | `/eu-legislative:flash-report-drafter` | Flash report from meeting notes — Council working party, COREPER, comitology, EP committee, trilogue; positions by delegation, reservations, next steps, majority picture |
+| `/eu-legislative:sg-legal-helpdesk` | SG legal replies to internal questions — triage against the Legal Service's remit, short answer first, reasons, sources, certainty level, next step; holding replies and referrals |
+| `/eu-legislative:decision-procedure-adviser` | Commission decision-making under the 2024 Rules of Procedure — oral, written, empowerment, delegation; preconditions, working-day timeline, authentication, signature, publication |
 
 ### `eu-competition` — Competition & Legal Service
 

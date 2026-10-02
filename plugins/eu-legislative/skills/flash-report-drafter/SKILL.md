@@ -259,10 +259,10 @@ meeting:
 ## Handling
 
 - A flash report reveals the positions of individual Member States in ongoing
-  negotiations. Keep distribution to those who need it, and apply the
-  handling marking the service uses for such reports under the Commission's
-  security rules. Ask the author which marking applies; do not invent one.
-  `[model knowledge — verify]`
+  negotiations. Keep distribution to those who need it and mark the report
+  SENSITIVE, with a distribution marking where the service uses one
+  (Commission security notice C(2019) 1904). Council documents marked LIMITE
+  that are quoted or attached are handled as SENSITIVE inside the Commission.
 - Register the report in the document management system with the file.
 - If the report is later requested under Regulation (EC) No 1049/2001, the
   exceptions in its Art. 4 are assessed at that time. Write the report so

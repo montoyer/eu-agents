@@ -699,7 +699,7 @@ See `CLAUDE.md` — the "Extending the system" section — for the step-by-step 
 
 ## 13. Complete skill reference
 
-All 104 skills across 9 plugins. Add the marketplace with `/plugin marketplace add montoyer/eu-agents`, then install the plugin you need with `/plugin install <plugin-name>@eu-agents`.
+All 106 skills across 9 plugins. Add the marketplace with `/plugin marketplace add montoyer/eu-agents`, then install the plugin you need with `/plugin install <plugin-name>@eu-agents`.
 
 ### `eu-legislative` — Legislative & Policy
 
@@ -725,6 +725,8 @@ All 104 skills across 9 plugins. Add the marketplace with `/plugin marketplace a
 | `/eu-legislative:regulatory-impact-quantifier` | CBA/CEA quantification — compliance costs, SME test, OIOO, benefit monetisation, RSB-ready tables |
 | `/eu-legislative:policy-cycle` | Full EU policy lifecycle — agenda-setting through evaluation, all 7 phases, Better Regulation methodology |
 | `/eu-legislative:flash-report-drafter` | Flash report from meeting notes — Council working party, COREPER, comitology, EP committee, trilogue; positions by delegation, reservations, next steps, majority picture |
+| `/eu-legislative:sg-legal-helpdesk` | SG legal replies to internal questions — triage against the Legal Service's remit, short answer first, reasons, sources, certainty level, next step; holding replies and referrals |
+| `/eu-legislative:decision-procedure-adviser` | Commission decision-making under the 2024 Rules of Procedure — oral, written, empowerment, delegation; preconditions, working-day timeline, authentication, signature, publication |
 
 ### `eu-competition` — Competition & Legal Service
 

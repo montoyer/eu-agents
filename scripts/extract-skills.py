@@ -34,7 +34,7 @@ PLUGIN_CATEGORIES = {
 
 ACRONYMS = {
     "dpia", "dpo", "cdr", "pmo", "isc", "pq", "lfn", "gber", "eu", "ep", "olaf", "hod", "epso",
-    "eppo", "tia", "edps", "sme", "aar", "amp", "hr", "ai", "it", "ta", "digit",
+    "eppo", "tia", "edps", "sme", "aar", "amp", "hr", "ai", "it", "ta", "digit", "sg",
 }
 MIXED_CASE = {"ropa": "RoPA"}
 SKIP_SKILLS = {"cold-start-interview"}

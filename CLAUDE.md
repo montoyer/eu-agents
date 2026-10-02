@@ -66,6 +66,8 @@ Open-ended specialist personas. Adapt to whatever the user asks within their man
 /regulatory-impact-quantifier — Quantify regulatory costs and benefits for impact assessments
 /policy-cycle                — Full policy cycle management from agenda-setting to evaluation
 /flash-report-drafter        — Flash report from Council working party, COREPER, committee or trilogue notes
+/sg-legal-helpdesk           — SG legal officer replying to internal legal questions (procedure, institutional law)
+/decision-procedure-adviser  — Which Commission adoption procedure, conditions, timeline (Rules of Procedure 2024)
 
 // Competition & Legal Service (eu-competition)
 /lawyer-competition-antitrust — Antitrust analysis (Arts. 101–102 TFEU)
@@ -229,7 +231,7 @@ These require all 21 Commissioner agents and are structurally impossible with a 
 
 | Plugin ID | Domain | Key skills |
 |---|---|---|
-| `eu-legislative` | Legislative & Policy | `policy-officer`, `legislative-drafter`, `lawyer-secgen`, `impact-assessment`, `legislative-proposal`, `treaty-check`, `better-regulation`, `consultation`, `comitology-officer`, `economist`, `isc-contributor`, `pq-responder`, `subsidiarity-checker`, `trilogue-position-tracker`, `delegated-acts-drafter`, `fundamental-rights-assessor`, `regulatory-impact-quantifier`, `policy-cycle`, `flash-report-drafter` |
+| `eu-legislative` | Legislative & Policy | `policy-officer`, `legislative-drafter`, `lawyer-secgen`, `impact-assessment`, `legislative-proposal`, `treaty-check`, `better-regulation`, `consultation`, `comitology-officer`, `economist`, `isc-contributor`, `pq-responder`, `subsidiarity-checker`, `trilogue-position-tracker`, `delegated-acts-drafter`, `fundamental-rights-assessor`, `regulatory-impact-quantifier`, `policy-cycle`, `flash-report-drafter`, `sg-legal-helpdesk`, `decision-procedure-adviser` |
 | `eu-competition` | Competition & Legal Service | `lawyer-competition-antitrust`, `lawyer-state-aid`, `lawyer-legal-service`, `state-aid-review`, `market-definer`, `gber-screener`, `merger-screener`, `dawn-raid-advisor`, `eu-liability-advisor` |
 | `eu-institutional-management` | Institutional Management | `head-of-unit`, `deputy-head-of-unit`, `assistant-hod`, `hr-contract-manager-ta`, `financial-officer`, `pmo-pension-specialist`, `cdr-drafter`, `amp-drafter`, `aar-drafter`, `selection-board`, `access-to-documents`, `underperformance-advisor`, `budget-planner`, `ethics-officer` |
 | `eu-trade` | Trade Defence | `trade-defence-investigator`, `dumping-margin-calculator`, `sanctions-screener` |

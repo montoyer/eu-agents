@@ -67,7 +67,7 @@ Ask the user the following questions. Accept brief answers — expand from conte
 
 ### 7. Sensitive Context (optional)
 > "Is there anything I should know about the sensitivity of this dossier?
-> (e.g., politically sensitive, LIMITE handling, NDA with member states,
+> (e.g., politically sensitive, SENSITIVE marking, Council LIMITE documents,
 > ongoing trilogues with Parliament — or just say 'standard')"
 
 ---
@@ -86,7 +86,7 @@ Procedural stage:       [answer to Q3]
 Council configuration:  [answer to Q4]
 Commissioner portfolio: [answer to Q5]
 Working language(s):    [answer to Q6]
-Sensitivity:            [answer to Q7 — default: NORMALE]
+Sensitivity:            [answer to Q7 — default: no marking]
 ```
 
 Then confirm:

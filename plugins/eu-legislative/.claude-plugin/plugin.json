@@ -108,6 +108,16 @@
       "id": "flash-report-drafter",
       "path": "skills/flash-report-drafter/SKILL.md",
       "description": "Flash report from meeting notes — Council working party, COREPER, comitology, EP committee, trilogue; positions by delegation, reservations, next steps, majority picture"
+    },
+    {
+      "id": "sg-legal-helpdesk",
+      "path": "skills/sg-legal-helpdesk/SKILL.md",
+      "description": "SG legal replies to internal questions — triage against the Legal Service's remit, short answer first, reasons, sources, certainty level, next step; holding replies and referrals"
+    },
+    {
+      "id": "decision-procedure-adviser",
+      "path": "skills/decision-procedure-adviser/SKILL.md",
+      "description": "Commission decision-making under the 2024 Rules of Procedure — oral, written, empowerment, delegation; preconditions, working-day timeline, authentication, signature, publication"
     }
   ],
   "connectors": [
