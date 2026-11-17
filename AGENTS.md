@@ -15,14 +15,14 @@ Skills live in `plugins/` as SKILL.md files and are invoked as slash commands. E
 ### Commissioner personas (eu-simulation plugin)
 
 ```
-/commissioner president          — President of the European Commission
-/commissioner competition        — Commissioner for Competition
-/commissioner trade              — Commissioner for Trade
-/commissioner digital            — Executive Vice-President for Digital
-/commissioner green-deal         — Executive Vice-President for the Green Deal
+/commissioner president            — President of the European Commission
+/commissioner high-representative  — High Representative / Vice-President
+/commissioner clean-transition     — EVP for a Clean, Just and Competitive Transition (holds competition)
+/commissioner tech-sovereignty     — EVP for Tech Sovereignty, Security and Democracy
+/commissioner trade                — Commissioner for Trade and Economic Security
 ```
 
-See `knowledge/commissioners/` for all 21 portfolios.
+The simulation models the real 2024–2029 College: 27 portfolios, voiced as portfolios and never as named people. `knowledge/roster.yml` lists every id, title, alias (the old generic shortnames such as `green-deal` still work) and which Executive Vice-President steers which portfolio; each persona is `knowledge/commissioners/<id>.md`.
 
 ### Simulation support skills (eu-simulation plugin)
 
@@ -157,7 +157,7 @@ Produces a complete Art. 39 EUDPR DPIA by voicing five specialist roles in seque
 These voice multiple institutional actors in sequence:
 
 ```
-/college-deliberation          — Full College vote (all 21 Commissioners in sequence)
+/college-deliberation          — Full College vote (all 27 Members, one by one)
 /inter-service-consultation    — Route a proposal through all affected DGs + Legal Service
 /trilogue                      — EP / Council / Commission three-institution negotiation
 /european-parliament           — EP committee, rapporteur, political groups, plenary vote
@@ -167,13 +167,13 @@ These voice multiple institutional actors in sequence:
 
 ### Compound analysis commands (eu-simulation plugin)
 
-These require all 21 Commissioner agents and are structurally impossible with a single-agent system:
+These require all 27 portfolio agents and are structurally impossible with a single-agent system:
 
 ```
-/mandate-conflict <proposal>    — Conflict map across all 21 portfolios: guaranteed clashes,
+/mandate-conflict <proposal>    — Conflict map across all 27 portfolios: guaranteed clashes,
                                   treaty basis for each side, severity (BLOCKING / SIGNIFICANT /
                                   MANAGEABLE), resolution path
-/red-team-college <proposal>    — Token-efficient College stress test: runs all 21 Commissioners,
+/red-team-college <proposal>    — Token-efficient College stress test: runs all 27 portfolios,
                                   returns only SEVERE objections + College adoptability verdict
 /subsidiarity-stress <proposal> — Tests subsidiarity against 5 member-state configurations to find
                                   where the necessity argument fails; assesses yellow card risk
@@ -271,8 +271,9 @@ DRAFT — For review by an EU official before use. Not an official Commission po
 **To add a new Commissioner or DG:**
 1. Create a file in `knowledge/commissioners/` or `knowledge/dgs/` following the existing template.
 2. Define: mandate, legal basis, key dossiers, decision style, tensions with other portfolios.
-3. Add the agent to the `knowledge/agents/college-deliberation.md` roster.
-4. Update the commissioner shortnames grid in `plugins/eu-simulation/AGENTS.md`.
+3. For a Commissioner, add the portfolio to `knowledge/roster.yml` with the same `id`, `rank` and `title` as the file's YAML header (`scripts/validate.sh` fails if they differ).
+4. Update the commissioner shortnames grid in `plugins/eu-simulation/CLAUDE.md` and the table in `plugins/eu-simulation/skills/commissioner/SKILL.md`.
+5. Run `scripts/sync-shared-references.sh` to refresh the copy in `plugins/eu-simulation/knowledge/` (never edit that copy; `scripts/validate.sh` fails on drift).
 
 **To add a new skill:**
 1. Create `plugins/<domain>/skills/<skill-name>/SKILL.md` using the SKILL.md frontmatter convention.

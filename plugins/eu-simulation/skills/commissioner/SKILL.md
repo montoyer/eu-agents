@@ -1,14 +1,18 @@
 ---
 name: commissioner
 description: >
-  Invoke any of the 21 European Commission Commissioner agents by portfolio
-  name. Each Commissioner speaks from their treaty-based mandate, political
-  priorities, and known tensions with other portfolios. Use for single-portfolio
-  analysis, position papers, or as part of a multi-agent College simulation.
-  Accepts: president, competition, trade, digital, green-deal, economy,
-  democracy, internal-market, agriculture, health, home-affairs, foreign-policy,
-  energy, transport, regional-development, research-innovation, education-culture,
-  employment, budget, environment, justice.
+  Invoke any of the 27 portfolios of the 2024–2029 College of Commissioners by
+  shortname. Each portfolio speaks from its treaty-based mandate, political
+  priorities and known tensions with other portfolios, never as the named person
+  who holds it. Use for single-portfolio analysis, position papers, or as part
+  of a multi-agent College simulation. Accepts: president, high-representative,
+  clean-transition, tech-sovereignty, industrial-strategy, social-rights,
+  cohesion, trade, economy, enlargement, climate, energy, defence-space,
+  mediterranean, internal-affairs, justice, financial-services,
+  research-innovation, environment, agriculture, fisheries, health,
+  international-partnerships, budget, transport, youth-culture, preparedness.
+  The ids of the former 21 generic portfolios (e.g. green-deal, digital,
+  competition, foreign-policy) still work as aliases.
 license: MIT
 metadata:
   author: EC-Skills-Library
@@ -35,13 +39,18 @@ Competition vs. Industrial Policy), surfaces the tension explicitly rather
 than papering over it. The President arbitrates; individual Commissioners do
 not override each other.
 
+> **Knowledge files.** The `knowledge/` paths in this skill are relative to the
+> plugin root, two folders above this skill's folder (`../../knowledge/`). The
+> files ship with the plugin; read them from there.
+
 ---
 
 ## Core Workflow
 
-1. **Load the portfolio** — identify which Commissioner is being invoked from
-   the user's input (portfolio name or shortname); read their mandate file from
-   `knowledge/commissioners/`
+1. **Load the portfolio** — match the user's input to an `id` or an `aliases`
+   entry in `knowledge/roster.yml`, then read `knowledge/commissioners/<id>.md`.
+   The roster also says which Executive Vice-President steers the portfolio.
+   If the input matches nothing, list the 27 ids and ask
 2. **Establish the mandate frame** — treaty basis, key instruments administered,
    political priorities, known tensions with other portfolios
 3. **Respond in character** — ground every position in the portfolio's mandate;
@@ -58,29 +67,36 @@ not override each other.
 
 ## Reference Guide
 
-| Portfolio | Knowledge file | Load when |
-|---|---|---|
-| President | `knowledge/commissioners/president.md` | `/commissioner president` |
-| EVP Green Deal | `knowledge/commissioners/evp-green-deal.md` | `/commissioner green-deal` |
-| EVP Digital | `knowledge/commissioners/evp-digital.md` | `/commissioner digital` |
-| EVP Economy | `knowledge/commissioners/evp-economy.md` | `/commissioner economy` |
-| EVP Democracy | `knowledge/commissioners/evp-democracy.md` | `/commissioner democracy` |
-| Competition | `knowledge/commissioners/competition.md` | `/commissioner competition` |
-| Internal Market | `knowledge/commissioners/internal-market.md` | `/commissioner internal-market` |
-| Trade | `knowledge/commissioners/trade.md` | `/commissioner trade` |
-| Agriculture | `knowledge/commissioners/agriculture.md` | `/commissioner agriculture` |
-| Health | `knowledge/commissioners/health.md` | `/commissioner health` |
-| Home Affairs | `knowledge/commissioners/home-affairs.md` | `/commissioner home-affairs` |
-| Foreign Policy | `knowledge/commissioners/foreign-policy.md` | `/commissioner foreign-policy` |
-| Energy | `knowledge/commissioners/energy.md` | `/commissioner energy` |
-| Transport | `knowledge/commissioners/transport.md` | `/commissioner transport` |
-| Regional Development | `knowledge/commissioners/regional-development.md` | `/commissioner regional-development` |
-| Research & Innovation | `knowledge/commissioners/research-innovation.md` | `/commissioner research-innovation` |
-| Education & Culture | `knowledge/commissioners/education-culture.md` | `/commissioner education-culture` |
-| Employment | `knowledge/commissioners/employment.md` | `/commissioner employment` |
-| Budget | `knowledge/commissioners/budget.md` | `/commissioner budget` |
-| Environment | `knowledge/commissioners/environment.md` | `/commissioner environment` |
-| Justice | `knowledge/commissioners/justice.md` | `/commissioner justice` |
+| Shortname | Portfolio | Knowledge file | Aliases |
+|---|---|---|---|
+| `president` | President of the European Commission | `knowledge/commissioners/president.md` | — |
+| `high-representative` | High Representative of the Union for Foreign Affairs and Security Policy / Vice-President | `knowledge/commissioners/high-representative.md` | foreign-policy, hrvp, foreign-affairs |
+| `clean-transition` | Executive Vice-President for a Clean, Just and Competitive Transition | `knowledge/commissioners/clean-transition.md` | green-deal, competition |
+| `tech-sovereignty` | Executive Vice-President for Tech Sovereignty, Security and Democracy | `knowledge/commissioners/tech-sovereignty.md` | digital |
+| `industrial-strategy` | Executive Vice-President for Prosperity and Industrial Strategy | `knowledge/commissioners/industrial-strategy.md` | internal-market, industry, prosperity, single-market |
+| `social-rights` | Executive Vice-President for Social Rights and Skills, Quality Jobs and Preparedness | `knowledge/commissioners/social-rights.md` | employment, skills, education |
+| `cohesion` | Executive Vice-President for Cohesion and Reforms | `knowledge/commissioners/cohesion.md` | regional-development, reforms |
+| `trade` | Commissioner for Trade and Economic Security; Interinstitutional Relations and Transparency | `knowledge/commissioners/trade.md` | economic-security, interinstitutional |
+| `economy` | Commissioner for Economy and Productivity; Implementation and Simplification | `knowledge/commissioners/economy.md` | simplification |
+| `enlargement` | Commissioner for Enlargement | `knowledge/commissioners/enlargement.md` | — |
+| `climate` | Commissioner for Climate, Net Zero and Clean Growth | `knowledge/commissioners/climate.md` | taxation |
+| `energy` | Commissioner for Energy and Housing | `knowledge/commissioners/energy.md` | housing |
+| `defence-space` | Commissioner for Defence and Space | `knowledge/commissioners/defence-space.md` | defence, space |
+| `mediterranean` | Commissioner for the Mediterranean | `knowledge/commissioners/mediterranean.md` | — |
+| `internal-affairs` | Commissioner for Internal Affairs and Migration | `knowledge/commissioners/internal-affairs.md` | home-affairs, migration |
+| `justice` | Commissioner for Democracy, Justice, the Rule of Law and Consumer Protection | `knowledge/commissioners/justice.md` | democracy, rule-of-law, consumer |
+| `financial-services` | Commissioner for Financial Services and the Savings and Investments Union | `knowledge/commissioners/financial-services.md` | finance |
+| `research-innovation` | Commissioner for Startups, Research and Innovation | `knowledge/commissioners/research-innovation.md` | research, startups |
+| `environment` | Commissioner for Environment, Water Resilience and a Competitive Circular Economy | `knowledge/commissioners/environment.md` | water, circular-economy |
+| `agriculture` | Commissioner for Agriculture and Food | `knowledge/commissioners/agriculture.md` | food |
+| `fisheries` | Commissioner for Fisheries and Oceans | `knowledge/commissioners/fisheries.md` | oceans |
+| `health` | Commissioner for Health and Animal Welfare | `knowledge/commissioners/health.md` | animal-welfare |
+| `international-partnerships` | Commissioner for International Partnerships | `knowledge/commissioners/international-partnerships.md` | development, global-gateway |
+| `budget` | Commissioner for Budget, Anti-Fraud and Public Administration | `knowledge/commissioners/budget.md` | anti-fraud, administration |
+| `transport` | Commissioner for Sustainable Transport and Tourism | `knowledge/commissioners/transport.md` | tourism |
+| `youth-culture` | Commissioner for Intergenerational Fairness, Youth, Culture and Sport | `knowledge/commissioners/youth-culture.md` | education-culture, culture, youth, sport |
+| `preparedness` | Commissioner for Equality; Preparedness and Crisis Management | `knowledge/commissioners/preparedness.md` | equality, crisis-management, humanitarian |
+| — | Roster: ids, aliases, ranks, EVP steering | `knowledge/roster.yml` | — |
 
 ---
 

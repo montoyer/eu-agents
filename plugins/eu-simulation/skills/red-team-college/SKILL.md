@@ -2,7 +2,7 @@
 name: red-team-college
 description: >
   Token-efficient College stress test. Runs a policy brief or draft proposal
-  through all 21 Commissioner agents and returns only the objections rated
+  through all 27 portfolios of the College and returns only the objections rated
   SEVERE — those where a Commissioner's mandate is directly threatened and
   adoption in the current form would require overriding their treaty-grounded
   position. Output: a compact {commissioner, objection, severity, red line}
@@ -27,7 +27,7 @@ metadata:
 
 # Red-Team College Coordinator
 
-Runs a proposal through all 21 Commissioner agents and surfaces only the
+Runs a proposal through all 27 portfolios of the College and surfaces only the
 objections that are SEVERE — where a Commissioner's treaty-grounded mandate
 is directly threatened and the proposal in its current form cannot be adopted
 without overriding that position. Everything else is filtered out.
@@ -43,12 +43,16 @@ whether the proposal survives the College and on what conditions.
 
 - **SEVERE** — The Commissioner's mandate directly prohibits or is fundamentally
   undermined by the proposal in its current form. Adoption requires either a
-  fundamental design change or Presidential override. *This is the only category
+  fundamental design change or Presidential arbitration and a vote. *This is the only category
   returned in the main output.*
 - **SIGNIFICANT** — Real reservations grounded in mandate, resolvable with a
   textual fix or carve-out. Not returned in the main output but counted.
 - **NO OBJECTION** — Portfolio has no mandate stake, or its concerns are minor.
   Not returned.
+
+> **Knowledge files.** The `knowledge/` paths in this skill are relative to the
+> plugin root, two folders above this skill's folder (`../../knowledge/`). The
+> files ship with the plugin; read them from there.
 
 ---
 
@@ -56,7 +60,7 @@ whether the proposal survives the College and on what conditions.
 
 1. **Parse the proposal** — identify legal basis, key obligations, scope,
    enforcement mechanism, and any delegated powers
-2. **Load all 21 Commissioner knowledge files** — for each portfolio, read
+2. **Load the roster and all 27 portfolio files** — for each portfolio, read
    mandate, treaty basis, key dossiers, and stated tensions with other portfolios
 3. **For each Commissioner, assess** — Does this proposal directly implicate
    their mandate? If yes: what is the direction (supportive / neutral /
@@ -83,7 +87,8 @@ whether the proposal survives the College and on what conditions.
 
 | Resource | Path | Load when |
 |---|---|---|
-| All 21 Commissioner personas | `knowledge/commissioners/*.md` | Step 2 — full load required |
+| College roster: 27 portfolios, ranks, EVP steering | `knowledge/roster.yml` | Step 2 — list of portfolios to load |
+| All 27 portfolio personas | `knowledge/commissioners/*.md` | Step 2 — full load required |
 | College deliberation protocol | `knowledge/agents/college-deliberation.md` | Step 5 — adoptability thresholds |
 
 ---
@@ -91,7 +96,7 @@ whether the proposal survives the College and on what conditions.
 ## Constraints
 
 ### MUST DO
-- **Load all 21 Commissioner files** — a stress test that misses a portfolio
+- **Load all 27 portfolio files** — a stress test that misses a portfolio
   is not a stress test; the most dangerous objections often come from
   portfolios that appear tangentially related
 - **Apply the severity definition strictly** — SEVERE means the mandate is

@@ -3,7 +3,7 @@ name: college-decision
 description: >
   Use when you want to send a question to the College of Commissioners and get
   the resulting document back. This is a single-command workflow: it runs the
-  full College deliberation (all 21 Commissioners speak, the President calls the
+  full College deliberation (all 27 Members speak, the President calls the
   vote) and then, if the College ADOPTS, drafts the full legislative instrument
   as a COM(YYYY) NNN final document — explanatory memorandum, recitals, and
   operative articles by chapter. If the College refers the dossier back or
@@ -34,7 +34,7 @@ metadata:
 Composes two existing capabilities into one question→document flow:
 
 1. **College deliberation** — the full College of Commissioners meeting protocol
-   (all 21 Commissioners speak, the President reads the room and calls the vote).
+   (all 27 Members speak, the President reads the room and calls the vote).
 2. **Legislative drafting** — only if the College adopts, the adopted dossier is
    turned into a structurally complete `COM(YYYY) NNN final` legislative document.
 
@@ -49,6 +49,10 @@ vote*, not a foregone conclusion: a College that refers a dossier back has not
 adopted anything, so no COM document exists yet — and this skill must not invent
 one.
 
+> **Knowledge files.** The `knowledge/` paths in this skill are relative to the
+> plugin root, two folders above this skill's folder (`../../knowledge/`). The
+> files ship with the plugin; read them from there.
+
 ---
 
 ## Core Workflow
@@ -56,7 +60,7 @@ one.
 1. **Run the College deliberation** — follow the full protocol in
    `knowledge/agents/college-deliberation.md`: President opens (question framed,
    treaty basis noted, decision threshold set) → lead Commissioner presents →
-   EVP coordination layer → each of the 21 Commissioners speaks once → President
+   EVP coordination layer → each of the 27 Members speaks once → President
    reads the room → formal vote if needed → outcome.
 
 2. **Branch on the outcome:**
@@ -85,8 +89,9 @@ one.
 
 | Resource | Path | Load when |
 |---|---|---|
-| College deliberation protocol + 21-member roster | `knowledge/agents/college-deliberation.md` | Step 1 — every session; full protocol and roster |
-| All 21 Commissioner personas | `knowledge/commissioners/*.md` | Step 1 — each Commissioner's speaking turn |
+| College deliberation protocol | `knowledge/agents/college-deliberation.md` | Step 1 — every session; full protocol |
+| College roster: 27 portfolios, ranks, EVP steering, voting rule | `knowledge/roster.yml` | Step 1 — speaking order and vote count |
+| All 27 portfolio personas | `knowledge/commissioners/*.md` | Step 1 — each Commissioner's speaking turn |
 | Conflict escalation rules | `knowledge/agents/college-deliberation.md` | Step 1 — when two positions are irreconcilable |
 | Legislative drafting conventions | eu-legislative `legislative-proposal` skill | Step 3 — instrument choice, legal basis, JPG structure, recitals, empowerments |
 
@@ -101,7 +106,7 @@ duplicate those reference files here.
 ## Constraints
 
 ### MUST DO
-- **Voice all 21 Commissioners** — every member of the College speaks; the
+- **Voice all 27 Members** — every member of the College speaks, one by one; the
   difficult voices are the most instructive. A Commissioner whose portfolio has
   no stake gives a brief "no objection from a [X] perspective", not silence.
 - **Ground every position in mandate** — a Commissioner speaking outside their
@@ -149,11 +154,11 @@ Simulated date: [DD Month YYYY]
 Decision sought: [Adopt for transmission to EP/Council / Note / Other]
 
 **Outcome:** [ADOPTED / REFERRED BACK / WITHDRAWN]
-**Vote:** [In favour N — Against N — Abstain N; threshold 11/21] *(state "consensus, no formal vote" if adopted without a vote)*
+**Vote:** [In favour N — Against N — Abstain N; adoption needs 14 of 27, a majority of all Members, Art. 250 TFEU] *(state "consensus, no formal vote" if adopted without a vote)*
 **Key tensions:** [Portfolio A vs Portfolio B on [issue] — nature of disagreement; or "none material"]
 **Conditions attached:** [any amendments/conditions the President attached to adoption, or "none"]
 
-> The full deliberation record (all 21 contributions, EVP assessments, President's
+> The full deliberation record (all 27 contributions, EVP assessments, President's
 > consensus reading) is available on request — run `/college-deliberation` for the
 > verbatim meeting record. This skill summarises the decision and, on adoption,
 > produces the instrument below.

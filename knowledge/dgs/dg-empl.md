@@ -1,6 +1,6 @@
 # DG EMPL — Directorate-General for Employment, Social Affairs and Inclusion
 
-> Supports the Commissioner for Jobs and Social Rights (or equivalent portfolio).
+> Supports the Executive Vice-President for Social Rights and Skills, Quality Jobs and Preparedness (`social-rights`). Roster: `knowledge/roster.yml`.
 
 ---
 
@@ -86,7 +86,7 @@ When DG EMPL participates in an inter-service consultation, it:
 | DG ENER / DG ENV | Just transition — green industrial transition vs. worker protection in affected sectors |
 | DG HOME | Social rights of third-country nationals, undeclared work, posted workers abuse |
 | DG REGIO | ESF+ vs. ERDF coordination — both support social cohesion but different instrument logic |
-| EVP Economy | Euro Area fiscal rules vs. member state social spending capacity |
+| Economy (`economy`) | Euro Area fiscal rules vs. member state social spending capacity |
 
 ---
 

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commissioners • Montoyer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+    
+    :root {
+      --bg: #f8f9f7;
+      --ink: #111;
+      --muted: #666;
+      --line: #e5e7e4;
+      --accent: #0066ff;
+    }
+    
+    body {
+      font-family: 'Inter', system_ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      margin: 0;
+      line-height: 1.5;
+    }
+    
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    
+    header {
+      border-bottom: 1px solid var(--line);
+      padding: 20px 0;
+      background: white;
+    }
+    
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .logo {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      font-size: 21px;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+      color: var(--ink);
+    }
+    
+    .logo span {
+      color: var(--accent);
+    }
+    
+    h1 {
+      font-size: 42px;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      margin: 40px 0 12px;
+    }
+    
+    .subtitle {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 620px;
+    }
+    
+    .intro {
+      margin: 32px 0 40px;
+      font-size: 15px;
+      max-width: 620px;
+    }
+    
+    .commissioners-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 20px;
+    }
+    
+    .commissioner-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 20px;
+      transition: border-color 0.1s, box-shadow 0.1s;
+    }
+    
+    .commissioner-card:hover {
+      border-color: #ccc;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+    
+    .card-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    
+    .avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 9999px;
+      background: #e5e7e4;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      color: #555;
+      font-size: 14px;
+    }
+    
+    .name {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.3;
+    }
+    
+    .portfolio {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+    
+    .handle {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 13px;
+      color: var(--accent);
+      text-decoration: none;
+      margin-top: 8px;
+    }
+    
+    .handle:hover {
+      text-decoration: underline;
+    }
+    
+    .latest-tweet {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+    
+    .latest-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #888;
+      margin-bottom: 6px;
+    }
+    
+    .tweet-content {
+      font-size: 13.5px;
+      line-height: 1.45;
+      color: #222;
+      background: #fafaf8;
+      padding: 10px 12px;
+      border-radius: 8px;
+      border-left: 3px solid var(--accent);
+    }
+    
+    .tweet-meta {
+      font-size: 11px;
+      color: #888;
+      margin-top: 6px;
+    }
+    
+    .agent-link {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 12px;
+      background: #f0f0ed;
+      padding: 2px 8px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: #333;
+      font-family: ui-monospace, monospace;
+    }
+    
+    .agent-link:hover {
+      background: #e5e5e2;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 40px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th {
+      background: #f8f9f7;
+      text-align: left;
+      font-weight: 500;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line);
+    }
+    
+    td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line);
+      font-size: 14px;
+    }
+    
+    tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .section-title {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin: 48px 0 16px;
+    }
+    
+    .footer-note {
+      margin-top: 60px;
+      font-size: 12px;
+      color: #777;
+      max-width: 620px;
+    }
+    
+    .trust {
+      font-size: 11px;
+      background: #f5f5f2;
+      padding: 1px 6px;
+      border-radius: 3px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a href="/" class="logo">montoyer<span>.</span></a>
+        <div style="font-size: 13px; color: #666;">
+          <a href="https://github.com/montoyer/eu-agents" style="color: inherit; text-decoration: none;">github</a>
+          &nbsp;&nbsp;•&nbsp;&nbsp;
+          <a href="/" style="color: inherit; text-decoration: none;">home</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>College of Commissioners</h1>
+    <p class="subtitle">The 27 members of the von der Leyen Commission (2024–2029), with a recent X post for three of them.</p>
+
+    <div class="intro">
+      To run the agent for a portfolio in Claude Code, type <code>/eu-simulation:commissioner &lt;shortname&gt;</code>.
+    </div>
+
+    <!-- Grid of cards for key members + table for full list -->
+    <h2 class="section-title">Recent posts</h2>
+    
+    <div class="commissioners-grid">
+      <!-- President -->
+      <div class="commissioner-card">
+        <div class="card-header">
+          <div class="avatar">UvL</div>
+          <div>
+            <div class="name">Ursula von der Leyen</div>
+            <div class="portfolio">President of the European Commission</div>
+            <a href="https://x.com/vonderleyen" class="handle" target="_blank">@vonderleyen</a>
+          </div>
+        </div>
+        
+        <div class="latest-tweet">
+          <div class="latest-label">25 Jun 2026</div>
+          <div class="tweet-content">
+            En estas horas difíciles, estamos con los venezolanos.<br><br>
+            The @EU_Commission is coordinating the European response to the earthquake via our Civil Protection Mechanism. 🇪🇸🇮🇹🇨🇿🇫🇷🇩🇪🇱🇺🇳🇱 🇵🇹 are sending search and rescue teams.
+          </div>
+          <div class="tweet-meta">
+            <a href="https://x.com/vonderleyen/status/2070185239956144138" target="_blank">View on X →</a>
+          </div>
+        </div>
+        
+        <a href="#" class="agent-link" onclick="alert('In Claude Code: /eu-simulation:commissioner president')">/commissioner president</a>
+      </div>
+
+      <!-- Kaja Kallas -->
+      <div class="commissioner-card">
+        <div class="card-header">
+          <div class="avatar">KK</div>
+          <div>
+            <div class="name">Kaja Kallas</div>
+            <div class="portfolio">High Representative for Foreign Affairs and Security Policy / Vice-President</div>
+            <a href="https://x.com/kajakallas" class="handle" target="_blank">@kajakallas</a>
+          </div>
+        </div>
+        
+        <div class="latest-tweet">
+          <div class="latest-label">24 Jun 2026</div>
+          <div class="tweet-content">
+            I am pleased to announce that @KajsaOllongren will be the new Secretary General of the @eu_eeas.<br><br>
+            Kajsa brings with her 30 years of experience in public service, diplomacy and management of organisations...
+          </div>
+          <div class="tweet-meta">
+            <a href="https://x.com/kajakallas/status/2069785790322794829" target="_blank">View on X →</a>
+          </div>
+        </div>
+        
+        <a href="#" class="agent-link" onclick="alert('In Claude Code: /eu-simulation:commissioner high-representative')">/commissioner high-representative</a>
+      </div>
+
+      <!-- Teresa Ribera -->
+      <div class="commissioner-card">
+        <div class="card-header">
+          <div class="avatar">TR</div>
+          <div>
+            <div class="name">Teresa Ribera</div>
+            <div class="portfolio">Executive Vice-President for Clean, Just and Competitive Transition</div>
+            <a href="https://x.com/Teresaribera" class="handle" target="_blank">@Teresaribera</a>
+          </div>
+        </div>
+        
+        <div class="latest-tweet">
+          <div class="latest-label">No post quoted</div>
+          <div class="tweet-meta">
+            <a href="https://x.com/Teresaribera" target="_blank">View profile on X →</a>
+          </div>
+        </div>
+
+        <a href="#" class="agent-link" onclick="alert('In Claude Code: /eu-simulation:commissioner clean-transition')">/commissioner clean-transition</a>
+      </div>
+
+      <!-- Henna Virkkunen -->
+      <div class="commissioner-card">
+        <div class="card-header">
+          <div class="avatar">HV</div>
+          <div>
+            <div class="name">Henna Virkkunen</div>
+            <div class="portfolio">Executive Vice-President for Tech Sovereignty, Security and Democracy</div>
+            <a href="https://x.com/HennaVirkkunen" class="handle" target="_blank">@HennaVirkkunen</a>
+          </div>
+        </div>
+        
+        <div class="latest-tweet">
+          <div class="latest-label">25 Jun 2026</div>
+          <div class="tweet-content">
+            More than half of EU businesses rely on cloud services, alongside record levels of investment in public cloud infrastructure.<br><br>
+            These services must operate in fair, open &amp; competitive markets...
+          </div>
+          <div class="tweet-meta">
+            <a href="https://x.com/HennaVirkkunen/status/2070152222718009746" target="_blank">View on X →</a>
+          </div>
+        </div>
+        
+        <a href="#" class="agent-link" onclick="alert('In Claude Code: /eu-simulation:commissioner tech-sovereignty')">/commissioner tech-sovereignty</a>
+      </div>
+    </div>
+
+    <h2 class="section-title">Full College (27 members)</h2>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Portfolio</th>
+          <th>X handle</th>
+          <th>Quoted post</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Ursula von der Leyen</strong></td>
+          <td>President</td>
+          <td><a href="https://x.com/vonderleyen" target="_blank">@vonderleyen</a></td>
+          <td style="font-size:12px">Venezuela earthquake response coordination (25 Jun)</td>
+        </tr>
+        <tr>
+          <td><strong>Kaja Kallas</strong></td>
+          <td>High Representative / VP</td>
+          <td><a href="https://x.com/kajakallas" target="_blank">@kajakallas</a></td>
+          <td style="font-size:12px">New EEAS Secretary General appointment (24 Jun)</td>
+        </tr>
+        <tr>
+          <td><strong>Teresa Ribera</strong></td>
+          <td>EVP Clean, Just and Competitive Transition</td>
+          <td><a href="https://x.com/Teresaribera" target="_blank">@Teresaribera</a></td>
+          <td style="font-size:12px">—</td>
+        </tr>
+        <tr>
+          <td><strong>Henna Virkkunen</strong></td>
+          <td>EVP Tech Sovereignty, Security and Democracy</td>
+          <td><a href="https://x.com/HennaVirkkunen" target="_blank">@HennaVirkkunen</a></td>
+          <td style="font-size:12px">EU cloud services competition (25 Jun)</td>
+        </tr>
+        <tr>
+          <td><strong>Stéphane Séjourné</strong></td>
+          <td>EVP Prosperity and Industrial Strategy</td>
+          <td><a href="https://x.com/steph_sejourne" target="_blank">@steph_sejourne</a></td>
+          <td style="font-size:12px">—</td>
+        </tr>
+        <tr>
+          <td><strong>Roxana Mînzatu</strong></td>
+          <td>EVP Social Rights and Skills, Quality Jobs and Preparedness</td>
+          <td>—</td>
+          <td style="font-size:12px">—</td>
+        </tr>
+        <tr>
+          <td><strong>Raffaele Fitto</strong></td>
+          <td>EVP Cohesion and Reforms</td>
+          <td>—</td>
+          <td style="font-size:12px">—</td>
+        </tr>
+        <tr>
+          <td><strong>Maroš Šefčovič</strong></td>
+          <td>Trade and Economic Security; Interinstitutional Relations and Transparency</td>
+          <td>—</td>
+          <td style="font-size:12px">—</td>
+        </tr>
+        <tr>
+          <td><strong>Valdis Dombrovskis</strong></td>
+          <td>Economy and Productivity; Implementation and Simplification</td>
+          <td>—</td>
+          <td style="font-size:12px">—</td>
+        </tr>
+        <tr>
+          <td><strong>Christophe Hansen</strong></td>
+          <td>Agriculture and Food</td>
+          <td>—</td>
+          <td style="font-size:12px">—</td>
+        </tr>
+        <tr>
+          <td><strong>Wopke Hoekstra</strong></td>
+          <td>Climate, Net Zero and Clean Growth</td>
+          <td>—</td>
+          <td style="font-size:12px">—</td>
+        </tr>
+        <tr>
+          <td><strong>Andrius Kubilius</strong></td>
+          <td>Defence and Space</td>
+          <td>—</td>
+          <td style="font-size:12px">—</td>
+        </tr>
+        <tr>
+          <td><strong>Dan Jørgensen</strong></td>
+          <td>Energy and Housing</td>
+          <td>—</td>
+          <td style="font-size:12px">—</td>
+        </tr>
+        <tr>
+          <td><strong>Ekaterina Zaharieva</strong></td>
+          <td>Startups, Research and Innovation</td>
+          <td>—</td>
+          <td style="font-size:12px">—</td>
+        </tr>
+        <tr>
+          <td><strong>Michael McGrath</strong></td>
+          <td>Democracy, Justice, the Rule of Law and Consumer Protection</td>
+          <td>—</td>
+          <td style="font-size:12px">—</td>
+        </tr>
+        <tr>
+          <td><strong>Apostolos Tzitzikostas</strong></td>
+          <td>Sustainable Transport and Tourism</td>
+          <td>—</td>
+          <td style="font-size:12px">—</td>
+        </tr>
+        <tr>
+          <td><strong>Glenn Micallef</strong></td>
+          <td>Intergenerational Fairness, Youth, Culture and Sport</td>
+          <td>—</td>
+          <td style="font-size:12px">—</td>
+        </tr>
+        <tr>
+          <td><strong>Jessika Roswall</strong></td>
+          <td>Environment, Water Resilience and a Competitive Circular Economy</td>
+          <td>—</td>
+          <td style="font-size:12px">—</td>
+        </tr>
+        <tr>
+          <td><strong>Piotr Serafin</strong></td>
+          <td>Budget, Anti-Fraud and Public Administration</td>
+          <td>—</td>
+          <td style="font-size:12px">—</td>
+        </tr>
+        <tr>
+          <td><strong>Magnus Brunner</strong></td>
+          <td>Internal Affairs and Migration</td>
+          <td>—</td>
+          <td style="font-size:12px">—</td>
+        </tr>
+        <tr>
+          <td><strong>Hadja Lahbib</strong></td>
+          <td>Equality; Preparedness and Crisis Management</td>
+          <td>—</td>
+          <td style="font-size:12px">—</td>
+        </tr>
+        <tr>
+          <td><strong>Maria Luís Albuquerque</strong></td>
+          <td>Financial Services and the Savings and Investments Union</td>
+          <td>—</td>
+          <td style="font-size:12px">—</td>
+        </tr>
+        <tr>
+          <td><strong>Costas Kadis</strong></td>
+          <td>Fisheries and Oceans</td>
+          <td>—</td>
+          <td style="font-size:12px">—</td>
+        </tr>
+        <tr>
+          <td><strong>Jozef Síkela</strong></td>
+          <td>International Partnerships</td>
+          <td>—</td>
+          <td style="font-size:12px">—</td>
+        </tr>
+        <tr>
+          <td><strong>Marta Kos</strong></td>
+          <td>Enlargement</td>
+          <td>—</td>
+          <td style="font-size:12px">—</td>
+        </tr>
+        <tr>
+          <td><strong>Olivér Várhelyi</strong></td>
+          <td>Health and Animal Welfare</td>
+          <td>—</td>
+          <td style="font-size:12px">—</td>
+        </tr>
+        <tr>
+          <td><strong>Dubravka Šuica</strong></td>
+          <td>Mediterranean</td>
+          <td>—</td>
+          <td style="font-size:12px">—</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="footer-note">
+      <p>Posts were copied by hand on 25 June 2026 and do not update.</p>
+      <p class="trust">DRAFT — Prototype page for Montoyer. Not an official Commission document.</p>
+    </div>
+  </div>
+
+  <script>
+    // Simple enhancement: clicking a handle or name could suggest the agent command in future
+    console.log('%c[Montoyer] Commissioners prototype page loaded', 'color:#888');
+  </script>
+</body>
+</html>

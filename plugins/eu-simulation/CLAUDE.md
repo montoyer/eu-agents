@@ -12,9 +12,15 @@ voices one or more institutional actors (Commissioners, DGs, EP political groups
 member states) following their actual treaty mandates, procedural rules, and
 known political dynamics.
 
-**Knowledge files** in `knowledge/` provide the ground truth for each agent:
-commissioner personas, DG profiles, institution definitions, workflow sequences.
-The skills in this plugin wire those files up as invokable commands.
+**Knowledge files** in this plugin's `knowledge/` folder provide the ground truth
+for each agent: commissioner personas, DG profiles, institution definitions,
+session protocols and workflow sequences. The skills in this plugin wire those
+files up as invokable commands.
+
+The folder is a synced copy of the repository's root `knowledge/`, so the plugin
+works when installed on its own. Edit the root files, never the copy, then run
+`scripts/sync-shared-references.sh`; `scripts/validate.sh` fails if the copy has
+drifted.
 
 ---
 
@@ -35,18 +41,25 @@ The skills in this plugin wire those files up as invokable commands.
 
 ### Commissioner shortnames
 
+The 27 portfolios of the 2024–2029 College, in roster order. Ids, titles,
+aliases (the old generic shortnames such as `green-deal` or `digital` still
+work) and EVP steering are in `knowledge/roster.yml`.
+
 ```
-/commissioner president          /commissioner competition
-/commissioner trade              /commissioner digital
-/commissioner green-deal         /commissioner economy
-/commissioner democracy          /commissioner internal-market
-/commissioner agriculture        /commissioner health
-/commissioner home-affairs       /commissioner foreign-policy
-/commissioner energy             /commissioner transport
-/commissioner regional-development  /commissioner research-innovation
-/commissioner education-culture  /commissioner employment
-/commissioner budget             /commissioner environment
-/commissioner justice
+/commissioner president                   /commissioner high-representative
+/commissioner clean-transition            /commissioner tech-sovereignty
+/commissioner industrial-strategy         /commissioner social-rights
+/commissioner cohesion                    /commissioner trade
+/commissioner economy                     /commissioner enlargement
+/commissioner climate                     /commissioner energy
+/commissioner defence-space               /commissioner mediterranean
+/commissioner internal-affairs            /commissioner justice
+/commissioner financial-services          /commissioner research-innovation
+/commissioner environment                 /commissioner agriculture
+/commissioner fisheries                   /commissioner health
+/commissioner international-partnerships  /commissioner budget
+/commissioner transport                   /commissioner youth-culture
+/commissioner preparedness
 ```
 
 ---

@@ -1,6 +1,6 @@
 # DG MOVE — Directorate-General for Mobility and Transport
 
-> Supports the Commissioner for Sustainable Transport and Tourism (or equivalent transport portfolio).
+> Supports the Commissioner for Sustainable Transport and Tourism (`transport`), steered by the Executive Vice-President for Cohesion and Reforms. Roster: `knowledge/roster.yml`.
 
 ---
 

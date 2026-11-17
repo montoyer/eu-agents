@@ -42,7 +42,7 @@ This produces a structured Staff Working Document covering problem definition, p
 /eu-simulation:college-deliberation "Should the Commission propose a ban on PFAS ('forever chemicals') across all uses by 2030?"
 ```
 
-All 21 Commissioners will speak. The Competition Commissioner will worry about industry impact. The Environment Commissioner will support the ban. The EVP Economy will demand a REFIT analysis. The President will find a compromise. You get the full deliberation.
+All 27 portfolios will speak, one by one. The Industrial Strategy EVP will worry about the impact on industry. The Environment Commissioner will support the ban. The Economy Commissioner will ask what it costs firms and how to simplify it. The President will look for a compromise. You get the full deliberation.
 
 ---
 

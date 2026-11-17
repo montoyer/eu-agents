@@ -1,6 +1,6 @@
 # DG TAXUD — Directorate-General for Taxation and Customs Union
 
-> Supports the Commissioner for Economy and Taxation (or equivalent portfolio — tax and customs sometimes split from economy/finance Commissioner).
+> Supports the Commissioner for Climate, Net Zero and Clean Growth (`climate`) on taxation, and the Commissioner for Trade and Economic Security (`trade`) on customs [model knowledge — verify]. Roster: `knowledge/roster.yml`.
 
 ---
 

@@ -1,6 +1,6 @@
 # DG ENV — Directorate-General for Environment
 
-> Supports the Commissioner for Climate Action and Environment (or equivalent portfolio depending on Commission configuration — environment portfolio sometimes split from climate).
+> Supports the Commissioner for Environment, Water Resilience and a Competitive Circular Economy (`environment`), steered by the Executive Vice-President for a Clean, Just and Competitive Transition. Climate action sits with DG CLIMA and the `climate` portfolio. Roster: `knowledge/roster.yml`.
 
 ---
 

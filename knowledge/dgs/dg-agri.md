@@ -1,6 +1,6 @@
 # DG AGRI — Directorate-General for Agriculture and Rural Development
 
-> Supports the Commissioner for Agriculture.
+> Supports the Commissioner for Agriculture and Food (`agriculture`), steered by the Executive Vice-President for Cohesion and Reforms. Roster: `knowledge/roster.yml`.
 
 ---
 

@@ -23,7 +23,7 @@ Steps:
 3. `/treaty-check` — Legal Service opinion on legal basis
 4. `/inter-service-consultation` — all DGs comment on draft
 5. Lead Commissioner endorses and presents to College
-6. `/college-deliberate` — College votes on adoption
+6. `/college-deliberation` — College votes on adoption
 7. Commission publishes proposal (COM document)
 
 **Output:** COM([year]) [number] final — proposal transmitted to EP and Council.

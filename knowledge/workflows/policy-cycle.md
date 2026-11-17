@@ -64,7 +64,7 @@ Steps:
 Steps:
 1. `/legislative-proposal` — draft text produced.
 2. College briefing and discussion.
-3. `/college-deliberate` — formal College adoption.
+3. `/college-deliberation` — formal College adoption.
 4. COM proposal published and transmitted to EP and Council.
 
 **Output:** COM([year]) [number] final.

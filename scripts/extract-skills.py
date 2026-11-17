@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-extract-skills.py — Build site/prompts.json from SKILL.md files and knowledge/workflows/*.md
+extract-skills.py — Build site/prompts.json from SKILL.md files
 
 No external dependencies — stdlib only.
 
@@ -17,8 +17,8 @@ from typing import Optional
 
 REPO_ROOT = Path(__file__).parent.parent
 PLUGINS_DIR = REPO_ROOT / "plugins"
-WORKFLOWS_DIR = REPO_ROOT / "knowledge" / "workflows"
 OUTPUT_FILE = REPO_ROOT / "site" / "prompts.json"
+ROSTER_FILE = REPO_ROOT / "knowledge" / "roster.yml"
 
 PLUGIN_CATEGORIES = {
     "eu-legislative": "Legislative & Policy",
@@ -39,10 +39,10 @@ ACRONYMS = {
 MIXED_CASE = {"ropa": "RoPA"}
 SKIP_SKILLS = {"cold-start-interview"}
 
-# Sections that are internal/Claude-Code-specific — dropped from the prompt body.
-# Only the section itself is removed; the sections after it are kept.
+# Sections dropped from the prompt body. Only the section itself is removed;
+# the sections after it are kept. Output Templates stay: they are inline and
+# tell the model what to produce, in any LLM.
 BODY_DROP_SECTIONS = (
-    "## Output Template",
     "## Knowledge Reference",
 )
 # A Reference Guide is dropped only when it is a table of local files to load
@@ -57,7 +57,6 @@ COMPLEX_FORMATS = {
     "college-meeting-record",
     "trilogue-compromise-text",
     "ep-committee-report",
-    "multi-phase-workflow",
 }
 
 
@@ -183,7 +182,9 @@ def is_dropped_section(section: str) -> bool:
 
 
 def clean_prompt_body(body: str) -> str:
-    """Return the persona+workflow portion of a SKILL.md body — usable in any LLM."""
+    """Return the persona, workflow and output templates of a SKILL.md body — usable in any LLM."""
+    # Strip the plugin note on where knowledge/ files live: meaningless outside Claude Code
+    body = re.sub(r"^> \*\*Knowledge files\.\*\*[^\n]*(?:\n>[^\n]*)*\n*", "", body, flags=re.M)
     # Strip the closing DRAFT block (never one that is followed by further sections)
     body = re.sub(r"\n---\s*\nDRAFT(?:(?!\n## ).)*$", "", body, flags=re.DOTALL)
     # Each section carries the `---` separator that follows it, so dropping one
@@ -192,7 +193,60 @@ def clean_prompt_body(body: str) -> str:
     return re.sub(r"(?:\n\s*---\s*)+$", "", body.rstrip()).strip()
 
 
+# ── College roster (site prompts cannot read knowledge/roster.yml) ────────────
+
+RANK_LABELS = {"president": "President", "hrvp": "HR/VP", "evp": "Executive VP", "commissioner": "Commissioner"}
+
+
+def parse_roster(path: Path = ROSTER_FILE) -> tuple[list[dict], dict]:
+    """Read the portfolios and College numbers from roster.yml (our own simple layout)."""
+    text = path.read_text(encoding="utf-8")
+    portfolios, cur = [], None
+    for line in text.splitlines():
+        m = re.match(r"  - id: (\S+)\s*$", line)
+        if m:
+            cur = {"id": m.group(1)}
+            portfolios.append(cur)
+            continue
+        if cur is None:
+            continue
+        m = re.match(r'    (rank|title): "?(.*?)"?\s*$', line)
+        if m:
+            cur[m.group(1)] = m.group(2)
+        m = re.match(r"    (aliases|steers): \[(.*)\]\s*$", line)
+        if m:
+            cur[m.group(1)] = [x.strip() for x in m.group(2).split(",") if x.strip()]
+    college = {k: int(v) for k, v in re.findall(r"^  (members|majority|quorum): (\d+)", text, re.M)}
+    return portfolios, college
+
+
+def roster_section() -> str:
+    """A self-contained roster section appended to prompts that cite knowledge/roster.yml."""
+    portfolios, college = parse_roster()
+    titles = {p["id"]: p["title"] for p in portfolios}
+    rows = ["| # | Portfolio | Rank | Steers |", "|---|---|---|---|"]
+    for n, p in enumerate(portfolios, 1):
+        steers = " · ".join(titles[s].replace("Commissioner for ", "") for s in p.get("steers", [])) or "—"
+        rows.append(f"| {n} | {p['title']} | {RANK_LABELS.get(p['rank'], p['rank'])} | {steers} |")
+    return (
+        "## College roster (2024–2029)\n\n"
+        f"The {college['members']} portfolios of the College, in speaking order. This list replaces "
+        "`knowledge/roster.yml` and the persona files, which exist only in the Claude Code plugin. "
+        "Speak as the portfolio, never as the person who holds it. A decision needs "
+        f"{college['majority']} votes out of {college['members']}, a majority of all Members "
+        "(Art. 250 TFEU). Steering by the Executive Vice-Presidents is model knowledge: verify it.\n\n"
+        + "\n".join(rows)
+    )
+
+
 # ── Extractors ────────────────────────────────────────────────────────────────
+
+def with_roster(prompt: str, raw_body: str) -> str:
+    """Append the College roster to prompts whose skill reads knowledge/roster.yml."""
+    if "knowledge/roster.yml" not in raw_body or not ROSTER_FILE.exists():
+        return prompt
+    return prompt + "\n\n---\n\n" + roster_section()
+
 
 def extract_skill(skill_path: Path, plugin_name: str) -> Optional[dict]:
     text = skill_path.read_text(encoding="utf-8")
@@ -233,40 +287,7 @@ def extract_skill(skill_path: Path, plugin_name: str) -> Optional[dict]:
         "related": related,
         "type": "skill",
         "difficulty": infer_difficulty(role, output_format),
-        "prompt_body": clean_prompt_body(body),
-    }
-
-
-def extract_workflow(wf_path: Path) -> Optional[dict]:
-    text = wf_path.read_text(encoding="utf-8")
-
-    title_m = re.search(r"^# (.+)$", text, re.MULTILINE)
-    raw_title = title_m.group(1) if title_m else wf_path.stem.replace("-", " ").title()
-    title = raw_title.replace("Workflow: ", "")
-
-    trigger_m = re.search(r"\*\*Trigger:\*\*\s*`([^`]+)`", text)
-    trigger = trigger_m.group(1) if trigger_m else f"/{wf_path.stem} <brief>"
-
-    desc_m = re.search(r"## What this workflow does\s*\n+(.+?)(?=\n---|\n##)", text, re.DOTALL)
-    description = desc_m.group(1).strip() if desc_m else ""
-
-    phase_count = len(re.findall(r"^## Phase \d+", text, re.MULTILINE))
-
-    return {
-        "id": wf_path.stem,
-        "title": title,
-        "description": description,
-        "plugin": "workflows",
-        "category": "Guided Workflows",
-        "trigger": trigger,
-        "tags": [],
-        "role": "multi-agent",
-        "output_format": "multi-phase-workflow",
-        "scope": "workflow",
-        "related": [],
-        "type": "workflow",
-        "difficulty": "advanced" if phase_count >= 4 else "standard",
-        "prompt_body": text.strip(),
+        "prompt_body": with_roster(clean_prompt_body(body), body),
     }
 
 
@@ -296,17 +317,6 @@ def main() -> None:
                 print(f"  ! {plugin_dir.name}/{skill_dir.name}: {exc}", file=sys.stderr)
                 errors += 1
 
-    print("\nExtracting workflows...")
-    for wf_file in sorted(WORKFLOWS_DIR.glob("*.md")):
-        try:
-            entry = extract_workflow(wf_file)
-            if entry:
-                prompts.append(entry)
-                print(f"  + workflow/{wf_file.name}")
-        except Exception as exc:
-            print(f"  ! workflow/{wf_file.name}: {exc}", file=sys.stderr)
-            errors += 1
-
     # Pin "EU Institutional Simulation" first; sort everything else by category then title
     PINNED_CAT = "EU Institutional Simulation"
     prompts.sort(key=lambda p: (0 if p["category"] == PINNED_CAT else 1, p["category"], p["title"]))
@@ -319,8 +329,8 @@ def main() -> None:
         "prompts": prompts,
         "footer": {
             "disclaimer": (
-                "Independent project — not an official European Commission product "
-                "and not affiliated with the European Commission or any EU institution in any way."
+                "Independent project, not affiliated with the European Commission "
+                "or any other EU institution."
             ),
             "website": "https://www.montoyer.com",
             "website_description": "AI agents and prompts for the Brussels quarter",

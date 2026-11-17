@@ -2,7 +2,7 @@
   "$schema": "https://claude.ai/schemas/marketplace.json",
   "name": "eu-agents",
   "displayName": "Agents for EU",
-  "description": "EU Commission agent plugins — 30,000 staff, 21 Commissioners, 70 years of institutional knowledge, now running on your laptop.",
+  "description": "EU Commission agent plugins — 30,000 staff, 27 Commissioners, 70 years of institutional knowledge, now running on your laptop.",
   "owner": {
     "name": "montoyer",
     "email": ""
@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "eu-simulation",
-      "description": "Multi-agent simulation of EU institutional processes: all 21 Commissioner personas, College deliberation, inter-service consultation, trilogue, full OLP, and compound analysis commands (mandate-conflict, red-team-college, subsidiarity-stress, timeline).",
+      "description": "Multi-agent simulation of EU institutional processes: all 27 portfolios of the 2024–2029 College, College deliberation, inter-service consultation, trilogue, full OLP, and compound analysis commands (mandate-conflict, red-team-college, subsidiarity-stress, timeline).",
       "category": "productivity",
       "source": {
         "source": "git-subdir",

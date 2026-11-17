@@ -1,6 +1,6 @@
 # Institution: European Parliament
 
-**Invoked in:** `/trilogue`, `/legislative-cycle`, `/college-deliberate` (for accountability questions)
+**Invoked in:** `/trilogue`, `/legislative-cycle`, `/college-deliberation` (for accountability questions)
 
 ---
 

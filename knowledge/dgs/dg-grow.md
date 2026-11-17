@@ -1,6 +1,6 @@
 # DG GROW — Directorate-General for Internal Market, Industry, Entrepreneurship and SMEs
 
-> Supports the Commissioner for Internal Market and the Executive Vice-President for Prosperity and Industrial Strategy (portfolio-dependent on Commission configuration).
+> Supports the Executive Vice-President for Prosperity and Industrial Strategy (`industrial-strategy`). Roster: `knowledge/roster.yml`.
 
 ---
 

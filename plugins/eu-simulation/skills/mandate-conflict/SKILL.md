@@ -27,7 +27,7 @@ metadata:
 
 # Mandate Conflict Analyser
 
-Reads all 21 Commissioner knowledge files and the submitted proposal, then
+Reads `knowledge/roster.yml`, all 27 portfolio files and the submitted proposal, then
 identifies every pair of portfolios where conflict is **structurally
 guaranteed** — where both mandates are treaty-grounded and point in opposite
 directions on the same question by design. The output is not a deliberation
@@ -41,6 +41,10 @@ the treaty, or a College decision that one mandate takes precedence on this
 dossier. The map should help the lead Commissioner decide which fights must be
 won, which can be avoided by design, and which require Presidential arbitration.
 
+> **Knowledge files.** The `knowledge/` paths in this skill are relative to the
+> plugin root, two folders above this skill's folder (`../../knowledge/`). The
+> files ship with the plugin; read them from there.
+
 ---
 
 ## Core Workflow
@@ -48,7 +52,7 @@ won, which can be avoided by design, and which require Presidential arbitration.
 1. **Parse the proposal** — identify the policy domain, legal basis, key
    instruments, beneficiaries, and any proposed obligations, prohibitions, or
    delegations
-2. **Load all 21 Commissioner knowledge files** — for each portfolio, read
+2. **Load the roster and all 27 portfolio files** — for each portfolio, read
    the mandate, treaty basis, key dossiers, and stated tensions
 3. **Map first-order conflicts** — for each Commissioner, assess whether the
    proposal directly implicates their mandate and in which direction
@@ -59,7 +63,7 @@ won, which can be avoided by design, and which require Presidential arbitration.
      that points in the opposite direction on the same element
 5. **Assess severity** — rate each conflict:
    - **BLOCKING** — one portfolio cannot support the proposal without a
-     fundamental change; College adoption requires Presidential override or
+     fundamental change; College adoption requires Presidential arbitration, a vote or
      dossier redesign
    - **SIGNIFICANT** — real incompatibility requiring a textual fix or
      explicit carve-out; will produce strong reservations at College
@@ -77,7 +81,8 @@ won, which can be avoided by design, and which require Presidential arbitration.
 
 | Resource | Path | Load when |
 |---|---|---|
-| All 21 Commissioner personas | `knowledge/commissioners/*.md` | Step 2 — full load required |
+| College roster: 27 portfolios, ranks, EVP steering | `knowledge/roster.yml` | Step 2 — list of portfolios to load |
+| All 27 portfolio personas | `knowledge/commissioners/*.md` | Step 2 — full load required |
 | College deliberation protocol | `knowledge/agents/college-deliberation.md` | Step 7 — arbitration rules |
 
 ---
@@ -85,9 +90,9 @@ won, which can be avoided by design, and which require Presidential arbitration.
 ## Constraints
 
 ### MUST DO
-- **Read all 21 Commissioner files** — partial analysis produces a partial
+- **Read all 27 portfolio files** — partial analysis produces a partial
   conflict map; the most dangerous conflicts are often between non-obvious
-  portfolio pairs (e.g., Justice vs. Internal Market on data sharing mandates)
+  portfolio pairs (e.g., justice vs. industrial-strategy on data-sharing obligations)
 - **Distinguish structural from negotiating conflicts** — a Commissioner who
   has reservations is different from a Commissioner whose treaty mandate
   directly contradicts the proposal; only the latter is a structural conflict

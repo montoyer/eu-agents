@@ -1,6 +1,6 @@
 # Agents for EU — Simulate EU Policy, Law, and Institutions with Claude Code
 
-> 30,000 staff. 21 Commissioners. Real procedures. Now on your laptop.
+> 30,000 staff. 27 Commissioners. Real procedures. Now on your laptop.
 
 <div align="center">
   <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjByaDMyMXFqcmo4aXZxNWVwdHJzbXZlZnN4bWEzNmp3b3g2Z3doeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/UqASWHeU91ADUSk5co/giphy.gif" width="520" alt="EU Commission in session"/>
@@ -25,7 +25,7 @@
 `/eu-simulation:inter-service-consultation "Algorithmic pricing regulation"` runs every affected DG and returns their objections with the exact treaty or regulatory basis.
 
 **You are drafting and want to know which Commissioners will fight it.**  
-`/eu-simulation:mandate-conflict "AI liability regulation"` maps every structural conflict across all 21 portfolios, with the legal basis on each side and severity.
+`/eu-simulation:mandate-conflict "AI liability regulation"` maps every structural conflict across all 27 portfolios, with the legal basis on each side and severity.
 
 **You need to know whether your proposal even passes subsidiarity.**  
 `/eu-simulation:subsidiarity-stress "Harmonised SME insolvency rules"` tests the necessity argument against five different member-state configurations.
@@ -36,7 +36,7 @@ This is not generic prompting. It is the European Commission's institutional mac
 
 ## The non-obvious insight
 
-The EU Commission is not primarily a regulator. It is a **structured argumentation engine**: 21 mandate-scoped agents forced to reconcile conflicting treaty obligations through explicit procedures (subsidiarity, impact assessment, inter-service consultation, College deliberation, trilogue).
+The EU Commission is not primarily a regulator. It is a **structured argumentation engine**: 27 mandate-scoped agents forced to reconcile conflicting treaty obligations through explicit procedures (subsidiarity, impact assessment, inter-service consultation, College deliberation, trilogue).
 
 That machinery is reusable. The same scaffold that produces defensible policy for 450 million people works for any high-stakes decision where multiple legitimate perspectives must survive adversarial scrutiny.
 
@@ -44,8 +44,8 @@ The most powerful commands in this system are the ones that are impossible for a
 
 | Command                        | What only multi-agent + real mandates can do |
 |--------------------------------|---------------------------------------------|
-| `/eu-simulation:mandate-conflict` | Maps every structurally guaranteed clash across 21 portfolios with treaty bases and severity |
-| `/eu-simulation:red-team-college` | Runs the proposal through all 21; returns only SEVERE objections + adoptability verdict |
+| `/eu-simulation:mandate-conflict` | Maps every structurally guaranteed clash across 27 portfolios with treaty bases and severity |
+| `/eu-simulation:red-team-college` | Runs the proposal through all 27; returns only SEVERE objections + adoptability verdict |
 | `/eu-simulation:subsidiarity-stress` | Tests the necessity argument against 5 different member-state configurations |
 | `/eu-simulation:timeline`       | Produces a realistic OLP timeline with QMV thresholds and trilogue risk points |
 
@@ -95,7 +95,7 @@ DRAFT — For review by an EU official before use. Not an official Commission po
 
 | Plugin                        | Purpose |
 |-------------------------------|---------|
-| `eu-simulation`               | 21 Commissioners + College + ISC + trilogue + OLP + compound analysis commands |
+| `eu-simulation`               | 27 Commissioners + College + ISC + trilogue + OLP + compound analysis commands |
 | `eu-legislative`              | Impact assessment, legislative drafting, treaty check, consultation, REFIT, policy cycle |
 | `eu-privacy`                  | Full Art. 39 EUDPR DPIA workflow (DPO → IT-PM → Legal → Security → EDPS) |
 | `eu-competition`              | Antitrust (Arts. 101-102), state aid (107-109), mergers, dawn raids, Legal Service |

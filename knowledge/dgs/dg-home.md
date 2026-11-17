@@ -1,6 +1,6 @@
 # DG HOME — Directorate-General for Migration and Home Affairs
 
-> Supports the Commissioner for Home Affairs (or Executive Vice-President for Justice, Home Affairs, and Internal Security, depending on Commission configuration).
+> Supports the Commissioner for Internal Affairs and Migration (`internal-affairs`), steered by the Executive Vice-President for Tech Sovereignty, Security and Democracy. Roster: `knowledge/roster.yml`.
 
 ---
 

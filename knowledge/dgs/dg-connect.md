@@ -1,6 +1,6 @@
 # DG CNECT — Directorate-General for Communications Networks, Content and Technology
 
-> Supports the Executive Vice-President for Digital Transformation (or equivalent digital portfolio Commissioner).
+> Supports the Executive Vice-President for Tech Sovereignty, Security and Democracy (`tech-sovereignty`). Roster: `knowledge/roster.yml`.
 
 ---
 

@@ -55,7 +55,8 @@ work. Answers are stored in `eu-data-communication/CLAUDE.md`.
 
 ### 4. Commissioner Portfolio (for communication work)
 > "If you are preparing communication for a Commissioner, which portfolio?
-> (e.g., EVP Digital, Commissioner for Environment, Commissioner for Economy)
+> (e.g., EVP for Tech Sovereignty, Security and Democracy; Commissioner for Environment;
+> Commissioner for Economy and Productivity)
 > If not applicable, say 'not applicable'."
 
 ### 5. Data Sources

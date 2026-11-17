@@ -1,6 +1,6 @@
 # DG COMP — Directorate-General for Competition
 
-> Supports the Commissioner for Competition.
+> Supports the Executive Vice-President for a Clean, Just and Competitive Transition (`clean-transition`), who holds competition policy. Roster: `knowledge/roster.yml`.
 
 ---
 

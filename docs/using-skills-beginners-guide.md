@@ -615,8 +615,8 @@ All 106 skills across 9 plugins. Install a plugin with `/plugin install <plugin-
 
 | Skill | Description |
 |---|---|
-| `/eu-simulation:commissioner` | Invoke any of 21 Commissioner personas — speaks from treaty mandate, priorities, tensions |
-| `/eu-simulation:college-deliberation` | Full College of Commissioners meeting — all 21 speak, President calls vote, outcome recorded |
+| `/eu-simulation:commissioner` | Invoke any of the 27 portfolios of the 2024–2029 College — speaks from treaty mandate, priorities, tensions |
+| `/eu-simulation:college-deliberation` | Full College of Commissioners meeting — all 27 Members speak one by one, President calls vote, outcome recorded |
 | `/eu-simulation:inter-service-consultation` | ISC round — lead DG circulates, all affected DGs respond, synthesis note produced |
 | `/eu-simulation:trilogue` | Inter-institutional trilogue — EP/Council/Commission negotiate via four-column document |
 | `/eu-simulation:legislative-cycle` | Full OLP from Commission initiative to OJ publication — chains all six phases |
@@ -624,8 +624,8 @@ All 106 skills across 9 plugins. Install a plugin with `/plugin install <plugin-
 | `/eu-simulation:council-eu` | Council counter-party agent — configuration, QMV arithmetic, general approach, Presidency mandate |
 | `/eu-simulation:advocate-general` | AG Opinion simulation — legal question analysis, party arguments, proposed ruling, Art. 252 TFEU independence |
 | `/eu-simulation:council-presidency` | Council Presidency chair — compromise texts, non-papers, QMV tracking, general approach, trilogue mandate |
-| `/eu-simulation:mandate-conflict` | Conflict map across all 21 Commissioner portfolios — structurally guaranteed mandate clashes with treaty basis and severity rating |
-| `/eu-simulation:red-team-college` | Token-efficient College stress test — runs all 21 Commissioners, returns only SEVERE objections and adoptability verdict |
+| `/eu-simulation:mandate-conflict` | Conflict map across all 27 College portfolios — structurally guaranteed mandate clashes with treaty basis and severity rating |
+| `/eu-simulation:red-team-college` | Token-efficient College stress test — runs all 27 portfolios, returns only SEVERE objections and adoptability verdict |
 | `/eu-simulation:subsidiarity-stress` | Tests subsidiarity justification against 5 member-state configurations — finds where necessity argument fails and assesses yellow card risk |
 | `/eu-simulation:timeline` | OLP timeline with blocking dependencies, QMV arithmetic, and trilogue risk points |
 

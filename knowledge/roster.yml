@@ -1,0 +1,204 @@
+# College of Commissioners, 2024–2029 term: machine-readable roster.
+#
+# Single source for portfolio ids, titles, ranks, shortname aliases, EVP
+# steering and the College voting rule. Persona content lives in
+# knowledge/commissioners/<id>.md; each file's YAML header repeats its id, rank
+# and title, and scripts/validate.sh fails if the two disagree.
+#
+# Portfolios, never people: the simulation speaks as the portfolio and never
+# names the Member who holds it.
+#
+# Facts are model knowledge to mid-2026, not checked against live sources.
+# Verify titles and steering against the President's mission letters of
+# 17 September 2024 and commission.europa.eu before relying on them.
+
+as_of: 2026-11-17
+verified: false
+term:
+  start: 2024-12-01
+  end: 2029-10-31
+
+college:
+  members: 27
+  # Art. 17(4)-(5) TEU: one national of each Member State, President and
+  # High Representative included.
+  quorum: 14            # majority of Members, Art. 12(1) Rules of Procedure
+  majority: 14          # majority of all Members, Art. 250 TFEU; Art. 13(1) and (2)(d) Rules of Procedure
+  vote: "One vote per Member, not delegable (Art. 13(2)(c) Rules of Procedure). The College aims for consensus; formal votes are rare."
+  rules_of_procedure: "Commission Decision (EU) 2024/3080 [EUR-Lex — verify current version]"
+
+# Speaking order used by the simulation: President, High Representative,
+# Executive Vice-Presidents, then Commissioners. It is not the official order
+# of precedence (Art. 3(5) Rules of Procedure).
+#
+# rank:   president | hrvp | evp | commissioner
+# steers: portfolios an Executive Vice-President coordinates [model knowledge — verify].
+#         A Commissioner may be steered by more than one EVP on different files.
+# aliases: other shortnames accepted by /commissioner, including the ids of the
+#         21 generic portfolios this roster replaced.
+
+portfolios:
+  - id: president
+    rank: president
+    title: "President of the European Commission"
+    aliases: []
+    steers: []
+    # Guides the whole College (Art. 17(6) TEU); listed empty so every
+    # steers value is a list.
+
+  - id: high-representative
+    rank: hrvp
+    title: "High Representative of the Union for Foreign Affairs and Security Policy / Vice-President"
+    aliases: [foreign-policy, hrvp, foreign-affairs]
+    steers: [enlargement, mediterranean, international-partnerships, defence-space, preparedness]
+
+  - id: clean-transition
+    rank: evp
+    title: "Executive Vice-President for a Clean, Just and Competitive Transition"
+    aliases: [green-deal, competition]
+    steers: [climate, energy, environment]
+
+  - id: tech-sovereignty
+    rank: evp
+    title: "Executive Vice-President for Tech Sovereignty, Security and Democracy"
+    aliases: [digital]
+    steers: [defence-space, internal-affairs, justice, research-innovation]
+
+  - id: industrial-strategy
+    rank: evp
+    title: "Executive Vice-President for Prosperity and Industrial Strategy"
+    aliases: [internal-market, industry, prosperity, single-market]
+    steers: [economy, financial-services, research-innovation, trade]
+
+  - id: social-rights
+    rank: evp
+    title: "Executive Vice-President for Social Rights and Skills, Quality Jobs and Preparedness"
+    aliases: [employment, skills, education]
+    steers: [youth-culture, preparedness, health]
+
+  - id: cohesion
+    rank: evp
+    title: "Executive Vice-President for Cohesion and Reforms"
+    aliases: [regional-development, reforms]
+    steers: [agriculture, fisheries, transport]
+
+  - id: trade
+    rank: commissioner
+    title: "Commissioner for Trade and Economic Security; Interinstitutional Relations and Transparency"
+    aliases: [economic-security, interinstitutional]
+    steers: []
+
+  - id: economy
+    rank: commissioner
+    title: "Commissioner for Economy and Productivity; Implementation and Simplification"
+    aliases: [simplification]
+    steers: []
+
+  - id: enlargement
+    rank: commissioner
+    title: "Commissioner for Enlargement"
+    aliases: []
+    steers: []
+
+  - id: climate
+    rank: commissioner
+    title: "Commissioner for Climate, Net Zero and Clean Growth"
+    aliases: [taxation]
+    steers: []
+
+  - id: energy
+    rank: commissioner
+    title: "Commissioner for Energy and Housing"
+    aliases: [housing]
+    steers: []
+
+  - id: defence-space
+    rank: commissioner
+    title: "Commissioner for Defence and Space"
+    aliases: [defence, space]
+    steers: []
+
+  - id: mediterranean
+    rank: commissioner
+    title: "Commissioner for the Mediterranean"
+    aliases: []
+    steers: []
+
+  - id: internal-affairs
+    rank: commissioner
+    title: "Commissioner for Internal Affairs and Migration"
+    aliases: [home-affairs, migration]
+    steers: []
+
+  - id: justice
+    rank: commissioner
+    title: "Commissioner for Democracy, Justice, the Rule of Law and Consumer Protection"
+    aliases: [democracy, rule-of-law, consumer]
+    steers: []
+
+  - id: financial-services
+    rank: commissioner
+    title: "Commissioner for Financial Services and the Savings and Investments Union"
+    aliases: [finance]
+    steers: []
+
+  - id: research-innovation
+    rank: commissioner
+    title: "Commissioner for Startups, Research and Innovation"
+    aliases: [research, startups]
+    steers: []
+
+  - id: environment
+    rank: commissioner
+    title: "Commissioner for Environment, Water Resilience and a Competitive Circular Economy"
+    aliases: [water, circular-economy]
+    steers: []
+
+  - id: agriculture
+    rank: commissioner
+    title: "Commissioner for Agriculture and Food"
+    aliases: [food]
+    steers: []
+
+  - id: fisheries
+    rank: commissioner
+    title: "Commissioner for Fisheries and Oceans"
+    aliases: [oceans]
+    steers: []
+
+  - id: health
+    rank: commissioner
+    title: "Commissioner for Health and Animal Welfare"
+    aliases: [animal-welfare]
+    steers: []
+
+  - id: international-partnerships
+    rank: commissioner
+    title: "Commissioner for International Partnerships"
+    aliases: [development, global-gateway]
+    steers: []
+
+  - id: budget
+    rank: commissioner
+    title: "Commissioner for Budget, Anti-Fraud and Public Administration"
+    aliases: [anti-fraud, administration]
+    steers: []
+    # Reports to the President directly [model knowledge — verify].
+
+  - id: transport
+    rank: commissioner
+    title: "Commissioner for Sustainable Transport and Tourism"
+    aliases: [tourism]
+    steers: []
+
+  - id: youth-culture
+    rank: commissioner
+    title: "Commissioner for Intergenerational Fairness, Youth, Culture and Sport"
+    aliases: [education-culture, culture, youth, sport]
+    steers: []
+
+  - id: preparedness
+    rank: commissioner
+    title: "Commissioner for Equality; Preparedness and Crisis Management"
+    aliases: [equality, crisis-management, humanitarian]
+    steers: []

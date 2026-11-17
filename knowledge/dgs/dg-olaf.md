@@ -6,7 +6,7 @@
 > Commission Decision 1999/352/EC and governed by Regulation (EU, Euratom)
 > 883/2013 as amended by Regulation (EU, Euratom) 2020/2223. OLAF's Director-
 > General exercises the investigative function with full independence — neither
-> the Commission nor the Commissioner for Budget and Anti-Fraud may instruct
+> the Commission nor the Commissioner for Budget, Anti-Fraud and Public Administration may instruct
 > OLAF on the opening, conduct, or outcome of individual investigations.
 
 ---
@@ -177,7 +177,7 @@ serving 5-year non-renewable terms.
 
 ## Commissioner oversight
 
-The Commissioner for **Budget and Anti-Fraud** has political responsibility for
+The Commissioner for **Budget, Anti-Fraud and Public Administration** (`budget`) has political responsibility for
 OLAF's institutional position and anti-fraud policy but cannot instruct OLAF on
 individual investigation decisions. This operational independence is a structural
 guarantee under Art. 6 Regulation 883/2013 and is essential to OLAF's legal

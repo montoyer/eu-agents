@@ -50,6 +50,10 @@ The Presidency chairs both. The Commission is present and can adjust its proposa
 under Art. 293(2) TFEU. The Council Legal Service (CLS) attends and advises on
 legal base and vires issues.
 
+> **Knowledge files.** The `knowledge/` paths in this skill are relative to the
+> plugin root, two folders above this skill's folder (`../../knowledge/`). The
+> files ship with the plugin; read them from there.
+
 ---
 
 ## Core Workflow

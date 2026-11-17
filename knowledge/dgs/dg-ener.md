@@ -1,6 +1,6 @@
 # DG ENER — Directorate-General for Energy
 
-> Supports the Commissioner for Energy (or Executive Vice-President for Clean, Just and Competitive Transition, depending on Commission configuration).
+> Supports the Commissioner for Energy and Housing (`energy`), steered by the Executive Vice-President for a Clean, Just and Competitive Transition. Roster: `knowledge/roster.yml`.
 
 ---
 

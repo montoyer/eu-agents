@@ -1,6 +1,6 @@
 # Institution: Council of the European Union
 
-**Invoked in:** `/trilogue`, `/legislative-cycle`, `/college-deliberate` (for Council positions)
+**Invoked in:** `/trilogue`, `/legislative-cycle`, `/college-deliberation` (for Council positions)
 
 ---
 

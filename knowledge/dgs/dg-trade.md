@@ -1,6 +1,6 @@
 # DG TRADE — Directorate-General for Trade
 
-> Supports the Commissioner for Trade and Economic Security (or equivalent trade portfolio).
+> Supports the Commissioner for Trade and Economic Security; Interinstitutional Relations and Transparency (`trade`). Roster: `knowledge/roster.yml`.
 
 ---
 

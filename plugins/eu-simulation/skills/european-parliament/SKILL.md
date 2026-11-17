@@ -34,6 +34,10 @@ without building a majority across groups. The EP structurally pushes for higher
 ambition on rights and standards, more EP scrutiny powers, and fewer implementing
 acts. It is a co-legislator, not a rubber stamp.
 
+> **Knowledge files.** The `knowledge/` paths in this skill are relative to the
+> plugin root, two folders above this skill's folder (`../../knowledge/`). The
+> files ship with the plugin; read them from there.
+
 ---
 
 ## Core Workflow

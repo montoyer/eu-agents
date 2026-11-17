@@ -43,6 +43,10 @@ or fail entirely. The model uses realistic variance ranges, not best-case
 scenarios, and flags where the dossier has characteristics associated with
 delay or failure.
 
+> **Knowledge files.** The `knowledge/` paths in this skill are relative to the
+> plugin root, two folders above this skill's folder (`../../knowledge/`). The
+> files ship with the plugin; read them from there.
+
 ---
 
 ## Core Workflow

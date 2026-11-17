@@ -59,7 +59,8 @@ Ask the user the following questions. Accept brief answers — expand from conte
 
 ### 5. Commissioner Portfolio
 > "Which Commissioner's portfolio does your dossier fall under?
-> (e.g., EVP Digital, Commissioner for Environment, Commissioner for Trade)"
+> (e.g., EVP for Tech Sovereignty, Security and Democracy; Commissioner for Environment;
+> Commissioner for Trade and Economic Security)"
 
 ### 6. Working Language(s)
 > "What language(s) do you need outputs in?

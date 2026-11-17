@@ -1,6 +1,6 @@
 # DG JUST — Directorate-General for Justice and Consumers
 
-> Supports the Commissioner for Justice, Fundamental Rights and Rule of Law (or equivalent portfolio — often combined with democracy or rule of law responsibilities).
+> Supports the Commissioner for Democracy, Justice, the Rule of Law and Consumer Protection (`justice`), and the Commissioner for Equality; Preparedness and Crisis Management (`preparedness`) on equality. Roster: `knowledge/roster.yml`.
 
 ---
 

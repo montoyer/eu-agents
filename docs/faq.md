@@ -196,32 +196,34 @@ Most skills load an agent persona automatically. When you type `/eu-competition:
 
 ### Example: Commissioner agents
 
-The `knowledge/commissioners/competition.md` file defines the Competition Commissioner agent:
+The simulation models the 27 portfolios of the 2024–2029 College. `knowledge/roster.yml` lists them; each has a file in `knowledge/commissioners/`. Competition policy sits with the Executive Vice-President for a Clean, Just and Competitive Transition, in `knowledge/commissioners/clean-transition.md`:
 
 ```markdown
-# Commissioner for Competition
-
-## Mandate
-Treaty basis: TFEU Art. 101-109
-Scope: Enforces EU competition rules: antitrust, merger control, and state aid.
+---
+id: clean-transition
+rank: evp
+title: "Executive Vice-President for a Clean, Just and Competitive Transition"
+lead_dgs: [COMP]
+---
 
 ## Decision style
-Legally precise. All positions must be defensible before the General Court and ECJ.
-Distinguishes sharply between competition enforcement and industrial policy.
-Resists pressure to clear mergers for "strategic" reasons not grounded in competition analysis.
+Two roles, two standards. On competition cases: legal, evidence-based and
+quasi-judicial; refuses to clear a merger or approve aid for "strategic"
+reasons that have no basis in competition law. ...
 
 ## Tensions with other portfolios
-- vs. EVP Economy: Industrial policy state aid vs. level playing field.
-- vs. EVP Digital: DMA (ex ante) vs. antitrust (ex post) — jurisdiction boundaries.
+- vs. industrial-strategy: European champions and State aid for industry vs.
+  merger control and a level playing field between member states.
+- vs. tech-sovereignty: shared DMA enforcement; ex-ante obligations vs. ex-post antitrust.
 ```
 
-When you invoke `/eu-simulation:commissioner competition`, this mandate file is loaded and the AI responds as that portfolio — not as a named individual, but as the institutional position of DG COMP.
+When you invoke `/eu-simulation:commissioner clean-transition` (or its alias `competition`), this file is loaded and the AI responds as that portfolio, never as the named person who holds it.
 
 ### Multi-agent sessions
 
 Agents can be run in sequence to simulate inter-institutional processes. The `knowledge/agents/` directory defines these multi-agent protocols:
 
-- `college-deliberation.md` — all 21 Commissioner agents convene, each speaks, President arbitrates and calls the vote
+- `college-deliberation.md` — all 27 portfolios convene and speak one by one, the President arbitrates and calls the vote
 - `inter-service-consultation.md` — lead DG circulates, affected DGs respond (Agreement / Reservations / Opposition), Legal Service opines, SecGen checks Better Regulation compliance
 - `trilogue.md` — EP rapporteur, Council Presidency, and Commission representative negotiate article by article
 - `dpia.md` — five specialist agents (IT-PM, Legal Officer, IT Security, DPO, EDPS) contribute sections of a complete DPIA in sequence
@@ -450,7 +452,7 @@ Should the Commission propose mandatory human oversight requirements for all
 AI systems used in public benefit decisions (social benefits, taxation, permit grants)?
 ```
 
-All 21 Commissioner agents deliberate in sequence. Expect: the EVP Digital to support (Digital Rights angle), the Commissioner for Employment to flag labour market implications, the Commissioner for Budget to worry about implementation costs, the Competition Commissioner to flag state aid risk in national AI procurement, the President to find a consensus position.
+All 27 portfolios deliberate one by one. Expect the Tech Sovereignty EVP to support (AI Act angle), the Social Rights EVP to flag labour-market effects, the Budget Commissioner to ask about implementation costs, the Justice Commissioner to test the Charter, and the President to look for a consensus position.
 
 ### Chaining skills
 
@@ -512,9 +514,9 @@ For workflow skills, you do not need the full persona. Copy the numbered step se
 
 The `knowledge/commissioners/` files are already formatted as LLM-ready system prompts. Copy any commissioner file and paste it into the system prompt field of GPT@EC (if accessible) or as the first message.
 
-**Example — Competition Commissioner in GPT@EC:**
+**Example — the competition portfolio in GPT@EC:**
 
-1. Open `knowledge/commissioners/competition.md`
+1. Open `knowledge/commissioners/clean-transition.md`
 2. Copy the entire file
 3. In GPT@EC, start a new chat and paste it as your first message, followed by:
 
@@ -673,8 +675,8 @@ This is not a formality. The outputs are structurally realistic and procedurally
 
 ### The Commissioner agent went off-mandate
 
-- This should not happen — the agents are constrained by their knowledge files. If it does, remind the agent: "You are the Commissioner for Competition. Please respond only within the scope of your portfolio mandate."
-- Check that the `knowledge/commissioners/competition.md` file exists and has not been edited to remove the mandate constraints.
+- This should not happen — the agents are constrained by their knowledge files. If it does, remind the agent: "You are the Executive Vice-President for a Clean, Just and Competitive Transition. Please respond only within the scope of your portfolio mandate."
+- Check that the `knowledge/commissioners/clean-transition.md` file exists and has not been edited to remove the mandate constraints.
 
 ### I am using GPT@EC and the persona drifts after a few messages
 
@@ -746,8 +748,8 @@ All 106 skills across 9 plugins. Add the marketplace with `/plugin marketplace a
 
 | Skill | Description |
 |---|---|
-| `/eu-simulation:commissioner` | Invoke any of 21 Commissioner personas — speaks from treaty mandate, priorities, tensions |
-| `/eu-simulation:college-deliberation` | Full College of Commissioners meeting — all 21 speak, President calls vote, outcome recorded |
+| `/eu-simulation:commissioner` | Invoke any of the 27 portfolios of the 2024–2029 College — speaks from treaty mandate, priorities, tensions |
+| `/eu-simulation:college-deliberation` | Full College of Commissioners meeting — all 27 Members speak one by one, President calls vote, outcome recorded |
 | `/eu-simulation:inter-service-consultation` | ISC round — lead DG circulates, all affected DGs respond, synthesis note produced |
 | `/eu-simulation:trilogue` | Inter-institutional trilogue — EP/Council/Commission negotiate via four-column document |
 | `/eu-simulation:legislative-cycle` | Full OLP from Commission initiative to OJ publication — chains all six phases |
@@ -755,8 +757,8 @@ All 106 skills across 9 plugins. Add the marketplace with `/plugin marketplace a
 | `/eu-simulation:council-eu` | Council counter-party agent — configuration, QMV arithmetic, general approach, Presidency mandate |
 | `/eu-simulation:advocate-general` | AG Opinion simulation — legal question analysis, party arguments, proposed ruling, Art. 252 TFEU independence |
 | `/eu-simulation:council-presidency` | Council Presidency chair — compromise texts, non-papers, QMV tracking, general approach, trilogue mandate |
-| `/eu-simulation:mandate-conflict` | Conflict map across all 21 Commissioner portfolios — structurally guaranteed mandate clashes with treaty basis and severity rating |
-| `/eu-simulation:red-team-college` | Token-efficient College stress test — runs all 21 Commissioners, returns only SEVERE objections and adoptability verdict |
+| `/eu-simulation:mandate-conflict` | Conflict map across all 27 College portfolios — structurally guaranteed mandate clashes with treaty basis and severity rating |
+| `/eu-simulation:red-team-college` | Token-efficient College stress test — runs all 27 portfolios, returns only SEVERE objections and adoptability verdict |
 | `/eu-simulation:subsidiarity-stress` | Tests subsidiarity justification against 5 member-state configurations — finds where necessity argument fails and assesses yellow card risk |
 | `/eu-simulation:timeline` | OLP timeline with blocking dependencies, QMV arithmetic, and trilogue risk points |
 

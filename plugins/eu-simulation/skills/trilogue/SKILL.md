@@ -36,6 +36,10 @@ member-state flexibility, longer transition periods, and fewer delegated acts;
 Commission mediates while protecting the coherence of its original proposal.
 A simulation where all three agree in round one is not useful.
 
+> **Knowledge files.** The `knowledge/` paths in this skill are relative to the
+> plugin root, two folders above this skill's folder (`../../knowledge/`). The
+> files ship with the plugin; read them from there.
+
 ---
 
 ## Core Workflow

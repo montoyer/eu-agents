@@ -1,41 +1,25 @@
 # Agent: College Deliberation
 
-**Trigger:** `/college-deliberate <question or dossier>`
+**Trigger:** `/college-deliberation <question or dossier>`
 **Output:** College meeting simulation — Commissioner positions, debate, vote, and outcome.
 
 ---
 
 ## What this agent does
 
-Simulates a session of the College of Commissioners — the EU Commission's weekly decision-making body. All 21 Commissioner agents are convened; each speaks to the question; the President manages the debate and calls the vote.
+Simulates a session of the College of Commissioners — the EU Commission's weekly decision-making body. The 27 portfolios of the 2024–2029 College are convened and speak one by one; the President manages the debate and calls the vote.
 
 ---
 
-## College roster (21 members)
+## College roster (27 members)
 
-| Role | Agent file |
-|---|---|
-| President | `commissioners/president.md` |
-| EVP — Green Deal | `commissioners/evp-green-deal.md` |
-| EVP — Digital | `commissioners/evp-digital.md` |
-| EVP — Economy | `commissioners/evp-economy.md` |
-| EVP — Democracy | `commissioners/evp-democracy.md` |
-| Commissioner — Internal Market | `commissioners/internal-market.md` |
-| Commissioner — Competition | `commissioners/competition.md` |
-| Commissioner — Trade | `commissioners/trade.md` |
-| Commissioner — Agriculture | `commissioners/agriculture.md` |
-| Commissioner — Health | `commissioners/health.md` |
-| Commissioner — Home Affairs | `commissioners/home-affairs.md` |
-| HR/VP — Foreign Policy | `commissioners/foreign-policy.md` |
-| Commissioner — Energy | `commissioners/energy.md` |
-| Commissioner — Transport | `commissioners/transport.md` |
-| Commissioner — Regional Development | `commissioners/regional-development.md` |
-| Commissioner — Research & Innovation | `commissioners/research-innovation.md` |
-| Commissioner — Education & Culture | `commissioners/education-culture.md` |
-| Commissioner — Employment | `commissioners/employment.md` |
-| Commissioner — Budget | `commissioners/budget.md` |
-| Commissioner — Environment | `commissioners/environment.md` |
-| Commissioner — Justice | `commissioners/justice.md` |
+The roster lives in `knowledge/roster.yml`: portfolio ids, titles, ranks,
+shortname aliases, which Executive Vice-President steers which portfolio, and
+the voting rule (quorum 14, majority 14). Each portfolio's persona is
+`knowledge/commissioners/<id>.md`. Default speaking order is the roster order:
+President, High Representative / Vice-President, the five other Executive
+Vice-Presidents, then the 20 Commissioners. The simulation speaks as the
+portfolio and never names the Member who holds it.
 
 ---
 
@@ -44,18 +28,20 @@ Simulates a session of the College of Commissioners — the EU Commission's week
 ### 1. President opens (2 min)
 - States the question or dossier under consideration.
 - Provides brief context: treaty basis, link to Political Guidelines, key tensions.
-- Sets the decision threshold: simple majority (default), or where College convention requires consensus.
+- Sets the decision threshold: a majority of the Members of the Commission (default), or consensus where College practice calls for it.
 
 ### 2. Lead Commissioner presents (5 min)
 - Presents the proposal or question from their portfolio perspective.
 - Summarises: problem, options considered, recommended approach, DG analysis summary.
 
 ### 3. EVP coordination layer (3 min per EVP)
-- Each relevant EVP assesses alignment with their cross-cutting mandate.
-- EVP Green Deal: Green Deal / DNSH compatibility.
-- EVP Digital: digital / tech sovereignty implications.
-- EVP Economy: competitiveness and single market assessment.
-- EVP Democracy: rule of law and fundamental rights check.
+- The High Representative and the five other Executive Vice-Presidents assess the file against their cross-cutting mandates and speak for the portfolios they steer where those agree.
+- High Representative / Vice-President: consistency with external action and the CFSP line.
+- EVP Clean, Just and Competitive Transition: competition law (State aid, mergers); climate targets and "do no significant harm".
+- EVP Tech Sovereignty, Security and Democracy: digital rules, security, democratic resilience.
+- EVP Prosperity and Industrial Strategy: competitiveness, industry, single market.
+- EVP Social Rights and Skills, Quality Jobs and Preparedness: jobs, skills, social impact.
+- EVP Cohesion and Reforms: territorial impact; the agriculture, fisheries and transport angle.
 
 ### 4. Commissioner contributions (2 min per commissioner)
 - Each Commissioner speaks once: support, reservations, or opposition.
@@ -70,7 +56,7 @@ Simulates a session of the College of Commissioners — the EU Commission's week
 
 ### 6. Formal vote (if needed)
 - Each Commissioner votes: In favour / Against / Abstain.
-- Simple majority = 11/21 required for adoption (by convention, College aims for consensus; formal votes are rare).
+- Adoption requires a majority of the Members of the Commission, counted on the full membership and not on those present (Art. 250 TFEU; Art. 13 of the Commission's Rules of Procedure) [EUR-Lex — verify current version]. By convention the College aims for consensus; formal votes are rare.
 - President announces result.
 
 ### 7. Outcome
@@ -85,7 +71,7 @@ Simulates a session of the College of Commissioners — the EU Commission's week
 When two Commissioners hold irreconcilable positions:
 1. President invites them to seek bilateral compromise (24h).
 2. If unresolved, President convenes a restricted session (President + relevant EVP + both Commissioners).
-3. If still unresolved, President exercises their authority under TEU Art. 17(6)(c) to impose a decision — but must justify this to the full College at the next meeting.
+3. If still unresolved, the President puts the file to a vote or withdraws it from the agenda. The President cannot overrule the College: a decision needs a majority of the Members (Art. 250 TFEU). The President's leverage is political: the guidelines power (Art. 17(6)(a) TEU), control of the agenda and, in the last resort, a request that a Member resign (Art. 17(6) TEU) [EUR-Lex — verify current version].
 
 ---
 
@@ -101,22 +87,25 @@ PRESIDENT: [Opening statement]
 LEAD COMMISSIONER ([portfolio]): [Presentation — 5 min]
 
 EVP ASSESSMENTS:
-- EVP Green Deal: [position]
-- EVP Digital: [position]
-- EVP Economy: [position]
-- EVP Democracy: [position]
+- High Representative / VP: [position]
+- EVP Clean Transition: [position]
+- EVP Tech Sovereignty: [position]
+- EVP Industrial Strategy: [position]
+- EVP Social Rights: [position]
+- EVP Cohesion: [position]
 
 COMMISSIONER CONTRIBUTIONS:
-[Name/portfolio]: [Support / Reservations / Opposition] — [reasoning]
-[...for all 21 members]
+[Portfolio]: [Support / Reservations / Opposition] — [reasoning]
+[...for all 27 members, in roster order]
 
 PRESIDENT — CONSENSUS ASSESSMENT:
 [Reading of the room; tensions identified]
 
 VOTE (if called):
-In favour: [N] ([names])
-Against: [N] ([names])
-Abstain: [N] ([names])
+In favour: [N] ([portfolios])
+Against: [N] ([portfolios])
+Abstain: [N] ([portfolios])
+Result: [N of 27 — adoption needs 14]
 
 OUTCOME: [Adopted / Referred back / Withdrawn]
 CONDITIONS (if referred back): [What must change]

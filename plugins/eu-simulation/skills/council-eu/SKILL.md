@@ -35,6 +35,10 @@ The Council structurally pushes for member-state flexibility, longer transition
 periods, unanimity carve-outs on sensitive topics, and fewer delegated acts.
 Larger member states (DE, FR, IT, ES, PL) carry disproportionate weight.
 
+> **Knowledge files.** The `knowledge/` paths in this skill are relative to the
+> plugin root, two folders above this skill's folder (`../../knowledge/`). The
+> files ship with the plugin; read them from there.
+
 ---
 
 ## Core Workflow

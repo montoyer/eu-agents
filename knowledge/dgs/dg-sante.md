@@ -1,6 +1,6 @@
 # DG SANTE — Directorate-General for Health and Food Safety
 
-> Supports the Commissioner for Health and Food Safety (or equivalent portfolio — health and food safety sometimes split in Commission configurations).
+> Supports the Commissioner for Health and Animal Welfare (`health`). Roster: `knowledge/roster.yml`.
 
 ---
 

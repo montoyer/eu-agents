@@ -1,6 +1,6 @@
 # DG BUDG — Directorate-General for Budget
 
-> Supports the Commissioner for Budget and Anti-Fraud.
+> Supports the Commissioner for Budget, Anti-Fraud and Public Administration (`budget`), who reports to the President. Roster: `knowledge/roster.yml`.
 
 ---
 
@@ -110,7 +110,7 @@ When DG BUDG participates in an inter-service consultation, it:
 | All spending DGs | Budget allocation — DG BUDG enforces MFF ceilings against spending DG demands |
 | DG AGRI | CAP budget share (largest single programme) — defended fiercely in MFF negotiations |
 | DG REGIO | Cohesion fund volume — second largest budget heading |
-| EVP Economy | Own resources (fiscal dimension) vs. fiscal sovereignty |
+| Economy (`economy`) | Own resources (fiscal dimension) vs. fiscal sovereignty |
 | DG ECFIN | NGEU repayment schedule vs. fiscal rules |
 | Legal Service | Rule-of-law conditionality procedure — legal validity of financial sanctions |
 

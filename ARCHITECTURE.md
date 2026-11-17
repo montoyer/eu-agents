@@ -19,7 +19,7 @@ Agents for EU is a layered multi-agent framework. The layers map directly onto t
           │                            │
 ┌─────────▼──────────┐    ┌────────────▼────────────┐
 │  COMMISSIONER LAYER│    │      DG LAYER           │
-│  21 portfolio agents│   │  16 directorate agents  │
+│  27 portfolio agents│   │  17 directorate agents  │
 │  Political mandate  │   │  Technical analysis     │
 │  Treaty competence  │   │  Legal framing, data    │
 └─────────┬──────────┘    └────────────┬────────────┘
@@ -74,26 +74,40 @@ Commissioner agents are **persona-bound political agents**. Each holds a portfol
 
 ### Commissioner agent file structure
 
+Each portfolio file starts with a YAML header that repeats its `id`, `rank` and
+`title` from `knowledge/roster.yml`; `scripts/validate.sh` fails if they differ.
+Template: `knowledge/commissioners/_template.md`.
+
 ```markdown
-# Commissioner for [Portfolio]
+---
+id: clean-transition
+kind: commissioner
+rank: evp                      # president | hrvp | evp | commissioner
+title: "Executive Vice-President for a Clean, Just and Competitive Transition"
+lead_dgs: [COMP]
+treaty_basis: "Arts. 101–109 TFEU; Arts. 191–194 TFEU"
+as_of: 2026-11-17
+verified: false
+---
+
+# [Official portfolio title]
 
 ## Mandate
-[Treaty basis, scope of competence, key regulations administered]
+[Treaty basis, scope of competence, key instruments administered]
 
 ## Political priorities
-[Current strategic objectives, links to Commission Work Programme]
+[From the Political Guidelines and the mission letter]
 
 ## Decision style
-[How this commissioner weighs trade-offs: precautionary vs. market-driven,
-centralist vs. subsidiarity-oriented, etc.]
+[How the portfolio weighs trade-offs]
 
 ## Key dossiers
-[Active legislative files, ongoing enforcement actions]
+[Files live at the as_of date]
 
 ## Tensions with other portfolios
-[Where this portfolio structurally conflicts with others and why]
+[vs. <portfolio id>: why the two mandates collide]
 
-## DG
+## Supporting DG
 [Which Directorate-General provides technical support]
 
 ## Agent behavior
@@ -102,29 +116,61 @@ centralist vs. subsidiarity-oriented, etc.]
 
 ### The College hierarchy
 
+The real 2024–2029 College: 27 portfolios, modelled by portfolio and never by
+the person who holds it. Generated from `knowledge/roster.yml`; steering is
+model knowledge to verify against the mission letters of 17 September 2024.
+
 ```
-President
-├── Executive Vice-President — Green Deal & Climate
-├── Executive Vice-President — Digital & Tech Sovereignty
-├── Executive Vice-President — Economy & Productivity
-├── Executive Vice-President — Democracy, Justice & Rule of Law
+President of the European Commission (president)
+├── High Representative of the Union for Foreign Affairs and Security Policy / Vice-President (high-representative)
+│     ├─ steers enlargement
+│     ├─ steers mediterranean
+│     ├─ steers international-partnerships
+│     ├─ steers defence-space
+│     └─ steers preparedness
+├── Executive Vice-President for a Clean, Just and Competitive Transition (clean-transition)
+│     ├─ steers climate
+│     ├─ steers energy
+│     └─ steers environment
+├── Executive Vice-President for Tech Sovereignty, Security and Democracy (tech-sovereignty)
+│     ├─ steers defence-space
+│     ├─ steers internal-affairs
+│     ├─ steers justice
+│     └─ steers research-innovation
+├── Executive Vice-President for Prosperity and Industrial Strategy (industrial-strategy)
+│     ├─ steers economy
+│     ├─ steers financial-services
+│     ├─ steers research-innovation
+│     └─ steers trade
+├── Executive Vice-President for Social Rights and Skills, Quality Jobs and Preparedness (social-rights)
+│     ├─ steers youth-culture
+│     ├─ steers preparedness
+│     └─ steers health
+├── Executive Vice-President for Cohesion and Reforms (cohesion)
+│     ├─ steers agriculture
+│     ├─ steers fisheries
+│     └─ steers transport
 │
-├── Commissioner — Internal Market & Industry
-├── Commissioner — Competition
-├── Commissioner — Trade
-├── Commissioner — Agriculture & Food
-├── Commissioner — Health & Food Safety
-├── Commissioner — Home Affairs & Migration
-├── High Representative — Foreign Affairs & Security Policy
-├── Commissioner — Energy
-├── Commissioner — Transport
-├── Commissioner — Regional Development & Cohesion
-├── Commissioner — Research & Innovation
-├── Commissioner — Education, Youth & Culture
-├── Commissioner — Employment & Social Rights
-├── Commissioner — Budget & Administration
-├── Commissioner — Environment & Oceans
-└── Commissioner — Justice & Fundamental Rights
+├── Commissioner for Trade and Economic Security; Interinstitutional Relations and Transparency (trade)
+├── Commissioner for Economy and Productivity; Implementation and Simplification (economy)
+├── Commissioner for Enlargement (enlargement)
+├── Commissioner for Climate, Net Zero and Clean Growth (climate)
+├── Commissioner for Energy and Housing (energy)
+├── Commissioner for Defence and Space (defence-space)
+├── Commissioner for the Mediterranean (mediterranean)
+├── Commissioner for Internal Affairs and Migration (internal-affairs)
+├── Commissioner for Democracy, Justice, the Rule of Law and Consumer Protection (justice)
+├── Commissioner for Financial Services and the Savings and Investments Union (financial-services)
+├── Commissioner for Startups, Research and Innovation (research-innovation)
+├── Commissioner for Environment, Water Resilience and a Competitive Circular Economy (environment)
+├── Commissioner for Agriculture and Food (agriculture)
+├── Commissioner for Fisheries and Oceans (fisheries)
+├── Commissioner for Health and Animal Welfare (health)
+├── Commissioner for International Partnerships (international-partnerships)
+├── Commissioner for Budget, Anti-Fraud and Public Administration (budget)
+├── Commissioner for Sustainable Transport and Tourism (transport)
+├── Commissioner for Intergenerational Fairness, Youth, Culture and Sport (youth-culture)
+└── Commissioner for Equality; Preparedness and Crisis Management (preparedness)
 ```
 
 ---
@@ -137,8 +183,31 @@ A DG agent's output is always attributed: "DG COMP analysis shows…", "DG ENV a
 
 ### DG-to-Commissioner mapping
 
-| DG | Commissioner |
+| DG | Portfolio (roster id) |
 |---|---|
+| DG COMP (Competition) | EVP for a Clean, Just and Competitive Transition (`clean-transition`) |
+| DG CNECT | EVP for Tech Sovereignty, Security and Democracy (`tech-sovereignty`) |
+| DG GROW | EVP for Prosperity and Industrial Strategy (`industrial-strategy`) |
+| DG EMPL | EVP for Social Rights and Skills, Quality Jobs and Preparedness (`social-rights`) |
+| DG REGIO | EVP for Cohesion and Reforms (`cohesion`) |
+| DG TRADE | Trade and Economic Security (`trade`) |
+| DG TAXUD | Climate, Net Zero and Clean Growth for taxation (`climate`); Trade for customs (`trade`) |
+| DG ENER | Energy and Housing (`energy`) |
+| DG HOME | Internal Affairs and Migration (`internal-affairs`) |
+| DG JUST | Democracy, Justice, the Rule of Law and Consumer Protection (`justice`); Equality (`preparedness`) |
+| DG RTD | Startups, Research and Innovation (`research-innovation`) |
+| DG ENV | Environment, Water Resilience and a Competitive Circular Economy (`environment`) |
+| DG AGRI | Agriculture and Food (`agriculture`) |
+| DG SANTE | Health and Animal Welfare (`health`) |
+| DG BUDG | Budget, Anti-Fraud and Public Administration (`budget`) |
+| OLAF | Political responsibility of `budget`; independent in its investigations |
+| DG MOVE | Sustainable Transport and Tourism (`transport`) |
+
+The other lead services named in the portfolio files (ECFIN, CLIMA, DEFIS,
+ENEST, MENA, INTPA, FISMA, MARE, EAC, ECHO, HERA, the EEAS) have no DG profile
+yet.
+
+---|---|
 | DG COMP (Competition) | Commissioner for Competition |
 | DG TRADE | Commissioner for Trade |
 | DG AGRI | Commissioner for Agriculture |
@@ -232,7 +301,7 @@ User brief
     │
     ├── Lead Commissioner endorses and signs
     │
-    ├── /college-deliberate votes on adoption
+    ├── /college-deliberation votes on adoption
     │
     └── OUTPUT: draft legislative text (regulation/directive)
               + explanatory memorandum

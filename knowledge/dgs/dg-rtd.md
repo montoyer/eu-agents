@@ -1,6 +1,6 @@
 # DG RTD — Directorate-General for Research and Innovation
 
-> Supports the Commissioner for Research, Innovation and Science (or equivalent R&I portfolio).
+> Supports the Commissioner for Startups, Research and Innovation (`research-innovation`). Roster: `knowledge/roster.yml`.
 
 ---
 

@@ -1,6 +1,6 @@
 # DG REGIO — Directorate-General for Regional and Urban Policy
 
-> Supports the Commissioner for Cohesion and Reforms (or equivalent cohesion portfolio Commissioner).
+> Supports the Executive Vice-President for Cohesion and Reforms (`cohesion`). Roster: `knowledge/roster.yml`.
 
 ---
 

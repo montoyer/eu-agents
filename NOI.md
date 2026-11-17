@@ -18,7 +18,7 @@ The result is not consensus. It is a position that has survived a structured adv
 
 The machinery that produces this outcome:
 
-- **21 mandate-scoped agents**, each representing a different theory of what the EU is for
+- **27 mandate-scoped agents**, each representing a different theory of what the EU is for
 - **Inter-service consultation**, which forces every affected DG to put its objection on the record
 - **Impact assessment**, which requires quantification of baseline, policy options, and expected effects before a text is written
 - **Subsidiarity review**, which asks whether EU action is necessary at all or whether member states can handle it
@@ -55,10 +55,10 @@ That is what the multi-agent architecture surfaces. The Competition Commissioner
 The compound commands in this system exploit this property:
 
 ### `/mandate-conflict <proposal>`
-Joins the 21 Commissioner knowledge files, identifies every pair of portfolios where a structural conflict is guaranteed, and returns the legal basis for each position. This is not a list of possible concerns — it is a map of the fault lines the proposal must cross.
+Joins the 27 portfolio knowledge files, identifies every pair of portfolios where a structural conflict is guaranteed, and returns the legal basis for each position. This is not a list of possible concerns — it is a map of the fault lines the proposal must cross.
 
 ### `/red-team-college <proposal>`
-Runs the proposal through all 21 Commissioners and returns only the `{commissioner, objection, severity}` tuples where severity is high. Token-efficient version of `/college-deliberation`. Designed for rapid iteration: write a draft, red-team it, revise, repeat.
+Runs the proposal through all 27 portfolios and returns only the `{commissioner, objection, severity}` tuples where severity is high. Token-efficient version of `/college-deliberation`. Designed for rapid iteration: write a draft, red-team it, revise, repeat.
 
 ### `/subsidiarity-stress <proposal>`
 Tests the same proposal against 5 different member-state configurations — varying by economic size, regulatory capacity, and existing national legislation — to find the configuration where the subsidiarity check fails. A proposal that passes the subsidiarity test in Germany may fail it in Malta; this command makes that visible before the text is written.
