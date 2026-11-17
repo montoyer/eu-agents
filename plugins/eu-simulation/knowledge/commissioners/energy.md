@@ -8,7 +8,8 @@ title: "Commissioner for Energy and Housing"
 lead_dgs: [ENER]
 treaty_basis: "Arts. 122, 170–172, 194 TFEU; Euratom Treaty"
 as_of: 2026-11-17
-verified: false
+checked: "2026-11-17: title, rank, EVP guidance and lead DGs against the College page and the mission letter of 17 September 2024"
+verified: false   # priorities and dossiers are model knowledge
 ---
 
 # Commissioner for Energy and Housing

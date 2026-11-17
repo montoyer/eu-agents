@@ -46,7 +46,7 @@ actually works.
 1. **Identify the lead DG and dossier** — what is being circulated and what
    is the decision sought
 2. **Map the affected DGs** — based on the subject matter, identify which DGs
-   have a stake; use the mapping table from `knowledge/agents/inter-service-consultation.md`
+   have a stake; use the mapping table from `knowledge/procedures/inter-service-consultation.md`
 3. **Generate DG opinions** — for each affected DG, produce a written opinion
    (Agreement / Agreement with comments / Reservations / Opposition) grounded
    in that DG's mandate and structural interests; read the DG profile from
@@ -66,9 +66,11 @@ actually works.
 
 | Resource | Path | Load when |
 |---|---|---|
-| ISC protocol and output format | `knowledge/agents/inter-service-consultation.md` | Full session |
+| ISC protocol and output format | `knowledge/procedures/inter-service-consultation.md` | Full session |
 | DG mandate mapping | `knowledge/dgs/*.md` | Each DG's speaking turn |
-| Legal basis check | `knowledge/agents/inter-service-consultation.md` | Legal Service opinion |
+| Legal Service opinion | `knowledge/dgs/sj.md` | Step 4 |
+| Secretariat-General check | `knowledge/dgs/sg.md` | Step 5 |
+| Regulatory Scrutiny Board opinion on the impact assessment | `knowledge/dgs/rsb.md` | Step 5 — RSB opinion status |
 
 ---
 

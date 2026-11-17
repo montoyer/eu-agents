@@ -1,8 +1,19 @@
 <!-- SYNCED COPY — do not edit. Canonical: knowledge/dgs/dg-rtd.md — edit there, then run scripts/sync-shared-references.sh -->
 
+---
+id: dg-rtd
+kind: dg
+abbrev: RTD
+name: "Directorate-General for Research and Innovation"
+supports: [research-innovation]
+as_of: 2026-11-17
+checked: "2026-11-17: name and supported portfolio against the mission letters of 17 September 2024"
+verified: false   # mandate, instruments and positions are model knowledge
+---
+
 # DG RTD — Directorate-General for Research and Innovation
 
-> Supports the Commissioner for Startups, Research and Innovation (`research-innovation`). Roster: `knowledge/roster.yml`.
+> Supports the Commissioner for Startups, Research and Innovation (`research-innovation`), guided by the Executive Vice-President for Prosperity and Industrial Strategy, and on tech sovereignty by the Executive Vice-President for Tech Sovereignty, Security and Democracy. Roster: `knowledge/roster.yml`.
 
 ---
 

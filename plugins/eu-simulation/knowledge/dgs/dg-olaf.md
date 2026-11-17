@@ -1,5 +1,16 @@
 <!-- SYNCED COPY — do not edit. Canonical: knowledge/dgs/dg-olaf.md — edit there, then run scripts/sync-shared-references.sh -->
 
+---
+id: dg-olaf
+kind: office
+abbrev: OLAF
+name: "European Anti-Fraud Office"
+supports: [budget]
+as_of: 2026-11-17
+checked: "2026-11-17: name and supported portfolio against the mission letters of 17 September 2024"
+verified: false   # mandate, instruments and positions are model knowledge
+---
+
 # OLAF — European Anti-Fraud Office
 ## Office européen de lutte antifraude
 

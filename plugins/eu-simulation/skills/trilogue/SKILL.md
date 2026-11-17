@@ -6,7 +6,7 @@ description: >
   institution's mandate, runs negotiation rounds using the four-column document
   format (Commission | EP | Council | Compromise), surfaces fault lines, and
   produces either a political agreement declaration or a breakdown assessment.
-  Based on the trilogue protocol in knowledge/agents/trilogue.md.
+  Based on the trilogue protocol in knowledge/procedures/trilogue.md.
 license: MIT
 metadata:
   author: EC-Skills-Library
@@ -65,10 +65,10 @@ A simulation where all three agree in round one is not useful.
 
 | Resource | Path | Load when |
 |---|---|---|
-| Trilogue protocol and output format | `knowledge/agents/trilogue.md` | Full session |
+| Trilogue protocol and output format | `knowledge/procedures/trilogue.md` | Full session |
 | EP institutional agent | `knowledge/institutions/european-parliament.md` | EP mandate and dynamics |
 | Council institutional agent | `knowledge/institutions/council-eu.md` | Council dynamics and QMV |
-| Four-column document format | `knowledge/agents/trilogue.md` | All negotiation rounds |
+| Four-column document format | `knowledge/procedures/trilogue.md` | All negotiation rounds |
 
 ---
 

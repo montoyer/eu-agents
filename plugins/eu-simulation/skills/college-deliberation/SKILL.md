@@ -74,10 +74,10 @@ everyone agrees immediately is unrealistic.
 
 | Resource | Path | Load when |
 |---|---|---|
-| College deliberation protocol | `knowledge/agents/college-deliberation.md` | All sessions — full protocol and output format |
+| College deliberation protocol | `knowledge/procedures/college-deliberation.md` | All sessions — full protocol and output format |
 | College roster: 27 portfolios, ranks, EVP steering, voting rule | `knowledge/roster.yml` | All sessions — speaking order and vote count |
 | All 27 portfolio personas | `knowledge/commissioners/*.md` | Each Commissioner's speaking turn |
-| Conflict escalation rules | `knowledge/agents/college-deliberation.md` | When two positions are irreconcilable |
+| Conflict escalation rules | `knowledge/procedures/college-deliberation.md` | When two positions are irreconcilable |
 
 ---
 

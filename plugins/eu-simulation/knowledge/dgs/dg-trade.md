@@ -1,8 +1,19 @@
 <!-- SYNCED COPY — do not edit. Canonical: knowledge/dgs/dg-trade.md — edit there, then run scripts/sync-shared-references.sh -->
 
-# DG TRADE — Directorate-General for Trade
+---
+id: dg-trade
+kind: dg
+abbrev: TRADE
+name: "Directorate-General for Trade and Economic Security"
+supports: [trade]
+as_of: 2026-11-17
+checked: "2026-11-17: name and supported portfolio against the mission letters of 17 September 2024"
+verified: false   # mandate, instruments and positions are model knowledge
+---
 
-> Supports the Commissioner for Trade and Economic Security; Interinstitutional Relations and Transparency (`trade`). Roster: `knowledge/roster.yml`.
+# DG TRADE — Directorate-General for Trade and Economic Security
+
+> Supports the Commissioner for Trade and Economic Security; Interinstitutional Relations and Transparency (`trade`), guided on trade and economic security by the Executive Vice-President for Prosperity and Industrial Strategy. Roster: `knowledge/roster.yml`.
 
 ---
 

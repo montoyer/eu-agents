@@ -117,42 +117,46 @@ verified: false
 ### The College hierarchy
 
 The real 2024–2029 College: 27 portfolios, modelled by portfolio and never by
-the person who holds it. Generated from `knowledge/roster.yml`; steering is
-model knowledge to verify against the mission letters of 17 September 2024.
+the person who holds it. Generated from `knowledge/roster.yml`. "Guides" follows
+the mission letters of 17 September 2024 ("As a rule, you will work under the
+guidance of..."); the roster's `note` fields give the partial cases, such as
+Health, which the Social Rights EVP guides only on health preparedness.
 
 ```
 President of the European Commission (president)
 ├── High Representative of the Union for Foreign Affairs and Security Policy / Vice-President (high-representative)
-│     ├─ steers enlargement
-│     ├─ steers mediterranean
-│     ├─ steers international-partnerships
-│     ├─ steers defence-space
-│     └─ steers preparedness
+│     ├─ guides enlargement
+│     ├─ guides mediterranean
+│     ├─ guides international-partnerships
+│     └─ guides preparedness
 ├── Executive Vice-President for a Clean, Just and Competitive Transition (clean-transition)
-│     ├─ steers climate
-│     ├─ steers energy
-│     └─ steers environment
+│     ├─ guides climate
+│     ├─ guides energy
+│     ├─ guides environment
+│     └─ guides health
 ├── Executive Vice-President for Tech Sovereignty, Security and Democracy (tech-sovereignty)
-│     ├─ steers defence-space
-│     ├─ steers internal-affairs
-│     ├─ steers justice
-│     └─ steers research-innovation
+│     ├─ guides defence-space
+│     ├─ guides internal-affairs
+│     ├─ guides justice
+│     └─ guides research-innovation
 ├── Executive Vice-President for Prosperity and Industrial Strategy (industrial-strategy)
-│     ├─ steers economy
-│     ├─ steers financial-services
-│     ├─ steers research-innovation
-│     └─ steers trade
+│     ├─ guides economy
+│     ├─ guides financial-services
+│     ├─ guides research-innovation
+│     └─ guides trade
 ├── Executive Vice-President for Social Rights and Skills, Quality Jobs and Preparedness (social-rights)
-│     ├─ steers youth-culture
-│     ├─ steers preparedness
-│     └─ steers health
+│     ├─ guides youth-culture
+│     ├─ guides preparedness
+│     ├─ guides health
+│     └─ guides mediterranean
 ├── Executive Vice-President for Cohesion and Reforms (cohesion)
-│     ├─ steers agriculture
-│     ├─ steers fisheries
-│     └─ steers transport
+│     ├─ guides agriculture
+│     ├─ guides fisheries
+│     ├─ guides transport
+│     └─ guides enlargement
 │
-├── Commissioner for Trade and Economic Security; Interinstitutional Relations and Transparency (trade)
-├── Commissioner for Economy and Productivity; Implementation and Simplification (economy)
+├── Commissioner for Trade and Economic Security; Interinstitutional Relations and Transparency (trade)  · reports to the President on part of the portfolio
+├── Commissioner for Economy and Productivity; Implementation and Simplification (economy)  · reports to the President on part of the portfolio
 ├── Commissioner for Enlargement (enlargement)
 ├── Commissioner for Climate, Net Zero and Clean Growth (climate)
 ├── Commissioner for Energy and Housing (energy)
@@ -167,7 +171,7 @@ President of the European Commission (president)
 ├── Commissioner for Fisheries and Oceans (fisheries)
 ├── Commissioner for Health and Animal Welfare (health)
 ├── Commissioner for International Partnerships (international-partnerships)
-├── Commissioner for Budget, Anti-Fraud and Public Administration (budget)
+├── Commissioner for Budget, Anti-Fraud and Public Administration (budget)  · reports to the President
 ├── Commissioner for Sustainable Transport and Tourism (transport)
 ├── Commissioner for Intergenerational Fairness, Youth, Culture and Sport (youth-culture)
 └── Commissioner for Equality; Preparedness and Crisis Management (preparedness)
@@ -194,7 +198,7 @@ A DG agent's output is always attributed: "DG COMP analysis shows…", "DG ENV a
 | DG TAXUD | Climate, Net Zero and Clean Growth for taxation (`climate`); Trade for customs (`trade`) |
 | DG ENER | Energy and Housing (`energy`) |
 | DG HOME | Internal Affairs and Migration (`internal-affairs`) |
-| DG JUST | Democracy, Justice, the Rule of Law and Consumer Protection (`justice`); Equality (`preparedness`) |
+| DG JUST | Democracy, Justice, the Rule of Law and Consumer Protection (`justice`) |
 | DG RTD | Startups, Research and Innovation (`research-innovation`) |
 | DG ENV | Environment, Water Resilience and a Competitive Circular Economy (`environment`) |
 | DG AGRI | Agriculture and Food (`agriculture`) |
@@ -202,34 +206,31 @@ A DG agent's output is always attributed: "DG COMP analysis shows…", "DG ENV a
 | DG BUDG | Budget, Anti-Fraud and Public Administration (`budget`) |
 | OLAF | Political responsibility of `budget`; independent in its investigations |
 | DG MOVE | Sustainable Transport and Tourism (`transport`) |
+| DG ECFIN | Economy and Productivity (`economy`) |
+| DG CLIMA | Climate, Net Zero and Clean Growth (`climate`) |
+| DG DEFIS | Defence and Space (`defence-space`) |
+| DG ENEST | Enlargement (`enlargement`) |
+| DG MENA | the Mediterranean (`mediterranean`) |
+| DG INTPA | International Partnerships (`international-partnerships`) |
+| DG FISMA | Financial Services and the Savings and Investments Union (`financial-services`) |
+| DG MARE | Fisheries and Oceans (`fisheries`) |
+| DG EAC | Social Rights EVP (`social-rights`) for education; Youth, Culture and Sport (`youth-culture`) |
+| DG ECHO | Equality; Preparedness and Crisis Management (`preparedness`) |
+| Secretariat-General, Legal Service | President (`president`) and the College |
+| Regulatory Scrutiny Board | Independent body; no portfolio |
 
-The other lead services named in the portfolio files (ECFIN, CLIMA, DEFIS,
-ENEST, MENA, INTPA, FISMA, MARE, EAC, ECHO, HERA, the EEAS) have no DG profile
-yet.
-
----|---|
-| DG COMP (Competition) | Commissioner for Competition |
-| DG TRADE | Commissioner for Trade |
-| DG AGRI | Commissioner for Agriculture |
-| DG SANTE | Commissioner for Health |
-| DG ENER | Commissioner for Energy |
-| DG MOVE | Commissioner for Transport |
-| DG REGIO | Commissioner for Regional Development |
-| DG RTD | Commissioner for Research & Innovation |
-| DG EMPL | Commissioner for Employment |
-| DG BUDG | Commissioner for Budget |
-| DG ENV | Commissioner for Environment |
-| DG JUST | Commissioner for Justice |
-| DG HOME | Commissioner for Home Affairs |
-| DG GROW | Commissioner for Internal Market |
-| DG TAXUD | Commissioner for Internal Market (taxation) |
-| DG CONNECT | EVP for Digital |
+The supporting services come from each Member's mission letter of 17 September
+2024. Each DG file opens with a YAML header (`id`, `kind`, `abbrev`, `name`,
+`supports`); `scripts/validate.sh` check 10 fails if a supported portfolio does
+not list the DG in its `lead_dgs`. Services named in the portfolio files without
+a profile yet: ESTAT, HERA, DIGIT, HR, DGT, SCIC, COMM, JRC, and the EEAS
+(profiled as an institution).
 
 ---
 
 ## Layer 4 — Agents (multi-agent sessions)
 
-Multi-agent sessions coordinate multiple Commissioner and DG agents in a defined procedure.
+Multi-agent sessions coordinate multiple Commissioner and DG agents in a defined procedure. Their protocols, and the sequenced workflows, live in `knowledge/procedures/`.
 
 ### College deliberation
 
@@ -278,6 +279,9 @@ Counter-party agents representing EU bodies outside the Commission. They receive
 | Court of Justice (ECJ) | Rules on legality, interprets treaties |
 | European Central Bank | Monetary policy, consulted on financial legislation |
 | EEAS | External relations, implements foreign policy |
+| EDPS | Supervises data protection in the EU institutions; prior consultation under Art. 40 EUDPR |
+| Member States (actor) | National positions in the Council; QMV weight from `knowledge/member-states.yml` |
+| National parliaments (actor) | Subsidiarity scrutiny under Protocol No 2: yellow and orange cards |
 
 ---
 
@@ -314,10 +318,15 @@ User brief
 ## Extension guide
 
 ### Adding a commissioner
-1. Copy `knowledge/commissioners/_template.md`.
-2. Fill in mandate, legal basis, priorities, tensions.
-3. Add to the roster in `knowledge/agents/college-deliberation.md`.
-4. Link to the corresponding DG file in `knowledge/dgs/`.
+1. Copy `knowledge/commissioners/_template.md` and fill in the YAML header, mandate, legal basis, priorities and tensions.
+2. Add the portfolio to `knowledge/roster.yml` with the same `id`, `rank` and `title` (check 8).
+3. List its DGs in `lead_dgs`, and add the portfolio to each DG file's `supports` (check 10).
+4. Run `scripts/sync-shared-references.sh`, then `scripts/validate.sh`.
+
+### Adding a DG or central service
+1. Create `knowledge/dgs/dg-<abbrev>.md` with a YAML header: `id`, `kind` (`dg`, `office`, `service` or `body`), `abbrev`, `name`, `supports`.
+2. Add the abbreviation to the `lead_dgs` of each portfolio it supports (check 10).
+3. Add a row to the consultation table in `knowledge/procedures/inter-service-consultation.md`.
 
 ### Adding a skill
 1. Create `plugins/<domain>/skills/<skill-name>/SKILL.md` using the SKILL.md frontmatter convention.
@@ -325,13 +334,13 @@ User brief
 3. Cite the EU procedure or legal instrument it models.
 4. Register the skill name in `plugins/<domain>/.claude-plugin/plugin.json`.
 
-### Adding a workflow
-1. Create `knowledge/workflows/my-workflow.md`.
+### Adding a procedure
+1. Create `knowledge/procedures/my-procedure.md` (multi-agent protocols and sequenced workflows both live here).
 2. Define the sequence of skills and agents to invoke, with data passed between steps.
 3. Note any decision gates (e.g., College must adopt before proceeding).
 
-### Adding an institution
-1. Create `knowledge/institutions/my-institution.md`.
+### Adding an institution or actor
+1. Create `knowledge/institutions/my-institution.md` with a YAML header: `id`, `kind` (`institution`, `body` or `actor`), `name`, `treaty_basis` (check 10).
 2. Define: treaty role, decision procedure, political dynamics, how it receives Commission input.
 
 ---

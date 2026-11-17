@@ -53,8 +53,9 @@ Larger member states (DE, FR, IT, ES, PL) carry disproportionate weight.
    or COREPER II (political dossiers); flag A-points (agreed) vs B-points
    (still contested)
 4. **QMV arithmetic** — 27 member states; QMV = 55% of MS (15) + 65% of
-   EU population; calculate whether a blocking minority (4 MS representing
-   35% of population) could form on key issues
+   EU population, both in favour; calculate whether a blocking minority (at
+   least 4 MS not in favour holding more than 35% of population) could form on
+   key issues, using the populations in `knowledge/member-states.yml`
 5. **Council general approach** — produce the Council's consolidated position
    with key divergences from the Commission text and EP amendments
 6. **Trilogue mandate** — if proceeding to trilogue, identify Council red lines
@@ -68,7 +69,9 @@ Larger member states (DE, FR, IT, ES, PL) carry disproportionate weight.
 |---|---|---|
 | Council institutional agent | `knowledge/institutions/council-eu.md` | All sessions |
 | QMV rules | `knowledge/institutions/council-eu.md` | Step 4 — blocking minority analysis |
+| Population per Member State (Annex III, Council Rules of Procedure) | `knowledge/member-states.yml` | Step 4 — QMV arithmetic |
 | Council configurations | `knowledge/institutions/council-eu.md` | Step 1 |
+| Member State agents and recurring alignments | `knowledge/institutions/member-states.md` | Steps 3–4 — national positions |
 
 ---
 
@@ -76,21 +79,30 @@ Larger member states (DE, FR, IT, ES, PL) carry disproportionate weight.
 
 ```
 QUALIFIED MAJORITY VOTING (Art. 16(4) TEU):
-  Threshold: ≥55% of member states (≥15 of 27)
-             AND ≥65% of EU population
+  Threshold: ≥55% of member states (≥15 of 27) in favour
+             AND ≥65% of EU population in favour
+  An abstention counts like a vote against: only YES votes reach the thresholds.
 
-BLOCKING MINORITY: ≥4 member states representing ≥35% of EU population
+BLOCKING MINORITY: at least 4 members not in favour holding more than 35% of
+  the population; with 3 or fewer the qualified majority is deemed attained.
+  13 members not in favour block on the state count alone.
 
-LARGE MEMBER STATE POPULATION WEIGHTS (approximate):
-  Germany: 84m  France: 68m  Italy: 60m  Spain: 47m  Poland: 38m
-  → DE+FR+IT = 212m = ~47% of EU population
-  → DE+FR+IT+ES = 259m = ~57% of EU population
-  → Any 4 large MS can form a blocking minority on population grounds
+LARGE MEMBER STATE POPULATIONS (Annex III, applicable in 2026; full table in
+knowledge/member-states.yml):
+  Germany 83.5m (18.47%)  France 68.6m (15.18%)  Italy 59.6m (13.19%)
+  Spain 49.1m (10.86%)    Poland 37.5m (8.29%)
+  → DE+FR+IT = 211.8m = 46.84%, but three members cannot block alone
+  → DE+FR+IT+ES = 260.9m = 57.69% → blocking minority
+  → IT+ES+PL+RO = 36.54% → blocking minority without Germany or France
 
 UNANIMITY required for: taxation (Art. 113 TFEU), CFSP, constitutional
-  matters, own resources; Presidency cannot use QMV on these
+  matters, own resources; Presidency cannot use QMV on these. Abstentions do
+  not prevent unanimity (Art. 238(4) TFEU).
 
-ENHANCED QMV (Art. 294(13) TFEU — second reading): ≥72% of MS + ≥65% population
+REINFORCED QMV (Art. 238(2) TFEU — Council not acting on a Commission or High
+  Representative proposal): ≥72% of MS (20 of 27) + ≥65% population
+SECOND READING (Art. 294(9) TFEU): QMV, but unanimity for Parliament amendments
+  on which the Commission has delivered a negative opinion
 ```
 
 ---

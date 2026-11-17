@@ -8,12 +8,15 @@
 # Portfolios, never people: the simulation speaks as the portfolio and never
 # names the Member who holds it.
 #
-# Facts are model knowledge to mid-2026, not checked against live sources.
-# Verify titles and steering against the President's mission letters of
-# 17 September 2024 and commission.europa.eu before relying on them.
+# Checked on 2026-11-17: titles and ranks against the Commission's College page
+# (commission.europa.eu/about/organisation/college-commissioners_en), steering
+# against each Member's mission letter of 17 September 2024 ("As a rule, you
+# will work under the guidance of..."), and the voting rule against Decision
+# (EU) 2024/3080. Aliases are this repository's own shortnames. A reshuffle
+# changes this file first.
 
 as_of: 2026-11-17
-verified: false
+verified: true
 term:
   start: 2024-12-01
   end: 2029-10-31
@@ -32,8 +35,10 @@ college:
 # of precedence (Art. 3(5) Rules of Procedure).
 #
 # rank:   president | hrvp | evp | commissioner
-# steers: portfolios an Executive Vice-President coordinates [model knowledge — verify].
-#         A Commissioner may be steered by more than one EVP on different files.
+# steers: portfolios that work "under the guidance of" this Executive
+#         Vice-President or the High Representative, as the mission letters
+#         put it. A Commissioner may be guided by two on different files.
+# note:   optional; partial guidance and direct reporting to the President.
 # aliases: other shortnames accepted by /commissioner, including the ids of the
 #         21 generic portfolios this roster replaced.
 
@@ -50,49 +55,57 @@ portfolios:
     rank: hrvp
     title: "High Representative of the Union for Foreign Affairs and Security Policy / Vice-President"
     aliases: [foreign-policy, hrvp, foreign-affairs]
-    steers: [enlargement, mediterranean, international-partnerships, defence-space, preparedness]
+    steers: [enlargement, mediterranean, international-partnerships, preparedness]
+    note: "Guides Preparedness on humanitarian aid only. Jointly coordinates work on a European Defence Union."
 
   - id: clean-transition
     rank: evp
     title: "Executive Vice-President for a Clean, Just and Competitive Transition"
     aliases: [green-deal, competition]
-    steers: [climate, energy, environment]
+    steers: [climate, energy, environment, health]
+    note: "Holds competition policy. Guides Health on everything except health preparedness."
 
   - id: tech-sovereignty
     rank: evp
     title: "Executive Vice-President for Tech Sovereignty, Security and Democracy"
     aliases: [digital]
     steers: [defence-space, internal-affairs, justice, research-innovation]
+    note: "Guides Startups, Research and Innovation on tech sovereignty only."
 
   - id: industrial-strategy
     rank: evp
     title: "Executive Vice-President for Prosperity and Industrial Strategy"
     aliases: [internal-market, industry, prosperity, single-market]
     steers: [economy, financial-services, research-innovation, trade]
+    note: "Guides Economy on economy and productivity, and Trade on trade and economic security."
 
   - id: social-rights
     rank: evp
     title: "Executive Vice-President for Social Rights and Skills, Quality Jobs and Preparedness"
     aliases: [employment, skills, education]
-    steers: [youth-culture, preparedness, health]
+    steers: [youth-culture, preparedness, health, mediterranean]
+    note: "Guides Health on health preparedness and Mediterranean on demography only. Called People, Skills and Preparedness in the mission letters."
 
   - id: cohesion
     rank: evp
     title: "Executive Vice-President for Cohesion and Reforms"
     aliases: [regional-development, reforms]
-    steers: [agriculture, fisheries, transport]
+    steers: [agriculture, fisheries, transport, enlargement]
+    note: "Guides Enlargement on making EU policies ready for enlargement only."
 
   - id: trade
     rank: commissioner
     title: "Commissioner for Trade and Economic Security; Interinstitutional Relations and Transparency"
     aliases: [economic-security, interinstitutional]
     steers: []
+    note: "Reports to the President on interinstitutional relations and transparency."
 
   - id: economy
     rank: commissioner
     title: "Commissioner for Economy and Productivity; Implementation and Simplification"
     aliases: [simplification]
     steers: []
+    note: "Reports to the President on implementation and simplification."
 
   - id: enlargement
     rank: commissioner
@@ -183,7 +196,7 @@ portfolios:
     title: "Commissioner for Budget, Anti-Fraud and Public Administration"
     aliases: [anti-fraud, administration]
     steers: []
-    # Reports to the President directly [model knowledge — verify].
+    note: "Reports to the President directly; no Executive Vice-President guides this portfolio."
 
   - id: transport
     rank: commissioner

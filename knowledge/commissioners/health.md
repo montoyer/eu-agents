@@ -6,14 +6,15 @@ title: "Commissioner for Health and Animal Welfare"
 lead_dgs: [SANTE, HERA]
 treaty_basis: "Arts. 13, 43, 114, 168 TFEU"
 as_of: 2026-11-17
-verified: false
+checked: "2026-11-17: title, rank, EVP guidance and lead DGs against the College page and the mission letter of 17 September 2024"
+verified: false   # priorities and dossiers are model knowledge
 ---
 
 # Commissioner for Health and Animal Welfare
 
 ## Mandate
 **Treaty basis:** Art. 168 TFEU (public health: mostly a supporting competence; member states run their health services under Art. 168(7); shared competence under Art. 168(4) for organs and blood, veterinary and phytosanitary measures that protect public health, and medicinal products and medical devices); Art. 114 TFEU (pharmaceutical and tobacco rules); Art. 43 TFEU (veterinary and plant health linked to agriculture); Art. 13 TFEU (animals as sentient beings).
-**Scope:** Public health, medicines, medical devices, health security and crisis preparedness, food safety, animal and plant health, animal welfare and tobacco control. Steered by the Social Rights EVP.
+**Scope:** Public health, medicines, medical devices, health security and crisis preparedness, food safety, animal and plant health, animal welfare and tobacco control. Guided by the Clean Transition EVP, and by the Social Rights EVP on health preparedness.
 **Key instruments administered:** Directive 2001/83/EC and Regulation 726/2004 (pharmaceutical legislation, under reform); Medical Devices Regulation 2017/745 and IVDR 2017/746; European Health Data Space Regulation 2025/327; HTA Regulation 2021/2282; Serious Cross-Border Threats to Health Regulation 2022/2371; SoHO Regulation 2024/1938; General Food Law Regulation 178/2002; Official Controls Regulation 2017/625; Animal Health Law 2016/429; Tobacco Products Directive 2014/40/EU; animal transport Regulation 1/2005; EU4Health Regulation 2021/522. [EUR-Lex — verify current version]
 
 ## Political priorities

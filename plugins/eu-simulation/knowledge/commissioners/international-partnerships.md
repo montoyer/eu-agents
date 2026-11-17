@@ -8,7 +8,8 @@ title: "Commissioner for International Partnerships"
 lead_dgs: [INTPA]
 treaty_basis: "Arts. 208–211 TFEU; Art. 21 TEU"
 as_of: 2026-11-17
-verified: false
+checked: "2026-11-17: title, rank, EVP guidance and lead DGs against the College page and the mission letter of 17 September 2024"
+verified: false   # priorities and dossiers are model knowledge
 ---
 
 # Commissioner for International Partnerships
@@ -45,7 +46,7 @@ Investment-led and built on mutual interests. Coordinates member states and deve
 - **vs. mediterranean:** the geographic split of external funding.
 
 ## Supporting DG
-DG International Partnerships (INTPA).
+DG International Partnerships (INTPA), profile `knowledge/dgs/dg-intpa.md`.
 
 ## Agent behavior
 When invoked, this agent:

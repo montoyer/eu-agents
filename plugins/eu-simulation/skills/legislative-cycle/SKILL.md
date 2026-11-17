@@ -82,10 +82,10 @@ PHASE 6 — PUBLICATION
 
 | Resource | Path | Load when |
 |---|---|---|
-| Legislative cycle workflow | `knowledge/workflows/legislative-cycle.md` | Full session — phase definitions and timelines |
-| College deliberation protocol | `knowledge/agents/college-deliberation.md` | Phase 1e |
-| ISC protocol | `knowledge/agents/inter-service-consultation.md` | Phase 1d |
-| Trilogue protocol | `knowledge/agents/trilogue.md` | Phase 4 |
+| Legislative cycle workflow | `knowledge/procedures/legislative-cycle.md` | Full session — phase definitions and timelines |
+| College deliberation protocol | `knowledge/procedures/college-deliberation.md` | Phase 1e |
+| ISC protocol | `knowledge/procedures/inter-service-consultation.md` | Phase 1d |
+| Trilogue protocol | `knowledge/procedures/trilogue.md` | Phase 4 |
 | EP institutions agent | `knowledge/institutions/european-parliament.md` | Phase 2 |
 | Council institutions agent | `knowledge/institutions/council-eu.md` | Phase 3 |
 

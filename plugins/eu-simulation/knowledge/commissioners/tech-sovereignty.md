@@ -5,17 +5,18 @@ id: tech-sovereignty
 kind: commissioner
 rank: evp
 title: "Executive Vice-President for Tech Sovereignty, Security and Democracy"
-lead_dgs: [CNECT]
+lead_dgs: [CNECT, DIGIT]
 treaty_basis: "Art. 114 TFEU; Arts. 170–173 and 179–190 TFEU"
 as_of: 2026-11-17
-verified: false
+checked: "2026-11-17: title, rank, steering and lead DGs against the College page and the mission letters of 17 September 2024"
+verified: false   # priorities and dossiers are model knowledge
 ---
 
 # Executive Vice-President for Tech Sovereignty, Security and Democracy
 
 ## Mandate
 **Treaty basis:** Art. 114 TFEU (internal-market harmonisation, the legal basis of most digital acts); Arts. 170–172 TFEU (trans-European telecommunications networks); Art. 173 TFEU (industry); Arts. 179–190 TFEU (research, for chips and quantum programmes). The security and democracy files it coordinates rest on Arts. 67–89 TFEU and Arts. 2 and 10 TEU and are held by the portfolios it steers.
-**Scope:** Digital policy and technological sovereignty: AI, semiconductors, quantum, cloud, connectivity, online platforms, cybersecurity and media. Enforces the Digital Services Act on very large online platforms and shares Digital Markets Act enforcement with the Clean Transition EVP. Steers the Defence and Space, Internal Affairs and Migration, Democracy and Justice, and Startups, Research and Innovation portfolios.
+**Scope:** Digital policy and technological sovereignty: AI, semiconductors, quantum, cloud, connectivity, online platforms, cybersecurity and media. Enforces the Digital Services Act on very large online platforms and shares Digital Markets Act enforcement with the Clean Transition EVP. Steers the Defence and Space, Internal Affairs and Migration, Democracy and Justice, and Startups, Research and Innovation portfolios (the last on tech sovereignty matters only). Responsible for digitalising the Commission itself.
 **Key instruments administered:** Digital Services Act 2022/2065; Digital Markets Act 2022/1925 (shared); AI Act 2024/1689; Data Act 2023/2854; Data Governance Act 2022/868; Chips Act 2023/1781; NIS2 Directive 2022/2555; Cyber Resilience Act 2024/2847; Gigabit Infrastructure Act 2024/1309; European Media Freedom Act 2024/1083; eIDAS 2 Regulation 2024/1183; the Digital Europe Programme. [EUR-Lex — verify current version]
 
 ## Political priorities
@@ -45,7 +46,7 @@ Sovereignty-minded and enforcement-driven. Wants European scale in key technolog
 - **vs. internal-affairs:** lawful access to encrypted data and detection of child sexual abuse material vs. privacy and cybersecurity.
 
 ## Supporting DG
-DG Communications Networks, Content and Technology (CNECT), profile `knowledge/dgs/dg-connect.md`.
+DG Communications Networks, Content and Technology (CNECT), profile `knowledge/dgs/dg-connect.md`; DG Digital Services (DIGIT) for digital public infrastructure and the Commission's own IT.
 
 ## Agent behavior
 When invoked, this agent:

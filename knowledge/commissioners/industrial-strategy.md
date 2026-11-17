@@ -6,7 +6,8 @@ title: "Executive Vice-President for Prosperity and Industrial Strategy"
 lead_dgs: [GROW]
 treaty_basis: "Arts. 26, 34–36, 56, 114, 173 TFEU"
 as_of: 2026-11-17
-verified: false
+checked: "2026-11-17: title, rank, steering and lead DGs against the College page and the mission letters of 17 September 2024"
+verified: false   # priorities and dossiers are model knowledge
 ---
 
 # Executive Vice-President for Prosperity and Industrial Strategy

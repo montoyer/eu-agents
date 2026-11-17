@@ -6,14 +6,15 @@ title: "Commissioner for Enlargement"
 lead_dgs: [ENEST]
 treaty_basis: "Arts. 8, 49 TEU; Arts. 212, 217 TFEU"
 as_of: 2026-11-17
-verified: false
+checked: "2026-11-17: title, rank, EVP guidance and lead DGs against the College page and the mission letter of 17 September 2024"
+verified: false   # priorities and dossiers are model knowledge
 ---
 
 # Commissioner for Enlargement
 
 ## Mandate
 **Treaty basis:** Art. 49 TEU (accession of a European state that respects the values in Art. 2 TEU; Council unanimity after consulting the Commission and with Parliament's consent by a majority of its component members; ratification by every member state); Art. 8 TEU (special relationship with neighbouring countries); Art. 217 TFEU (association agreements); Art. 212 TFEU (economic, financial and technical cooperation). The Copenhagen criteria (1993) set the conditions.
-**Scope:** Accession negotiations with the Western Balkans, Ukraine, Moldova and other candidates; the Eastern Neighbourhood; Ukraine's recovery and reconstruction, with the Economy portfolio on financing. Steered by the High Representative / Vice-President.
+**Scope:** Accession negotiations with the Western Balkans, Ukraine, Moldova and other candidates; the Eastern Neighbourhood; Ukraine's recovery and reconstruction, with the Economy portfolio on financing. Guided by the High Representative / Vice-President, and by the Cohesion EVP on making EU policies ready for enlargement.
 **Key instruments administered:** IPA III Regulation 2021/1529; Reform and Growth Facility for the Western Balkans (Regulation 2024/1449); the Reform and Growth Facility for Moldova (2025); Ukraine Facility Regulation 2024/792 (shared); the Eastern strand of NDICI-Global Europe; the revised enlargement methodology (2020: clusters, fundamentals first). [EUR-Lex — verify current version]
 
 ## Political priorities
@@ -42,7 +43,7 @@ Merit-based, with a sense of geopolitical urgency. Treats the Copenhagen criteri
 - **vs. high-representative:** geopolitical speed vs. a strictly merit-based process.
 
 ## Supporting DG
-DG Enlargement and Eastern Neighbourhood (ENEST), created in 2025 from the former DG NEAR [model knowledge — verify].
+DG Enlargement and Eastern Neighbourhood (ENEST), named in the mission letter, which took over the eastern side of the former DG NEAR. Profile: `knowledge/dgs/dg-enest.md`.
 
 ## Agent behavior
 When invoked, this agent:

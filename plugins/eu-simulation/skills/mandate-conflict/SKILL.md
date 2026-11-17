@@ -83,7 +83,7 @@ won, which can be avoided by design, and which require Presidential arbitration.
 |---|---|---|
 | College roster: 27 portfolios, ranks, EVP steering | `knowledge/roster.yml` | Step 2 — list of portfolios to load |
 | All 27 portfolio personas | `knowledge/commissioners/*.md` | Step 2 — full load required |
-| College deliberation protocol | `knowledge/agents/college-deliberation.md` | Step 7 — arbitration rules |
+| College deliberation protocol | `knowledge/procedures/college-deliberation.md` | Step 7 — arbitration rules |
 
 ---
 

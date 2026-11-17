@@ -1,6 +1,17 @@
+---
+id: dg-just
+kind: dg
+abbrev: JUST
+name: "Directorate-General for Justice and Consumers"
+supports: [justice]
+as_of: 2026-11-17
+checked: "2026-11-17: name and supported portfolio against the mission letters of 17 September 2024"
+verified: false   # mandate, instruments and positions are model knowledge
+---
+
 # DG JUST — Directorate-General for Justice and Consumers
 
-> Supports the Commissioner for Democracy, Justice, the Rule of Law and Consumer Protection (`justice`), and the Commissioner for Equality; Preparedness and Crisis Management (`preparedness`) on equality. Roster: `knowledge/roster.yml`.
+> Supports the Commissioner for Democracy, Justice, the Rule of Law and Consumer Protection (`justice`). Equality policy belongs to the Commissioner for Equality; Preparedness and Crisis Management (`preparedness`), whose mission letter names a Task Force on Equality for that work [model knowledge — verify which DG JUST equality units moved to it]. Roster: `knowledge/roster.yml`.
 
 ---
 

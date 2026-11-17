@@ -211,11 +211,12 @@ These require all 27 portfolio agents and are structurally impossible with a sin
 | `plugins/<domain>/AGENTS.md` | Domain practice profile — playbook, house style, constraints |
 | `plugins/<domain>/hooks/` | Optional `hooks.json` + hook scripts (currently `eu-legislative` only) |
 | `plugins/<domain>/references/` | Reference documents loaded by skills in that domain |
+| `knowledge/roster.yml` | The 27 portfolios of the College: ids, titles, ranks, aliases, EVP guidance, voting rule |
+| `knowledge/member-states.yml` | The 27 Member States: QMV populations (Annex III), EP seats, euro membership, presidencies |
 | `knowledge/commissioners/` | Commissioner agent personas — mandate, priorities, decision style |
-| `knowledge/dgs/` | DG operational agents — technical analysis, legal framing |
-| `knowledge/institutions/` | Counter-party agents (Parliament, Council, ECJ, ECB, EEAS) |
-| `knowledge/workflows/` | Sequenced multi-step process definitions |
-| `knowledge/agents/` | Multi-agent session protocols (College, ISC, trilogue) |
+| `knowledge/dgs/` | DG and central-service agents (Secretariat-General, Legal Service, Regulatory Scrutiny Board) — technical analysis, legal framing |
+| `knowledge/institutions/` | Counter-party agents (Parliament, Council, European Council, CJEU, ECB, EEAS, EDPS) and actors (Member States, national parliaments) |
+| `knowledge/procedures/` | Procedures: multi-agent session protocols (College, ISC, trilogue, DPIA) and sequenced workflows (legislative cycle, policy cycle) |
 | `docs/` | User guides and reference material |
 | `docs/examples/` | Worked end-to-end simulations |
 
@@ -272,6 +273,7 @@ DRAFT — For review by an EU official before use. Not an official Commission po
 1. Create a file in `knowledge/commissioners/` or `knowledge/dgs/` following the existing template.
 2. Define: mandate, legal basis, key dossiers, decision style, tensions with other portfolios.
 3. For a Commissioner, add the portfolio to `knowledge/roster.yml` with the same `id`, `rank` and `title` as the file's YAML header (`scripts/validate.sh` fails if they differ).
+   For a DG, give the file a YAML header (`id`, `kind`, `abbrev`, `name`, `supports`) and add the abbreviation to the `lead_dgs` of each portfolio it supports (`scripts/validate.sh` check 10).
 4. Update the commissioner shortnames grid in `plugins/eu-simulation/CLAUDE.md` and the table in `plugins/eu-simulation/skills/commissioner/SKILL.md`.
 5. Run `scripts/sync-shared-references.sh` to refresh the copy in `plugins/eu-simulation/knowledge/` (never edit that copy; `scripts/validate.sh` fails on drift).
 

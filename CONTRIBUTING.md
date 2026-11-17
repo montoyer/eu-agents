@@ -234,8 +234,7 @@ they are loaded as context by skills (particularly by `eu-simulation`).
 | New Commissioner persona | `knowledge/commissioners/[portfolio].md` — follow `_template.md` |
 | New DG profile | `knowledge/dgs/dg-[name].md` |
 | New institution agent | `knowledge/institutions/[name].md` |
-| New workflow sequence | `knowledge/workflows/[name].md` |
-| New multi-agent protocol | `knowledge/agents/[name].md` |
+| New workflow sequence or multi-agent protocol | `knowledge/procedures/[name].md` |
 
 Knowledge files are **reference material only** — they do not produce invokable
 skills on their own. To make a knowledge file invokable, create a corresponding

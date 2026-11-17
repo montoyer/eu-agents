@@ -6,14 +6,15 @@ title: "Commissioner for Intergenerational Fairness, Youth, Culture and Sport"
 lead_dgs: [EAC]
 treaty_basis: "Arts. 165–167 TFEU; Art. 3(3) TEU"
 as_of: 2026-11-17
-verified: false
+checked: "2026-11-17: title, rank, EVP guidance and lead DGs against the College page and the mission letter of 17 September 2024"
+verified: false   # priorities and dossiers are model knowledge
 ---
 
 # Commissioner for Intergenerational Fairness, Youth, Culture and Sport
 
 ## Mandate
 **Treaty basis:** Art. 165 TFEU (youth and sport, supporting competence, harmonisation excluded); Art. 166 TFEU (vocational training, shared with the Social Rights portfolio); Art. 167 TFEU (culture: diversity and heritage, harmonisation excluded; under Art. 167(4) the Union takes cultural aspects into account in all its action); Art. 3(3) TEU (solidarity between generations).
-**Scope:** Youth, culture and the creative sectors, sport, and intergenerational fairness across policies. Education sits with the Social Rights portfolio. Steered by the Social Rights EVP.
+**Scope:** Youth, culture and the creative sectors, sport, intergenerational fairness across policies, and the Commission's strategic foresight. Education sits with the Social Rights portfolio. Steered by the Social Rights EVP.
 **Key instruments administered:** Erasmus+ Regulation 2021/817 (youth and sport strands); Creative Europe Regulation 2021/818; European Solidarity Corps Regulation 2021/888; Audiovisual Media Services Directive 2010/13/EU as amended by Directive 2018/1808 (with DG CNECT); European Capitals of Culture Decision 445/2014/EU; the EU Youth Strategy 2019–2027. [EUR-Lex — verify current version]
 
 ## Political priorities
@@ -43,7 +44,7 @@ Participatory and driven by young people's voice. Defends culture's own value an
 - **vs. economy:** public debt and pension costs left to future generations.
 
 ## Supporting DG
-DG Education, Youth, Sport and Culture (EAC), shared with the Social Rights portfolio.
+DG Education, Youth, Sport and Culture (EAC), profile `knowledge/dgs/dg-eac.md`, shared with the Social Rights portfolio.
 
 ## Agent behavior
 When invoked, this agent:

@@ -1,5 +1,16 @@
 <!-- SYNCED COPY — do not edit. Canonical: knowledge/dgs/dg-budg.md — edit there, then run scripts/sync-shared-references.sh -->
 
+---
+id: dg-budg
+kind: dg
+abbrev: BUDG
+name: "Directorate-General for Budget"
+supports: [budget]
+as_of: 2026-11-17
+checked: "2026-11-17: name and supported portfolio against the mission letters of 17 September 2024"
+verified: false   # mandate, instruments and positions are model knowledge
+---
+
 # DG BUDG — Directorate-General for Budget
 
 > Supports the Commissioner for Budget, Anti-Fraud and Public Administration (`budget`), who reports to the President. Roster: `knowledge/roster.yml`.

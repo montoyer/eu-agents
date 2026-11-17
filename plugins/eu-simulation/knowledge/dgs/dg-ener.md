@@ -1,5 +1,16 @@
 <!-- SYNCED COPY — do not edit. Canonical: knowledge/dgs/dg-ener.md — edit there, then run scripts/sync-shared-references.sh -->
 
+---
+id: dg-ener
+kind: dg
+abbrev: ENER
+name: "Directorate-General for Energy"
+supports: [energy]
+as_of: 2026-11-17
+checked: "2026-11-17: name and supported portfolio against the mission letters of 17 September 2024"
+verified: false   # mandate, instruments and positions are model knowledge
+---
+
 # DG ENER — Directorate-General for Energy
 
 > Supports the Commissioner for Energy and Housing (`energy`), steered by the Executive Vice-President for a Clean, Just and Competitive Transition. Roster: `knowledge/roster.yml`.

@@ -5,17 +5,18 @@ id: cohesion
 kind: commissioner
 rank: evp
 title: "Executive Vice-President for Cohesion and Reforms"
-lead_dgs: [REGIO, REFORM]
+lead_dgs: [REGIO]
 treaty_basis: "Arts. 174–178, 349 TFEU"
 as_of: 2026-11-17
-verified: false
+checked: "2026-11-17: title, rank, steering and lead DGs against the College page and the mission letters of 17 September 2024"
+verified: false   # priorities and dossiers are model knowledge
 ---
 
 # Executive Vice-President for Cohesion and Reforms
 
 ## Mandate
 **Treaty basis:** Arts. 174–178 TFEU (economic, social and territorial cohesion; Art. 174 targets the least-favoured regions, rural areas, areas in industrial transition, islands, cross-border and mountain regions); Art. 175(3) TFEU (specific actions outside the Funds, the legal basis of the Recovery and Resilience Facility and the Technical Support Instrument); Art. 177 TFEU (Common Provisions); Art. 178 TFEU (ERDF); Art. 349 TFEU (outermost regions).
-**Scope:** Cohesion policy (ERDF, Cohesion Fund, Just Transition Fund, Interreg), support for structural reforms, urban policy and the outermost regions. Shares implementation of the Recovery and Resilience Facility with the Economy portfolio. Steers the Agriculture, Fisheries and Transport portfolios.
+**Scope:** Cohesion policy (ERDF, Cohesion Fund, Just Transition Fund, Interreg), support for structural reforms, urban policy and the outermost regions. Shares implementation of the Recovery and Resilience Facility with the Economy portfolio. Steers the Agriculture, Fisheries and Transport portfolios, and the Enlargement portfolio on making EU policies ready for enlargement.
 **Key instruments administered:** Common Provisions Regulation 2021/1060; ERDF and Cohesion Fund Regulation 2021/1058; Just Transition Fund Regulation 2021/1056; Interreg Regulation 2021/1059; Technical Support Instrument Regulation 2021/240; Recovery and Resilience Facility Regulation 2021/241 (shared); the 2025 mid-term review amendments that let programmes move money to defence, housing, water and the energy transition. [EUR-Lex — verify current version]
 
 ## Political priorities
@@ -45,7 +46,7 @@ Regional and pragmatic. Defends shared management and the partnership principle,
 - **vs. defence-space:** reprogramming cohesion money to defence vs. the cohesion objective of Art. 174 TFEU.
 
 ## Supporting DG
-DG Regional and Urban Policy (REGIO), profile `knowledge/dgs/dg-regio.md`; DG Structural Reform Support (REFORM).
+DG Regional and Urban Policy (REGIO), profile `knowledge/dgs/dg-regio.md`. The mission letter names no other DG; the Technical Support Instrument run by DG Structural Reform Support (REFORM) serves the reform agenda [model knowledge — verify which Member DG REFORM reports to].
 
 ## Agent behavior
 When invoked, this agent:

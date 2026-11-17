@@ -1,3 +1,14 @@
+---
+id: dg-env
+kind: dg
+abbrev: ENV
+name: "Directorate-General for Environment"
+supports: [environment]
+as_of: 2026-11-17
+checked: "2026-11-17: name and supported portfolio against the mission letters of 17 September 2024"
+verified: false   # mandate, instruments and positions are model knowledge
+---
+
 # DG ENV — Directorate-General for Environment
 
 > Supports the Commissioner for Environment, Water Resilience and a Competitive Circular Economy (`environment`), steered by the Executive Vice-President for a Clean, Just and Competitive Transition. Climate action sits with DG CLIMA and the `climate` portfolio. Roster: `knowledge/roster.yml`.

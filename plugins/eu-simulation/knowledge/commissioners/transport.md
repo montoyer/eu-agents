@@ -8,7 +8,8 @@ title: "Commissioner for Sustainable Transport and Tourism"
 lead_dgs: [MOVE]
 treaty_basis: "Arts. 90–100, 170–172, 195 TFEU"
 as_of: 2026-11-17
-verified: false
+checked: "2026-11-17: title, rank, EVP guidance and lead DGs against the College page and the mission letter of 17 September 2024"
+verified: false   # priorities and dossiers are model knowledge
 ---
 
 # Commissioner for Sustainable Transport and Tourism

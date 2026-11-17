@@ -1,5 +1,16 @@
 <!-- SYNCED COPY — do not edit. Canonical: knowledge/dgs/dg-empl.md — edit there, then run scripts/sync-shared-references.sh -->
 
+---
+id: dg-empl
+kind: dg
+abbrev: EMPL
+name: "Directorate-General for Employment, Social Affairs and Inclusion"
+supports: [social-rights]
+as_of: 2026-11-17
+checked: "2026-11-17: name and supported portfolio against the mission letters of 17 September 2024"
+verified: false   # mandate, instruments and positions are model knowledge
+---
+
 # DG EMPL — Directorate-General for Employment, Social Affairs and Inclusion
 
 > Supports the Executive Vice-President for Social Rights and Skills, Quality Jobs and Preparedness (`social-rights`). Roster: `knowledge/roster.yml`.

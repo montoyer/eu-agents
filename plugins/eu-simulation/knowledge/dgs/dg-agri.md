@@ -1,5 +1,16 @@
 <!-- SYNCED COPY — do not edit. Canonical: knowledge/dgs/dg-agri.md — edit there, then run scripts/sync-shared-references.sh -->
 
+---
+id: dg-agri
+kind: dg
+abbrev: AGRI
+name: "Directorate-General for Agriculture and Rural Development"
+supports: [agriculture]
+as_of: 2026-11-17
+checked: "2026-11-17: name and supported portfolio against the mission letters of 17 September 2024"
+verified: false   # mandate, instruments and positions are model knowledge
+---
+
 # DG AGRI — Directorate-General for Agriculture and Rural Development
 
 > Supports the Commissioner for Agriculture and Food (`agriculture`), steered by the Executive Vice-President for Cohesion and Reforms. Roster: `knowledge/roster.yml`.

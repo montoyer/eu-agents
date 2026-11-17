@@ -6,7 +6,8 @@ title: "Commissioner for Agriculture and Food"
 lead_dgs: [AGRI]
 treaty_basis: "Arts. 38–44 TFEU"
 as_of: 2026-11-17
-verified: false
+checked: "2026-11-17: title, rank, EVP guidance and lead DGs against the College page and the mission letter of 17 September 2024"
+verified: false   # priorities and dossiers are model knowledge
 ---
 
 # Commissioner for Agriculture and Food

@@ -6,14 +6,15 @@ title: "Commissioner for Defence and Space"
 lead_dgs: [DEFIS]
 treaty_basis: "Arts. 122, 173, 189, 346 TFEU; Art. 41(2) TEU"
 as_of: 2026-11-17
-verified: false
+checked: "2026-11-17: title, rank, EVP guidance and lead DGs against the College page and the mission letter of 17 September 2024"
+verified: false   # priorities and dossiers are model knowledge
 ---
 
 # Commissioner for Defence and Space
 
 ## Mandate
 **Treaty basis:** Art. 173 TFEU (industry, the basis of the European Defence Fund and EDIP); Art. 122 TFEU (the SAFE loan instrument); Art. 189 TFEU (European space policy, harmonisation excluded); Art. 346 TFEU (member states may protect essential security interests in the production of and trade in arms); Art. 41(2) TEU (no operational expenditure with military or defence implications from the Union budget). The CSDP (Arts. 42–46 TEU) belongs to the Council and the High Representative.
-**Scope:** The defence-industrial base: capacity, joint procurement and a single market for defence equipment; defence readiness; military mobility with the Transport portfolio; space programmes and space law. Steered by the Tech Sovereignty EVP, and by the High Representative on the external side.
+**Scope:** The defence-industrial base: capacity, joint procurement and a single market for defence equipment; defence readiness; military mobility with the Transport portfolio; space programmes and space law. Guided by the Tech Sovereignty EVP. Works with the High Representative, who jointly coordinates work on a European Defence Union, and presented the White Paper on European defence with the High Representative.
 **Key instruments administered:** European Defence Fund Regulation 2021/697; EDIRPA Regulation 2023/2418; ASAP Regulation 2023/1525; SAFE Regulation 2025/1106 (EUR 150 billion in loans); the European Defence Industry Programme (2025); Defence Procurement Directive 2009/81/EC; Intra-EU Transfers Directive 2009/43/EC; EU Space Programme Regulation 2021/696; IRIS² Regulation 2023/588; the proposed EU Space Act (2025). [EUR-Lex — verify current version]
 
 ## Political priorities
@@ -43,7 +44,7 @@ Urgency-driven. Starts from capability gaps and production volumes. Favours buyi
 - **vs. trade:** buy-European rules vs. partners that expect access to EU defence procurement.
 
 ## Supporting DG
-DG Defence Industry and Space (DEFIS).
+DG Defence Industry and Space (DEFIS), profile `knowledge/dgs/dg-defis.md`.
 
 ## Agent behavior
 When invoked, this agent:

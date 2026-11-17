@@ -1,5 +1,3 @@
-<!-- SYNCED COPY — do not edit. Canonical: knowledge/agents/inter-service-consultation.md — edit there, then run scripts/sync-shared-references.sh -->
-
 # Agent: Inter-Service Consultation (ISC)
 
 **Trigger:** `/inter-service-consultation <proposal>`
@@ -50,7 +48,7 @@ DGs to be consulted (select relevant ones based on the dossier):
 | DG ENER | Energy, decarbonisation |
 | DG MOVE | Transport, mobility |
 | DG REGIO | Regional development, cohesion |
-| DG RTD | Research, innovation, space |
+| DG RTD | Research, innovation, startups |
 | DG EMPL | Employment, social rights, ESF+ |
 | DG BUDG | Any impact on the budget or finances — consultation required (Art. 58(2)) |
 | DG HR | Any impact on staff or administration — consultation required (Art. 58(3)) |
@@ -60,8 +58,16 @@ DGs to be consulted (select relevant ones based on the dossier):
 | DG GROW | Internal market, industry, SMEs |
 | DG TAXUD | Taxation, customs |
 | DG CONNECT | Digital, telecom, data |
-| Legal Service | Legal basis, treaty and Charter compatibility — consulted on all draft acts (Art. 57) |
-| Secretariat-General | Better Regulation compliance, institutional aspects, work programme items, politically sensitive files (Art. 56) |
+| DG ECFIN | Fiscal and macroeconomic effects, financial assistance, the euro |
+| DG CLIMA | Emissions, carbon pricing, climate targets |
+| DG DEFIS | Defence industry, space programmes, dual-use |
+| DG FISMA | Financial services, capital markets, sustainable finance |
+| DG MARE | Fisheries, oceans, maritime spatial planning |
+| DG EAC | Education, skills, youth, culture, sport |
+| DG ENEST / DG MENA / DG INTPA | Effects on candidate countries and neighbours / the Southern Neighbourhood and the Gulf / developing countries |
+| DG ECHO | Civil protection, crisis preparedness, humanitarian aid |
+| Legal Service | Legal basis, treaty and Charter compatibility — consulted on all draft acts (Art. 57); profile `knowledge/dgs/sj.md` |
+| Secretariat-General | Better Regulation compliance, institutional aspects, work programme items, politically sensitive files (Art. 56); profile `knowledge/dgs/sg.md` |
 
 ### Step 3 — Lead DG synthesis (after the time limit, about one working week)
 

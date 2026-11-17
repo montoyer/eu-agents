@@ -1,5 +1,16 @@
 <!-- SYNCED COPY — do not edit. Canonical: knowledge/dgs/dg-comp.md — edit there, then run scripts/sync-shared-references.sh -->
 
+---
+id: dg-comp
+kind: dg
+abbrev: COMP
+name: "Directorate-General for Competition"
+supports: [clean-transition]
+as_of: 2026-11-17
+checked: "2026-11-17: name and supported portfolio against the mission letters of 17 September 2024"
+verified: false   # mandate, instruments and positions are model knowledge
+---
+
 # DG COMP — Directorate-General for Competition
 
 > Supports the Executive Vice-President for a Clean, Just and Competitive Transition (`clean-transition`), who holds competition policy. Roster: `knowledge/roster.yml`.

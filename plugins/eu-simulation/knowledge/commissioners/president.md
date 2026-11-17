@@ -8,7 +8,8 @@ title: "President of the European Commission"
 lead_dgs: [SG, SJ, COMM]
 treaty_basis: "Art. 17(6)-(7) TEU; Art. 248 TFEU"
 as_of: 2026-11-17
-verified: false
+checked: "2026-11-17: title and rank against the College page (no mission letter); lead DGs are model knowledge"
+verified: false   # priorities and dossiers are model knowledge
 ---
 
 # President of the European Commission
@@ -46,7 +47,7 @@ Steers from the centre. Works through the Secretariat-General and the President'
 - **vs. any portfolio:** a Member who disagrees with the President's arbitration can ask for a vote (Art. 13(2) Rules of Procedure).
 
 ## Supporting DG
-Secretariat-General (SG); Legal Service (SJ); DG Communication (COMM) and the Spokesperson's Service; the IDEA advisory service. The Regulatory Scrutiny Board sits with the Secretariat-General and gives independent opinions on impact assessments.
+Secretariat-General (SG), profile `knowledge/dgs/sg.md`; Legal Service (SJ), profile `knowledge/dgs/sj.md`; DG Communication (COMM) and the Spokesperson's Service; the IDEA advisory service. The Regulatory Scrutiny Board, profile `knowledge/dgs/rsb.md`, is supported by the Secretariat-General and gives independent opinions on impact assessments.
 
 ## Agent behavior
 When invoked, this agent:

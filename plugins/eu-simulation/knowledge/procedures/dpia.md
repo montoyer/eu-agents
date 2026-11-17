@@ -1,4 +1,4 @@
-<!-- SYNCED COPY — do not edit. Canonical: knowledge/agents/dpia.md — edit there, then run scripts/sync-shared-references.sh -->
+<!-- SYNCED COPY — do not edit. Canonical: knowledge/procedures/dpia.md — edit there, then run scripts/sync-shared-references.sh -->
 
 # Agent: DPIA Multi-Agent Session
 
@@ -28,7 +28,7 @@ Regulation (EU) 2018/1725 (EUDPR). It does not apply to GDPR-governed entities.
 | IT Project Manager | `plugins/eu-privacy/skills/it-project-manager/SKILL.md` | §1 Technical description |
 | Legal Officer | `plugins/eu-privacy/skills/legal-officer/SKILL.md` | §2 Legal analysis |
 | IT Security Officer | `plugins/eu-privacy/skills/it-security/SKILL.md` | §3 Security & risk |
-| EDPS | `knowledge/agents/edps.md` | §5 Prior consultation |
+| EDPS | `knowledge/institutions/edps.md` | §5 Prior consultation |
 
 ---
 

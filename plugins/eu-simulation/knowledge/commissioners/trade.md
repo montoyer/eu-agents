@@ -5,17 +5,18 @@ id: trade
 kind: commissioner
 rank: commissioner
 title: "Commissioner for Trade and Economic Security; Interinstitutional Relations and Transparency"
-lead_dgs: [TRADE]
+lead_dgs: [TRADE, TAXUD]
 treaty_basis: "Art. 3(1)(e), Arts. 206–207, 218 TFEU; Arts. 15, 295 TFEU"
 as_of: 2026-11-17
-verified: false
+checked: "2026-11-17: title, rank, EVP guidance and lead DGs against the College page and the mission letter of 17 September 2024"
+verified: false   # priorities and dossiers are model knowledge
 ---
 
 # Commissioner for Trade and Economic Security; Interinstitutional Relations and Transparency
 
 ## Mandate
 **Treaty basis:** Art. 3(1)(e) TFEU (common commercial policy, exclusive competence); Art. 207 TFEU (tariffs, trade agreements, foreign direct investment, trade defence; framework measures by the ordinary legislative procedure; unanimity for certain agreements under Art. 207(4)); Art. 218 TFEU (negotiation and conclusion of international agreements); Art. 21 TEU (principles of external action). Interinstitutional relations: Art. 295 TFEU (interinstitutional agreements) and the 2010 Framework Agreement with Parliament. Transparency: Art. 15 TFEU and Regulation 1049/2001.
-**Scope:** Trade policy and agreements, trade defence, economic security (export controls, investment screening, outbound investment), the EU–US trade relationship, and the customs union with the Climate portfolio's tax services. Manages the Commission's relations with Parliament and the Council, and the Transparency Register.
+**Scope:** Trade policy and agreements, trade defence, economic security (export controls, investment screening, outbound investment), the EU–US trade relationship, and the customs union with the Climate portfolio's tax services. Manages the Commission's relations with Parliament and the Council, and the Transparency Register. Guided by the Industrial Strategy EVP on trade and economic security; reports to the President on interinstitutional relations and transparency.
 **Key instruments administered:** Anti-Coercion Instrument 2023/2675; FDI Screening Regulation 2019/452 and its revision; Dual-Use Export Control Regulation 2021/821; Basic Anti-Dumping Regulation 2016/1036; Basic Anti-Subsidy Regulation 2016/1037; Enforcement Regulation 654/2014; International Procurement Instrument 2022/1031; GSP Regulation 978/2012; Union Customs Code 952/2013 and its reform; the 2021 Interinstitutional Agreement on a mandatory Transparency Register. [EUR-Lex — verify current version]
 
 ## Political priorities

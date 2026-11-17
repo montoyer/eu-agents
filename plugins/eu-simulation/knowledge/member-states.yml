@@ -1,0 +1,234 @@
+# SYNCED COPY — do not edit. Canonical: knowledge/member-states.yml — edit there, then run scripts/sync-shared-references.sh
+
+# Member States of the EU: machine-readable data for Council arithmetic.
+#
+# Single source for the population figures used in qualified majority voting,
+# the seats each Member State holds in the European Parliament, euro-area
+# membership and the order of Council presidencies. Skills that count votes
+# read this file; scripts/validate.sh checks its totals.
+#
+# Population: Annex III to the Council's Rules of Procedure, which the Council
+# replaces each year with effect from 1 January (Art. 11(6) of its Rules of
+# Procedure), on Eurostat data held on 30 September of the year before. Update
+# this block when the next decision is published in the Official Journal.
+
+as_of: 2026-11-17
+verified: true
+
+population:
+  source: "Council Decision (EU, Euratom) 2025/2427 of 17 November 2025, OJ L, 27.11.2025 [EUR-Lex — verify current version]"
+  applies_from: 2026-01-01
+  applies_to: 2026-12-31
+  total: 452162974
+  qmv_threshold: 293905933    # 65 % of the total, as Annex III states it
+  blocking_above: 158257041   # states not voting in favour must exceed this to block (35 %)
+
+ep_seats_source: "European Council Decision (EU) 2023/2061, 2024–2029 term, 720 seats"
+euro_source: "21 members from 1 January 2026, when Bulgaria joined [model knowledge — verify]"
+presidency_source: "Council Decision (EU) 2016/1316, order to 31 December 2030"
+
+# Ordered by population, as in Annex III. share is Annex III's indicative
+# percentage; compute shares from population, not by adding these rounded values.
+states:
+  - code: DE
+    name: Germany
+    population: 83502300
+    share: 18.47
+    ep_seats: 96
+    euro: true
+  - code: FR
+    name: France
+    population: 68635943
+    share: 15.18
+    ep_seats: 81
+    euro: true
+  - code: IT
+    name: Italy
+    population: 59635202
+    share: 13.19
+    ep_seats: 76
+    euro: true
+  - code: ES
+    name: Spain
+    population: 49093546
+    share: 10.86
+    ep_seats: 61
+    euro: true
+  - code: PL
+    name: Poland
+    population: 37475594
+    share: 8.29
+    ep_seats: 53
+    euro: false
+  - code: RO
+    name: Romania
+    population: 19036031
+    share: 4.21
+    ep_seats: 33
+    euro: false
+  - code: NL
+    name: Netherlands
+    population: 18191086
+    share: 4.02
+    ep_seats: 31
+    euro: true
+  - code: BE
+    name: Belgium
+    population: 11900123
+    share: 2.63
+    ep_seats: 22
+    euro: true
+  - code: CZ
+    name: Czechia
+    population: 10921096
+    share: 2.42
+    ep_seats: 21
+    euro: false
+  - code: PT
+    name: Portugal
+    population: 10749635
+    share: 2.38
+    ep_seats: 21
+    euro: true
+  - code: SE
+    name: Sweden
+    population: 10583000
+    share: 2.34
+    ep_seats: 21
+    euro: false
+  - code: EL
+    name: Greece
+    population: 10409547
+    share: 2.30
+    ep_seats: 21
+    euro: true
+  - code: HU
+    name: Hungary
+    population: 9539502
+    share: 2.11
+    ep_seats: 21
+    euro: false
+  - code: AT
+    name: Austria
+    population: 9180000
+    share: 2.03
+    ep_seats: 20
+    euro: true
+  - code: BG
+    name: Bulgaria
+    population: 6437360
+    share: 1.42
+    ep_seats: 17
+    euro: true
+  - code: DK
+    name: Denmark
+    population: 5985790
+    share: 1.32
+    ep_seats: 15
+    euro: false
+  - code: FI
+    name: Finland
+    population: 5626971
+    share: 1.24
+    ep_seats: 15
+    euro: true
+  - code: SK
+    name: Slovakia
+    population: 5456246
+    share: 1.21
+    ep_seats: 15
+    euro: true
+  - code: IE
+    name: Ireland
+    population: 5440278
+    share: 1.20
+    ep_seats: 14
+    euro: true
+  - code: HR
+    name: Croatia
+    population: 3874350
+    share: 0.86
+    ep_seats: 12
+    euro: true
+  - code: LT
+    name: Lithuania
+    population: 2890664
+    share: 0.64
+    ep_seats: 11
+    euro: true
+  - code: SI
+    name: Slovenia
+    population: 2130850
+    share: 0.47
+    ep_seats: 9
+    euro: true
+  - code: LV
+    name: Latvia
+    population: 1860565
+    share: 0.41
+    ep_seats: 9
+    euro: true
+  - code: EE
+    name: Estonia
+    population: 1369995
+    share: 0.30
+    ep_seats: 7
+    euro: true
+  - code: CY
+    name: Cyprus
+    population: 982966
+    share: 0.22
+    ep_seats: 6
+    euro: true
+  - code: LU
+    name: Luxembourg
+    population: 680084
+    share: 0.15
+    ep_seats: 6
+    euro: true
+  - code: MT
+    name: Malta
+    population: 574250
+    share: 0.13
+    ep_seats: 6
+    euro: true
+
+# Six-month presidencies, January–June (H1) and July–December (H2). Trios of
+# three consecutive presidencies share an 18-month programme.
+presidencies:
+  - semester: 2025-H1
+    state: PL
+    trio: 1
+  - semester: 2025-H2
+    state: DK
+    trio: 1
+  - semester: 2026-H1
+    state: CY
+    trio: 1
+  - semester: 2026-H2
+    state: IE
+    trio: 2
+  - semester: 2027-H1
+    state: LT
+    trio: 2
+  - semester: 2027-H2
+    state: EL
+    trio: 2
+  - semester: 2028-H1
+    state: IT
+    trio: 3
+  - semester: 2028-H2
+    state: LV
+    trio: 3
+  - semester: 2029-H1
+    state: LU
+    trio: 3
+  - semester: 2029-H2
+    state: NL
+    trio: 4
+  - semester: 2030-H1
+    state: SK
+    trio: 4
+  - semester: 2030-H2
+    state: MT
+    trio: 4

@@ -1,4 +1,4 @@
-<!-- SYNCED COPY — do not edit. Canonical: knowledge/agents/college-deliberation.md — edit there, then run scripts/sync-shared-references.sh -->
+<!-- SYNCED COPY — do not edit. Canonical: knowledge/procedures/college-deliberation.md — edit there, then run scripts/sync-shared-references.sh -->
 
 # Agent: College Deliberation
 

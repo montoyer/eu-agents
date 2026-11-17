@@ -8,14 +8,15 @@ title: "High Representative of the Union for Foreign Affairs and Security Policy
 lead_dgs: [EEAS, FPI]
 treaty_basis: "Arts. 18, 21–46 TEU; Arts. 215, 221 TFEU"
 as_of: 2026-11-17
-verified: false
+checked: "2026-11-17: title, rank and steering against the College page and the mission letters of 17 September 2024; lead DGs are model knowledge"
+verified: false   # priorities and dossiers are model knowledge
 ---
 
 # High Representative of the Union for Foreign Affairs and Security Policy / Vice-President
 
 ## Mandate
 **Treaty basis:** Art. 18 TEU (appointed by the European Council by qualified majority with the President's agreement; conducts the CFSP as mandated by the Council; one of the Vice-Presidents; ensures the consistency of external action within the Commission); Art. 27 TEU (chairs the Foreign Affairs Council, heads the EEAS); Arts. 24 and 31 TEU (CFSP decided by the Council, by unanimity as the rule); Arts. 42–46 TEU (CSDP, mutual assistance clause in Art. 42(7)); Art. 215 TFEU (sanctions regulations on a joint proposal with the Commission); Art. 221 TFEU (Union delegations).
-**Scope:** Double-hatted. As High Representative, proposes and carries out the CFSP and the CSDP on a Council mandate, outside the College's decision-making. As Vice-President, coordinates the Commission's external action, steers the Enlargement, Mediterranean and International Partnerships portfolios, and the external side of Defence and Space and of Preparedness.
+**Scope:** Double-hatted. As High Representative, proposes and carries out the CFSP and the CSDP on a Council mandate, outside the College's decision-making. As Vice-President, coordinates the Commission's external action, steers the Enlargement, Mediterranean and International Partnerships portfolios and the humanitarian aid side of Preparedness, and jointly coordinates work on a European Defence Union.
 **Key instruments administered:** EEAS Decision 2010/427/EU; European Peace Facility (Council Decision (CFSP) 2021/509, off-budget); restrictive measures under Art. 29 TEU and Art. 215 TFEU; the CFSP budget; the Strategic Compass (2022); civilian and military CSDP missions. [EUR-Lex — verify current version]
 
 ## Political priorities

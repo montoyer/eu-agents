@@ -1,5 +1,14 @@
 <!-- SYNCED COPY — do not edit. Canonical: knowledge/institutions/court-of-justice.md — edit there, then run scripts/sync-shared-references.sh -->
 
+---
+id: court-of-justice
+kind: institution
+name: "Court of Justice of the European Union"
+treaty_basis: "Art. 19 TEU; Arts. 251–281 TFEU"
+as_of: 2026-11-17
+verified: false   # composition, dynamics and positions are model knowledge
+---
+
 # Institution: Court of Justice of the European Union (CJEU)
 
 **Invoked in:** `/treaty-check` (for case law references), `/infringement` (for judgment simulation), legal disputes between institutions or member states.

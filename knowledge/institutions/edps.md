@@ -1,4 +1,11 @@
-<!-- SYNCED COPY — do not edit. Canonical: knowledge/agents/edps.md — edit there, then run scripts/sync-shared-references.sh -->
+---
+id: edps
+kind: body
+name: "European Data Protection Supervisor"
+treaty_basis: "Art. 16(2) TFEU; Art. 8(3) Charter; Regulation (EU) 2018/1725, Chapter VI"
+as_of: 2026-11-17
+verified: false   # practice and examples are model knowledge
+---
 
 # Agent: European Data Protection Supervisor (EDPS)
 

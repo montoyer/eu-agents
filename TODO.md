@@ -52,6 +52,7 @@ Improvements and future change requests.
 - CLAUDE.md skill listing is 100% in sync with the 98 on-disk skills; all 9 `plugin.json` skill registries match disk.
 - Every SKILL.md has `name`/`description` frontmatter and a DRAFT disclaimer.
 - 27 portfolio files match `knowledge/roster.yml` (validate.sh check 8 since 2026-11-17); the shortname grid and the `/commissioner` table were regenerated from the roster.
+- `knowledge/member-states.yml` totals (check 9) and DG/institution headers (check 10) since 2026-11-17.
 - `validate.sh` + `.githooks/pre-commit` + Pages CI pipeline all run clean (hard checks).
 
 
@@ -75,16 +76,18 @@ conversation; parallel subagents are not needed.
 
 - [x] Phase 1 — `knowledge/` synced into `plugins/eu-simulation/knowledge/` (drift check in validate.sh check 6, cited paths in check 7); College command named `college-deliberation` everywhere in this repo; majority rule stated as Art. 250 TFEU instead of 11/21; workflow entries dropped from the library
 - [ ] Outside this repo: fix `/college-deliberate` on the montoyer.com landing page and `/simulation-eu:` on the published simulation pages; reword "21 Commissioner personas running in parallel"
-- [ ] Phase 2 — knowledge
+- [ ] Phase 2 — knowledge (two follow-ups open below)
   - [x] The real 2024–2029 College as 27 portfolio files (by portfolio, never by name), each with a YAML header (`id`, `rank`, `title`, `lead_dgs`, `treaty_basis`, `as_of`, `verified: false`); the 21 generic files removed, their shortnames kept as aliases (2026-11-17)
   - [x] `knowledge/roster.yml`: ids, titles, ranks, aliases, EVP steering, quorum and majority (14 of 27); synced into the plugin; validate.sh check 8 keeps roster and files in step
   - [x] College skills, `/commissioner` table, shortname grid, DG profiles, docs and site page moved to the 27 portfolios; Art. 17(6)(c) TEU "President imposes a decision" error corrected
   - [x] Extractor appends the roster to the five simulation prompts that cite it, and drops the plugin-only "Knowledge files" note
-  - [ ] Verify against official sources: portfolio titles, EVP steering (mission letters of 17 September 2024), lead DGs (DG ENEST and DG MENA, customs under trade), key dossiers; then set `verified: true` per file
-  - [ ] Dated member-state populations in the roster (for QMV)
-  - [ ] YAML headers on DG and institution files
-  - [ ] Missing actors: Legal Service, Secretariat-General, Regulatory Scrutiny Board, 27 member states, national parliaments; DG profiles for ECFIN, CLIMA, DEFIS, ENEST, MENA, INTPA, FISMA, MARE, EAC, ECHO
-  - [ ] Merge `knowledge/agents/` and `knowledge/workflows/` into `knowledge/procedures/`
+  - [x] Checked against official sources (2026-11-17): titles and ranks against the College page; EVP guidance and lead DGs against the 26 mission letters of 17 September 2024 (three steering errors fixed: Health under the Clean Transition EVP, Defence and Space under Tech Sovereignty only, Mediterranean also under Social Rights for demography; digital euro moved to Economy; DIGIT to Tech Sovereignty; DGT and SCIC to Budget); College voting rule against Decision (EU) 2024/3080. Each persona header now has `checked:`; `verified` stays false because priorities and dossiers are model knowledge
+  - [ ] Verify each persona's priorities and key dossiers against live sources (Commission Work Programme 2026, Legislative Observatory), then set `verified: true` per file
+  - [x] `knowledge/member-states.yml`: 2026 populations from Council Decision (EU, Euratom) 2025/2427 (Annex III), EP seats, euro membership, presidencies to 2030; validate.sh check 9 checks the totals; QMV skills read it and the extractor appends the table to the four Council prompts. qmv-calculator rewritten: abstentions count as not in favour, reinforced QMV and Art. 238(3) corrected
+  - [ ] Replace the population block with the 2027 Annex III when the Council adopts it (expected late 2026, applies from 1 January 2027)
+  - [x] YAML headers on all DG and institution files; validate.sh check 10 keeps each DG's `supports` in step with the portfolios' `lead_dgs`
+  - [x] Missing actors: Secretariat-General, Legal Service, Regulatory Scrutiny Board (`knowledge/dgs/`), Member States and national parliaments (`knowledge/institutions/`); DG profiles for ECFIN, CLIMA, DEFIS, ENEST, MENA, INTPA, FISMA, MARE, EAC, ECHO; yellow-card arithmetic in subsidiarity-stress corrected to votes (18 of 54)
+  - [x] `knowledge/agents/` and `knowledge/workflows/` merged into `knowledge/procedures/`; EDPS moved to `knowledge/institutions/`
   - [ ] Worked examples in `docs/examples/` still use the 2019–2024 portfolio names (left as historical records)
 - [ ] Phase 3 — engine: consolidate simulation skills 16 → 13 (`college` absorbs college-decision; `council` absorbs coreper and council-presidency; new `dg` actor); every session writes `simulation.json` in the montoyer.com format; JSON schema and a self-contained validator in this repo; "Simulate this" links on the commissioners page
 - [ ] Phase 4 — MCP server exposing the knowledge base, so claude.ai users can run a full simulation without a terminal

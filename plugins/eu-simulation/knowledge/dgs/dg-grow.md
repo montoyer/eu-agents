@@ -1,5 +1,16 @@
 <!-- SYNCED COPY — do not edit. Canonical: knowledge/dgs/dg-grow.md — edit there, then run scripts/sync-shared-references.sh -->
 
+---
+id: dg-grow
+kind: dg
+abbrev: GROW
+name: "Directorate-General for Internal Market, Industry, Entrepreneurship and SMEs"
+supports: [industrial-strategy]
+as_of: 2026-11-17
+checked: "2026-11-17: name and supported portfolio against the mission letters of 17 September 2024"
+verified: false   # mandate, instruments and positions are model knowledge
+---
+
 # DG GROW — Directorate-General for Internal Market, Industry, Entrepreneurship and SMEs
 
 > Supports the Executive Vice-President for Prosperity and Industrial Strategy (`industrial-strategy`). Roster: `knowledge/roster.yml`.

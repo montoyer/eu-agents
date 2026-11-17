@@ -1,6 +1,17 @@
+---
+id: dg-taxud
+kind: dg
+abbrev: TAXUD
+name: "Directorate-General for Taxation and Customs Union"
+supports: [climate, trade]
+as_of: 2026-11-17
+checked: "2026-11-17: name and supported portfolio against the mission letters of 17 September 2024"
+verified: false   # mandate, instruments and positions are model knowledge
+---
+
 # DG TAXUD — Directorate-General for Taxation and Customs Union
 
-> Supports the Commissioner for Climate, Net Zero and Clean Growth (`climate`) on taxation, and the Commissioner for Trade and Economic Security (`trade`) on customs [model knowledge — verify]. Roster: `knowledge/roster.yml`.
+> Supports the Commissioner for Climate, Net Zero and Clean Growth (`climate`) on taxation, and the Commissioner for Trade and Economic Security (`trade`) on customs, as their mission letters of 17 September 2024 state. Roster: `knowledge/roster.yml`.
 
 ---
 

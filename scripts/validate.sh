@@ -15,6 +15,12 @@
 #   8. knowledge/roster.yml and knowledge/commissioners/ agree: one file per
 #      roster id, same id, rank and title in the file's YAML header, steering
 #      and aliases point at real ids, majority = members / 2 + 1.
+#   9. knowledge/member-states.yml adds up: 27 unique states, populations sum
+#      to the stated total, the QMV threshold is 65 % of it, 720 EP seats, and
+#      presidencies name real states.
+#  10. knowledge/dgs/ and knowledge/institutions/ files open with a YAML header
+#      whose id matches the file name; each DG's `supports` ids exist in the
+#      roster, and each supported portfolio lists the DG in its lead_dgs.
 #
 # Soft checks (reported as warnings, do not fail the build):
 #   3. Every `references/<file>.md` cited inside a SKILL.md exists in that
@@ -234,6 +240,135 @@ sys.exit(1 if errs else 0)
 ROSTER
 )"; then
   while IFS= read -r line; do red "  ROSTER: $line"; done <<< "$roster_errors"
+  errors=$((errors + 1))
+fi
+
+# ---------------------------------------------------------------------------
+# Check 9 — member-state data adds up
+# ---------------------------------------------------------------------------
+echo "==> Check 9: knowledge/member-states.yml totals"
+if ! ms_errors="$(python3 - <<'MS'
+import re, sys
+from pathlib import Path
+
+text = Path("knowledge/member-states.yml").read_text(encoding="utf-8")
+errs = []
+
+def num(key):
+    m = re.search(rf"^  {key}: (\d+)", text, re.M)
+    return int(m.group(1)) if m else None
+
+total, thr, block = num("total"), num("qmv_threshold"), num("blocking_above")
+lists = {"states": [], "presidencies": []}
+section, cur = None, None
+for line in text.splitlines():
+    if re.match(r"^[a-z_]+:", line):
+        section = line.split(":")[0]
+        cur = None
+        continue
+    m = re.match(r"  - (\w+): (\S+)", line)
+    if m and section in lists:
+        cur = {m.group(1): m.group(2)}
+        lists[section].append(cur)
+        continue
+    m = re.match(r"    (\w+): (\S+)", line)
+    if m and cur is not None:
+        cur[m.group(1)] = m.group(2)
+
+states = lists["states"]
+codes = [s.get("code") for s in states]
+if len(states) != 27:
+    errs.append(f"{len(states)} states listed, expected 27")
+if len(set(codes)) != len(codes):
+    errs.append("duplicate state codes")
+for s in states:
+    for key in ("name", "population", "share", "ep_seats", "euro"):
+        if key not in s:
+            errs.append(f"{s.get('code')}: missing {key}")
+pop_sum = sum(int(s.get("population", 0)) for s in states)
+if total is None or pop_sum != total:
+    errs.append(f"populations sum to {pop_sum}, total says {total}")
+if total and thr is not None and abs(thr - total * 0.65) >= 1:
+    errs.append(f"qmv_threshold {thr} is not 65 % of {total}")
+if total and thr is not None and block != total - thr:
+    errs.append(f"blocking_above {block} should be total - qmv_threshold = {total - thr}")
+seats = sum(int(s.get("ep_seats", 0)) for s in states)
+if seats != 720:
+    errs.append(f"EP seats sum to {seats}, expected 720")
+for p in lists["presidencies"]:
+    if p.get("state") not in codes:
+        errs.append(f"presidency {p.get('semester')}: unknown state {p.get('state')}")
+
+print("\n".join(errs))
+sys.exit(1 if errs else 0)
+MS
+)"; then
+  while IFS= read -r line; do red "  MEMBER-STATES: $line"; done <<< "$ms_errors"
+  errors=$((errors + 1))
+fi
+
+# ---------------------------------------------------------------------------
+# Check 10 — DG and institution headers agree with the roster
+# ---------------------------------------------------------------------------
+echo "==> Check 10: DG and institution headers"
+if ! hdr_errors="$(python3 - <<'HDR'
+import re, sys
+from pathlib import Path
+
+def header(path):
+    text = path.read_text(encoding="utf-8")
+    m = re.match(r"---\n(.*?)\n---\n", text, re.S)
+    if not m:
+        return None
+    fields = {}
+    for line in m.group(1).splitlines():
+        km = re.match(r"(\w+): (.*?)\s*(?:#.*)?$", line)
+        if km:
+            fields[km.group(1)] = km.group(2).strip('"')
+    return fields
+
+def as_list(v):
+    return [x.strip() for x in v.strip("[]").split(",") if x.strip()]
+
+errs = []
+roster_ids = set(re.findall(r"^  - id: (\S+)", Path("knowledge/roster.yml").read_text(encoding="utf-8"), re.M))
+lead = {}
+for f in Path("knowledge/commissioners").glob("*.md"):
+    if f.name.startswith("_"):
+        continue
+    h = header(f) or {}
+    lead[f.stem] = set(as_list(h.get("lead_dgs", "")))
+
+for folder, kinds in (("knowledge/dgs", {"dg", "office", "service", "body"}), ("knowledge/institutions", {"institution", "body", "actor"})):
+    for f in sorted(Path(folder).glob("*.md")):
+        if f.name.startswith("_"):
+            continue
+        h = header(f)
+        if h is None:
+            errs.append(f"{f}: no YAML header")
+            continue
+        if h.get("id") != f.stem:
+            errs.append(f"{f}: id '{h.get('id')}' does not match the file name")
+        if h.get("kind") not in kinds:
+            errs.append(f"{f}: kind '{h.get('kind')}' not one of {sorted(kinds)}")
+        if not h.get("name"):
+            errs.append(f"{f}: missing name")
+        if folder.endswith("dgs") and h.get("kind") != "body":
+            ab = h.get("abbrev", "")
+            sup = as_list(h.get("supports", ""))
+            if not ab or not sup:
+                errs.append(f"{f}: needs abbrev and supports")
+            for pid in sup:
+                if pid not in roster_ids:
+                    errs.append(f"{f}: supports unknown portfolio '{pid}'")
+                elif ab not in lead.get(pid, set()):
+                    errs.append(f"{f}: '{pid}' does not list {ab} in lead_dgs")
+
+print("\n".join(errs))
+sys.exit(1 if errs else 0)
+HDR
+)"; then
+  while IFS= read -r line; do red "  HEADER: $line"; done <<< "$hdr_errors"
   errors=$((errors + 1))
 fi
 

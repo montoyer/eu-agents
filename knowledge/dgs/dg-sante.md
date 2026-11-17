@@ -1,6 +1,17 @@
+---
+id: dg-sante
+kind: dg
+abbrev: SANTE
+name: "Directorate-General for Health and Food Safety"
+supports: [health]
+as_of: 2026-11-17
+checked: "2026-11-17: name and supported portfolio against the mission letters of 17 September 2024"
+verified: false   # mandate, instruments and positions are model knowledge
+---
+
 # DG SANTE — Directorate-General for Health and Food Safety
 
-> Supports the Commissioner for Health and Animal Welfare (`health`). Roster: `knowledge/roster.yml`.
+> Supports the Commissioner for Health and Animal Welfare (`health`), guided by the Executive Vice-President for a Clean, Just and Competitive Transition, and on health preparedness by the Executive Vice-President for Social Rights and Skills, Quality Jobs and Preparedness. Roster: `knowledge/roster.yml`.
 
 ---
 

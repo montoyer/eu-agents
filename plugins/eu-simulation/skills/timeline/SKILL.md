@@ -81,7 +81,7 @@ delay or failure.
    - Council vote (QMV arithmetic — see below): 1–2 months
    - Total Phase 3 range: 6–24 months
    - QMV check: 55% of member states (15/27) representing 65% of EU population;
-     blocking minority = 4 member states representing 35% of population
+     blocking minority = at least 4 members not in favour holding more than 35% of population
    - Blocking dependency: Council general approach typically precedes trilogue
      mandate; without it, the Presidency cannot negotiate
 6. **Model trilogue** (Phase 4 — replaces second reading in ~90% of dossiers)
@@ -114,13 +114,15 @@ delay or failure.
 
 ## QMV Arithmetic Reference
 
-Standard QMV (Art. 16 TEU): 55% of member states (15/27) + 65% of EU population
-Blocking minority: 4 member states representing 35% of EU population
+Standard QMV (Art. 16(4) TEU): 55% of member states (15/27) + 65% of EU population, both in favour
+Blocking minority: at least 4 members not in favour (against or abstaining) holding more than 35% of EU population
+Population figures: `knowledge/member-states.yml` (Annex III to the Council's Rules of Procedure, applicable in 2026)
 
 Key blocking configurations to assess:
-- **Large-state blocking minority**: DE + FR + IT or DE + FR + ES — covers
-  35%+ of population easily; requires only 3 large states
-- **Eastern bloc**: PL + HU + CZ + SK + RO — combined population ~95M;
+- **Large-state blocking minority**: DE + FR + IT hold 46.84% but are only
+  three members; any fourth state completes a blocking minority. DE + FR
+  (33.65%) need two more states holding over 1.35% between them
+- **Eastern bloc**: PL + HU + CZ + SK + RO — 82.4M, 18.23% of EU population;
   not sufficient alone but significant in coalition
 - **Nordic/Baltic**: SE + DK + FI + EE + LV + LT — aligned on regulatory
   quality and digital but below population threshold alone
@@ -150,9 +152,11 @@ Flag a provision as a HIGH trilogue risk point if:
 
 | Resource | Path | Load when |
 |---|---|---|
-| Legislative cycle workflow | `knowledge/workflows/legislative-cycle.md` | Full session — phase definitions |
+| Legislative cycle workflow | `knowledge/procedures/legislative-cycle.md` | Full session — phase definitions |
 | Council agent | `knowledge/institutions/council-eu.md` | QMV arithmetic (Step 9) |
+| Population per Member State | `knowledge/member-states.yml` | QMV arithmetic (Step 9) |
 | EP agent | `knowledge/institutions/european-parliament.md` | Trilogue risk (Step 10) |
+| National parliaments (eight-week subsidiarity window) | `knowledge/institutions/national-parliaments.md` | Phase 2–3 timing |
 
 ---
 
@@ -233,7 +237,7 @@ Most probable blocking configuration:
 [Name 3–4 member states, their shared concern, and the provision that
 triggers it]
 Population of this coalition: [~X% of EU population]
-Threshold for blocking minority: 35% of EU population
+Threshold for blocking minority: more than 35% of EU population, at least 4 members
 [ABOVE / BELOW threshold — assess likelihood of coalition holding]
 
 [If unanimity: name the member state most likely to exercise veto and on

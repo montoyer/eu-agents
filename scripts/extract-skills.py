@@ -19,6 +19,7 @@ REPO_ROOT = Path(__file__).parent.parent
 PLUGINS_DIR = REPO_ROOT / "plugins"
 OUTPUT_FILE = REPO_ROOT / "site" / "prompts.json"
 ROSTER_FILE = REPO_ROOT / "knowledge" / "roster.yml"
+MEMBER_STATES_FILE = REPO_ROOT / "knowledge" / "member-states.yml"
 
 PLUGIN_CATEGORIES = {
     "eu-legislative": "Legislative & Policy",
@@ -210,7 +211,7 @@ def parse_roster(path: Path = ROSTER_FILE) -> tuple[list[dict], dict]:
             continue
         if cur is None:
             continue
-        m = re.match(r'    (rank|title): "?(.*?)"?\s*$', line)
+        m = re.match(r'    (rank|title|note): "?(.*?)"?\s*$', line)
         if m:
             cur[m.group(1)] = m.group(2)
         m = re.match(r"    (aliases|steers): \[(.*)\]\s*$", line)
@@ -224,28 +225,76 @@ def roster_section() -> str:
     """A self-contained roster section appended to prompts that cite knowledge/roster.yml."""
     portfolios, college = parse_roster()
     titles = {p["id"]: p["title"] for p in portfolios}
-    rows = ["| # | Portfolio | Rank | Steers |", "|---|---|---|---|"]
+    rows = ["| # | Portfolio | Rank | Guides | Note |", "|---|---|---|---|---|"]
     for n, p in enumerate(portfolios, 1):
         steers = " · ".join(titles[s].replace("Commissioner for ", "") for s in p.get("steers", [])) or "—"
-        rows.append(f"| {n} | {p['title']} | {RANK_LABELS.get(p['rank'], p['rank'])} | {steers} |")
+        rank = RANK_LABELS.get(p["rank"], p["rank"])
+        rows.append(f"| {n} | {p['title']} | {rank} | {steers} | {p.get('note', '')} |")
     return (
         "## College roster (2024–2029)\n\n"
         f"The {college['members']} portfolios of the College, in speaking order. This list replaces "
         "`knowledge/roster.yml` and the persona files, which exist only in the Claude Code plugin. "
         "Speak as the portfolio, never as the person who holds it. A decision needs "
         f"{college['majority']} votes out of {college['members']}, a majority of all Members "
-        "(Art. 250 TFEU). Steering by the Executive Vice-Presidents is model knowledge: verify it.\n\n"
+        "(Art. 250 TFEU). \"Guides\" lists the portfolios that work under an Executive Vice-President's "
+        "guidance, as the mission letters of 17 September 2024 state it.\n\n"
+        + "\n".join(rows)
+    )
+
+
+# ── Member-state figures (site prompts cannot read knowledge/member-states.yml) ─
+
+def parse_member_states(path: Path = MEMBER_STATES_FILE) -> tuple[list[dict], dict]:
+    """Read the states and the population block from member-states.yml (our own simple layout)."""
+    text = path.read_text(encoding="utf-8")
+    states, cur, section = [], None, None
+    for line in text.splitlines():
+        if re.match(r"^[a-z_]+:", line):
+            section, cur = line.split(":")[0], None
+            continue
+        if section != "states":
+            continue
+        m = re.match(r"  - code: (\S+)", line)
+        if m:
+            cur = {"code": m.group(1)}
+            states.append(cur)
+            continue
+        m = re.match(r"    (\w+): (\S.*?)\s*$", line)
+        if m and cur is not None:
+            cur[m.group(1)] = m.group(2)
+    pop = {k: v.strip('"') for k, v in re.findall(r"^  (source|applies_from|applies_to|total|qmv_threshold|blocking_above): ([^#\n]+?)\s*(?:#.*)?$", text, re.M)}
+    return states, pop
+
+
+def member_states_section() -> str:
+    """A self-contained population table appended to prompts that cite knowledge/member-states.yml."""
+    states, pop = parse_member_states()
+    fmt = lambda n: f"{int(n):,}".replace(",", " ")
+    source = re.sub(r"\s*\[EUR-Lex[^\]]*\]", "", pop["source"])
+    rows = ["| Member State | Population | % of EU | EP seats | Euro |", "|---|---:|---:|---:|---|"]
+    for st in states:
+        rows.append(f"| {st['name']} ({st['code']}) | {fmt(st['population'])} | {st['share']} | {st['ep_seats']} | {'yes' if st['euro'] == 'true' else 'no'} |")
+    return (
+        f"## Member State populations ({pop['applies_from'][:4]})\n\n"
+        "This table replaces `knowledge/member-states.yml`, which exists only in the Claude Code plugin. "
+        f"Population figures: Annex III to the Council's Rules of Procedure, {source}, applicable from "
+        f"{pop['applies_from']} to {pop['applies_to']}. The Council replaces them every 1 January. "
+        f"EU total {fmt(pop['total'])}; a qualified majority needs at least {fmt(pop['qmv_threshold'])} (65 %) "
+        f"in favour; members not in favour block with more than {fmt(pop['blocking_above'])} (35 %) "
+        "if they are at least four. Compute shares from the absolute figures.\n\n"
         + "\n".join(rows)
     )
 
 
 # ── Extractors ────────────────────────────────────────────────────────────────
 
-def with_roster(prompt: str, raw_body: str) -> str:
-    """Append the College roster to prompts whose skill reads knowledge/roster.yml."""
-    if "knowledge/roster.yml" not in raw_body or not ROSTER_FILE.exists():
-        return prompt
-    return prompt + "\n\n---\n\n" + roster_section()
+def with_knowledge_tables(prompt: str, raw_body: str) -> str:
+    """Append the College roster and the member-state table to prompts whose skill reads them."""
+    if "knowledge/roster.yml" in raw_body and ROSTER_FILE.exists():
+        prompt += "\n\n---\n\n" + roster_section()
+    if "knowledge/member-states.yml" in raw_body and MEMBER_STATES_FILE.exists():
+        prompt += "\n\n---\n\n" + member_states_section()
+    return prompt
 
 
 def extract_skill(skill_path: Path, plugin_name: str) -> Optional[dict]:
@@ -287,7 +336,7 @@ def extract_skill(skill_path: Path, plugin_name: str) -> Optional[dict]:
         "related": related,
         "type": "skill",
         "difficulty": infer_difficulty(role, output_format),
-        "prompt_body": with_roster(clean_prompt_body(body), body),
+        "prompt_body": with_knowledge_tables(clean_prompt_body(body), body),
     }
 
 

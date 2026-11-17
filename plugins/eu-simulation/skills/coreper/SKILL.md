@@ -117,8 +117,10 @@ legal base and vires issues.
 | Resource | Path | Load when |
 |---|---|---|
 | Council institutional agent | `knowledge/institutions/council-eu.md` | All sessions |
-| QMV rules and population weights | `knowledge/institutions/council-eu.md` | Steps 4–5 |
-| Trilogue protocol | `knowledge/agents/trilogue.md` | Step 6 — mandate preparation |
+| QMV rules | `knowledge/institutions/council-eu.md` | Steps 4–5 |
+| Population per Member State (Annex III, Council Rules of Procedure) | `knowledge/member-states.yml` | Steps 4–5 |
+| Trilogue protocol | `knowledge/procedures/trilogue.md` | Step 6 — mandate preparation |
+| Member State agents and recurring alignments | `knowledge/institutions/member-states.md` | Ambassadors' speaking turns |
 
 ---
 

@@ -39,7 +39,7 @@ Composes two existing capabilities into one question→document flow:
    turned into a structurally complete `COM(YYYY) NNN final` legislative document.
 
 This skill does not redefine either capability. It orchestrates the College
-protocol from `knowledge/agents/college-deliberation.md` and applies the drafting
+protocol from `knowledge/procedures/college-deliberation.md` and applies the drafting
 conventions of the `legislative-proposal` skill for the emitted document. Use
 `/college-deliberation` when you only want the meeting record; use this skill when
 you want the meeting record **and** the instrument.
@@ -58,7 +58,7 @@ one.
 ## Core Workflow
 
 1. **Run the College deliberation** — follow the full protocol in
-   `knowledge/agents/college-deliberation.md`: President opens (question framed,
+   `knowledge/procedures/college-deliberation.md`: President opens (question framed,
    treaty basis noted, decision threshold set) → lead Commissioner presents →
    EVP coordination layer → each of the 27 Members speaks once → President
    reads the room → formal vote if needed → outcome.
@@ -89,10 +89,10 @@ one.
 
 | Resource | Path | Load when |
 |---|---|---|
-| College deliberation protocol | `knowledge/agents/college-deliberation.md` | Step 1 — every session; full protocol |
+| College deliberation protocol | `knowledge/procedures/college-deliberation.md` | Step 1 — every session; full protocol |
 | College roster: 27 portfolios, ranks, EVP steering, voting rule | `knowledge/roster.yml` | Step 1 — speaking order and vote count |
 | All 27 portfolio personas | `knowledge/commissioners/*.md` | Step 1 — each Commissioner's speaking turn |
-| Conflict escalation rules | `knowledge/agents/college-deliberation.md` | Step 1 — when two positions are irreconcilable |
+| Conflict escalation rules | `knowledge/procedures/college-deliberation.md` | Step 1 — when two positions are irreconcilable |
 | Legislative drafting conventions | eu-legislative `legislative-proposal` skill | Step 3 — instrument choice, legal basis, JPG structure, recitals, empowerments |
 
 Step 3 applies the drafting conventions of the eu-legislative `legislative-proposal`

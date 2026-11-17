@@ -8,7 +8,8 @@ title: "Commissioner for Democracy, Justice, the Rule of Law and Consumer Protec
 lead_dgs: [JUST]
 treaty_basis: "Arts. 2, 7, 10–11, 19 TEU; Arts. 16, 81–86, 169 TFEU"
 as_of: 2026-11-17
-verified: false
+checked: "2026-11-17: title, rank, EVP guidance and lead DGs against the College page and the mission letter of 17 September 2024"
+verified: false   # priorities and dossiers are model knowledge
 ---
 
 # Commissioner for Democracy, Justice, the Rule of Law and Consumer Protection

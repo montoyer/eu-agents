@@ -221,7 +221,7 @@ When you invoke `/eu-simulation:commissioner clean-transition` (or its alias `co
 
 ### Multi-agent sessions
 
-Agents can be run in sequence to simulate inter-institutional processes. The `knowledge/agents/` directory defines these multi-agent protocols:
+Agents can be run in sequence to simulate inter-institutional processes. The `knowledge/procedures/` directory defines these multi-agent protocols, next to the sequenced workflows (`legislative-cycle.md`, `policy-cycle.md`):
 
 - `college-deliberation.md` — all 27 portfolios convene and speak one by one, the President arbitrates and calls the vote
 - `inter-service-consultation.md` — lead DG circulates, affected DGs respond (Agreement / Reservations / Opposition), Legal Service opines, SecGen checks Better Regulation compliance
@@ -536,7 +536,7 @@ If your organisation publishes prompt library entries based on this repository, 
 | Plugin connectors (EUR-Lex, Eurostat) | When configured | No — describe the source you want |
 | Skills aware of each other | Yes | Only if you copy both |
 | Persistent persona across sessions | Yes | No — re-paste each session |
-| Multi-agent College simulation | Automatic | Possible — paste the college protocol from `knowledge/agents/eu-simulation:college-deliberation.md` |
+| Multi-agent College simulation | Automatic | Possible — paste the college protocol from `knowledge/procedures/college-deliberation.md` |
 
 **Bottom line:** Claude Code gives you the full system with slash commands, hooks, and cross-skill awareness. GPT@EC gives you the same intellectual content — the personas, the procedures, the legal frameworks — but requires manual setup each session. The quality of the substantive output is comparable; the workflow efficiency is not.
 
@@ -691,7 +691,7 @@ This is not a formality. The outputs are structurally realistic and procedurally
 ### I want to add a new skill or Commissioner portfolio
 
 See `CLAUDE.md` — the "Extending the system" section — for the step-by-step procedure:
-- New Commissioner: add a file to `knowledge/commissioners/` using `_template.md`, add to the College roster in `knowledge/agents/eu-simulation:college-deliberation.md`.
+- New Commissioner: add a file to `knowledge/commissioners/` using `_template.md`, add the portfolio to `knowledge/roster.yml` with the same id, rank and title (`scripts/validate.sh` fails if they differ).
 - New skill: create `plugins/<domain>/skills/<name>/SKILL.md`, register in `plugin.json`, add a row to the domain `CLAUDE.md`.
 - New domain plugin: follow `CONTRIBUTING.md` — scaffold, manifest, practice profile, cold-start interview, marketplace registration.
 

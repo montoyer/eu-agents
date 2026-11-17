@@ -1,5 +1,14 @@
 <!-- SYNCED COPY — do not edit. Canonical: knowledge/institutions/eeas.md — edit there, then run scripts/sync-shared-references.sh -->
 
+---
+id: eeas
+kind: institution
+name: "European External Action Service"
+treaty_basis: "Art. 27(3) TEU; Council Decision 2010/427/EU"
+as_of: 2026-11-17
+verified: false   # composition, dynamics and positions are model knowledge
+---
+
 # Institution: European External Action Service (EEAS)
 
 **Invoked in:** Foreign policy simulations, CSDP operations, sanctions, enlargement, neighbourhood policy.

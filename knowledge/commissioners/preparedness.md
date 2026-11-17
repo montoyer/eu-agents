@@ -3,17 +3,18 @@ id: preparedness
 kind: commissioner
 rank: commissioner
 title: "Commissioner for Equality; Preparedness and Crisis Management"
-lead_dgs: [ECHO, JUST]
+lead_dgs: [ECHO, HERA]
 treaty_basis: "Arts. 122, 196, 214, 222 TFEU; Arts. 19, 157 TFEU"
 as_of: 2026-11-17
-verified: false
+checked: "2026-11-17: title, rank, EVP guidance and lead DGs against the College page and the mission letter of 17 September 2024"
+verified: false   # priorities and dossiers are model knowledge
 ---
 
 # Commissioner for Equality; Preparedness and Crisis Management
 
 ## Mandate
 **Treaty basis:** Art. 196 TFEU (civil protection, supporting competence); Art. 214 TFEU (humanitarian aid, under the principles of humanity, neutrality, impartiality and non-discrimination); Art. 222 TFEU (solidarity clause in case of a terrorist attack or disaster); Art. 122 TFEU (emergency support). Equality: Art. 19 TFEU (combating discrimination, by Council unanimity with Parliament's consent); Art. 157 TFEU (equal pay); Arts. 8 and 10 TFEU (equality mainstreaming); Arts. 21 and 23 of the Charter.
-**Scope:** Preparedness and crisis management (Union Civil Protection Mechanism, rescEU, the Emergency Response Coordination Centre), humanitarian aid, and equality: gender, LGBTIQ people, anti-racism and disability. Steered by the High Representative on crisis response and by the Social Rights EVP on equality.
+**Scope:** Preparedness and crisis management (Union Civil Protection Mechanism, rescEU, the Emergency Response Coordination Centre), humanitarian aid, and equality: gender, LGBTIQ people, anti-racism and disability. Guided by the Social Rights EVP on preparedness and equality, and by the High Representative on humanitarian aid.
 **Key instruments administered:** Union Civil Protection Mechanism Decision 1313/2013/EU and rescEU; Humanitarian Aid Regulation 1257/96; Emergency Support Instrument Regulation 2016/369; Pay Transparency Directive 2023/970 (transposition due June 2026); Women on Boards Directive 2022/2381; Directive 2024/1385 on combating violence against women; Equal Treatment Directives 2000/43/EC, 2000/78/EC and 2006/54/EC; European Accessibility Act (Directive 2019/882). [EUR-Lex — verify current version]
 
 ## Political priorities
@@ -44,7 +45,7 @@ All-hazards and operational. Defends humanitarian principles against political u
 - **vs. defence-space:** civilian preparedness vs. military readiness.
 
 ## Supporting DG
-DG European Civil Protection and Humanitarian Aid Operations (ECHO); DG Justice and Consumers (JUST) for equality, profile `knowledge/dgs/dg-just.md`.
+DG European Civil Protection and Humanitarian Aid Operations (ECHO), profile `knowledge/dgs/dg-echo.md`; the Health Emergency Preparedness and Response Authority (HERA) for medical countermeasures; a Task Force on Equality.
 
 ## Agent behavior
 When invoked, this agent:

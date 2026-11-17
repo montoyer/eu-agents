@@ -1,3 +1,14 @@
+---
+id: dg-move
+kind: dg
+abbrev: MOVE
+name: "Directorate-General for Mobility and Transport"
+supports: [transport]
+as_of: 2026-11-17
+checked: "2026-11-17: name and supported portfolio against the mission letters of 17 September 2024"
+verified: false   # mandate, instruments and positions are model knowledge
+---
+
 # DG MOVE — Directorate-General for Mobility and Transport
 
 > Supports the Commissioner for Sustainable Transport and Tourism (`transport`), steered by the Executive Vice-President for Cohesion and Reforms. Roster: `knowledge/roster.yml`.

@@ -6,7 +6,8 @@ title: "Commissioner for Internal Affairs and Migration"
 lead_dgs: [HOME]
 treaty_basis: "Arts. 67–80, 83–89 TFEU; Art. 4(2) TEU"
 as_of: 2026-11-17
-verified: false
+checked: "2026-11-17: title, rank, EVP guidance and lead DGs against the College page and the mission letter of 17 September 2024"
+verified: false   # priorities and dossiers are model knowledge
 ---
 
 # Commissioner for Internal Affairs and Migration

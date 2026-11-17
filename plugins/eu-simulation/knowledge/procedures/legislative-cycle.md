@@ -1,4 +1,4 @@
-<!-- SYNCED COPY — do not edit. Canonical: knowledge/workflows/legislative-cycle.md — edit there, then run scripts/sync-shared-references.sh -->
+<!-- SYNCED COPY — do not edit. Canonical: knowledge/procedures/legislative-cycle.md — edit there, then run scripts/sync-shared-references.sh -->
 
 # Workflow: Legislative Cycle (Ordinary Legislative Procedure)
 

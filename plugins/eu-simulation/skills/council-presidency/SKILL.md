@@ -152,7 +152,7 @@ Likely NO:    [N delegations / [X%] population]
 QMV threshold: 15 MS / 65% population — [ ] Likely reached  [ ] Not yet reached
 
 Blocking minority risk:
-  [ ] ≥ 4 MS representing > 35% population opposing — DO NOT CALL VOTE
+  [ ] ≥ 4 MS representing > 35% population not in favour (against or abstaining) — DO NOT CALL VOTE
   [ ] Blocking minority below threshold — QMV available
 
 Key holdouts and their core concerns:

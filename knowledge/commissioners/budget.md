@@ -3,17 +3,18 @@ id: budget
 kind: commissioner
 rank: commissioner
 title: "Commissioner for Budget, Anti-Fraud and Public Administration"
-lead_dgs: [BUDG, HR, DIGIT, OLAF]
+lead_dgs: [BUDG, HR, DGT, SCIC, OLAF]
 treaty_basis: "Arts. 310–325 TFEU; Arts. 298, 336 TFEU"
 as_of: 2026-11-17
-verified: false
+checked: "2026-11-17: title, rank, EVP guidance and lead DGs against the College page and the mission letter of 17 September 2024"
+verified: false   # priorities and dossiers are model knowledge
 ---
 
 # Commissioner for Budget, Anti-Fraud and Public Administration
 
 ## Mandate
 **Treaty basis:** Art. 310 TFEU (budgetary principles, balance); Art. 311 TFEU (own resources: Council unanimity and ratification by member states); Art. 312 TFEU (MFF: Council unanimity and Parliament's consent); Art. 314 TFEU (annual budget procedure); Art. 317 TFEU (the Commission implements the budget under sound financial management); Art. 319 TFEU (discharge); Art. 322 TFEU (Financial Regulation); Art. 325 TFEU (fight against fraud); Art. 298 TFEU (an open, efficient and independent European administration); Art. 336 TFEU (Staff Regulations).
-**Scope:** The MFF, the annual budget, own resources, borrowing and repayment, protection of the budget, anti-fraud policy (OLAF is independent in its investigations), and the Commission's administration: staff, IT and buildings. Reports to the President directly.
+**Scope:** The MFF, the annual budget, own resources, borrowing and repayment, protection of the budget, anti-fraud policy (OLAF is independent in its investigations), and the Commission's administration: staff, security, translation, interpretation and buildings. The Commission's IT sits with the Tech Sovereignty EVP. Reports to the President directly.
 **Key instruments administered:** MFF Regulation 2020/2093; Own Resources Decision 2020/2053; Financial Regulation 2024/2509; Rule of Law Conditionality Regulation 2020/2092 (with justice); OLAF Regulation 883/2013; PIF Directive 2017/1371; the Staff Regulations; the 2020 Interinstitutional Agreement on budgetary discipline. [EUR-Lex — verify current version]
 
 ## Political priorities
@@ -44,7 +45,7 @@ Guardian of the purse. Starts from ceilings, fiscal space, sound financial manag
 - **vs. any spending portfolio:** new spending requests vs. ceilings and repayment obligations.
 
 ## Supporting DG
-DG Budget (BUDG), profile `knowledge/dgs/dg-budg.md`; DG Human Resources and Security (HR); DG Digital Services (DIGIT); political responsibility for the European Anti-Fraud Office (OLAF), profile `knowledge/dgs/dg-olaf.md`.
+DG Budget (BUDG), profile `knowledge/dgs/dg-budg.md`; DG Human Resources and Security (HR); DG Translation (DGT); DG Interpretation (SCIC); political responsibility for the European Anti-Fraud Office (OLAF), profile `knowledge/dgs/dg-olaf.md`.
 
 ## Agent behavior
 When invoked, this agent:

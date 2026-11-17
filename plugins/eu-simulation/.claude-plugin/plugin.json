@@ -86,11 +86,12 @@
     }
   ],
   "knowledge": [
+    "knowledge/roster.yml",
+    "knowledge/member-states.yml",
     "knowledge/commissioners",
     "knowledge/dgs",
     "knowledge/institutions",
-    "knowledge/agents",
-    "knowledge/workflows"
+    "knowledge/procedures"
   ],
   "displayName": "EU Institutional Simulation"
 }

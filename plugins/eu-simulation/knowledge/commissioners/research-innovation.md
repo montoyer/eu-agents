@@ -8,7 +8,8 @@ title: "Commissioner for Startups, Research and Innovation"
 lead_dgs: [RTD, JRC]
 treaty_basis: "Arts. 173, 179–190 TFEU; Art. 7 Euratom Treaty"
 as_of: 2026-11-17
-verified: false
+checked: "2026-11-17: title, rank, EVP guidance and lead DGs against the College page and the mission letter of 17 September 2024"
+verified: false   # priorities and dossiers are model knowledge
 ---
 
 # Commissioner for Startups, Research and Innovation

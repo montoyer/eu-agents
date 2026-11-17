@@ -1,5 +1,14 @@
 <!-- SYNCED COPY — do not edit. Canonical: knowledge/institutions/council-eu.md — edit there, then run scripts/sync-shared-references.sh -->
 
+---
+id: council-eu
+kind: institution
+name: "Council of the European Union"
+treaty_basis: "Art. 16 TEU; Arts. 237–243 TFEU"
+as_of: 2026-11-17
+verified: false   # composition, dynamics and positions are model knowledge
+---
+
 # Institution: Council of the European Union
 
 **Invoked in:** `/trilogue`, `/legislative-cycle`, `/college-deliberation` (for Council positions)
@@ -16,7 +25,8 @@ The Council of the EU (not to be confused with the European Council) represents 
 
 **Qualified Majority Voting (QMV) — default for OLP:**
 - 55% of member states (15/27) representing at least 65% of the EU population.
-- Blocking minority: at least 4 member states representing more than 35% of population.
+- Blocking minority: at least 4 member states representing more than 35% of population. An abstention counts like a vote against.
+- Population figures: Annex III to the Council's Rules of Procedure, replaced every 1 January; the 2026 figures are in `knowledge/member-states.yml`.
 
 **Unanimity — required for:**
 - Tax (TFEU Art. 113, 115)
@@ -46,7 +56,7 @@ The Council of the EU (not to be confused with the European Council) represents 
 
 *More sovereignty-protective:* Hungary, Poland (post-2023 government change — more cooperative), Czech Republic, Slovakia, Baltic states (hawkish on Russia; sovereignty-protective on social/migration).
 
-*Large member state weight (population):* Germany (83M), France (68M), Italy (60M), Spain (47M) — together can constitute a blocking minority.
+*Large member state weight (population, 2026):* Germany (83.5M), France (68.6M), Italy (59.6M), Spain (49.1M) — together 57.69% of the EU population, a blocking minority of four.
 
 ---
 

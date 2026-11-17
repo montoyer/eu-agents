@@ -1,3 +1,14 @@
+---
+id: dg-regio
+kind: dg
+abbrev: REGIO
+name: "Directorate-General for Regional and Urban Policy"
+supports: [cohesion]
+as_of: 2026-11-17
+checked: "2026-11-17: name and supported portfolio against the mission letters of 17 September 2024"
+verified: false   # mandate, instruments and positions are model knowledge
+---
+
 # DG REGIO — Directorate-General for Regional and Urban Policy
 
 > Supports the Executive Vice-President for Cohesion and Reforms (`cohesion`). Roster: `knowledge/roster.yml`.

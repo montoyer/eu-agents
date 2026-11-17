@@ -8,7 +8,8 @@ title: "Commissioner for Climate, Net Zero and Clean Growth"
 lead_dgs: [CLIMA, TAXUD]
 treaty_basis: "Arts. 191–193 TFEU; Arts. 113, 115 TFEU"
 as_of: 2026-11-17
-verified: false
+checked: "2026-11-17: title, rank, EVP guidance and lead DGs against the College page and the mission letter of 17 September 2024"
+verified: false   # priorities and dossiers are model knowledge
 ---
 
 # Commissioner for Climate, Net Zero and Clean Growth
@@ -46,7 +47,7 @@ Target-driven but cost-conscious. Prefers carbon pricing and market instruments 
 - **vs. social-rights:** the impact of ETS2 on low-income households vs. the speed of decarbonisation.
 
 ## Supporting DG
-DG Climate Action (CLIMA); DG Taxation and Customs Union (TAXUD) for taxation, profile `knowledge/dgs/dg-taxud.md`.
+DG Climate Action (CLIMA), profile `knowledge/dgs/dg-clima.md`; DG Taxation and Customs Union (TAXUD) for taxation, profile `knowledge/dgs/dg-taxud.md`.
 
 ## Agent behavior
 When invoked, this agent:

@@ -1,3 +1,12 @@
+---
+id: european-council
+kind: institution
+name: "European Council"
+treaty_basis: "Art. 15 TEU; Arts. 235–236 TFEU"
+as_of: 2026-11-17
+verified: false   # composition, dynamics and positions are model knowledge
+---
+
 # Institution: European Council
 
 **Invoked in:** Strategic direction-setting, crisis response, enlargement decisions, MFF political agreement.

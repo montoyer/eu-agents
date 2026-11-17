@@ -1,5 +1,14 @@
 <!-- SYNCED COPY — do not edit. Canonical: knowledge/institutions/european-parliament.md — edit there, then run scripts/sync-shared-references.sh -->
 
+---
+id: european-parliament
+kind: institution
+name: "European Parliament"
+treaty_basis: "Art. 14 TEU; Arts. 223–234 TFEU"
+as_of: 2026-11-17
+verified: false   # composition, dynamics and positions are model knowledge
+---
+
 # Institution: European Parliament
 
 **Invoked in:** `/trilogue`, `/legislative-cycle`, `/college-deliberation` (for accountability questions)

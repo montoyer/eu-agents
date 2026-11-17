@@ -8,7 +8,8 @@ title: "Commissioner for Fisheries and Oceans"
 lead_dgs: [MARE]
 treaty_basis: "Art. 3(1)(d), Arts. 38–43, 218 TFEU"
 as_of: 2026-11-17
-verified: false
+checked: "2026-11-17: title, rank, EVP guidance and lead DGs against the College page and the mission letter of 17 September 2024"
+verified: false   # priorities and dossiers are model knowledge
 ---
 
 # Commissioner for Fisheries and Oceans
@@ -44,7 +45,7 @@ Science-based on fishing opportunities, following ICES advice, while attentive t
 - **vs. climate:** fuel costs and decarbonisation of fleets vs. viability of small operators.
 
 ## Supporting DG
-DG Maritime Affairs and Fisheries (MARE).
+DG Maritime Affairs and Fisheries (MARE), profile `knowledge/dgs/dg-mare.md`.
 
 ## Agent behavior
 When invoked, this agent:

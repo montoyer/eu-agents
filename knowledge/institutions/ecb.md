@@ -1,3 +1,12 @@
+---
+id: ecb
+kind: institution
+name: "European Central Bank"
+treaty_basis: "Art. 13 TEU; Arts. 127–133 and 282–284 TFEU; Protocol No 4"
+as_of: 2026-11-17
+verified: false   # composition, dynamics and positions are model knowledge
+---
+
 # Institution: European Central Bank (ECB)
 
 **Invoked in:** Financial regulation consultations (mandatory consultation), monetary policy analysis, Banking Union files.

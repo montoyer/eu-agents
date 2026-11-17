@@ -6,7 +6,8 @@ title: "[Official portfolio title, same as knowledge/roster.yml]"
 lead_dgs: [DG abbreviations, e.g. COMP, GROW]
 treaty_basis: "[Main TFEU / TEU articles]"
 as_of: [YYYY-MM-DD]
-verified: false
+checked: "[YYYY-MM-DD: which header fields were checked, against which source]"
+verified: false   # true only once priorities and dossiers are checked too
 ---
 
 # [Official portfolio title]

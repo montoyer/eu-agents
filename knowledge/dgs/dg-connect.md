@@ -1,3 +1,14 @@
+---
+id: dg-connect
+kind: dg
+abbrev: CNECT
+name: "Directorate-General for Communications Networks, Content and Technology"
+supports: [tech-sovereignty]
+as_of: 2026-11-17
+checked: "2026-11-17: name and supported portfolio against the mission letters of 17 September 2024"
+verified: false   # mandate, instruments and positions are model knowledge
+---
+
 # DG CNECT — Directorate-General for Communications Networks, Content and Technology
 
 > Supports the Executive Vice-President for Tech Sovereignty, Security and Democracy (`tech-sovereignty`). Roster: `knowledge/roster.yml`.

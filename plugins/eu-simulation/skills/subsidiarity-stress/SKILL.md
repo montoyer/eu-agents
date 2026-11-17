@@ -86,10 +86,13 @@ orientation. This skill makes that variation explicit.
      not justified under Protocol No. 2
 5. **Identify the critical configuration** — the one where subsidiarity is
    weakest; this is the configuration the impact assessment must address
-6. **Assess yellow card risk** — Protocol No. 2 yellow card requires 1/3 of
-   national parliamentary chambers to issue reasoned opinions; identify
-   whether the weakest configurations cluster around a realistic blocking
-   coalition of national parliaments
+6. **Assess yellow card risk** — Protocol No. 2 counts votes, not chambers:
+   each national parliament has two votes, one per chamber in a bicameral
+   system, 54 in all. A yellow card needs reasoned opinions worth one third
+   of the votes (18), or one quarter (14) for drafts under Art. 76 TFEU; an
+   orange card under the ordinary legislative procedure needs a simple
+   majority (28). Identify whether the weakest configurations cluster around
+   a realistic coalition of national parliaments
 7. **Recommend impact assessment hardening** — for the weakest configurations,
    identify what additional evidence or legal argument would strengthen the
    subsidiarity justification
@@ -101,7 +104,8 @@ orientation. This skill makes that variation explicit.
 | Resource | Path | Load when |
 |---|---|---|
 | Treaty check workflow | Knowledge of Protocol No. 2 to TEU/TFEU | All sessions |
-| Legislative cycle workflow | `knowledge/workflows/legislative-cycle.md` | Step 6 (yellow card timing) |
+| Legislative cycle workflow | `knowledge/procedures/legislative-cycle.md` | Step 6 (yellow card timing) |
+| National parliaments: votes, yellow and orange card thresholds, eight-week window | `knowledge/institutions/national-parliaments.md` | Step 6 (yellow card risk) |
 
 ---
 
@@ -179,8 +183,8 @@ configuration]
 
 Chambers likely to issue reasoned opinions: [List configurations and the
 national parliaments they correspond to]
-Count toward 1/3 threshold: [N chambers out of ~40 total]
-Yellow card risk: [LOW (<5 chambers) / ELEVATED (5–12) / HIGH (>12)]
+Votes from those chambers: [N of 54] — yellow card at 18 (14 under Art. 76 TFEU); orange card at 28
+Yellow card risk: [LOW (< 9 votes) / ELEVATED (9–17) / HIGH (≥ 18)]
 
 [Note: A yellow card does not block the proposal — the Commission must review
 and explain whether it maintains, amends, or withdraws the proposal. But it
